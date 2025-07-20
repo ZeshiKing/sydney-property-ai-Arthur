@@ -294,7 +294,7 @@ if __name__ == "__main__":
     # 示例用法
     try:
         preference = "我喜欢安静的环境，预算在100万以内，希望找到靠近学校的房子"
-        recommendations = explain_recommendation(preference)
+        recommendations = explain_recommendation_flexible(preference)
         
         print("基于您的偏好，我们推荐：")
         for i, rec in enumerate(recommendations, 1):

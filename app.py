@@ -6,6 +6,13 @@ import os
 import re
 from recommend_claude import explain_recommendation_flexible
 
+# 尝试加载.env文件
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # 如果没安装python-dotenv也没关系
+
 # 页面配置
 st.set_page_config(
     page_title="demoRA - 智能找房助手",
