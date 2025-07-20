@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  sydney-property-ai:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sydney-property-ai
+    ports:
+      - "8501:8501"
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    volumes:
+      - ./data:/app/data:ro
+      - ./logs:/app/logs
+      - ./sydney_properties_working_final.csv:/app/sydney_properties_working_final.csv:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.sydney-property-ai.rule=Host(`property.localhost`)"
+      - "traefik.http.services.sydney-property-ai.loadbalancer.server.port=8501"
+
+  # 可选：添加反向代理
+  traefik:
+    image: traefik:v2.9
+    container_name: traefik
+    command:
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+    ports:
+      - "80:80"
+      - "8080:8080"  # Traefik dashboard
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+    depends_on:
+      - sydney-property-ai
+
+networks:
+  default:
+    name: sydney-property-network
