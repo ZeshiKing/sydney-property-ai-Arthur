@@ -1,0 +1,27 @@
+{
+  "name": "Sydney Property AI",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "postCreateCommand": "pip install -r requirements.txt",
+  "forwardPorts": [8501, 8502],
+  "portsAttributes": {
+    "8501": {
+      "label": "Streamlit App",
+      "onAutoForward": "openPreview"
+    },
+    "8502": {
+      "label": "Streamlit App Alt",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.flake8"
+      ]
+    }
+  }
+}
