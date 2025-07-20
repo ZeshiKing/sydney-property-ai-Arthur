@@ -1,0 +1,4 @@
+streamlit==1.46.1
+anthropic==0.57.1
+pandas==2.2.3
+typing_extensions
