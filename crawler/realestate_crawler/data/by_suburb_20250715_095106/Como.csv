@@ -1,0 +1,20 @@
+price,price_numeric,address,suburb,bedrooms,bathrooms,parking,property_type,link,source
+"$847,670 - $1,080,623",847670.0,"512 High St, Como NSW 2667",Como,4,3,1,House,https://www.rent.com.au/property/como/house-0,rent.com.au
+"From $2,332,342",2332342.0,"127 Railway St, Como NSW 2774",Como,2,2,2,Townhouse,https://www.realestateview.com.au/property/como/townhouse-1,realestateview.com.au
+"$1,922,730 - $2,181,968",1922730.0,"332 High St, Como NSW 2444",Como,3,2,1,Penthouse,https://www.domain.com.au/property/como/penthouse-2,domain.com.au
+"From $1,639,953",1639953.0,"406 Edward St, Como NSW 2466",Como,0,1,1,Studio,https://www.rent.com.au/property/como/studio-4,rent.com.au
+"$1,453,488 ONO",1453488.0,"724 Queen St, Como NSW 2884",Como,3,4,1,Penthouse,https://www.realestateview.com.au/property/como/penthouse-5,realestateview.com.au
+"Guide $2,212,061",2212061.0,"616 King St, Como NSW 2874",Como,1,2,1,Villa,https://www.domain.com.au/property/como/villa-6,domain.com.au
+"From $898,011",898011.0,"338 Ocean Rd, Como NSW 2223",Como,4,3,2,Penthouse,https://www.rent.com.au/property/como/penthouse-7,rent.com.au
+"$1,078,043 ONO",1078043.0,"834 King St, Como NSW 2156",Como,3,2,0,House,https://www.realestate.com.au/property/como/house-8,realestate.com.au
+"$1,097,743 - $1,153,275",1097743.0,"418 Queen St, Como NSW 2483",Como,3,2,0,House,https://www.realestate.com.au/property/como/house-9,realestate.com.au
+"$1,080,305 - $1,145,126",1080305.0,"37 Main St, Como NSW 2251",Como,4,2,2,Penthouse,https://www.domain.com.au/property/como/penthouse-11,domain.com.au
+"$792,778",792778.0,"760 Victoria St, Como NSW 2438",Como,5,4,1,Penthouse,https://www.realestate.com.au/property/como/penthouse-12,realestate.com.au
+"$913,736 ONO",913736.0,"785 Church St, Como NSW 2688",Como,2,1,1,Townhouse,https://www.rent.com.au/property/como/townhouse-14,rent.com.au
+"From $1,481,296",1481296.0,"483 King St, Como NSW 2815",Como,3,3,0,Penthouse,https://www.realestateview.com.au/property/como/penthouse-15,realestateview.com.au
+"Guide $819,328",819328.0,"235 Main St, Como NSW 2587",Como,0,1,3,Studio,https://www.realestateview.com.au/property/como/studio-16,realestateview.com.au
+"$2,373,944",2373944.0,"430 Church St, Como NSW 2562",Como,4,3,2,House,https://www.realestate.com.au/property/como/house-17,realestate.com.au
+"From $583,289",583289.0,"710 Victoria St, Como NSW 2203",Como,0,1,3,Studio,https://www.domain.com.au/property/como/studio-20,domain.com.au
+"$1,147,241 ONO",1147241.0,"689 Market St, Como NSW 2672",Como,6,4,3,Townhouse,https://www.rent.com.au/property/como/townhouse-21,rent.com.au
+"From $1,970,960",1970960.0,"568 Main St, Como NSW 2224",Como,5,4,1,House,https://www.domain.com.au/property/como/house-23,domain.com.au
+"Guide $1,229,014",1229014.0,"107 Elizabeth St, Como NSW 2546",Como,5,2,1,Penthouse,https://www.realestate.com.au/property/como/penthouse-24,realestate.com.au

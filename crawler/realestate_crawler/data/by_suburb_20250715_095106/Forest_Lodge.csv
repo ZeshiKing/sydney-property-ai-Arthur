@@ -1,0 +1,20 @@
+price,price_numeric,address,suburb,bedrooms,bathrooms,parking,property_type,link,source
+"$1,255,750 ONO",1255750.0,"732 Beach Rd, Forest Lodge NSW 2276",Forest Lodge,3,4,0,Penthouse,https://www.realestate.com.au/property/forest-lodge/penthouse-0,realestate.com.au
+"$2,065,316",2065316.0,"478 Albert St, Forest Lodge NSW 2490",Forest Lodge,5,2,2,Penthouse,https://www.rent.com.au/property/forest-lodge/penthouse-1,rent.com.au
+"$1,472,012",1472012.0,"751 Park Ave, Forest Lodge NSW 2607",Forest Lodge,1,2,0,Apartment / Unit / Flat,https://www.rent.com.au/property/forest-lodge/apartment--unit--flat-3,rent.com.au
+"$1,348,603 - $1,631,193",1348603.0,"886 Queen St, Forest Lodge NSW 2423",Forest Lodge,3,4,1,House,https://www.rent.com.au/property/forest-lodge/house-4,rent.com.au
+"From $1,459,393",1459393.0,"176 Park Ave, Forest Lodge NSW 2899",Forest Lodge,3,3,0,Villa,https://www.rent.com.au/property/forest-lodge/villa-5,rent.com.au
+"$1,597,745 - $1,804,391",1597745.0,"276 Pacific Highway, Forest Lodge NSW 2521",Forest Lodge,0,1,3,Studio,https://www.rent.com.au/property/forest-lodge/studio-6,rent.com.au
+"Guide $1,049,428",1049428.0,"408 Military Rd, Forest Lodge NSW 2833",Forest Lodge,3,3,1,Apartment / Unit / Flat,https://www.rent.com.au/property/forest-lodge/apartment--unit--flat-8,rent.com.au
+"$733,819",733819.0,"323 Military Rd, Forest Lodge NSW 2389",Forest Lodge,2,2,2,Apartment / Unit / Flat,https://www.rent.com.au/property/forest-lodge/apartment--unit--flat-9,rent.com.au
+"Guide $1,803,076",1803076.0,"334 Elizabeth St, Forest Lodge NSW 2924",Forest Lodge,1,1,3,House,https://www.realestateview.com.au/property/forest-lodge/house-10,realestateview.com.au
+"From $1,029,508",1029508.0,"630 High St, Forest Lodge NSW 2867",Forest Lodge,4,4,3,House,https://www.realestateview.com.au/property/forest-lodge/house-12,realestateview.com.au
+"$544,746",544746.0,"485 Princes Highway, Forest Lodge NSW 2695",Forest Lodge,4,2,1,Penthouse,https://www.domain.com.au/property/forest-lodge/penthouse-14,domain.com.au
+"Guide $1,637,462",1637462.0,"12 Princes Highway, Forest Lodge NSW 2622",Forest Lodge,3,4,1,Apartment / Unit / Flat,https://www.rent.com.au/property/forest-lodge/apartment--unit--flat-15,rent.com.au
+"From $2,327,121",2327121.0,"635 Queen St, Forest Lodge NSW 2646",Forest Lodge,1,1,1,Townhouse,https://www.realestate.com.au/property/forest-lodge/townhouse-16,realestate.com.au
+"$2,019,639 ONO",2019639.0,"256 Princes Highway, Forest Lodge NSW 2698",Forest Lodge,2,3,2,Villa,https://www.realestateview.com.au/property/forest-lodge/villa-17,realestateview.com.au
+"$2,491,649 - $2,673,649",2491649.0,"227 Queen St, Forest Lodge NSW 2997",Forest Lodge,3,4,1,Townhouse,https://www.realestate.com.au/property/forest-lodge/townhouse-19,realestate.com.au
+"From $1,180,877",1180877.0,"4 Park Ave, Forest Lodge NSW 2762",Forest Lodge,2,1,1,Apartment / Unit / Flat,https://www.realestateview.com.au/property/forest-lodge/apartment--unit--flat-21,realestateview.com.au
+"$2,183,201 ONO",2183201.0,"905 Church St, Forest Lodge NSW 2213",Forest Lodge,3,4,3,Villa,https://www.domain.com.au/property/forest-lodge/villa-22,domain.com.au
+"$1,611,681 ONO",1611681.0,"288 Ocean Rd, Forest Lodge NSW 2564",Forest Lodge,5,3,2,Penthouse,https://www.realestateview.com.au/property/forest-lodge/penthouse-23,realestateview.com.au
+"From $1,024,995",1024995.0,"917 Ocean Rd, Forest Lodge NSW 2990",Forest Lodge,4,2,0,House,https://www.domain.com.au/property/forest-lodge/house-24,domain.com.au

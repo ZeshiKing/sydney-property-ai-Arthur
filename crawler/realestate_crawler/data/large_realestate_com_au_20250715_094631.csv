@@ -1,0 +1,801 @@
+price,price_numeric,address,suburb,bedrooms,bathrooms,parking,property_type,link,source
+"$1,515,425",1515425,"425 Condamine St, Marrickville NSW 2888",Marrickville,2,2,1,Townhouse,https://www.realestate.com.au/property-townhouse-marrickville-1,realestate.com.au
+"$502,164",502164,"606 Victoria St, Liverpool NSW 2328",Liverpool,5,2,2,Townhouse,https://www.realestate.com.au/property-townhouse-liverpool-2,realestate.com.au
+"$1,248,591",1248591,"65 George St, La Perouse NSW 2327",La Perouse,6,2,1,Villa,https://www.realestate.com.au/property-villa-la-perouse-3,realestate.com.au
+"$2,429,791",2429791,"735 The Boulevarde, Belmore NSW 2271",Belmore,5,4,2,House,https://www.realestate.com.au/property-house-belmore-4,realestate.com.au
+"$1,149,960",1149960,"17 Victoria St, Double Bay NSW 2671",Double Bay,4,2,1,Villa,https://www.realestate.com.au/property-villa-double-bay-5,realestate.com.au
+"$2,351,717",2351717,"985 Pittwater Rd, Pymble NSW 2862",Pymble,3,3,3,House,https://www.realestate.com.au/property-house-pymble-6,realestate.com.au
+"$766,682",766682,"424 Edward St, St Peters NSW 2727",St Peters,4,3,1,Duplex,https://www.realestate.com.au/property-duplex-st-peters-7,realestate.com.au
+"$2,245,308",2245308,"82 Liverpool Rd, Kyeemagh NSW 2804",Kyeemagh,5,4,4,House,https://www.realestate.com.au/property-house-kyeemagh-8,realestate.com.au
+Contact Agent,,"124 Main St, Penshurst NSW 2057",Penshurst,2,1,3,Villa,https://www.realestate.com.au/property-villa-penshurst-9,realestate.com.au
+"$503,948",503948,"175 Crown St, Lakemba NSW 2854",Lakemba,0,1,4,Studio,https://www.realestate.com.au/property-studio-lakemba-10,realestate.com.au
+"$568,097",568097,"209 Liverpool Rd, Newtown NSW 2149",Newtown,5,3,2,Townhouse,https://www.realestate.com.au/property-townhouse-newtown-11,realestate.com.au
+"$964,417",964417,"373 Edward St, Punchbowl NSW 2729",Punchbowl,3,3,1,Townhouse,https://www.realestate.com.au/property-townhouse-punchbowl-12,realestate.com.au
+"$343,934",343934,"48 Albert St, Bankstown NSW 2185",Bankstown,2,3,1,Duplex,https://www.realestate.com.au/property-duplex-bankstown-13,realestate.com.au
+"$961,888",961888,"709 Henry St, St Leonards NSW 2479",St Leonards,3,1,1,Villa,https://www.realestate.com.au/property-villa-st-leonards-14,realestate.com.au
+"$747,460",747460,"34 Charles St, Manly NSW 2158",Manly,4,2,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-manly-15,realestate.com.au
+Under Contract,,"631 Crown St, Granville NSW 2426",Granville,2,1,2,Terrace,https://www.realestate.com.au/property-terrace-granville-16,realestate.com.au
+"$1,230,911",1230911,"653 High St, Erskineville NSW 2048",Erskineville,3,1,3,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-erskineville-17,realestate.com.au
+"$2,421,429",2421429,"563 Thomas St, Northbridge NSW 2225",Northbridge,4,1,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-northbridge-18,realestate.com.au
+"$550,538",550538,"916 Military Rd, Neutral Bay NSW 2449",Neutral Bay,6,1,0,Villa,https://www.realestate.com.au/property-villa-neutral-bay-19,realestate.com.au
+"$1,924,122",1924122,"170 Crown St, Bellevue Hill NSW 2715",Bellevue Hill,4,4,0,Semi-Detached,https://www.realestate.com.au/property-semi-detached-bellevue-hill-20,realestate.com.au
+"From $1,500,465",1500465,"923 Canterbury Rd, Roselands NSW 2930",Roselands,1,1,1,Duplex,https://www.realestate.com.au/property-duplex-roselands-21,realestate.com.au
+"$2,405,726",2405726,"679 Henry St, Erskineville NSW 2292",Erskineville,5,3,2,Villa,https://www.realestate.com.au/property-villa-erskineville-22,realestate.com.au
+"$1,882,116",1882116,"407 Spit Rd, Coogee NSW 2438",Coogee,4,1,2,Villa,https://www.realestate.com.au/property-villa-coogee-23,realestate.com.au
+"From $989,748",989748,"225 Park Ave, Mount Druitt NSW 2667",Mount Druitt,0,1,0,Studio,https://www.realestate.com.au/property-studio-mount-druitt-24,realestate.com.au
+"$2,151,833",2151833,"830 King St, Westmead NSW 2870",Westmead,0,1,1,Studio,https://www.realestate.com.au/property-studio-westmead-25,realestate.com.au
+"$1,589,420",1589420,"964 Market St, Tempe NSW 2713",Tempe,1,1,3,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-tempe-26,realestate.com.au
+"$1,091,071",1091071,"692 Queen St, Botany NSW 2953",Botany,2,2,1,Villa,https://www.realestate.com.au/property-villa-botany-27,realestate.com.au
+"From $2,115,013",2115013,"732 King St, Hunters Hill NSW 2015",Hunters Hill,6,2,0,House,https://www.realestate.com.au/property-house-hunters-hill-28,realestate.com.au
+"$1,300,121",1300121,"47 Park Ave, Rhodes NSW 2226",Rhodes,2,1,2,Townhouse,https://www.realestate.com.au/property-townhouse-rhodes-29,realestate.com.au
+"$781,627",781627,"531 Charles St, Wollstonecraft NSW 2443",Wollstonecraft,6,3,2,Villa,https://www.realestate.com.au/property-villa-wollstonecraft-30,realestate.com.au
+"$932,818",932818,"198 Railway St, Kirribilli NSW 2646",Kirribilli,3,2,2,House,https://www.realestate.com.au/property-house-kirribilli-31,realestate.com.au
+"$1,920,281",1920281,"652 Mona Vale Rd, Parramatta NSW 2602",Parramatta,1,2,1,Duplex,https://www.realestate.com.au/property-duplex-parramatta-32,realestate.com.au
+"$708,796",708796,"117 King Georges Rd, Campsie NSW 2175",Campsie,6,3,2,Villa,https://www.realestate.com.au/property-villa-campsie-33,realestate.com.au
+"$1,135,691",1135691,"305 Spit Rd, Seven Hills NSW 2783",Seven Hills,2,1,1,Terrace,https://www.realestate.com.au/property-terrace-seven-hills-34,realestate.com.au
+"$1,520,174",1520174,"482 Frederick St, Manly NSW 2717",Manly,0,1,1,Studio,https://www.realestate.com.au/property-studio-manly-35,realestate.com.au
+"$846,339",846339,"637 Church St, Killara NSW 2755",Killara,2,1,2,House,https://www.realestate.com.au/property-house-killara-36,realestate.com.au
+"$625,912",625912,"572 Forest Rd, St Peters NSW 2766",St Peters,6,2,0,Townhouse,https://www.realestate.com.au/property-townhouse-st-peters-37,realestate.com.au
+"$785,056",785056,"128 Main St, Malabar NSW 2141",Malabar,2,2,1,Villa,https://www.realestate.com.au/property-villa-malabar-38,realestate.com.au
+"$806,187",806187,"82 Mona Vale Rd, Allawah NSW 2324",Allawah,4,3,3,House,https://www.realestate.com.au/property-house-allawah-39,realestate.com.au
+POA,,"110 George St, Ramsgate NSW 2711",Ramsgate,3,1,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-ramsgate-40,realestate.com.au
+Contact Agent,,"554 Ocean Rd, Greenwich NSW 2136",Greenwich,1,2,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-greenwich-41,realestate.com.au
+"From $2,226,115",2226115,"352 Henry St, Crows Nest NSW 2961",Crows Nest,5,4,2,Villa,https://www.realestate.com.au/property-villa-crows-nest-42,realestate.com.au
+Under Contract,,"209 Crown St, Bondi Junction NSW 2806",Bondi Junction,5,2,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-bondi-junction-43,realestate.com.au
+Auction,,"479 Park Ave, Waverton NSW 2686",Waverton,6,1,0,House,https://www.realestate.com.au/property-house-waverton-44,realestate.com.au
+"$2,190,988",2190988,"735 Forest Rd, Marrickville NSW 2468",Marrickville,2,3,0,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-marrickville-45,realestate.com.au
+"From $2,437,206",2437206,"837 Princes Highway, Willoughby NSW 2236",Willoughby,2,3,1,Duplex,https://www.realestate.com.au/property-duplex-willoughby-46,realestate.com.au
+Under Contract,,"974 Henry St, La Perouse NSW 2461",La Perouse,4,4,3,House,https://www.realestate.com.au/property-house-la-perouse-47,realestate.com.au
+"$1,010,322",1010322,"14 Henry St, Ashfield NSW 2924",Ashfield,3,2,4,Duplex,https://www.realestate.com.au/property-duplex-ashfield-48,realestate.com.au
+"$1,814,303",1814303,"718 Condamine St, Epping NSW 2320",Epping,2,3,2,Duplex,https://www.realestate.com.au/property-duplex-epping-49,realestate.com.au
+"$2,126,920",2126920,"17 Princes Highway, Brighton-Le-Sands NSW 2303",Brighton-Le-Sands,4,3,1,Villa,https://www.realestate.com.au/property-villa-brighton-le-sands-50,realestate.com.au
+"$1,590,302",1590302,"482 Oxford St, Tennyson Point NSW 2689",Tennyson Point,3,1,3,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-tennyson-point-51,realestate.com.au
+"$1,034,494",1034494,"695 Market St, Rooty Hill NSW 2016",Rooty Hill,5,1,0,Terrace,https://www.realestate.com.au/property-terrace-rooty-hill-52,realestate.com.au
+"$1,066,672",1066672,"278 Oxford St, Gordon NSW 2200",Gordon,0,1,4,Studio,https://www.realestate.com.au/property-studio-gordon-53,realestate.com.au
+"$1,047,031",1047031,"828 Princes Highway, Bankstown NSW 2008",Bankstown,5,4,2,House,https://www.realestate.com.au/property-house-bankstown-54,realestate.com.au
+Under Contract,,"547 Frederick St, Parramatta NSW 2859",Parramatta,0,1,2,Studio,https://www.realestate.com.au/property-studio-parramatta-55,realestate.com.au
+"$2,148,408",2148408,"18 Park Ave, Eastwood NSW 2328",Eastwood,1,1,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-eastwood-56,realestate.com.au
+"$2,296,329",2296329,"402 John St, Tempe NSW 2369",Tempe,2,3,0,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-tempe-57,realestate.com.au
+"$2,287,694",2287694,"840 Crown St, Sans Souci NSW 2419",Sans Souci,5,2,2,Townhouse,https://www.realestate.com.au/property-townhouse-sans-souci-58,realestate.com.au
+"$1,752,370",1752370,"71 Princes Highway, Mascot NSW 2396",Mascot,6,4,1,Townhouse,https://www.realestate.com.au/property-townhouse-mascot-59,realestate.com.au
+POA,,"884 John St, Tempe NSW 2399",Tempe,0,1,1,Studio,https://www.realestate.com.au/property-studio-tempe-60,realestate.com.au
+"From $968,429",968429,"884 Church St, Pymble NSW 2229",Pymble,2,2,3,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-pymble-61,realestate.com.au
+"$782,568",782568,"97 Charles St, Burwood NSW 2773",Burwood,2,3,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-burwood-62,realestate.com.au
+"From $644,473",644473,"737 Spit Rd, Kirribilli NSW 2615",Kirribilli,0,1,1,Studio,https://www.realestate.com.au/property-studio-kirribilli-63,realestate.com.au
+"$1,208,705",1208705,"58 Oxford St, Newtown NSW 2888",Newtown,6,2,2,Villa,https://www.realestate.com.au/property-villa-newtown-64,realestate.com.au
+"$2,343,190",2343190,"513 Parramatta Rd, Allawah NSW 2068",Allawah,2,1,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-allawah-65,realestate.com.au
+"$1,284,963",1284963,"563 Charles St, Concord NSW 2722",Concord,5,4,1,Terrace,https://www.realestate.com.au/property-terrace-concord-66,realestate.com.au
+"From $1,386,238",1386238,"922 James St, Harris Park NSW 2869",Harris Park,2,1,1,Villa,https://www.realestate.com.au/property-villa-harris-park-67,realestate.com.au
+"$1,995,282",1995282,"621 High St, Erskineville NSW 2365",Erskineville,4,4,1,Terrace,https://www.realestate.com.au/property-terrace-erskineville-68,realestate.com.au
+"$1,800,654",1800654,"129 George St, Killara NSW 2837",Killara,3,2,4,Semi-Detached,https://www.realestate.com.au/property-semi-detached-killara-69,realestate.com.au
+"$2,088,646",2088646,"951 Canterbury Rd, Woolwich NSW 2753",Woolwich,5,4,0,House,https://www.realestate.com.au/property-house-woolwich-70,realestate.com.au
+"$862,901",862901,"617 Warringah Rd, Hurstville Grove NSW 2944",Hurstville Grove,4,1,3,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-hurstville-grove-71,realestate.com.au
+"$1,912,968",1912968,"356 Princes Highway, Roselands NSW 2507",Roselands,5,4,3,House,https://www.realestate.com.au/property-house-roselands-72,realestate.com.au
+"$2,079,455",2079455,"429 Main St, Peakhurst NSW 2731",Peakhurst,4,3,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-peakhurst-73,realestate.com.au
+"$1,066,017",1066017,"984 Church St, Newtown NSW 2864",Newtown,0,1,0,Studio,https://www.realestate.com.au/property-studio-newtown-74,realestate.com.au
+"$2,370,120",2370120,"794 Anzac Parade, Eastwood NSW 2356",Eastwood,2,2,0,Townhouse,https://www.realestate.com.au/property-townhouse-eastwood-75,realestate.com.au
+"$1,994,565",1994565,"66 High St, Northbridge NSW 2546",Northbridge,3,2,2,Duplex,https://www.realestate.com.au/property-duplex-northbridge-76,realestate.com.au
+"$1,347,349",1347349,"773 Edward St, Wollstonecraft NSW 2305",Wollstonecraft,6,3,1,Terrace,https://www.realestate.com.au/property-terrace-wollstonecraft-77,realestate.com.au
+"$1,643,679",1643679,"759 School St, Naremburn NSW 2607",Naremburn,3,1,2,Villa,https://www.realestate.com.au/property-villa-naremburn-78,realestate.com.au
+"$3,473,663",3473663,"110 Condamine St, Vaucluse NSW 2687",Vaucluse,5,3,2,House,https://www.realestate.com.au/property-house-vaucluse-79,realestate.com.au
+"$1,064,256",1064256,"324 Park Ave, Penshurst NSW 2544",Penshurst,4,2,2,Townhouse,https://www.realestate.com.au/property-townhouse-penshurst-80,realestate.com.au
+"$2,203,251",2203251,"878 John St, Mortdale NSW 2813",Mortdale,5,2,1,Townhouse,https://www.realestate.com.au/property-townhouse-mortdale-81,realestate.com.au
+"$1,428,114",1428114,"795 Church St, Hunters Hill NSW 2982",Hunters Hill,2,1,2,Villa,https://www.realestate.com.au/property-villa-hunters-hill-82,realestate.com.au
+"$1,708,120",1708120,"964 Park Ave, Concord NSW 2245",Concord,6,1,0,House,https://www.realestate.com.au/property-house-concord-83,realestate.com.au
+"$1,414,204",1414204,"778 Military Rd, Erskineville NSW 2371",Erskineville,5,3,2,Townhouse,https://www.realestate.com.au/property-townhouse-erskineville-84,realestate.com.au
+"$2,106,279",2106279,"758 Edward St, Milsons Point NSW 2501",Milsons Point,0,1,3,Studio,https://www.realestate.com.au/property-studio-milsons-point-85,realestate.com.au
+"$2,008,972",2008972,"154 Forest Rd, Wiley Park NSW 2955",Wiley Park,2,1,1,House,https://www.realestate.com.au/property-house-wiley-park-86,realestate.com.au
+"$4,901,398",4901398,"786 Oxford St, Bellevue Hill NSW 2368",Bellevue Hill,3,1,3,Terrace,https://www.realestate.com.au/property-terrace-bellevue-hill-87,realestate.com.au
+POA,,"138 Frederick St, Westmead NSW 2365",Westmead,4,2,1,House,https://www.realestate.com.au/property-house-westmead-88,realestate.com.au
+Under Contract,,"21 Pittwater Rd, Tempe NSW 2334",Tempe,3,1,1,Townhouse,https://www.realestate.com.au/property-townhouse-tempe-89,realestate.com.au
+"$456,527",456527,"375 Canterbury Rd, Roseville NSW 2980",Roseville,3,2,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-roseville-90,realestate.com.au
+"$1,294,753",1294753,"255 Princes Highway, Hurstville NSW 2375",Hurstville,6,4,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-hurstville-91,realestate.com.au
+"From $2,396,424",2396424,"77 Thomas St, Cronulla NSW 2094",Cronulla,4,3,3,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-cronulla-92,realestate.com.au
+"$1,213,547",1213547,"273 Forest Rd, Mascot NSW 2069",Mascot,0,1,1,Studio,https://www.realestate.com.au/property-studio-mascot-93,realestate.com.au
+"$950,111",950111,"591 Anzac Parade, Alexandria NSW 2651",Alexandria,4,3,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-alexandria-94,realestate.com.au
+"$1,582,871",1582871,"27 Forest Rd, St Peters NSW 2955",St Peters,6,3,0,Terrace,https://www.realestate.com.au/property-terrace-st-peters-95,realestate.com.au
+"$718,400",718400,"898 Railway St, Monterey NSW 2996",Monterey,3,1,4,Terrace,https://www.realestate.com.au/property-terrace-monterey-96,realestate.com.au
+"From $1,809,322",1809322,"998 Albert St, Ashbury NSW 2537",Ashbury,5,2,3,Semi-Detached,https://www.realestate.com.au/property-semi-detached-ashbury-97,realestate.com.au
+"$505,362",505362,"689 Frederick St, Sans Souci NSW 2955",Sans Souci,2,1,1,Duplex,https://www.realestate.com.au/property-duplex-sans-souci-98,realestate.com.au
+"$2,261,647",2261647,"970 Parramatta Rd, Kirribilli NSW 2415",Kirribilli,1,1,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-kirribilli-99,realestate.com.au
+"$2,131,150",2131150,"299 Anzac Parade, Tempe NSW 2740",Tempe,5,4,2,House,https://www.realestate.com.au/property-house-tempe-100,realestate.com.au
+"$1,509,987",1509987,"561 Market St, Roselands NSW 2344",Roselands,3,2,4,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-roselands-101,realestate.com.au
+"$1,298,962",1298962,"173 Charles St, La Perouse NSW 2590",La Perouse,0,1,4,Studio,https://www.realestate.com.au/property-studio-la-perouse-102,realestate.com.au
+"$1,704,547",1704547,"245 Edward St, Hornsby NSW 2550",Hornsby,4,1,0,Villa,https://www.realestate.com.au/property-villa-hornsby-103,realestate.com.au
+"$2,073,389",2073389,"928 Charles St, Kogarah NSW 2507",Kogarah,2,1,2,Villa,https://www.realestate.com.au/property-villa-kogarah-104,realestate.com.au
+"$555,542",555542,"893 Frederick St, Wiley Park NSW 2959",Wiley Park,5,3,2,Villa,https://www.realestate.com.au/property-villa-wiley-park-105,realestate.com.au
+"$1,081,978",1081978,"229 Victoria St, Belmore NSW 2236",Belmore,3,2,2,House,https://www.realestate.com.au/property-house-belmore-106,realestate.com.au
+"$1,604,462",1604462,"809 George St, Pymble NSW 2830",Pymble,4,2,1,Townhouse,https://www.realestate.com.au/property-townhouse-pymble-107,realestate.com.au
+"$4,616,200",4616200,"492 James St, Mosman NSW 2015",Mosman,0,1,0,Studio,https://www.realestate.com.au/property-studio-mosman-108,realestate.com.au
+"$4,989,033",4989033,"83 Falcon St, Mosman NSW 2798",Mosman,3,1,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-mosman-109,realestate.com.au
+"From $618,411",618411,"39 King Georges Rd, Clovelly NSW 2429",Clovelly,2,2,2,Duplex,https://www.realestate.com.au/property-duplex-clovelly-110,realestate.com.au
+"$490,992",490992,"569 Parramatta Rd, Tennyson Point NSW 2878",Tennyson Point,0,1,4,Studio,https://www.realestate.com.au/property-studio-tennyson-point-111,realestate.com.au
+"$1,711,451",1711451,"318 George St, Malabar NSW 2573",Malabar,3,3,4,Townhouse,https://www.realestate.com.au/property-townhouse-malabar-112,realestate.com.au
+"$1,728,404",1728404,"717 Parramatta Rd, Lalor Park NSW 2971",Lalor Park,3,1,2,Villa,https://www.realestate.com.au/property-villa-lalor-park-113,realestate.com.au
+"From $427,816",427816,"499 Pacific Highway, Wiley Park NSW 2345",Wiley Park,3,2,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-wiley-park-114,realestate.com.au
+"$1,384,012",1384012,"381 Condamine St, Cronulla NSW 2264",Cronulla,2,1,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-cronulla-115,realestate.com.au
+"$1,361,159",1361159,"290 Elizabeth St, Tempe NSW 2459",Tempe,4,1,3,Terrace,https://www.realestate.com.au/property-terrace-tempe-116,realestate.com.au
+"$540,914",540914,"517 Pittwater Rd, Epping NSW 2169",Epping,6,4,1,Terrace,https://www.realestate.com.au/property-terrace-epping-117,realestate.com.au
+"$2,433,885",2433885,"216 Frederick St, Willoughby NSW 2061",Willoughby,0,1,0,Studio,https://www.realestate.com.au/property-studio-willoughby-118,realestate.com.au
+"From $688,114",688114,"891 Thomas St, Forest Road NSW 2092",Forest Road,3,3,1,Villa,https://www.realestate.com.au/property-villa-forest-road-119,realestate.com.au
+"$1,165,393",1165393,"692 Anzac Parade, Gordon NSW 2671",Gordon,6,1,2,Townhouse,https://www.realestate.com.au/property-townhouse-gordon-120,realestate.com.au
+"From $668,906",668906,"64 Park Ave, Cronulla NSW 2980",Cronulla,1,1,1,Duplex,https://www.realestate.com.au/property-duplex-cronulla-121,realestate.com.au
+"$2,007,198",2007198,"307 Condamine St, Belmore NSW 2343",Belmore,5,1,3,Villa,https://www.realestate.com.au/property-villa-belmore-122,realestate.com.au
+"$595,930",595930,"948 Condamine St, Clovelly NSW 2033",Clovelly,2,1,0,Villa,https://www.realestate.com.au/property-villa-clovelly-123,realestate.com.au
+"$2,472,093",2472093,"444 George St, Newtown NSW 2046",Newtown,3,1,3,House,https://www.realestate.com.au/property-house-newtown-124,realestate.com.au
+"$1,326,776",1326776,"562 Anzac Parade, Penshurst NSW 2642",Penshurst,6,2,0,Townhouse,https://www.realestate.com.au/property-townhouse-penshurst-125,realestate.com.au
+"$669,723",669723,"297 Princes Highway, Canterbury NSW 2150",Canterbury,3,3,1,Townhouse,https://www.realestate.com.au/property-townhouse-canterbury-126,realestate.com.au
+"$2,484,789",2484789,"19 Queen St, Bondi NSW 2977",Bondi,4,4,1,Townhouse,https://www.realestate.com.au/property-townhouse-bondi-127,realestate.com.au
+"$941,002",941002,"689 Railway St, Waverton NSW 2941",Waverton,2,2,1,Duplex,https://www.realestate.com.au/property-duplex-waverton-128,realestate.com.au
+Contact Agent,,"537 Canterbury Rd, Granville NSW 2517",Granville,4,3,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-granville-129,realestate.com.au
+"$1,354,435",1354435,"604 Parramatta Rd, Kingsgrove NSW 2361",Kingsgrove,1,2,4,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-kingsgrove-130,realestate.com.au
+"$493,092",493092,"117 Church St, Oatley NSW 2632",Oatley,6,3,3,Semi-Detached,https://www.realestate.com.au/property-semi-detached-oatley-131,realestate.com.au
+"From $1,166,347",1166347,"740 Beach Rd, Bondi Beach NSW 2081",Bondi Beach,0,1,1,Studio,https://www.realestate.com.au/property-studio-bondi-beach-132,realestate.com.au
+"$1,671,024",1671024,"375 Beach Rd, Erskineville NSW 2726",Erskineville,6,1,4,Villa,https://www.realestate.com.au/property-villa-erskineville-133,realestate.com.au
+"$716,459",716459,"822 The Boulevarde, Willoughby NSW 2310",Willoughby,6,2,1,Terrace,https://www.realestate.com.au/property-terrace-willoughby-134,realestate.com.au
+"From $411,291",411291,"889 Ocean Rd, Brighton-Le-Sands NSW 2726",Brighton-Le-Sands,4,4,2,House,https://www.realestate.com.au/property-house-brighton-le-sands-135,realestate.com.au
+"$419,086",419086,"885 Barrenjoey Rd, Lakemba NSW 2953",Lakemba,0,1,3,Studio,https://www.realestate.com.au/property-studio-lakemba-136,realestate.com.au
+"$844,861",844861,"742 Queen St, Blacktown NSW 2577",Blacktown,5,3,1,House,https://www.realestate.com.au/property-house-blacktown-137,realestate.com.au
+"From $492,611",492611,"205 Market St, Westmead NSW 2921",Westmead,2,1,0,Semi-Detached,https://www.realestate.com.au/property-semi-detached-westmead-138,realestate.com.au
+Under Contract,,"233 William St, North Sydney NSW 2635",North Sydney,0,1,1,Studio,https://www.realestate.com.au/property-studio-north-sydney-139,realestate.com.au
+"$1,273,464",1273464,"779 Beach Rd, Little Bay NSW 2970",Little Bay,6,1,1,Townhouse,https://www.realestate.com.au/property-townhouse-little-bay-140,realestate.com.au
+"$1,591,643",1591643,"806 Park Ave, Parramatta NSW 2676",Parramatta,3,3,1,Townhouse,https://www.realestate.com.au/property-townhouse-parramatta-141,realestate.com.au
+Under Contract,,"335 Henry St, Gladesville NSW 2650",Gladesville,0,1,3,Studio,https://www.realestate.com.au/property-studio-gladesville-142,realestate.com.au
+Contact Agent,,"756 Edward St, Ashfield NSW 2034",Ashfield,4,3,2,Duplex,https://www.realestate.com.au/property-duplex-ashfield-143,realestate.com.au
+"From $1,239,183",1239183,"503 Charles St, Bellevue Hill NSW 2697",Bellevue Hill,2,3,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-bellevue-hill-144,realestate.com.au
+"$2,321,532",2321532,"295 Beach Rd, North Sydney NSW 2915",North Sydney,1,1,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-north-sydney-145,realestate.com.au
+"$724,714",724714,"580 Mona Vale Rd, Lane Cove NSW 2526",Lane Cove,5,1,4,Villa,https://www.realestate.com.au/property-villa-lane-cove-146,realestate.com.au
+"$536,633",536633,"561 Queen St, Auburn NSW 2676",Auburn,5,4,3,Terrace,https://www.realestate.com.au/property-terrace-auburn-147,realestate.com.au
+"$1,024,511",1024511,"127 Warringah Rd, Killara NSW 2771",Killara,2,1,2,Duplex,https://www.realestate.com.au/property-duplex-killara-148,realestate.com.au
+"$2,265,259",2265259,"12 Main St, Macquarie Park NSW 2751",Macquarie Park,1,1,2,Duplex,https://www.realestate.com.au/property-duplex-macquarie-park-149,realestate.com.au
+Contact Agent,,"817 Canterbury Rd, Westmead NSW 2509",Westmead,3,2,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-westmead-150,realestate.com.au
+"$692,769",692769,"621 Elizabeth St, Brighton-Le-Sands NSW 2246",Brighton-Le-Sands,4,4,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-brighton-le-sands-151,realestate.com.au
+"$508,818",508818,"95 William St, Monterey NSW 2549",Monterey,5,2,0,Terrace,https://www.realestate.com.au/property-terrace-monterey-152,realestate.com.au
+"$1,929,824",1929824,"688 High St, Kogarah NSW 2094",Kogarah,3,1,0,Duplex,https://www.realestate.com.au/property-duplex-kogarah-153,realestate.com.au
+"$1,646,168",1646168,"258 Barrenjoey Rd, Bondi Junction NSW 2139",Bondi Junction,5,4,1,House,https://www.realestate.com.au/property-house-bondi-junction-154,realestate.com.au
+"$1,472,037",1472037,"271 Barrenjoey Rd, Hurstville Grove NSW 2266",Hurstville Grove,2,2,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-hurstville-grove-155,realestate.com.au
+Under Contract,,"996 Beach Rd, La Perouse NSW 2818",La Perouse,3,3,4,Semi-Detached,https://www.realestate.com.au/property-semi-detached-la-perouse-156,realestate.com.au
+"$749,044",749044,"675 King St, Rose Bay NSW 2402",Rose Bay,2,1,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-rose-bay-157,realestate.com.au
+"$1,518,941",1518941,"899 Barrenjoey Rd, Willoughby NSW 2358",Willoughby,1,1,2,Duplex,https://www.realestate.com.au/property-duplex-willoughby-158,realestate.com.au
+"$1,428,207",1428207,"145 Church St, Seven Hills NSW 2782",Seven Hills,2,1,2,Terrace,https://www.realestate.com.au/property-terrace-seven-hills-159,realestate.com.au
+POA,,"562 Pittwater Rd, Narwee NSW 2137",Narwee,4,3,2,Terrace,https://www.realestate.com.au/property-terrace-narwee-160,realestate.com.au
+"$1,699,937",1699937,"266 Railway St, Hunters Hill NSW 2728",Hunters Hill,3,3,1,Terrace,https://www.realestate.com.au/property-terrace-hunters-hill-161,realestate.com.au
+"$694,694",694694,"476 Condamine St, Northbridge NSW 2308",Northbridge,2,1,2,Villa,https://www.realestate.com.au/property-villa-northbridge-162,realestate.com.au
+"From $1,930,844",1930844,"142 Spit Rd, Surry Hills NSW 2529",Surry Hills,3,2,0,Duplex,https://www.realestate.com.au/property-duplex-surry-hills-163,realestate.com.au
+"From $1,162,200",1162200,"586 Forest Rd, Summer Hill NSW 2112",Summer Hill,3,3,1,Townhouse,https://www.realestate.com.au/property-townhouse-summer-hill-164,realestate.com.au
+"$1,026,645",1026645,"126 Forest Rd, Oatley NSW 2484",Oatley,4,3,3,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-oatley-165,realestate.com.au
+"$501,203",501203,"448 Thomas St, Middle Cove NSW 2121",Middle Cove,2,1,1,Terrace,https://www.realestate.com.au/property-terrace-middle-cove-166,realestate.com.au
+"$798,265",798265,"701 Charles St, Wolli Creek NSW 2367",Wolli Creek,4,3,0,Duplex,https://www.realestate.com.au/property-duplex-wolli-creek-167,realestate.com.au
+"$1,914,983",1914983,"556 Liverpool Rd, Seven Hills NSW 2990",Seven Hills,3,2,2,Villa,https://www.realestate.com.au/property-villa-seven-hills-168,realestate.com.au
+"$1,845,934",1845934,"365 Henry St, Lakemba NSW 2893",Lakemba,5,1,0,Terrace,https://www.realestate.com.au/property-terrace-lakemba-169,realestate.com.au
+"$437,491",437491,"377 Ocean Rd, Bankstown NSW 2868",Bankstown,6,1,1,Townhouse,https://www.realestate.com.au/property-townhouse-bankstown-170,realestate.com.au
+"$901,318",901318,"141 Beach Rd, Artarmon NSW 2554",Artarmon,2,2,2,House,https://www.realestate.com.au/property-house-artarmon-171,realestate.com.au
+"$887,074",887074,"495 Church St, Burwood NSW 2897",Burwood,0,1,2,Studio,https://www.realestate.com.au/property-studio-burwood-172,realestate.com.au
+"From $865,166",865166,"38 King Georges Rd, Ramsgate NSW 2949",Ramsgate,2,1,4,Duplex,https://www.realestate.com.au/property-duplex-ramsgate-173,realestate.com.au
+"$2,484,910",2484910,"427 Charles St, Oatley NSW 2987",Oatley,0,1,2,Studio,https://www.realestate.com.au/property-studio-oatley-174,realestate.com.au
+Under Contract,,"115 Mona Vale Rd, La Perouse NSW 2614",La Perouse,3,1,3,House,https://www.realestate.com.au/property-house-la-perouse-175,realestate.com.au
+"$1,493,928",1493928,"208 Pittwater Rd, McMahons Point NSW 2985",McMahons Point,2,1,2,Villa,https://www.realestate.com.au/property-villa-mcmahons-point-176,realestate.com.au
+"$1,043,803",1043803,"75 Warringah Rd, Watsons Bay NSW 2209",Watsons Bay,2,1,1,Townhouse,https://www.realestate.com.au/property-townhouse-watsons-bay-177,realestate.com.au
+POA,,"203 Charles St, Surry Hills NSW 2222",Surry Hills,2,1,1,Villa,https://www.realestate.com.au/property-villa-surry-hills-178,realestate.com.au
+"$571,823",571823,"866 Park Ave, Naremburn NSW 2231",Naremburn,4,2,3,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-naremburn-179,realestate.com.au
+"$2,193,630",2193630,"436 Victoria St, Clovelly NSW 2002",Clovelly,4,4,0,House,https://www.realestate.com.au/property-house-clovelly-180,realestate.com.au
+"From $610,336",610336,"982 Warringah Rd, Monterey NSW 2343",Monterey,0,1,2,Studio,https://www.realestate.com.au/property-studio-monterey-181,realestate.com.au
+"$1,366,273",1366273,"626 Thomas St, Kirribilli NSW 2172",Kirribilli,0,1,1,Studio,https://www.realestate.com.au/property-studio-kirribilli-182,realestate.com.au
+Under Contract,,"321 Thomas St, Chatswood NSW 2994",Chatswood,2,1,1,Townhouse,https://www.realestate.com.au/property-townhouse-chatswood-183,realestate.com.au
+Auction,,"956 Canterbury Rd, Peakhurst NSW 2601",Peakhurst,3,1,2,Townhouse,https://www.realestate.com.au/property-townhouse-peakhurst-184,realestate.com.au
+"$1,833,178",1833178,"451 George St, Tempe NSW 2761",Tempe,2,2,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-tempe-185,realestate.com.au
+"$2,182,594",2182594,"809 John St, Bondi Beach NSW 2986",Bondi Beach,2,3,4,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-bondi-beach-186,realestate.com.au
+Contact Agent,,"782 Pittwater Rd, Mount Druitt NSW 2287",Mount Druitt,1,2,1,Duplex,https://www.realestate.com.au/property-duplex-mount-druitt-187,realestate.com.au
+"$1,234,913",1234913,"986 Edward St, Alexandria NSW 2789",Alexandria,6,3,1,Villa,https://www.realestate.com.au/property-villa-alexandria-188,realestate.com.au
+"$834,597",834597,"881 Church St, Mount Druitt NSW 2673",Mount Druitt,4,3,2,Townhouse,https://www.realestate.com.au/property-townhouse-mount-druitt-189,realestate.com.au
+"From $1,451,878",1451878,"47 Anzac Parade, Maroubra NSW 2662",Maroubra,5,3,1,Villa,https://www.realestate.com.au/property-villa-maroubra-190,realestate.com.au
+"$2,123,222",2123222,"772 King Georges Rd, Willoughby NSW 2489",Willoughby,4,2,0,Townhouse,https://www.realestate.com.au/property-townhouse-willoughby-191,realestate.com.au
+"$2,018,960",2018960,"866 Railway St, Eastwood NSW 2056",Eastwood,2,1,4,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-eastwood-192,realestate.com.au
+"$521,993",521993,"462 Mona Vale Rd, Beverley Park NSW 2360",Beverley Park,6,4,0,Terrace,https://www.realestate.com.au/property-terrace-beverley-park-193,realestate.com.au
+"$2,039,667",2039667,"629 John St, Concord NSW 2739",Concord,5,3,1,Terrace,https://www.realestate.com.au/property-terrace-concord-194,realestate.com.au
+"$2,160,629",2160629,"554 Elizabeth St, Waverton NSW 2409",Waverton,6,3,1,Villa,https://www.realestate.com.au/property-villa-waverton-195,realestate.com.au
+"$1,910,015",1910015,"712 Military Rd, Maroubra NSW 2176",Maroubra,6,3,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-maroubra-196,realestate.com.au
+"$2,425,155",2425155,"642 Railway St, Harris Park NSW 2176",Harris Park,5,1,2,Townhouse,https://www.realestate.com.au/property-townhouse-harris-park-197,realestate.com.au
+"$2,158,630",2158630,"56 Edward St, Penshurst NSW 2824",Penshurst,6,2,0,Semi-Detached,https://www.realestate.com.au/property-semi-detached-penshurst-198,realestate.com.au
+"$1,411,351",1411351,"753 Oxford St, Kogarah NSW 2830",Kogarah,2,2,1,House,https://www.realestate.com.au/property-house-kogarah-199,realestate.com.au
+"$491,563",491563,"393 Forest Rd, Lugarno NSW 2262",Lugarno,4,2,0,Duplex,https://www.realestate.com.au/property-duplex-lugarno-200,realestate.com.au
+"$1,146,307",1146307,"248 Thomas St, Gordon NSW 2531",Gordon,3,1,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-gordon-201,realestate.com.au
+"$2,006,740",2006740,"103 Spit Rd, Lidcombe NSW 2550",Lidcombe,4,4,2,Townhouse,https://www.realestate.com.au/property-townhouse-lidcombe-202,realestate.com.au
+Under Contract,,"201 High St, Kyeemagh NSW 2125",Kyeemagh,6,2,3,Townhouse,https://www.realestate.com.au/property-townhouse-kyeemagh-203,realestate.com.au
+"$2,210,048",2210048,"994 Forest Rd, Hurstville NSW 2076",Hurstville,2,3,1,Duplex,https://www.realestate.com.au/property-duplex-hurstville-204,realestate.com.au
+"$1,957,882",1957882,"688 Princes Highway, St Leonards NSW 2707",St Leonards,2,1,0,Duplex,https://www.realestate.com.au/property-duplex-st-leonards-205,realestate.com.au
+"$2,022,042",2022042,"241 High St, Doonside NSW 2308",Doonside,2,2,0,House,https://www.realestate.com.au/property-house-doonside-206,realestate.com.au
+"$816,622",816622,"285 Anzac Parade, Paddington NSW 2833",Paddington,2,1,4,Terrace,https://www.realestate.com.au/property-terrace-paddington-207,realestate.com.au
+"$1,310,917",1310917,"634 King Georges Rd, Naremburn NSW 2920",Naremburn,5,4,3,Townhouse,https://www.realestate.com.au/property-townhouse-naremburn-208,realestate.com.au
+"$1,707,495",1707495,"413 High St, Bronte NSW 2204",Bronte,3,2,1,Terrace,https://www.realestate.com.au/property-terrace-bronte-209,realestate.com.au
+"$1,992,805",1992805,"902 Pacific Highway, Ashfield NSW 2239",Ashfield,3,3,1,House,https://www.realestate.com.au/property-house-ashfield-210,realestate.com.au
+"$1,532,192",1532192,"470 High St, Strathfield NSW 2223",Strathfield,3,2,3,Duplex,https://www.realestate.com.au/property-duplex-strathfield-211,realestate.com.au
+"$665,200",665200,"31 George St, Marrickville NSW 2988",Marrickville,2,2,0,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-marrickville-212,realestate.com.au
+"$694,731",694731,"270 Thomas St, Seven Hills NSW 2168",Seven Hills,6,2,2,Terrace,https://www.realestate.com.au/property-terrace-seven-hills-213,realestate.com.au
+"$2,062,087",2062087,"827 Albert St, Lavender Bay NSW 2278",Lavender Bay,2,2,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-lavender-bay-214,realestate.com.au
+"$1,357,941",1357941,"900 Charles St, McMahons Point NSW 2673",McMahons Point,4,3,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-mcmahons-point-215,realestate.com.au
+"$1,534,922",1534922,"568 Victoria St, Campsie NSW 2645",Campsie,3,1,2,Terrace,https://www.realestate.com.au/property-terrace-campsie-216,realestate.com.au
+"$668,438",668438,"352 Victoria St, Ryde NSW 2849",Ryde,2,1,2,Duplex,https://www.realestate.com.au/property-duplex-ryde-217,realestate.com.au
+"$1,069,565",1069565,"816 Condamine St, Naremburn NSW 2238",Naremburn,2,2,2,House,https://www.realestate.com.au/property-house-naremburn-218,realestate.com.au
+"$1,178,038",1178038,"641 Victoria St, Artarmon NSW 2548",Artarmon,1,2,3,Duplex,https://www.realestate.com.au/property-duplex-artarmon-219,realestate.com.au
+Contact Agent,,"147 Park Ave, Woolwich NSW 2604",Woolwich,0,1,0,Studio,https://www.realestate.com.au/property-studio-woolwich-220,realestate.com.au
+"$1,232,779",1232779,"370 Park Ave, Rose Bay NSW 2614",Rose Bay,1,1,0,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-rose-bay-221,realestate.com.au
+"$792,837",792837,"514 Beach Rd, Kyeemagh NSW 2681",Kyeemagh,6,3,1,Townhouse,https://www.realestate.com.au/property-townhouse-kyeemagh-222,realestate.com.au
+"From $821,818",821818,"995 Park Ave, Penshurst NSW 2440",Penshurst,2,1,1,Terrace,https://www.realestate.com.au/property-terrace-penshurst-223,realestate.com.au
+"$1,581,182",1581182,"322 Pacific Highway, Beverly Hills NSW 2334",Beverly Hills,3,1,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-beverly-hills-224,realestate.com.au
+"$1,156,630",1156630,"906 Canterbury Rd, Strathfield NSW 2294",Strathfield,4,2,0,Townhouse,https://www.realestate.com.au/property-townhouse-strathfield-225,realestate.com.au
+Under Contract,,"215 Military Rd, Doonside NSW 2601",Doonside,0,1,3,Studio,https://www.realestate.com.au/property-studio-doonside-226,realestate.com.au
+"$2,421,665",2421665,"837 Elizabeth St, Allawah NSW 2253",Allawah,4,4,1,Townhouse,https://www.realestate.com.au/property-townhouse-allawah-227,realestate.com.au
+Under Contract,,"24 Warringah Rd, Paddington NSW 2616",Paddington,0,1,1,Studio,https://www.realestate.com.au/property-studio-paddington-228,realestate.com.au
+Contact Agent,,"870 Barrenjoey Rd, Seven Hills NSW 2911",Seven Hills,3,1,0,Townhouse,https://www.realestate.com.au/property-townhouse-seven-hills-229,realestate.com.au
+"$2,356,123",2356123,"544 The Boulevarde, Sans Souci NSW 2062",Sans Souci,5,2,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-sans-souci-230,realestate.com.au
+"$2,058,684",2058684,"274 Parramatta Rd, Homebush NSW 2858",Homebush,3,2,2,Duplex,https://www.realestate.com.au/property-duplex-homebush-231,realestate.com.au
+"$1,799,168",1799168,"156 Crown St, Punchbowl NSW 2194",Punchbowl,5,2,1,Villa,https://www.realestate.com.au/property-villa-punchbowl-232,realestate.com.au
+"From $977,907",977907,"802 High St, Malabar NSW 2343",Malabar,6,3,3,House,https://www.realestate.com.au/property-house-malabar-233,realestate.com.au
+"$1,962,407",1962407,"882 Henry St, St Leonards NSW 2075",St Leonards,2,1,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-st-leonards-234,realestate.com.au
+"$4,866,112",4866112,"543 James St, Mosman NSW 2386",Mosman,3,2,2,Duplex,https://www.realestate.com.au/property-duplex-mosman-235,realestate.com.au
+Auction,,"747 High St, Mount Druitt NSW 2745",Mount Druitt,2,3,1,Duplex,https://www.realestate.com.au/property-duplex-mount-druitt-236,realestate.com.au
+"$2,428,526",2428526,"162 Anzac Parade, Wiley Park NSW 2121",Wiley Park,6,1,1,Villa,https://www.realestate.com.au/property-villa-wiley-park-237,realestate.com.au
+Auction,,"118 Edward St, Milsons Point NSW 2875",Milsons Point,3,1,2,Terrace,https://www.realestate.com.au/property-terrace-milsons-point-238,realestate.com.au
+Auction,,"963 Falcon St, Forest Road NSW 2102",Forest Road,2,2,1,Duplex,https://www.realestate.com.au/property-duplex-forest-road-239,realestate.com.au
+"$490,115",490115,"259 Railway St, Roselands NSW 2960",Roselands,2,3,3,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-roselands-240,realestate.com.au
+"$2,002,790",2002790,"619 Parramatta Rd, Punchbowl NSW 2515",Punchbowl,2,1,1,Duplex,https://www.realestate.com.au/property-duplex-punchbowl-241,realestate.com.au
+"$1,327,595",1327595,"498 King Georges Rd, Beverley Park NSW 2194",Beverley Park,0,1,1,Studio,https://www.realestate.com.au/property-studio-beverley-park-242,realestate.com.au
+"From $1,221,874",1221874,"509 John St, Homebush NSW 2819",Homebush,0,1,3,Studio,https://www.realestate.com.au/property-studio-homebush-243,realestate.com.au
+Auction,,"183 The Boulevarde, Clovelly NSW 2729",Clovelly,4,3,4,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-clovelly-244,realestate.com.au
+"$731,388",731388,"565 Elizabeth St, Mount Druitt NSW 2799",Mount Druitt,3,1,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-mount-druitt-245,realestate.com.au
+POA,,"659 Liverpool Rd, Sans Souci NSW 2121",Sans Souci,4,4,1,Terrace,https://www.realestate.com.au/property-terrace-sans-souci-246,realestate.com.au
+"$2,464,354",2464354,"155 Liverpool Rd, Bexley NSW 2716",Bexley,2,1,3,Semi-Detached,https://www.realestate.com.au/property-semi-detached-bexley-247,realestate.com.au
+"From $1,749,329",1749329,"833 Ocean Rd, Hurstville Grove NSW 2505",Hurstville Grove,3,3,1,House,https://www.realestate.com.au/property-house-hurstville-grove-248,realestate.com.au
+"$931,783",931783,"428 Market St, Neutral Bay NSW 2602",Neutral Bay,2,1,1,Townhouse,https://www.realestate.com.au/property-townhouse-neutral-bay-249,realestate.com.au
+"From $942,045",942045,"215 Main St, Woolwich NSW 2036",Woolwich,2,2,4,Villa,https://www.realestate.com.au/property-villa-woolwich-250,realestate.com.au
+"$2,473,695",2473695,"781 School St, Roselands NSW 2333",Roselands,6,2,3,House,https://www.realestate.com.au/property-house-roselands-251,realestate.com.au
+"$792,516",792516,"553 Falcon St, Bankstown NSW 2353",Bankstown,1,2,0,Duplex,https://www.realestate.com.au/property-duplex-bankstown-252,realestate.com.au
+"From $1,620,679",1620679,"902 Beach Rd, Beverly Hills NSW 2808",Beverly Hills,3,1,1,House,https://www.realestate.com.au/property-house-beverly-hills-253,realestate.com.au
+"$2,226,726",2226726,"859 Princes Highway, Erskineville NSW 2165",Erskineville,0,1,2,Studio,https://www.realestate.com.au/property-studio-erskineville-254,realestate.com.au
+"$2,158,192",2158192,"400 Pittwater Rd, Mascot NSW 2600",Mascot,3,2,2,Duplex,https://www.realestate.com.au/property-duplex-mascot-255,realestate.com.au
+"$1,516,877",1516877,"402 George St, Ashfield NSW 2214",Ashfield,5,2,3,House,https://www.realestate.com.au/property-house-ashfield-256,realestate.com.au
+"$738,826",738826,"212 George St, Roselands NSW 2174",Roselands,5,4,0,Terrace,https://www.realestate.com.au/property-terrace-roselands-257,realestate.com.au
+POA,,"605 Albert St, Strathfield NSW 2304",Strathfield,0,1,1,Studio,https://www.realestate.com.au/property-studio-strathfield-258,realestate.com.au
+"From $706,671",706671,"451 Oxford St, Lane Cove NSW 2083",Lane Cove,3,3,4,Terrace,https://www.realestate.com.au/property-terrace-lane-cove-259,realestate.com.au
+"$1,024,400",1024400,"195 Crown St, Bondi Beach NSW 2159",Bondi Beach,5,3,2,Townhouse,https://www.realestate.com.au/property-townhouse-bondi-beach-260,realestate.com.au
+"$1,071,761",1071761,"483 Mona Vale Rd, La Perouse NSW 2292",La Perouse,1,2,4,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-la-perouse-261,realestate.com.au
+"$530,440",530440,"490 The Boulevarde, Wollstonecraft NSW 2012",Wollstonecraft,6,4,2,Villa,https://www.realestate.com.au/property-villa-wollstonecraft-262,realestate.com.au
+Under Contract,,"672 Church St, Wiley Park NSW 2751",Wiley Park,6,1,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-wiley-park-263,realestate.com.au
+"$1,626,391",1626391,"777 Park Ave, Maroubra NSW 2215",Maroubra,1,1,1,Duplex,https://www.realestate.com.au/property-duplex-maroubra-264,realestate.com.au
+"From $1,816,948",1816948,"787 Military Rd, Kirribilli NSW 2612",Kirribilli,2,3,1,Duplex,https://www.realestate.com.au/property-duplex-kirribilli-265,realestate.com.au
+"$1,362,457",1362457,"552 Charles St, Parramatta NSW 2391",Parramatta,3,3,2,House,https://www.realestate.com.au/property-house-parramatta-266,realestate.com.au
+"$1,266,851",1266851,"57 King St, La Perouse NSW 2631",La Perouse,2,1,1,House,https://www.realestate.com.au/property-house-la-perouse-267,realestate.com.au
+Auction,,"310 King Georges Rd, Auburn NSW 2834",Auburn,3,2,1,Duplex,https://www.realestate.com.au/property-duplex-auburn-268,realestate.com.au
+"$1,529,692",1529692,"942 Thomas St, Gladesville NSW 2807",Gladesville,6,2,3,Terrace,https://www.realestate.com.au/property-terrace-gladesville-269,realestate.com.au
+"$2,308,172",2308172,"460 Liverpool Rd, Homebush NSW 2102",Homebush,3,1,3,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-homebush-270,realestate.com.au
+"$1,632,209",1632209,"641 Victoria St, Crows Nest NSW 2236",Crows Nest,4,2,0,Townhouse,https://www.realestate.com.au/property-townhouse-crows-nest-271,realestate.com.au
+"$1,007,984",1007984,"890 Beach Rd, Hurstville Grove NSW 2159",Hurstville Grove,3,2,1,Townhouse,https://www.realestate.com.au/property-townhouse-hurstville-grove-272,realestate.com.au
+"$2,296,036",2296036,"918 Henry St, Beverley Park NSW 2749",Beverley Park,3,1,1,Villa,https://www.realestate.com.au/property-villa-beverley-park-273,realestate.com.au
+"$738,701",738701,"204 Charles St, Hornsby NSW 2593",Hornsby,3,2,3,Duplex,https://www.realestate.com.au/property-duplex-hornsby-274,realestate.com.au
+"$1,689,148",1689148,"311 Barrenjoey Rd, Tempe NSW 2617",Tempe,4,1,2,Townhouse,https://www.realestate.com.au/property-townhouse-tempe-275,realestate.com.au
+"$2,090,186",2090186,"796 William St, Pymble NSW 2936",Pymble,2,1,2,Villa,https://www.realestate.com.au/property-villa-pymble-276,realestate.com.au
+"$774,188",774188,"153 Anzac Parade, Blacktown NSW 2706",Blacktown,4,1,0,House,https://www.realestate.com.au/property-house-blacktown-277,realestate.com.au
+Under Contract,,"105 Military Rd, Summer Hill NSW 2494",Summer Hill,0,1,2,Studio,https://www.realestate.com.au/property-studio-summer-hill-278,realestate.com.au
+"$2,296,939",2296939,"863 King St, Willoughby NSW 2777",Willoughby,2,1,1,Townhouse,https://www.realestate.com.au/property-townhouse-willoughby-279,realestate.com.au
+"$2,350,954",2350954,"170 Spit Rd, Dover Heights NSW 2763",Dover Heights,3,2,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-dover-heights-280,realestate.com.au
+"$2,279,997",2279997,"116 Spit Rd, Erskineville NSW 2976",Erskineville,0,1,0,Studio,https://www.realestate.com.au/property-studio-erskineville-281,realestate.com.au
+"$2,144,923",2144923,"126 Military Rd, Bronte NSW 2516",Bronte,5,3,2,House,https://www.realestate.com.au/property-house-bronte-282,realestate.com.au
+Auction,,"388 Queen St, Mosman NSW 2174",Mosman,0,1,2,Studio,https://www.realestate.com.au/property-studio-mosman-283,realestate.com.au
+"$1,819,262",1819262,"167 Mona Vale Rd, Dee Why NSW 2897",Dee Why,2,2,1,House,https://www.realestate.com.au/property-house-dee-why-284,realestate.com.au
+"$726,435",726435,"118 Queen St, North Sydney NSW 2436",North Sydney,2,3,0,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-north-sydney-285,realestate.com.au
+Contact Agent,,"713 Condamine St, Allawah NSW 2672",Allawah,4,4,1,Villa,https://www.realestate.com.au/property-villa-allawah-286,realestate.com.au
+"$1,868,711",1868711,"820 King Georges Rd, Naremburn NSW 2759",Naremburn,1,2,1,Duplex,https://www.realestate.com.au/property-duplex-naremburn-287,realestate.com.au
+"From $2,207,094",2207094,"17 School St, Penshurst NSW 2122",Penshurst,4,1,1,House,https://www.realestate.com.au/property-house-penshurst-288,realestate.com.au
+"$666,637",666637,"32 Frederick St, Monterey NSW 2582",Monterey,3,2,0,Terrace,https://www.realestate.com.au/property-terrace-monterey-289,realestate.com.au
+"$1,030,334",1030334,"166 Main St, Paddington NSW 2050",Paddington,0,1,2,Studio,https://www.realestate.com.au/property-studio-paddington-290,realestate.com.au
+"$1,458,591",1458591,"8 Charles St, Mascot NSW 2232",Mascot,2,1,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-mascot-291,realestate.com.au
+"$888,095",888095,"308 Charles St, St Leonards NSW 2667",St Leonards,5,2,0,Townhouse,https://www.realestate.com.au/property-townhouse-st-leonards-292,realestate.com.au
+"$441,906",441906,"434 Park Ave, Neutral Bay NSW 2324",Neutral Bay,4,2,1,Duplex,https://www.realestate.com.au/property-duplex-neutral-bay-293,realestate.com.au
+"$998,863",998863,"174 Thomas St, Kirribilli NSW 2434",Kirribilli,3,2,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-kirribilli-294,realestate.com.au
+"$1,112,250",1112250,"295 Barrenjoey Rd, La Perouse NSW 2366",La Perouse,6,4,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-la-perouse-295,realestate.com.au
+"$741,508",741508,"277 Beach Rd, Tennyson Point NSW 2015",Tennyson Point,2,1,1,House,https://www.realestate.com.au/property-house-tennyson-point-296,realestate.com.au
+"$1,413,543",1413543,"457 Queen St, Macquarie Park NSW 2476",Macquarie Park,2,1,0,Duplex,https://www.realestate.com.au/property-duplex-macquarie-park-297,realestate.com.au
+"From $791,153",791153,"170 Ocean Rd, Roseville NSW 2160",Roseville,4,4,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-roseville-298,realestate.com.au
+"$1,341,587",1341587,"562 Railway St, Lane Cove NSW 2900",Lane Cove,6,1,1,Terrace,https://www.realestate.com.au/property-terrace-lane-cove-299,realestate.com.au
+POA,,"875 Condamine St, Dee Why NSW 2706",Dee Why,0,1,1,Studio,https://www.realestate.com.au/property-studio-dee-why-300,realestate.com.au
+"$2,194,129",2194129,"151 Main St, Hurstville Grove NSW 2406",Hurstville Grove,0,1,2,Studio,https://www.realestate.com.au/property-studio-hurstville-grove-301,realestate.com.au
+"$971,424",971424,"902 King St, Monterey NSW 2201",Monterey,3,2,0,Duplex,https://www.realestate.com.au/property-duplex-monterey-302,realestate.com.au
+"$1,608,624",1608624,"797 Railway St, Paddington NSW 2584",Paddington,5,3,2,Villa,https://www.realestate.com.au/property-villa-paddington-303,realestate.com.au
+"From $2,096,162",2096162,"901 Charles St, Crows Nest NSW 2583",Crows Nest,2,2,1,Terrace,https://www.realestate.com.au/property-terrace-crows-nest-304,realestate.com.au
+"$1,436,067",1436067,"309 Henry St, Marrickville NSW 2392",Marrickville,5,4,1,Townhouse,https://www.realestate.com.au/property-townhouse-marrickville-305,realestate.com.au
+"$1,188,672",1188672,"767 Falcon St, Narwee NSW 2763",Narwee,4,1,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-narwee-306,realestate.com.au
+"$601,690",601690,"922 Church St, Bronte NSW 2991",Bronte,3,3,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-bronte-307,realestate.com.au
+Under Contract,,"972 Thomas St, Mount Druitt NSW 2429",Mount Druitt,6,1,3,House,https://www.realestate.com.au/property-house-mount-druitt-308,realestate.com.au
+Contact Agent,,"862 Park Ave, Lavender Bay NSW 2755",Lavender Bay,1,2,2,Duplex,https://www.realestate.com.au/property-duplex-lavender-bay-309,realestate.com.au
+"$1,113,076",1113076,"552 Thomas St, Epping NSW 2112",Epping,5,2,1,House,https://www.realestate.com.au/property-house-epping-310,realestate.com.au
+"From $2,695,781",2695781,"828 Beach Rd, Point Piper NSW 2868",Point Piper,6,2,2,Villa,https://www.realestate.com.au/property-villa-point-piper-311,realestate.com.au
+"$2,198,015",2198015,"162 Ocean Rd, Botany NSW 2804",Botany,2,1,1,Terrace,https://www.realestate.com.au/property-terrace-botany-312,realestate.com.au
+"$2,058,585",2058585,"881 James St, Hornsby NSW 2805",Hornsby,6,4,2,House,https://www.realestate.com.au/property-house-hornsby-313,realestate.com.au
+"$833,315",833315,"618 James St, Allawah NSW 2476",Allawah,3,3,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-allawah-314,realestate.com.au
+Auction,,"481 Oxford St, Sans Souci NSW 2565",Sans Souci,6,3,0,Townhouse,https://www.realestate.com.au/property-townhouse-sans-souci-315,realestate.com.au
+"$2,319,905",2319905,"773 Forest Rd, Naremburn NSW 2638",Naremburn,2,1,2,Terrace,https://www.realestate.com.au/property-terrace-naremburn-316,realestate.com.au
+"$1,329,399",1329399,"646 Forest Rd, Brighton-Le-Sands NSW 2859",Brighton-Le-Sands,2,1,2,House,https://www.realestate.com.au/property-house-brighton-le-sands-317,realestate.com.au
+"$1,612,118",1612118,"926 John St, Clovelly NSW 2950",Clovelly,2,2,4,House,https://www.realestate.com.au/property-house-clovelly-318,realestate.com.au
+"$2,092,419",2092419,"295 King St, Wiley Park NSW 2598",Wiley Park,6,3,0,Terrace,https://www.realestate.com.au/property-terrace-wiley-park-319,realestate.com.au
+"From $887,431",887431,"861 Parramatta Rd, Granville NSW 2475",Granville,1,2,2,Duplex,https://www.realestate.com.au/property-duplex-granville-320,realestate.com.au
+"$1,646,489",1646489,"814 Canterbury Rd, Lugarno NSW 2220",Lugarno,3,2,2,Townhouse,https://www.realestate.com.au/property-townhouse-lugarno-321,realestate.com.au
+"From $963,344",963344,"879 Liverpool Rd, Rhodes NSW 2550",Rhodes,1,1,3,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-rhodes-322,realestate.com.au
+"$2,317,670",2317670,"655 Thomas St, Northbridge NSW 2092",Northbridge,1,1,0,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-northbridge-323,realestate.com.au
+"$1,691,791",1691791,"688 William St, Brighton-Le-Sands NSW 2474",Brighton-Le-Sands,3,1,3,Semi-Detached,https://www.realestate.com.au/property-semi-detached-brighton-le-sands-324,realestate.com.au
+"$1,575,003",1575003,"444 King Georges Rd, Lane Cove NSW 2543",Lane Cove,3,2,0,House,https://www.realestate.com.au/property-house-lane-cove-325,realestate.com.au
+"$1,351,807",1351807,"117 Main St, Burwood NSW 2797",Burwood,2,1,1,Terrace,https://www.realestate.com.au/property-terrace-burwood-326,realestate.com.au
+"$1,025,598",1025598,"580 Main St, Parramatta NSW 2484",Parramatta,3,3,1,Villa,https://www.realestate.com.au/property-villa-parramatta-327,realestate.com.au
+"$1,579,071",1579071,"359 Victoria St, Westmead NSW 2285",Westmead,1,1,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-westmead-328,realestate.com.au
+"$568,993",568993,"549 Thomas St, Dulwich Hill NSW 2742",Dulwich Hill,0,1,3,Studio,https://www.realestate.com.au/property-studio-dulwich-hill-329,realestate.com.au
+"$726,966",726966,"626 Parramatta Rd, Ashbury NSW 2604",Ashbury,2,1,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-ashbury-330,realestate.com.au
+"$951,245",951245,"555 Beach Rd, Botany NSW 2848",Botany,3,3,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-botany-331,realestate.com.au
+Under Contract,,"922 King St, Hornsby NSW 2867",Hornsby,3,2,0,House,https://www.realestate.com.au/property-house-hornsby-332,realestate.com.au
+"$469,653",469653,"888 Edward St, Gordon NSW 2006",Gordon,5,2,0,Villa,https://www.realestate.com.au/property-villa-gordon-333,realestate.com.au
+"From $2,279,400",2279400,"951 King St, Sans Souci NSW 2428",Sans Souci,3,2,1,Duplex,https://www.realestate.com.au/property-duplex-sans-souci-334,realestate.com.au
+"$1,802,632",1802632,"526 Princes Highway, St Leonards NSW 2292",St Leonards,2,2,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-st-leonards-335,realestate.com.au
+POA,,"650 William St, Wentworthville NSW 2890",Wentworthville,0,1,0,Studio,https://www.realestate.com.au/property-studio-wentworthville-336,realestate.com.au
+Contact Agent,,"552 Beach Rd, Maroubra NSW 2052",Maroubra,3,2,0,House,https://www.realestate.com.au/property-house-maroubra-337,realestate.com.au
+"$2,368,452",2368452,"227 Ocean Rd, Bellevue Hill NSW 2748",Bellevue Hill,3,3,2,Townhouse,https://www.realestate.com.au/property-townhouse-bellevue-hill-338,realestate.com.au
+"From $406,451",406451,"586 Edward St, Auburn NSW 2305",Auburn,3,2,4,Terrace,https://www.realestate.com.au/property-terrace-auburn-339,realestate.com.au
+"$445,949",445949,"848 Pacific Highway, Bankstown NSW 2104",Bankstown,0,1,3,Studio,https://www.realestate.com.au/property-studio-bankstown-340,realestate.com.au
+"$1,360,058",1360058,"304 Albert St, Rockdale NSW 2606",Rockdale,6,3,3,Villa,https://www.realestate.com.au/property-villa-rockdale-341,realestate.com.au
+"$2,440,353",2440353,"178 Falcon St, Parramatta NSW 2206",Parramatta,3,1,2,House,https://www.realestate.com.au/property-house-parramatta-342,realestate.com.au
+"$515,116",515116,"763 Forest Rd, Cammeray NSW 2354",Cammeray,5,4,2,House,https://www.realestate.com.au/property-house-cammeray-343,realestate.com.au
+"$964,742",964742,"225 Military Rd, Brighton-Le-Sands NSW 2172",Brighton-Le-Sands,6,2,3,Semi-Detached,https://www.realestate.com.au/property-semi-detached-brighton-le-sands-344,realestate.com.au
+"$1,407,178",1407178,"221 Beach Rd, Epping NSW 2008",Epping,4,1,1,Duplex,https://www.realestate.com.au/property-duplex-epping-345,realestate.com.au
+"$492,275",492275,"466 Edward St, Kingsgrove NSW 2383",Kingsgrove,0,1,1,Studio,https://www.realestate.com.au/property-studio-kingsgrove-346,realestate.com.au
+"$864,934",864934,"396 Pittwater Rd, Blacktown NSW 2067",Blacktown,2,2,1,Duplex,https://www.realestate.com.au/property-duplex-blacktown-347,realestate.com.au
+"$1,271,789",1271789,"235 Condamine St, Dulwich Hill NSW 2209",Dulwich Hill,0,1,3,Studio,https://www.realestate.com.au/property-studio-dulwich-hill-348,realestate.com.au
+Auction,,"31 Victoria St, St Leonards NSW 2539",St Leonards,5,1,0,Terrace,https://www.realestate.com.au/property-terrace-st-leonards-349,realestate.com.au
+Auction,,"260 James St, Double Bay NSW 2593",Double Bay,6,4,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-double-bay-350,realestate.com.au
+"$2,352,502",2352502,"397 School St, Woolwich NSW 2614",Woolwich,3,2,2,House,https://www.realestate.com.au/property-house-woolwich-351,realestate.com.au
+"$1,697,718",1697718,"259 Henry St, Bexley NSW 2288",Bexley,5,3,3,House,https://www.realestate.com.au/property-house-bexley-352,realestate.com.au
+"$1,050,925",1050925,"859 Mona Vale Rd, Mascot NSW 2296",Mascot,2,1,0,Semi-Detached,https://www.realestate.com.au/property-semi-detached-mascot-353,realestate.com.au
+"$567,644",567644,"903 Canterbury Rd, Tennyson Point NSW 2709",Tennyson Point,3,3,4,Terrace,https://www.realestate.com.au/property-terrace-tennyson-point-354,realestate.com.au
+"$878,293",878293,"988 Condamine St, Lalor Park NSW 2237",Lalor Park,3,1,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-lalor-park-355,realestate.com.au
+"From $1,590,651",1590651,"540 Princes Highway, Homebush NSW 2563",Homebush,3,1,0,Duplex,https://www.realestate.com.au/property-duplex-homebush-356,realestate.com.au
+"$1,158,401",1158401,"741 Anzac Parade, Burwood NSW 2976",Burwood,2,2,1,Villa,https://www.realestate.com.au/property-villa-burwood-357,realestate.com.au
+"$1,591,213",1591213,"972 Canterbury Rd, Crows Nest NSW 2979",Crows Nest,4,2,2,House,https://www.realestate.com.au/property-house-crows-nest-358,realestate.com.au
+"$1,421,495",1421495,"265 Frederick St, Campsie NSW 2691",Campsie,6,3,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-campsie-359,realestate.com.au
+"$876,265",876265,"227 Mona Vale Rd, Woolwich NSW 2938",Woolwich,4,2,2,House,https://www.realestate.com.au/property-house-woolwich-360,realestate.com.au
+"$1,768,447",1768447,"128 Charles St, Watsons Bay NSW 2593",Watsons Bay,4,1,2,Duplex,https://www.realestate.com.au/property-duplex-watsons-bay-361,realestate.com.au
+"From $2,108,193",2108193,"653 James St, Northbridge NSW 2574",Northbridge,2,1,0,House,https://www.realestate.com.au/property-house-northbridge-362,realestate.com.au
+"$847,805",847805,"992 Market St, Newtown NSW 2873",Newtown,0,1,0,Studio,https://www.realestate.com.au/property-studio-newtown-363,realestate.com.au
+"From $2,188,185",2188185,"687 Edward St, Newtown NSW 2734",Newtown,0,1,3,Studio,https://www.realestate.com.au/property-studio-newtown-364,realestate.com.au
+"$640,807",640807,"139 School St, Liverpool NSW 2752",Liverpool,6,3,2,Terrace,https://www.realestate.com.au/property-terrace-liverpool-365,realestate.com.au
+"$2,063,091",2063091,"695 Liverpool Rd, Lugarno NSW 2028",Lugarno,3,2,4,Villa,https://www.realestate.com.au/property-villa-lugarno-366,realestate.com.au
+"$1,826,245",1826245,"450 Railway St, Cammeray NSW 2213",Cammeray,2,1,0,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-cammeray-367,realestate.com.au
+"$1,906,165",1906165,"499 Frederick St, Erskineville NSW 2750",Erskineville,5,4,1,Terrace,https://www.realestate.com.au/property-terrace-erskineville-368,realestate.com.au
+"$641,878",641878,"740 Forest Rd, Putney NSW 2666",Putney,6,1,3,Townhouse,https://www.realestate.com.au/property-townhouse-putney-369,realestate.com.au
+"$1,422,183",1422183,"781 High St, Rooty Hill NSW 2855",Rooty Hill,5,1,2,Terrace,https://www.realestate.com.au/property-terrace-rooty-hill-370,realestate.com.au
+"From $894,064",894064,"325 Anzac Parade, Seven Hills NSW 2065",Seven Hills,1,2,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-seven-hills-371,realestate.com.au
+"$2,113,328",2113328,"522 Thomas St, Wentworthville NSW 2055",Wentworthville,5,2,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-wentworthville-372,realestate.com.au
+Contact Agent,,"609 Henry St, Penshurst NSW 2686",Penshurst,3,1,1,Terrace,https://www.realestate.com.au/property-terrace-penshurst-373,realestate.com.au
+"$1,163,028",1163028,"411 Oxford St, Chatswood NSW 2688",Chatswood,0,1,4,Studio,https://www.realestate.com.au/property-studio-chatswood-374,realestate.com.au
+"$2,123,662",2123662,"307 Warringah Rd, Penshurst NSW 2198",Penshurst,5,3,1,House,https://www.realestate.com.au/property-house-penshurst-375,realestate.com.au
+"$608,487",608487,"604 John St, Northbridge NSW 2195",Northbridge,6,3,1,Terrace,https://www.realestate.com.au/property-terrace-northbridge-376,realestate.com.au
+"$1,385,294",1385294,"175 Forest Rd, Kyeemagh NSW 2697",Kyeemagh,2,2,2,Villa,https://www.realestate.com.au/property-villa-kyeemagh-377,realestate.com.au
+"$1,299,237",1299237,"694 Pacific Highway, Cronulla NSW 2351",Cronulla,6,4,1,House,https://www.realestate.com.au/property-house-cronulla-378,realestate.com.au
+Under Contract,,"102 Oxford St, Liverpool NSW 2488",Liverpool,3,3,0,Villa,https://www.realestate.com.au/property-villa-liverpool-379,realestate.com.au
+"$1,954,379",1954379,"193 Thomas St, Hurstville Grove NSW 2066",Hurstville Grove,6,2,0,Villa,https://www.realestate.com.au/property-villa-hurstville-grove-380,realestate.com.au
+"From $2,215,839",2215839,"691 School St, Chatswood NSW 2755",Chatswood,3,3,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-chatswood-381,realestate.com.au
+"$1,375,341",1375341,"569 Canterbury Rd, Granville NSW 2521",Granville,0,1,0,Studio,https://www.realestate.com.au/property-studio-granville-382,realestate.com.au
+"$2,472,548",2472548,"87 King St, Belmore NSW 2131",Belmore,5,1,1,Terrace,https://www.realestate.com.au/property-terrace-belmore-383,realestate.com.au
+"From $442,416",442416,"350 Thomas St, Woolwich NSW 2134",Woolwich,4,3,2,House,https://www.realestate.com.au/property-house-woolwich-384,realestate.com.au
+"$2,340,732",2340732,"797 Railway St, Ashbury NSW 2775",Ashbury,6,4,1,Townhouse,https://www.realestate.com.au/property-townhouse-ashbury-385,realestate.com.au
+"$1,919,379",1919379,"612 Railway St, St Leonards NSW 2222",St Leonards,4,2,3,Terrace,https://www.realestate.com.au/property-terrace-st-leonards-386,realestate.com.au
+"$738,874",738874,"536 Park Ave, Auburn NSW 2458",Auburn,2,2,1,House,https://www.realestate.com.au/property-house-auburn-387,realestate.com.au
+"$1,666,012",1666012,"250 Anzac Parade, Cronulla NSW 2112",Cronulla,1,2,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-cronulla-388,realestate.com.au
+Under Contract,,"593 Crown St, West Ryde NSW 2932",West Ryde,5,4,3,Villa,https://www.realestate.com.au/property-villa-west-ryde-389,realestate.com.au
+"$2,340,941",2340941,"35 John St, Cronulla NSW 2857",Cronulla,4,3,3,Semi-Detached,https://www.realestate.com.au/property-semi-detached-cronulla-390,realestate.com.au
+Contact Agent,,"788 Market St, Dee Why NSW 2859",Dee Why,6,1,1,Townhouse,https://www.realestate.com.au/property-townhouse-dee-why-391,realestate.com.au
+POA,,"972 Ocean Rd, Wolli Creek NSW 2122",Wolli Creek,5,3,0,Semi-Detached,https://www.realestate.com.au/property-semi-detached-wolli-creek-392,realestate.com.au
+"$2,221,943",2221943,"40 Victoria St, Roseville NSW 2318",Roseville,4,1,1,Duplex,https://www.realestate.com.au/property-duplex-roseville-393,realestate.com.au
+POA,,"419 Thomas St, Hunters Hill NSW 2627",Hunters Hill,1,1,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-hunters-hill-394,realestate.com.au
+"$985,270",985270,"619 Barrenjoey Rd, Mount Druitt NSW 2796",Mount Druitt,5,4,3,Semi-Detached,https://www.realestate.com.au/property-semi-detached-mount-druitt-395,realestate.com.au
+"From $1,393,847",1393847,"408 Thomas St, Willoughby NSW 2611",Willoughby,6,2,2,House,https://www.realestate.com.au/property-house-willoughby-396,realestate.com.au
+"$711,679",711679,"960 Albert St, Tempe NSW 2471",Tempe,5,2,1,Townhouse,https://www.realestate.com.au/property-townhouse-tempe-397,realestate.com.au
+Contact Agent,,"423 Barrenjoey Rd, Punchbowl NSW 2515",Punchbowl,4,2,2,Duplex,https://www.realestate.com.au/property-duplex-punchbowl-398,realestate.com.au
+"$1,577,726",1577726,"180 Charles St, Rhodes NSW 2032",Rhodes,6,2,2,House,https://www.realestate.com.au/property-house-rhodes-399,realestate.com.au
+"$728,177",728177,"299 Pittwater Rd, Sydney NSW 2438",Sydney,6,4,2,House,https://www.realestate.com.au/property-house-sydney-400,realestate.com.au
+"$482,823",482823,"378 Albert St, Erskineville NSW 2655",Erskineville,0,1,1,Studio,https://www.realestate.com.au/property-studio-erskineville-401,realestate.com.au
+"$962,210",962210,"139 Condamine St, Alexandria NSW 2067",Alexandria,1,1,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-alexandria-402,realestate.com.au
+"From $2,096,522",2096522,"101 Barrenjoey Rd, Kogarah NSW 2368",Kogarah,3,2,1,Villa,https://www.realestate.com.au/property-villa-kogarah-403,realestate.com.au
+"$1,793,953",1793953,"535 King St, Campsie NSW 2928",Campsie,4,1,2,Villa,https://www.realestate.com.au/property-villa-campsie-404,realestate.com.au
+Contact Agent,,"193 Crown St, Hornsby NSW 2996",Hornsby,6,3,3,Semi-Detached,https://www.realestate.com.au/property-semi-detached-hornsby-405,realestate.com.au
+"$2,000,363",2000363,"347 Albert St, Toongabbie NSW 2678",Toongabbie,6,2,4,Semi-Detached,https://www.realestate.com.au/property-semi-detached-toongabbie-406,realestate.com.au
+"$849,409",849409,"696 Church St, Lavender Bay NSW 2119",Lavender Bay,2,2,1,Terrace,https://www.realestate.com.au/property-terrace-lavender-bay-407,realestate.com.au
+"$648,289",648289,"791 Main St, Blacktown NSW 2759",Blacktown,4,1,1,Villa,https://www.realestate.com.au/property-villa-blacktown-408,realestate.com.au
+"$2,143,880",2143880,"586 Main St, McMahons Point NSW 2253",McMahons Point,0,1,2,Studio,https://www.realestate.com.au/property-studio-mcmahons-point-409,realestate.com.au
+"$2,875,279",2875279,"903 Market St, Mosman NSW 2424",Mosman,4,3,0,Duplex,https://www.realestate.com.au/property-duplex-mosman-410,realestate.com.au
+POA,,"934 Canterbury Rd, Bellevue Hill NSW 2737",Bellevue Hill,2,1,1,Terrace,https://www.realestate.com.au/property-terrace-bellevue-hill-411,realestate.com.au
+"$1,287,707",1287707,"574 Condamine St, Little Bay NSW 2782",Little Bay,0,1,0,Studio,https://www.realestate.com.au/property-studio-little-bay-412,realestate.com.au
+"$1,348,512",1348512,"139 Mona Vale Rd, Allawah NSW 2368",Allawah,3,3,1,Duplex,https://www.realestate.com.au/property-duplex-allawah-413,realestate.com.au
+"From $2,471,049",2471049,"646 Main St, Chatswood NSW 2157",Chatswood,1,1,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-chatswood-414,realestate.com.au
+"$2,417,064",2417064,"188 Anzac Parade, Ashfield NSW 2428",Ashfield,5,3,1,Villa,https://www.realestate.com.au/property-villa-ashfield-415,realestate.com.au
+"$1,669,368",1669368,"134 George St, Bondi Beach NSW 2066",Bondi Beach,2,1,1,Villa,https://www.realestate.com.au/property-villa-bondi-beach-416,realestate.com.au
+"$1,565,024",1565024,"128 Forest Rd, Doonside NSW 2103",Doonside,3,3,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-doonside-417,realestate.com.au
+"From $2,014,413",2014413,"149 James St, Greenwich NSW 2403",Greenwich,3,1,2,Townhouse,https://www.realestate.com.au/property-townhouse-greenwich-418,realestate.com.au
+"$1,020,871",1020871,"976 Mona Vale Rd, Wollstonecraft NSW 2189",Wollstonecraft,4,3,0,Duplex,https://www.realestate.com.au/property-duplex-wollstonecraft-419,realestate.com.au
+POA,,"430 Falcon St, Lane Cove NSW 2312",Lane Cove,0,1,3,Studio,https://www.realestate.com.au/property-studio-lane-cove-420,realestate.com.au
+"$689,700",689700,"962 Canterbury Rd, Middle Cove NSW 2491",Middle Cove,2,2,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-middle-cove-421,realestate.com.au
+"$2,084,971",2084971,"750 Albert St, Wiley Park NSW 2464",Wiley Park,0,1,1,Studio,https://www.realestate.com.au/property-studio-wiley-park-422,realestate.com.au
+"$1,192,378",1192378,"835 Frederick St, Bankstown NSW 2323",Bankstown,5,2,1,Townhouse,https://www.realestate.com.au/property-townhouse-bankstown-423,realestate.com.au
+"$563,006",563006,"4 Railway St, Epping NSW 2793",Epping,3,1,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-epping-424,realestate.com.au
+Auction,,"443 High St, Castle Cove NSW 2323",Castle Cove,6,4,2,Terrace,https://www.realestate.com.au/property-terrace-castle-cove-425,realestate.com.au
+"$1,291,724",1291724,"325 Pittwater Rd, La Perouse NSW 2612",La Perouse,3,2,1,Villa,https://www.realestate.com.au/property-villa-la-perouse-426,realestate.com.au
+"$1,367,739",1367739,"741 The Boulevarde, Westmead NSW 2401",Westmead,1,1,3,Duplex,https://www.realestate.com.au/property-duplex-westmead-427,realestate.com.au
+"From $1,869,194",1869194,"459 Henry St, Greenwich NSW 2469",Greenwich,6,2,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-greenwich-428,realestate.com.au
+Auction,,"905 Market St, Brighton-Le-Sands NSW 2512",Brighton-Le-Sands,2,2,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-brighton-le-sands-429,realestate.com.au
+"$1,884,734",1884734,"636 Frederick St, Lugarno NSW 2464",Lugarno,2,2,0,House,https://www.realestate.com.au/property-house-lugarno-430,realestate.com.au
+"$2,438,435",2438435,"142 Frederick St, McMahons Point NSW 2381",McMahons Point,0,1,1,Studio,https://www.realestate.com.au/property-studio-mcmahons-point-431,realestate.com.au
+"$2,422,480",2422480,"80 Parramatta Rd, Bondi NSW 2845",Bondi,2,1,2,Townhouse,https://www.realestate.com.au/property-townhouse-bondi-432,realestate.com.au
+"$896,499",896499,"445 Victoria St, Dover Heights NSW 2617",Dover Heights,4,3,2,House,https://www.realestate.com.au/property-house-dover-heights-433,realestate.com.au
+"$987,651",987651,"697 Military Rd, Bondi Junction NSW 2960",Bondi Junction,2,2,0,Semi-Detached,https://www.realestate.com.au/property-semi-detached-bondi-junction-434,realestate.com.au
+"From $978,387",978387,"783 James St, Ramsgate NSW 2948",Ramsgate,2,1,0,Terrace,https://www.realestate.com.au/property-terrace-ramsgate-435,realestate.com.au
+"$2,368,113",2368113,"183 Crown St, St Peters NSW 2919",St Peters,3,3,0,Duplex,https://www.realestate.com.au/property-duplex-st-peters-436,realestate.com.au
+Contact Agent,,"59 Military Rd, Sydney NSW 2146",Sydney,6,1,3,Semi-Detached,https://www.realestate.com.au/property-semi-detached-sydney-437,realestate.com.au
+"$1,733,580",1733580,"526 Liverpool Rd, St Leonards NSW 2241",St Leonards,2,1,1,Duplex,https://www.realestate.com.au/property-duplex-st-leonards-438,realestate.com.au
+"$541,032",541032,"223 John St, Bankstown NSW 2247",Bankstown,3,1,4,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-bankstown-439,realestate.com.au
+Contact Agent,,"426 Edward St, Surry Hills NSW 2462",Surry Hills,3,3,2,Duplex,https://www.realestate.com.au/property-duplex-surry-hills-440,realestate.com.au
+"$1,984,518",1984518,"313 Main St, Summer Hill NSW 2667",Summer Hill,6,1,1,Villa,https://www.realestate.com.au/property-villa-summer-hill-441,realestate.com.au
+"$1,533,153",1533153,"237 Church St, Pymble NSW 2636",Pymble,0,1,3,Studio,https://www.realestate.com.au/property-studio-pymble-442,realestate.com.au
+"$1,267,674",1267674,"221 Henry St, Roseville NSW 2463",Roseville,4,1,0,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-roseville-443,realestate.com.au
+"$1,432,846",1432846,"657 School St, Artarmon NSW 2204",Artarmon,4,4,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-artarmon-444,realestate.com.au
+"$710,578",710578,"148 Pittwater Rd, Parramatta NSW 2821",Parramatta,2,1,1,Villa,https://www.realestate.com.au/property-villa-parramatta-445,realestate.com.au
+"$857,627",857627,"582 Charles St, Milsons Point NSW 2931",Milsons Point,5,1,0,House,https://www.realestate.com.au/property-house-milsons-point-446,realestate.com.au
+Under Contract,,"183 Pacific Highway, Wentworthville NSW 2601",Wentworthville,3,1,1,Duplex,https://www.realestate.com.au/property-duplex-wentworthville-447,realestate.com.au
+"$476,229",476229,"749 Park Ave, Auburn NSW 2553",Auburn,5,2,1,Terrace,https://www.realestate.com.au/property-terrace-auburn-448,realestate.com.au
+"$1,753,424",1753424,"140 Park Ave, Little Bay NSW 2953",Little Bay,0,1,2,Studio,https://www.realestate.com.au/property-studio-little-bay-449,realestate.com.au
+"$757,147",757147,"330 Condamine St, Naremburn NSW 2721",Naremburn,3,1,1,Townhouse,https://www.realestate.com.au/property-townhouse-naremburn-450,realestate.com.au
+"$2,491,640",2491640,"513 Pacific Highway, Botany NSW 2482",Botany,6,1,1,Terrace,https://www.realestate.com.au/property-terrace-botany-451,realestate.com.au
+"From $952,553",952553,"142 Railway St, Roseville NSW 2405",Roseville,1,1,2,Duplex,https://www.realestate.com.au/property-duplex-roseville-452,realestate.com.au
+"$2,060,807",2060807,"362 Park Ave, Surry Hills NSW 2115",Surry Hills,5,2,0,Villa,https://www.realestate.com.au/property-villa-surry-hills-453,realestate.com.au
+"$1,002,577",1002577,"199 James St, Roselands NSW 2867",Roselands,4,1,4,Duplex,https://www.realestate.com.au/property-duplex-roselands-454,realestate.com.au
+"$1,338,511",1338511,"30 Ocean Rd, Belmore NSW 2608",Belmore,5,1,0,Townhouse,https://www.realestate.com.au/property-townhouse-belmore-455,realestate.com.au
+"From $527,683",527683,"210 The Boulevarde, Lalor Park NSW 2138",Lalor Park,5,2,1,Townhouse,https://www.realestate.com.au/property-townhouse-lalor-park-456,realestate.com.au
+"$1,671,043",1671043,"770 Beach Rd, Homebush NSW 2383",Homebush,5,4,0,Townhouse,https://www.realestate.com.au/property-townhouse-homebush-457,realestate.com.au
+"$1,634,251",1634251,"933 School St, Alexandria NSW 2421",Alexandria,3,3,1,Duplex,https://www.realestate.com.au/property-duplex-alexandria-458,realestate.com.au
+"$1,250,134",1250134,"774 Beach Rd, Hurstville NSW 2410",Hurstville,4,1,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-hurstville-459,realestate.com.au
+"$2,363,758",2363758,"434 Liverpool Rd, Naremburn NSW 2419",Naremburn,4,2,3,Semi-Detached,https://www.realestate.com.au/property-semi-detached-naremburn-460,realestate.com.au
+"$2,219,799",2219799,"105 Beach Rd, Harris Park NSW 2260",Harris Park,3,2,2,Terrace,https://www.realestate.com.au/property-terrace-harris-park-461,realestate.com.au
+Under Contract,,"436 James St, Doonside NSW 2700",Doonside,3,1,1,Townhouse,https://www.realestate.com.au/property-townhouse-doonside-462,realestate.com.au
+"$1,791,425",1791425,"52 School St, Seven Hills NSW 2865",Seven Hills,3,1,1,Villa,https://www.realestate.com.au/property-villa-seven-hills-463,realestate.com.au
+"$618,826",618826,"349 Canterbury Rd, Paddington NSW 2125",Paddington,2,2,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-paddington-464,realestate.com.au
+"From $1,939,434",1939434,"253 King Georges Rd, Sydney NSW 2770",Sydney,3,1,1,Terrace,https://www.realestate.com.au/property-terrace-sydney-465,realestate.com.au
+"$711,225",711225,"219 Liverpool Rd, Wentworthville NSW 2009",Wentworthville,4,3,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-wentworthville-466,realestate.com.au
+Auction,,"802 Railway St, Kingsgrove NSW 2724",Kingsgrove,2,1,1,House,https://www.realestate.com.au/property-house-kingsgrove-467,realestate.com.au
+"From $1,509,819",1509819,"773 Elizabeth St, Northbridge NSW 2613",Northbridge,6,1,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-northbridge-468,realestate.com.au
+"$1,900,166",1900166,"345 King St, Castle Cove NSW 2165",Castle Cove,1,1,0,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-castle-cove-469,realestate.com.au
+"$1,574,969",1574969,"143 Beach Rd, Watsons Bay NSW 2653",Watsons Bay,0,1,1,Studio,https://www.realestate.com.au/property-studio-watsons-bay-470,realestate.com.au
+"$1,580,571",1580571,"540 King St, Harris Park NSW 2045",Harris Park,2,2,0,Villa,https://www.realestate.com.au/property-villa-harris-park-471,realestate.com.au
+"$2,168,789",2168789,"622 Henry St, Castle Cove NSW 2420",Castle Cove,3,1,1,Duplex,https://www.realestate.com.au/property-duplex-castle-cove-472,realestate.com.au
+"$669,031",669031,"727 Charles St, Naremburn NSW 2822",Naremburn,3,2,2,House,https://www.realestate.com.au/property-house-naremburn-473,realestate.com.au
+"$2,140,166",2140166,"340 Pittwater Rd, Harris Park NSW 2192",Harris Park,4,3,3,House,https://www.realestate.com.au/property-house-harris-park-474,realestate.com.au
+"$994,638",994638,"506 Beach Rd, Narwee NSW 2228",Narwee,2,2,0,Townhouse,https://www.realestate.com.au/property-townhouse-narwee-475,realestate.com.au
+"$1,533,164",1533164,"354 The Boulevarde, Botany NSW 2155",Botany,3,2,0,Terrace,https://www.realestate.com.au/property-terrace-botany-476,realestate.com.au
+"$1,310,517",1310517,"617 Pacific Highway, Artarmon NSW 2108",Artarmon,2,2,2,Villa,https://www.realestate.com.au/property-villa-artarmon-477,realestate.com.au
+"$2,028,760",2028760,"172 George St, Erskineville NSW 2358",Erskineville,6,2,2,Townhouse,https://www.realestate.com.au/property-townhouse-erskineville-478,realestate.com.au
+"$835,631",835631,"362 Warringah Rd, Milsons Point NSW 2974",Milsons Point,0,1,4,Studio,https://www.realestate.com.au/property-studio-milsons-point-479,realestate.com.au
+"$1,873,607",1873607,"306 Church St, Oatley NSW 2030",Oatley,1,1,4,Duplex,https://www.realestate.com.au/property-duplex-oatley-480,realestate.com.au
+"$1,756,331",1756331,"706 Henry St, Roseville NSW 2551",Roseville,1,2,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-roseville-481,realestate.com.au
+"$2,274,337",2274337,"562 Mona Vale Rd, Forest Road NSW 2345",Forest Road,6,1,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-forest-road-482,realestate.com.au
+"$713,841",713841,"588 James St, Kirribilli NSW 2457",Kirribilli,0,1,3,Studio,https://www.realestate.com.au/property-studio-kirribilli-483,realestate.com.au
+"$1,890,573",1890573,"94 Charles St, Carlton NSW 2014",Carlton,3,2,3,Terrace,https://www.realestate.com.au/property-terrace-carlton-484,realestate.com.au
+"$2,026,306",2026306,"379 King Georges Rd, Point Piper NSW 2341",Point Piper,2,2,3,House,https://www.realestate.com.au/property-house-point-piper-485,realestate.com.au
+"$890,782",890782,"516 School St, Surry Hills NSW 2990",Surry Hills,2,2,3,Villa,https://www.realestate.com.au/property-villa-surry-hills-486,realestate.com.au
+"From $415,475",415475,"773 Warringah Rd, Willoughby NSW 2327",Willoughby,2,2,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-willoughby-487,realestate.com.au
+POA,,"826 Pacific Highway, Tennyson Point NSW 2037",Tennyson Point,2,1,4,Townhouse,https://www.realestate.com.au/property-townhouse-tennyson-point-488,realestate.com.au
+"$709,261",709261,"557 Church St, Castle Cove NSW 2466",Castle Cove,2,2,2,Villa,https://www.realestate.com.au/property-villa-castle-cove-489,realestate.com.au
+"$552,063",552063,"6 Anzac Parade, Liverpool NSW 2149",Liverpool,2,1,1,Duplex,https://www.realestate.com.au/property-duplex-liverpool-490,realestate.com.au
+"$1,284,861",1284861,"599 Queen St, Roselands NSW 2215",Roselands,4,4,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-roselands-491,realestate.com.au
+POA,,"360 Oxford St, Woolwich NSW 2193",Woolwich,3,2,1,Terrace,https://www.realestate.com.au/property-terrace-woolwich-492,realestate.com.au
+"$655,431",655431,"817 Victoria St, Peakhurst NSW 2148",Peakhurst,1,2,0,Duplex,https://www.realestate.com.au/property-duplex-peakhurst-493,realestate.com.au
+"$481,887",481887,"740 Market St, Macquarie Park NSW 2421",Macquarie Park,4,3,0,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-macquarie-park-494,realestate.com.au
+Contact Agent,,"735 Parramatta Rd, Bronte NSW 2302",Bronte,4,4,3,Villa,https://www.realestate.com.au/property-villa-bronte-495,realestate.com.au
+"$1,297,501",1297501,"842 Warringah Rd, Seven Hills NSW 2486",Seven Hills,0,1,1,Studio,https://www.realestate.com.au/property-studio-seven-hills-496,realestate.com.au
+"$472,161",472161,"207 Albert St, Concord NSW 2256",Concord,2,2,3,Townhouse,https://www.realestate.com.au/property-townhouse-concord-497,realestate.com.au
+"From $1,017,931",1017931,"28 Falcon St, Harris Park NSW 2181",Harris Park,4,1,2,Duplex,https://www.realestate.com.au/property-duplex-harris-park-498,realestate.com.au
+"$2,146,628",2146628,"415 Beach Rd, Punchbowl NSW 2843",Punchbowl,4,1,4,Townhouse,https://www.realestate.com.au/property-townhouse-punchbowl-499,realestate.com.au
+"$611,970",611970,"874 Forest Rd, Greenwich NSW 2142",Greenwich,0,1,1,Studio,https://www.realestate.com.au/property-studio-greenwich-500,realestate.com.au
+"$541,520",541520,"881 Warringah Rd, Epping NSW 2124",Epping,0,1,1,Studio,https://www.realestate.com.au/property-studio-epping-501,realestate.com.au
+"$539,510",539510,"297 Crown St, Bankstown NSW 2597",Bankstown,0,1,0,Studio,https://www.realestate.com.au/property-studio-bankstown-502,realestate.com.au
+"From $1,218,672",1218672,"382 Henry St, Gordon NSW 2032",Gordon,3,3,1,House,https://www.realestate.com.au/property-house-gordon-503,realestate.com.au
+"From $1,981,341",1981341,"682 William St, Mortdale NSW 2154",Mortdale,0,1,4,Studio,https://www.realestate.com.au/property-studio-mortdale-504,realestate.com.au
+"$634,042",634042,"275 Ocean Rd, Gordon NSW 2236",Gordon,4,3,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-gordon-505,realestate.com.au
+"$1,956,039",1956039,"875 Albert St, Punchbowl NSW 2402",Punchbowl,2,2,2,Duplex,https://www.realestate.com.au/property-duplex-punchbowl-506,realestate.com.au
+"$1,845,753",1845753,"255 Falcon St, Bondi Beach NSW 2153",Bondi Beach,4,1,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-bondi-beach-507,realestate.com.au
+"$706,470",706470,"736 Crown St, Bankstown NSW 2509",Bankstown,2,2,0,Semi-Detached,https://www.realestate.com.au/property-semi-detached-bankstown-508,realestate.com.au
+"$2,427,337",2427337,"924 Pittwater Rd, Dee Why NSW 2730",Dee Why,1,2,4,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-dee-why-509,realestate.com.au
+"From $2,390,637",2390637,"439 James St, Campsie NSW 2262",Campsie,4,1,0,House,https://www.realestate.com.au/property-house-campsie-510,realestate.com.au
+"$906,147",906147,"661 Crown St, Penshurst NSW 2901",Penshurst,0,1,1,Studio,https://www.realestate.com.au/property-studio-penshurst-511,realestate.com.au
+"$869,826",869826,"67 Canterbury Rd, Ashbury NSW 2818",Ashbury,5,3,0,House,https://www.realestate.com.au/property-house-ashbury-512,realestate.com.au
+"$2,232,161",2232161,"334 Victoria St, Chatswood NSW 2873",Chatswood,3,2,1,Duplex,https://www.realestate.com.au/property-duplex-chatswood-513,realestate.com.au
+"$1,027,599",1027599,"702 Princes Highway, Bankstown NSW 2487",Bankstown,2,2,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-bankstown-514,realestate.com.au
+"$556,810",556810,"858 Pacific Highway, Canterbury NSW 2204",Canterbury,3,3,1,House,https://www.realestate.com.au/property-house-canterbury-515,realestate.com.au
+"$930,063",930063,"789 King St, Bankstown NSW 2775",Bankstown,4,1,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-bankstown-516,realestate.com.au
+"$2,892,893",2892893,"327 John St, Bellevue Hill NSW 2264",Bellevue Hill,3,2,0,Terrace,https://www.realestate.com.au/property-terrace-bellevue-hill-517,realestate.com.au
+"$1,628,840",1628840,"928 James St, Clovelly NSW 2386",Clovelly,4,2,2,Duplex,https://www.realestate.com.au/property-duplex-clovelly-518,realestate.com.au
+"$2,277,772",2277772,"902 Parramatta Rd, Crows Nest NSW 2225",Crows Nest,2,2,1,Villa,https://www.realestate.com.au/property-villa-crows-nest-519,realestate.com.au
+"$1,521,531",1521531,"786 Condamine St, Killara NSW 2228",Killara,0,1,3,Studio,https://www.realestate.com.au/property-studio-killara-520,realestate.com.au
+"$1,490,001",1490001,"225 Park Ave, St Leonards NSW 2190",St Leonards,3,3,1,Duplex,https://www.realestate.com.au/property-duplex-st-leonards-521,realestate.com.au
+"$1,680,619",1680619,"676 Pittwater Rd, West Ryde NSW 2342",West Ryde,2,1,1,Terrace,https://www.realestate.com.au/property-terrace-west-ryde-522,realestate.com.au
+"$730,064",730064,"316 Barrenjoey Rd, Tempe NSW 2420",Tempe,1,2,2,Duplex,https://www.realestate.com.au/property-duplex-tempe-523,realestate.com.au
+"$1,755,228",1755228,"557 Warringah Rd, Summer Hill NSW 2015",Summer Hill,3,3,3,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-summer-hill-524,realestate.com.au
+"$2,166,998",2166998,"956 Frederick St, Westmead NSW 2553",Westmead,3,3,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-westmead-525,realestate.com.au
+Auction,,"321 Church St, Mount Druitt NSW 2042",Mount Druitt,6,2,1,Terrace,https://www.realestate.com.au/property-terrace-mount-druitt-526,realestate.com.au
+"$1,789,337",1789337,"541 John St, Little Bay NSW 2322",Little Bay,2,2,1,Duplex,https://www.realestate.com.au/property-duplex-little-bay-527,realestate.com.au
+"$411,195",411195,"121 Condamine St, Killara NSW 2609",Killara,5,2,2,Villa,https://www.realestate.com.au/property-villa-killara-528,realestate.com.au
+"$2,270,023",2270023,"760 Market St, Cronulla NSW 2471",Cronulla,3,3,4,Semi-Detached,https://www.realestate.com.au/property-semi-detached-cronulla-529,realestate.com.au
+"$534,145",534145,"743 Elizabeth St, Hunters Hill NSW 2134",Hunters Hill,6,3,3,Terrace,https://www.realestate.com.au/property-terrace-hunters-hill-530,realestate.com.au
+Auction,,"232 Condamine St, Paddington NSW 2264",Paddington,5,4,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-paddington-531,realestate.com.au
+"$966,576",966576,"692 Canterbury Rd, Auburn NSW 2511",Auburn,4,2,1,Villa,https://www.realestate.com.au/property-villa-auburn-532,realestate.com.au
+"From $1,822,174",1822174,"593 George St, La Perouse NSW 2772",La Perouse,5,4,0,Terrace,https://www.realestate.com.au/property-terrace-la-perouse-533,realestate.com.au
+"$622,603",622603,"415 Liverpool Rd, Punchbowl NSW 2135",Punchbowl,2,3,3,Duplex,https://www.realestate.com.au/property-duplex-punchbowl-534,realestate.com.au
+Under Contract,,"639 Condamine St, Forest Road NSW 2771",Forest Road,5,2,1,House,https://www.realestate.com.au/property-house-forest-road-535,realestate.com.au
+"$1,467,353",1467353,"516 Military Rd, Double Bay NSW 2589",Double Bay,5,1,2,Villa,https://www.realestate.com.au/property-villa-double-bay-536,realestate.com.au
+Contact Agent,,"290 Frederick St, Surry Hills NSW 2452",Surry Hills,5,3,1,Townhouse,https://www.realestate.com.au/property-townhouse-surry-hills-537,realestate.com.au
+"$1,195,799",1195799,"241 Main St, Brighton-Le-Sands NSW 2724",Brighton-Le-Sands,0,1,0,Studio,https://www.realestate.com.au/property-studio-brighton-le-sands-538,realestate.com.au
+"$1,225,952",1225952,"378 James St, Toongabbie NSW 2480",Toongabbie,4,2,1,Duplex,https://www.realestate.com.au/property-duplex-toongabbie-539,realestate.com.au
+"$738,970",738970,"887 Military Rd, Northbridge NSW 2705",Northbridge,2,2,0,House,https://www.realestate.com.au/property-house-northbridge-540,realestate.com.au
+"$1,254,719",1254719,"864 Warringah Rd, Little Bay NSW 2243",Little Bay,0,1,1,Studio,https://www.realestate.com.au/property-studio-little-bay-541,realestate.com.au
+"$2,400,130",2400130,"655 Market St, Coogee NSW 2135",Coogee,2,1,3,House,https://www.realestate.com.au/property-house-coogee-542,realestate.com.au
+"$638,827",638827,"531 Barrenjoey Rd, Mount Druitt NSW 2051",Mount Druitt,3,3,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-mount-druitt-543,realestate.com.au
+"$836,540",836540,"237 Main St, St Peters NSW 2733",St Peters,2,1,1,Terrace,https://www.realestate.com.au/property-terrace-st-peters-544,realestate.com.au
+Under Contract,,"356 King St, Macquarie Park NSW 2036",Macquarie Park,3,2,0,Terrace,https://www.realestate.com.au/property-terrace-macquarie-park-545,realestate.com.au
+"$1,339,342",1339342,"95 High St, Greenwich NSW 2598",Greenwich,6,1,3,Semi-Detached,https://www.realestate.com.au/property-semi-detached-greenwich-546,realestate.com.au
+"$2,282,287",2282287,"502 Spit Rd, Bronte NSW 2461",Bronte,5,3,3,House,https://www.realestate.com.au/property-house-bronte-547,realestate.com.au
+"$1,780,795",1780795,"243 Mona Vale Rd, Surry Hills NSW 2095",Surry Hills,3,2,2,Villa,https://www.realestate.com.au/property-villa-surry-hills-548,realestate.com.au
+"$2,301,230",2301230,"515 Liverpool Rd, Neutral Bay NSW 2241",Neutral Bay,4,3,3,House,https://www.realestate.com.au/property-house-neutral-bay-549,realestate.com.au
+POA,,"478 Warringah Rd, Lidcombe NSW 2624",Lidcombe,6,1,2,House,https://www.realestate.com.au/property-house-lidcombe-550,realestate.com.au
+"$854,795",854795,"477 Liverpool Rd, Liverpool NSW 2090",Liverpool,3,2,1,Terrace,https://www.realestate.com.au/property-terrace-liverpool-551,realestate.com.au
+POA,,"45 Pacific Highway, Killara NSW 2736",Killara,5,1,1,House,https://www.realestate.com.au/property-house-killara-552,realestate.com.au
+"$1,867,738",1867738,"896 Mona Vale Rd, Double Bay NSW 2126",Double Bay,2,3,2,Duplex,https://www.realestate.com.au/property-duplex-double-bay-553,realestate.com.au
+"$1,316,658",1316658,"975 Princes Highway, Lane Cove NSW 2412",Lane Cove,1,1,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-lane-cove-554,realestate.com.au
+"$1,006,882",1006882,"833 Crown St, Burwood NSW 2011",Burwood,0,1,1,Studio,https://www.realestate.com.au/property-studio-burwood-555,realestate.com.au
+"$1,116,919",1116919,"100 The Boulevarde, Coogee NSW 2654",Coogee,6,1,1,House,https://www.realestate.com.au/property-house-coogee-556,realestate.com.au
+Auction,,"487 Ocean Rd, Allawah NSW 2598",Allawah,1,1,1,Duplex,https://www.realestate.com.au/property-duplex-allawah-557,realestate.com.au
+"From $1,737,914",1737914,"738 High St, Pymble NSW 2864",Pymble,4,1,3,House,https://www.realestate.com.au/property-house-pymble-558,realestate.com.au
+"$977,019",977019,"509 Edward St, Penshurst NSW 2365",Penshurst,5,1,3,Villa,https://www.realestate.com.au/property-villa-penshurst-559,realestate.com.au
+"$485,219",485219,"351 Park Ave, Gladesville NSW 2675",Gladesville,5,4,1,Townhouse,https://www.realestate.com.au/property-townhouse-gladesville-560,realestate.com.au
+POA,,"994 Barrenjoey Rd, St Leonards NSW 2081",St Leonards,3,3,1,Duplex,https://www.realestate.com.au/property-duplex-st-leonards-561,realestate.com.au
+"$665,883",665883,"865 School St, Blacktown NSW 2263",Blacktown,4,4,1,House,https://www.realestate.com.au/property-house-blacktown-562,realestate.com.au
+Contact Agent,,"7 George St, Gladesville NSW 2627",Gladesville,3,3,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-gladesville-563,realestate.com.au
+"$2,001,245",2001245,"289 Beach Rd, Castle Cove NSW 2129",Castle Cove,5,2,1,House,https://www.realestate.com.au/property-house-castle-cove-564,realestate.com.au
+Under Contract,,"7 Princes Highway, Auburn NSW 2242",Auburn,2,2,3,Terrace,https://www.realestate.com.au/property-terrace-auburn-565,realestate.com.au
+Auction,,"970 Warringah Rd, Pymble NSW 2681",Pymble,6,2,1,Villa,https://www.realestate.com.au/property-villa-pymble-566,realestate.com.au
+"$934,156",934156,"111 Canterbury Rd, Bexley NSW 2844",Bexley,0,1,2,Studio,https://www.realestate.com.au/property-studio-bexley-567,realestate.com.au
+"$966,041",966041,"542 Elizabeth St, Strathfield NSW 2811",Strathfield,4,2,1,Villa,https://www.realestate.com.au/property-villa-strathfield-568,realestate.com.au
+"From $1,613,348",1613348,"669 School St, Coogee NSW 2661",Coogee,4,3,2,Terrace,https://www.realestate.com.au/property-terrace-coogee-569,realestate.com.au
+"$1,629,202",1629202,"914 Condamine St, Beverly Hills NSW 2403",Beverly Hills,5,1,2,House,https://www.realestate.com.au/property-house-beverly-hills-570,realestate.com.au
+"$887,387",887387,"897 Canterbury Rd, Rose Bay NSW 2046",Rose Bay,4,2,0,Terrace,https://www.realestate.com.au/property-terrace-rose-bay-571,realestate.com.au
+"$870,962",870962,"419 Liverpool Rd, Hurstville Grove NSW 2708",Hurstville Grove,2,1,1,House,https://www.realestate.com.au/property-house-hurstville-grove-572,realestate.com.au
+"From $1,876,380",1876380,"254 James St, Crows Nest NSW 2703",Crows Nest,0,1,1,Studio,https://www.realestate.com.au/property-studio-crows-nest-573,realestate.com.au
+"From $775,425",775425,"525 Queen St, Roselands NSW 2326",Roselands,6,4,2,Villa,https://www.realestate.com.au/property-villa-roselands-574,realestate.com.au
+"$1,765,933",1765933,"919 School St, Greenwich NSW 2077",Greenwich,6,1,4,Terrace,https://www.realestate.com.au/property-terrace-greenwich-575,realestate.com.au
+"$914,706",914706,"290 Railway St, Rockdale NSW 2023",Rockdale,5,4,2,House,https://www.realestate.com.au/property-house-rockdale-576,realestate.com.au
+Contact Agent,,"104 Market St, Chatswood NSW 2450",Chatswood,0,1,2,Studio,https://www.realestate.com.au/property-studio-chatswood-577,realestate.com.au
+"$1,692,178",1692178,"79 George St, Dee Why NSW 2877",Dee Why,4,3,3,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-dee-why-578,realestate.com.au
+"$1,347,737",1347737,"486 The Boulevarde, Chatswood NSW 2715",Chatswood,3,1,4,Terrace,https://www.realestate.com.au/property-terrace-chatswood-579,realestate.com.au
+"$1,930,575",1930575,"911 Pacific Highway, Belmore NSW 2990",Belmore,4,4,1,Terrace,https://www.realestate.com.au/property-terrace-belmore-580,realestate.com.au
+"$2,037,133",2037133,"521 Ocean Rd, Chatswood NSW 2487",Chatswood,0,1,1,Studio,https://www.realestate.com.au/property-studio-chatswood-581,realestate.com.au
+Under Contract,,"584 High St, Blacktown NSW 2534",Blacktown,4,4,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-blacktown-582,realestate.com.au
+"$1,235,392",1235392,"254 Thomas St, West Ryde NSW 2105",West Ryde,0,1,1,Studio,https://www.realestate.com.au/property-studio-west-ryde-583,realestate.com.au
+"$1,587,216",1587216,"938 High St, Granville NSW 2707",Granville,2,1,2,House,https://www.realestate.com.au/property-house-granville-584,realestate.com.au
+"$792,860",792860,"326 Queen St, Botany NSW 2225",Botany,6,3,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-botany-585,realestate.com.au
+"From $1,554,642",1554642,"1 Henry St, Kingsgrove NSW 2778",Kingsgrove,6,2,2,Townhouse,https://www.realestate.com.au/property-townhouse-kingsgrove-586,realestate.com.au
+"$1,462,768",1462768,"901 Pacific Highway, Artarmon NSW 2724",Artarmon,0,1,1,Studio,https://www.realestate.com.au/property-studio-artarmon-587,realestate.com.au
+"$821,337",821337,"573 Mona Vale Rd, Liverpool NSW 2527",Liverpool,4,1,4,Semi-Detached,https://www.realestate.com.au/property-semi-detached-liverpool-588,realestate.com.au
+"$1,078,036",1078036,"103 Elizabeth St, Kyeemagh NSW 2091",Kyeemagh,4,1,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-kyeemagh-589,realestate.com.au
+POA,,"653 Oxford St, Erskineville NSW 2039",Erskineville,1,2,2,Duplex,https://www.realestate.com.au/property-duplex-erskineville-590,realestate.com.au
+"$725,339",725339,"260 High St, Marrickville NSW 2286",Marrickville,6,4,4,House,https://www.realestate.com.au/property-house-marrickville-591,realestate.com.au
+"$1,300,137",1300137,"735 School St, Double Bay NSW 2221",Double Bay,4,1,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-double-bay-592,realestate.com.au
+POA,,"521 Ocean Rd, Mount Druitt NSW 2756",Mount Druitt,5,2,1,Townhouse,https://www.realestate.com.au/property-townhouse-mount-druitt-593,realestate.com.au
+"$821,761",821761,"165 Elizabeth St, Wentworthville NSW 2494",Wentworthville,2,3,3,Duplex,https://www.realestate.com.au/property-duplex-wentworthville-594,realestate.com.au
+"$1,106,211",1106211,"50 Mona Vale Rd, Bankstown NSW 2245",Bankstown,2,1,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-bankstown-595,realestate.com.au
+"From $1,380,135",1380135,"992 Charles St, Little Bay NSW 2481",Little Bay,1,1,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-little-bay-596,realestate.com.au
+"$4,242,655",4242655,"755 Forest Rd, Point Piper NSW 2143",Point Piper,1,1,2,Duplex,https://www.realestate.com.au/property-duplex-point-piper-597,realestate.com.au
+"$966,464",966464,"692 Charles St, Seven Hills NSW 2867",Seven Hills,4,3,1,Terrace,https://www.realestate.com.au/property-terrace-seven-hills-598,realestate.com.au
+"$1,220,553",1220553,"608 Frederick St, Eastwood NSW 2581",Eastwood,2,1,3,House,https://www.realestate.com.au/property-house-eastwood-599,realestate.com.au
+"$997,531",997531,"340 Henry St, Allawah NSW 2169",Allawah,5,3,3,House,https://www.realestate.com.au/property-house-allawah-600,realestate.com.au
+"From $4,456,387",4456387,"653 James St, Double Bay NSW 2449",Double Bay,0,1,2,Studio,https://www.realestate.com.au/property-studio-double-bay-601,realestate.com.au
+"$551,330",551330,"789 Main St, Cronulla NSW 2873",Cronulla,3,3,1,Terrace,https://www.realestate.com.au/property-terrace-cronulla-602,realestate.com.au
+POA,,"453 Edward St, Ryde NSW 2370",Ryde,2,2,1,House,https://www.realestate.com.au/property-house-ryde-603,realestate.com.au
+"$2,072,791",2072791,"587 King Georges Rd, Putney NSW 2502",Putney,3,2,4,Terrace,https://www.realestate.com.au/property-terrace-putney-604,realestate.com.au
+"From $1,873,024",1873024,"139 Charles St, Chatswood NSW 2693",Chatswood,2,2,3,Duplex,https://www.realestate.com.au/property-duplex-chatswood-605,realestate.com.au
+"$917,987",917987,"646 Elizabeth St, Newtown NSW 2047",Newtown,1,2,4,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-newtown-606,realestate.com.au
+POA,,"737 Condamine St, Wolli Creek NSW 2131",Wolli Creek,4,2,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-wolli-creek-607,realestate.com.au
+"$2,040,107",2040107,"855 Henry St, Paddington NSW 2212",Paddington,2,2,0,Villa,https://www.realestate.com.au/property-villa-paddington-608,realestate.com.au
+"$2,443,974",2443974,"206 Edward St, Macquarie Park NSW 2486",Macquarie Park,0,1,2,Studio,https://www.realestate.com.au/property-studio-macquarie-park-609,realestate.com.au
+"$2,484,813",2484813,"605 Parramatta Rd, La Perouse NSW 2510",La Perouse,3,3,2,Villa,https://www.realestate.com.au/property-villa-la-perouse-610,realestate.com.au
+"$333,149",333149,"373 Princes Highway, Mount Druitt NSW 2646",Mount Druitt,2,1,1,Terrace,https://www.realestate.com.au/property-terrace-mount-druitt-611,realestate.com.au
+"$1,200,482",1200482,"856 Church St, Neutral Bay NSW 2497",Neutral Bay,3,1,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-neutral-bay-612,realestate.com.au
+Auction,,"888 Spit Rd, Ryde NSW 2289",Ryde,5,3,1,House,https://www.realestate.com.au/property-house-ryde-613,realestate.com.au
+"$2,303,066",2303066,"256 George St, Gordon NSW 2599",Gordon,6,4,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-gordon-614,realestate.com.au
+"$658,844",658844,"289 Albert St, Liverpool NSW 2013",Liverpool,0,1,1,Studio,https://www.realestate.com.au/property-studio-liverpool-615,realestate.com.au
+"$559,015",559015,"884 John St, Newtown NSW 2324",Newtown,4,1,3,House,https://www.realestate.com.au/property-house-newtown-616,realestate.com.au
+"$2,441,787",2441787,"883 Thomas St, Lalor Park NSW 2718",Lalor Park,2,1,1,Duplex,https://www.realestate.com.au/property-duplex-lalor-park-617,realestate.com.au
+"$4,945,272",4945272,"346 Railway St, Bellevue Hill NSW 2704",Bellevue Hill,6,1,2,House,https://www.realestate.com.au/property-house-bellevue-hill-618,realestate.com.au
+"$2,264,367",2264367,"132 Frederick St, St Peters NSW 2667",St Peters,2,1,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-st-peters-619,realestate.com.au
+"$1,664,757",1664757,"503 Elizabeth St, Punchbowl NSW 2592",Punchbowl,2,2,1,Terrace,https://www.realestate.com.au/property-terrace-punchbowl-620,realestate.com.au
+"$504,182",504182,"678 King Georges Rd, Blacktown NSW 2869",Blacktown,4,2,3,Terrace,https://www.realestate.com.au/property-terrace-blacktown-621,realestate.com.au
+Contact Agent,,"950 Railway St, Ramsgate NSW 2119",Ramsgate,4,3,0,Duplex,https://www.realestate.com.au/property-duplex-ramsgate-622,realestate.com.au
+"$2,447,119",2447119,"714 Military Rd, Putney NSW 2341",Putney,6,2,3,Townhouse,https://www.realestate.com.au/property-townhouse-putney-623,realestate.com.au
+Under Contract,,"788 James St, Kogarah NSW 2434",Kogarah,2,1,1,Duplex,https://www.realestate.com.au/property-duplex-kogarah-624,realestate.com.au
+"From $1,026,917",1026917,"125 Victoria St, Botany NSW 2403",Botany,5,3,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-botany-625,realestate.com.au
+"$698,153",698153,"799 Warringah Rd, Botany NSW 2075",Botany,0,1,2,Studio,https://www.realestate.com.au/property-studio-botany-626,realestate.com.au
+"From $2,271,842",2271842,"391 Forest Rd, Roseville NSW 2242",Roseville,3,1,2,Duplex,https://www.realestate.com.au/property-duplex-roseville-627,realestate.com.au
+"From $2,098,502",2098502,"888 Edward St, Pymble NSW 2185",Pymble,4,3,1,Townhouse,https://www.realestate.com.au/property-townhouse-pymble-628,realestate.com.au
+"$1,088,295",1088295,"656 Canterbury Rd, Newtown NSW 2344",Newtown,6,4,0,House,https://www.realestate.com.au/property-house-newtown-629,realestate.com.au
+Under Contract,,"858 Forest Rd, St Peters NSW 2940",St Peters,2,2,2,Terrace,https://www.realestate.com.au/property-terrace-st-peters-630,realestate.com.au
+"$448,986",448986,"349 The Boulevarde, Beverley Park NSW 2947",Beverley Park,2,3,0,Duplex,https://www.realestate.com.au/property-duplex-beverley-park-631,realestate.com.au
+"$1,478,088",1478088,"696 Forest Rd, Tempe NSW 2548",Tempe,2,2,0,Villa,https://www.realestate.com.au/property-villa-tempe-632,realestate.com.au
+"$1,346,650",1346650,"29 King St, Beverly Hills NSW 2823",Beverly Hills,0,1,2,Studio,https://www.realestate.com.au/property-studio-beverly-hills-633,realestate.com.au
+"$1,293,176",1293176,"231 Main St, Rockdale NSW 2021",Rockdale,5,4,0,Townhouse,https://www.realestate.com.au/property-townhouse-rockdale-634,realestate.com.au
+"$2,266,788",2266788,"315 School St, Burwood NSW 2971",Burwood,5,4,1,Townhouse,https://www.realestate.com.au/property-townhouse-burwood-635,realestate.com.au
+"From $624,336",624336,"337 George St, Carlton NSW 2966",Carlton,5,1,2,Terrace,https://www.realestate.com.au/property-terrace-carlton-636,realestate.com.au
+"$2,199,644",2199644,"216 Barrenjoey Rd, Bronte NSW 2077",Bronte,3,3,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-bronte-637,realestate.com.au
+Under Contract,,"421 King Georges Rd, Clovelly NSW 2119",Clovelly,6,2,1,House,https://www.realestate.com.au/property-house-clovelly-638,realestate.com.au
+POA,,"465 Church St, Toongabbie NSW 2962",Toongabbie,2,2,3,House,https://www.realestate.com.au/property-house-toongabbie-639,realestate.com.au
+"$1,868,871",1868871,"721 Condamine St, Hornsby NSW 2727",Hornsby,3,1,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-hornsby-640,realestate.com.au
+"$1,221,200",1221200,"802 Spit Rd, Granville NSW 2583",Granville,3,3,1,Terrace,https://www.realestate.com.au/property-terrace-granville-641,realestate.com.au
+"$1,420,730",1420730,"474 Spit Rd, Monterey NSW 2700",Monterey,4,1,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-monterey-642,realestate.com.au
+"$768,639",768639,"842 Liverpool Rd, Homebush NSW 2649",Homebush,5,2,0,House,https://www.realestate.com.au/property-house-homebush-643,realestate.com.au
+Contact Agent,,"196 John St, Chatswood NSW 2332",Chatswood,5,1,4,House,https://www.realestate.com.au/property-house-chatswood-644,realestate.com.au
+"From $1,875,648",1875648,"213 Liverpool Rd, Hornsby NSW 2789",Hornsby,4,1,2,House,https://www.realestate.com.au/property-house-hornsby-645,realestate.com.au
+"$987,041",987041,"259 Victoria St, Tennyson Point NSW 2531",Tennyson Point,3,2,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-tennyson-point-646,realestate.com.au
+Auction,,"64 William St, Wentworthville NSW 2799",Wentworthville,6,3,1,Villa,https://www.realestate.com.au/property-villa-wentworthville-647,realestate.com.au
+Contact Agent,,"902 Condamine St, Hurstville Grove NSW 2327",Hurstville Grove,0,1,2,Studio,https://www.realestate.com.au/property-studio-hurstville-grove-648,realestate.com.au
+"$1,822,505",1822505,"28 Victoria St, Bondi Beach NSW 2175",Bondi Beach,4,2,3,Duplex,https://www.realestate.com.au/property-duplex-bondi-beach-649,realestate.com.au
+"$1,432,847",1432847,"171 Elizabeth St, Epping NSW 2564",Epping,4,1,0,Semi-Detached,https://www.realestate.com.au/property-semi-detached-epping-650,realestate.com.au
+"$1,396,072",1396072,"883 Railway St, Campsie NSW 2297",Campsie,4,1,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-campsie-651,realestate.com.au
+Contact Agent,,"741 Ocean Rd, Dover Heights NSW 2753",Dover Heights,4,1,1,Terrace,https://www.realestate.com.au/property-terrace-dover-heights-652,realestate.com.au
+"$2,098,744",2098744,"990 William St, Mosman NSW 2225",Mosman,2,1,3,Villa,https://www.realestate.com.au/property-villa-mosman-653,realestate.com.au
+"$2,226,080",2226080,"604 Henry St, Coogee NSW 2126",Coogee,2,1,3,Terrace,https://www.realestate.com.au/property-terrace-coogee-654,realestate.com.au
+POA,,"202 Henry St, Brighton-Le-Sands NSW 2584",Brighton-Le-Sands,5,2,4,Townhouse,https://www.realestate.com.au/property-townhouse-brighton-le-sands-655,realestate.com.au
+"$1,293,616",1293616,"791 Ocean Rd, Homebush NSW 2897",Homebush,1,2,1,Duplex,https://www.realestate.com.au/property-duplex-homebush-656,realestate.com.au
+"$2,056,950",2056950,"965 Anzac Parade, Roseville NSW 2248",Roseville,4,3,1,Villa,https://www.realestate.com.au/property-villa-roseville-657,realestate.com.au
+"$2,181,167",2181167,"60 King Georges Rd, Hornsby NSW 2184",Hornsby,3,1,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-hornsby-658,realestate.com.au
+Auction,,"811 Princes Highway, Kyeemagh NSW 2502",Kyeemagh,6,4,2,Townhouse,https://www.realestate.com.au/property-townhouse-kyeemagh-659,realestate.com.au
+Under Contract,,"534 Market St, Beverly Hills NSW 2801",Beverly Hills,5,1,0,House,https://www.realestate.com.au/property-house-beverly-hills-660,realestate.com.au
+Contact Agent,,"403 Warringah Rd, Allawah NSW 2584",Allawah,2,2,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-allawah-661,realestate.com.au
+"$1,045,433",1045433,"551 Ocean Rd, Crows Nest NSW 2101",Crows Nest,5,1,0,Villa,https://www.realestate.com.au/property-villa-crows-nest-662,realestate.com.au
+"$2,276,884",2276884,"424 Elizabeth St, Beverly Hills NSW 2614",Beverly Hills,4,3,1,Townhouse,https://www.realestate.com.au/property-townhouse-beverly-hills-663,realestate.com.au
+"$1,412,559",1412559,"246 John St, Coogee NSW 2696",Coogee,5,4,0,Villa,https://www.realestate.com.au/property-villa-coogee-664,realestate.com.au
+"$1,527,342",1527342,"561 George St, Northbridge NSW 2952",Northbridge,5,1,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-northbridge-665,realestate.com.au
+Under Contract,,"624 John St, Alexandria NSW 2164",Alexandria,3,3,1,Villa,https://www.realestate.com.au/property-villa-alexandria-666,realestate.com.au
+"$585,459",585459,"672 Canterbury Rd, Botany NSW 2375",Botany,2,3,0,Duplex,https://www.realestate.com.au/property-duplex-botany-667,realestate.com.au
+"$525,368",525368,"50 School St, Doonside NSW 2431",Doonside,2,2,2,House,https://www.realestate.com.au/property-house-doonside-668,realestate.com.au
+"$1,454,960",1454960,"355 Beach Rd, Burwood NSW 2568",Burwood,5,3,1,House,https://www.realestate.com.au/property-house-burwood-669,realestate.com.au
+"$412,548",412548,"591 John St, Lakemba NSW 2757",Lakemba,0,1,1,Studio,https://www.realestate.com.au/property-studio-lakemba-670,realestate.com.au
+"From $1,802,992",1802992,"287 Liverpool Rd, Newtown NSW 2566",Newtown,4,3,1,Duplex,https://www.realestate.com.au/property-duplex-newtown-671,realestate.com.au
+POA,,"467 John St, Manly NSW 2101",Manly,3,3,2,Terrace,https://www.realestate.com.au/property-terrace-manly-672,realestate.com.au
+"$1,779,494",1779494,"333 Frederick St, Doonside NSW 2732",Doonside,6,4,1,House,https://www.realestate.com.au/property-house-doonside-673,realestate.com.au
+"$2,312,630",2312630,"662 Edward St, Tempe NSW 2645",Tempe,5,4,1,Terrace,https://www.realestate.com.au/property-terrace-tempe-674,realestate.com.au
+"$1,103,009",1103009,"304 Princes Highway, Tennyson Point NSW 2931",Tennyson Point,2,2,0,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-tennyson-point-675,realestate.com.au
+"From $1,487,099",1487099,"334 Condamine St, Bexley NSW 2124",Bexley,6,4,3,Townhouse,https://www.realestate.com.au/property-townhouse-bexley-676,realestate.com.au
+"$1,992,944",1992944,"826 Anzac Parade, Woolwich NSW 2679",Woolwich,3,1,1,House,https://www.realestate.com.au/property-house-woolwich-677,realestate.com.au
+Contact Agent,,"556 Henry St, Marrickville NSW 2498",Marrickville,4,3,1,Villa,https://www.realestate.com.au/property-villa-marrickville-678,realestate.com.au
+"$900,023",900023,"408 Falcon St, Watsons Bay NSW 2008",Watsons Bay,4,2,1,Duplex,https://www.realestate.com.au/property-duplex-watsons-bay-679,realestate.com.au
+"$1,502,466",1502466,"382 Pittwater Rd, Lakemba NSW 2040",Lakemba,4,1,0,Semi-Detached,https://www.realestate.com.au/property-semi-detached-lakemba-680,realestate.com.au
+"From $754,061",754061,"346 Main St, Roseville NSW 2876",Roseville,5,2,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-roseville-681,realestate.com.au
+POA,,"40 Market St, Castle Cove NSW 2050",Castle Cove,4,2,1,House,https://www.realestate.com.au/property-house-castle-cove-682,realestate.com.au
+"$2,093,069",2093069,"180 Elizabeth St, Artarmon NSW 2717",Artarmon,2,2,2,Townhouse,https://www.realestate.com.au/property-townhouse-artarmon-683,realestate.com.au
+"$1,190,959",1190959,"676 Pacific Highway, Lane Cove NSW 2103",Lane Cove,2,1,2,Villa,https://www.realestate.com.au/property-villa-lane-cove-684,realestate.com.au
+"$2,275,554",2275554,"832 Pacific Highway, Strathfield NSW 2839",Strathfield,3,3,0,Terrace,https://www.realestate.com.au/property-terrace-strathfield-685,realestate.com.au
+"$767,770",767770,"57 Crown St, Carlton NSW 2254",Carlton,4,4,0,Terrace,https://www.realestate.com.au/property-terrace-carlton-686,realestate.com.au
+"$1,008,876",1008876,"431 Barrenjoey Rd, Gladesville NSW 2000",Gladesville,1,1,0,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-gladesville-687,realestate.com.au
+"From $886,970",886970,"981 Canterbury Rd, Belmore NSW 2877",Belmore,3,2,2,House,https://www.realestate.com.au/property-house-belmore-688,realestate.com.au
+"From $2,287,798",2287798,"185 Barrenjoey Rd, Middle Cove NSW 2716",Middle Cove,0,1,4,Studio,https://www.realestate.com.au/property-studio-middle-cove-689,realestate.com.au
+"$1,243,712",1243712,"603 Oxford St, Maroubra NSW 2898",Maroubra,4,4,0,House,https://www.realestate.com.au/property-house-maroubra-690,realestate.com.au
+Contact Agent,,"149 Pittwater Rd, Botany NSW 2226",Botany,2,1,2,Villa,https://www.realestate.com.au/property-villa-botany-691,realestate.com.au
+Auction,,"964 Frederick St, Mortdale NSW 2265",Mortdale,5,2,0,Townhouse,https://www.realestate.com.au/property-townhouse-mortdale-692,realestate.com.au
+"$1,559,344",1559344,"29 Canterbury Rd, Tempe NSW 2243",Tempe,4,4,1,Townhouse,https://www.realestate.com.au/property-townhouse-tempe-693,realestate.com.au
+"$3,861,446",3861446,"463 Henry St, Vaucluse NSW 2916",Vaucluse,5,3,0,Semi-Detached,https://www.realestate.com.au/property-semi-detached-vaucluse-694,realestate.com.au
+"$752,147",752147,"226 Edward St, Rhodes NSW 2551",Rhodes,6,4,0,Townhouse,https://www.realestate.com.au/property-townhouse-rhodes-695,realestate.com.au
+"$1,843,279",1843279,"53 Charles St, Ashfield NSW 2294",Ashfield,1,1,0,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-ashfield-696,realestate.com.au
+"$2,150,544",2150544,"98 Thomas St, La Perouse NSW 2790",La Perouse,2,3,0,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-la-perouse-697,realestate.com.au
+"$1,943,607",1943607,"275 Oxford St, Parramatta NSW 2260",Parramatta,6,3,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-parramatta-698,realestate.com.au
+Contact Agent,,"987 Princes Highway, Hunters Hill NSW 2284",Hunters Hill,6,1,1,Townhouse,https://www.realestate.com.au/property-townhouse-hunters-hill-699,realestate.com.au
+"$2,029,850",2029850,"164 Main St, Roseville NSW 2742",Roseville,0,1,3,Studio,https://www.realestate.com.au/property-studio-roseville-700,realestate.com.au
+"$569,261",569261,"791 Forest Rd, Bankstown NSW 2462",Bankstown,5,3,4,Villa,https://www.realestate.com.au/property-villa-bankstown-701,realestate.com.au
+"$2,081,743",2081743,"851 Princes Highway, Doonside NSW 2237",Doonside,5,4,3,Villa,https://www.realestate.com.au/property-villa-doonside-702,realestate.com.au
+"$2,444,780",2444780,"732 Anzac Parade, Forest Road NSW 2945",Forest Road,0,1,2,Studio,https://www.realestate.com.au/property-studio-forest-road-703,realestate.com.au
+"From $2,006,907",2006907,"919 Falcon St, Westmead NSW 2174",Westmead,6,4,3,Townhouse,https://www.realestate.com.au/property-townhouse-westmead-704,realestate.com.au
+"$1,854,913",1854913,"756 Elizabeth St, Putney NSW 2418",Putney,5,2,3,House,https://www.realestate.com.au/property-house-putney-705,realestate.com.au
+"$1,467,642",1467642,"46 Canterbury Rd, Bondi Beach NSW 2711",Bondi Beach,2,2,0,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-bondi-beach-706,realestate.com.au
+"$901,641",901641,"309 The Boulevarde, Manly NSW 2881",Manly,6,1,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-manly-707,realestate.com.au
+"$2,001,032",2001032,"410 George St, Dulwich Hill NSW 2397",Dulwich Hill,4,1,1,Villa,https://www.realestate.com.au/property-villa-dulwich-hill-708,realestate.com.au
+"$369,875",369875,"80 Main St, Mount Druitt NSW 2765",Mount Druitt,5,4,2,House,https://www.realestate.com.au/property-house-mount-druitt-709,realestate.com.au
+"$2,439,570",2439570,"438 James St, Belmore NSW 2864",Belmore,5,4,1,Terrace,https://www.realestate.com.au/property-terrace-belmore-710,realestate.com.au
+"$1,066,247",1066247,"89 Anzac Parade, Rooty Hill NSW 2376",Rooty Hill,5,3,1,Townhouse,https://www.realestate.com.au/property-townhouse-rooty-hill-711,realestate.com.au
+POA,,"576 Edward St, Hunters Hill NSW 2512",Hunters Hill,0,1,2,Studio,https://www.realestate.com.au/property-studio-hunters-hill-712,realestate.com.au
+Contact Agent,,"117 Frederick St, Surry Hills NSW 2187",Surry Hills,2,3,2,Duplex,https://www.realestate.com.au/property-duplex-surry-hills-713,realestate.com.au
+"$2,437,488",2437488,"720 Falcon St, Mascot NSW 2836",Mascot,1,2,0,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-mascot-714,realestate.com.au
+"$2,489,886",2489886,"872 Parramatta Rd, Concord NSW 2012",Concord,1,1,2,Duplex,https://www.realestate.com.au/property-duplex-concord-715,realestate.com.au
+"$987,329",987329,"429 Victoria St, Little Bay NSW 2147",Little Bay,2,2,2,Villa,https://www.realestate.com.au/property-villa-little-bay-716,realestate.com.au
+"$1,941,399",1941399,"573 Queen St, Kyeemagh NSW 2856",Kyeemagh,2,2,2,Villa,https://www.realestate.com.au/property-villa-kyeemagh-717,realestate.com.au
+"$818,819",818819,"990 Anzac Parade, Pymble NSW 2852",Pymble,4,1,3,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-pymble-718,realestate.com.au
+"$1,145,545",1145545,"959 Henry St, Dover Heights NSW 2847",Dover Heights,4,2,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-dover-heights-719,realestate.com.au
+"$614,939",614939,"12 Thomas St, Tennyson Point NSW 2251",Tennyson Point,4,2,4,Semi-Detached,https://www.realestate.com.au/property-semi-detached-tennyson-point-720,realestate.com.au
+"$1,691,641",1691641,"623 Mona Vale Rd, Bexley NSW 2545",Bexley,5,3,2,Townhouse,https://www.realestate.com.au/property-townhouse-bexley-721,realestate.com.au
+"$1,238,593",1238593,"946 Princes Highway, Manly NSW 2624",Manly,2,3,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-manly-722,realestate.com.au
+"$608,614",608614,"206 Pittwater Rd, Ramsgate NSW 2360",Ramsgate,5,3,3,Townhouse,https://www.realestate.com.au/property-townhouse-ramsgate-723,realestate.com.au
+"$1,817,767",1817767,"441 Crown St, Canterbury NSW 2786",Canterbury,4,1,1,House,https://www.realestate.com.au/property-house-canterbury-724,realestate.com.au
+"$441,795",441795,"520 George St, Tempe NSW 2592",Tempe,0,1,3,Studio,https://www.realestate.com.au/property-studio-tempe-725,realestate.com.au
+"$1,214,250",1214250,"157 John St, Rockdale NSW 2626",Rockdale,3,3,1,Duplex,https://www.realestate.com.au/property-duplex-rockdale-726,realestate.com.au
+POA,,"169 George St, Tempe NSW 2640",Tempe,2,2,0,Duplex,https://www.realestate.com.au/property-duplex-tempe-727,realestate.com.au
+"$1,984,951",1984951,"168 Falcon St, Beverley Park NSW 2533",Beverley Park,2,1,2,Villa,https://www.realestate.com.au/property-villa-beverley-park-728,realestate.com.au
+"$1,801,231",1801231,"337 Liverpool Rd, Killara NSW 2737",Killara,4,1,0,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-killara-729,realestate.com.au
+"$1,949,757",1949757,"188 Beach Rd, Neutral Bay NSW 2770",Neutral Bay,6,1,1,Villa,https://www.realestate.com.au/property-villa-neutral-bay-730,realestate.com.au
+POA,,"642 Edward St, Hornsby NSW 2736",Hornsby,2,2,2,Villa,https://www.realestate.com.au/property-villa-hornsby-731,realestate.com.au
+"$2,398,405",2398405,"776 School St, Sans Souci NSW 2199",Sans Souci,4,1,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-sans-souci-732,realestate.com.au
+"$797,585",797585,"310 Forest Rd, Ashfield NSW 2171",Ashfield,3,3,1,Duplex,https://www.realestate.com.au/property-duplex-ashfield-733,realestate.com.au
+"From $2,359,433",2359433,"548 Military Rd, Gordon NSW 2648",Gordon,5,4,2,Terrace,https://www.realestate.com.au/property-terrace-gordon-734,realestate.com.au
+"$2,418,205",2418205,"113 Railway St, McMahons Point NSW 2929",McMahons Point,4,4,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-mcmahons-point-735,realestate.com.au
+"$1,383,507",1383507,"951 Henry St, Summer Hill NSW 2418",Summer Hill,0,1,0,Studio,https://www.realestate.com.au/property-studio-summer-hill-736,realestate.com.au
+"$1,426,830",1426830,"518 Crown St, Oatley NSW 2066",Oatley,5,2,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-oatley-737,realestate.com.au
+"From $1,300,690",1300690,"120 King Georges Rd, West Ryde NSW 2541",West Ryde,2,2,2,Villa,https://www.realestate.com.au/property-villa-west-ryde-738,realestate.com.au
+"From $2,355,404",2355404,"480 Princes Highway, Macquarie Park NSW 2354",Macquarie Park,6,3,3,Semi-Detached,https://www.realestate.com.au/property-semi-detached-macquarie-park-739,realestate.com.au
+"$693,048",693048,"697 King St, Canterbury NSW 2072",Canterbury,3,2,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-canterbury-740,realestate.com.au
+"$2,190,352",2190352,"771 Barrenjoey Rd, Monterey NSW 2425",Monterey,5,2,2,Terrace,https://www.realestate.com.au/property-terrace-monterey-741,realestate.com.au
+"$1,578,616",1578616,"659 Railway St, Rhodes NSW 2002",Rhodes,6,4,0,Semi-Detached,https://www.realestate.com.au/property-semi-detached-rhodes-742,realestate.com.au
+"$975,395",975395,"549 Edward St, Auburn NSW 2481",Auburn,3,2,1,House,https://www.realestate.com.au/property-house-auburn-743,realestate.com.au
+"$2,419,971",2419971,"527 James St, La Perouse NSW 2900",La Perouse,2,2,2,Terrace,https://www.realestate.com.au/property-terrace-la-perouse-744,realestate.com.au
+"From $2,151,988",2151988,"747 Charles St, Narwee NSW 2505",Narwee,3,2,1,Duplex,https://www.realestate.com.au/property-duplex-narwee-745,realestate.com.au
+"$439,357",439357,"62 Beach Rd, Cammeray NSW 2289",Cammeray,5,2,2,Townhouse,https://www.realestate.com.au/property-townhouse-cammeray-746,realestate.com.au
+"$1,931,004",1931004,"874 Military Rd, Cammeray NSW 2705",Cammeray,6,1,3,Townhouse,https://www.realestate.com.au/property-townhouse-cammeray-747,realestate.com.au
+"$1,355,528",1355528,"868 Charles St, Monterey NSW 2964",Monterey,3,3,1,Terrace,https://www.realestate.com.au/property-terrace-monterey-748,realestate.com.au
+"$1,197,969",1197969,"705 Canterbury Rd, Bondi Junction NSW 2262",Bondi Junction,2,1,1,House,https://www.realestate.com.au/property-house-bondi-junction-749,realestate.com.au
+"$1,434,312",1434312,"196 King Georges Rd, Forest Road NSW 2571",Forest Road,2,3,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-forest-road-750,realestate.com.au
+"$2,210,182",2210182,"268 King St, Wentworthville NSW 2271",Wentworthville,0,1,1,Studio,https://www.realestate.com.au/property-studio-wentworthville-751,realestate.com.au
+"$603,211",603211,"791 Pacific Highway, Naremburn NSW 2471",Naremburn,3,2,3,Duplex,https://www.realestate.com.au/property-duplex-naremburn-752,realestate.com.au
+"From $2,451,892",2451892,"90 Frederick St, Rockdale NSW 2327",Rockdale,0,1,0,Studio,https://www.realestate.com.au/property-studio-rockdale-753,realestate.com.au
+"$2,044,864",2044864,"616 Pacific Highway, Oatley NSW 2407",Oatley,0,1,1,Studio,https://www.realestate.com.au/property-studio-oatley-754,realestate.com.au
+"$993,638",993638,"510 Warringah Rd, Epping NSW 2625",Epping,3,3,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-epping-755,realestate.com.au
+"$2,087,507",2087507,"205 Beach Rd, West Ryde NSW 2900",West Ryde,4,2,1,House,https://www.realestate.com.au/property-house-west-ryde-756,realestate.com.au
+"$1,056,833",1056833,"553 Albert St, Greenwich NSW 2649",Greenwich,0,1,0,Studio,https://www.realestate.com.au/property-studio-greenwich-757,realestate.com.au
+"$4,606,861",4606861,"215 Elizabeth St, Double Bay NSW 2697",Double Bay,5,1,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-double-bay-758,realestate.com.au
+Under Contract,,"617 Liverpool Rd, Mascot NSW 2687",Mascot,2,1,3,Semi-Detached,https://www.realestate.com.au/property-semi-detached-mascot-759,realestate.com.au
+Under Contract,,"43 Forest Rd, Tempe NSW 2975",Tempe,2,1,0,Terrace,https://www.realestate.com.au/property-terrace-tempe-760,realestate.com.au
+"$2,051,794",2051794,"749 Charles St, Kogarah NSW 2691",Kogarah,3,2,1,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-kogarah-761,realestate.com.au
+"$1,522,621",1522621,"229 Railway St, Brighton-Le-Sands NSW 2065",Brighton-Le-Sands,6,3,0,Villa,https://www.realestate.com.au/property-villa-brighton-le-sands-762,realestate.com.au
+"$1,629,814",1629814,"9 Anzac Parade, Bexley NSW 2149",Bexley,0,1,2,Studio,https://www.realestate.com.au/property-studio-bexley-763,realestate.com.au
+"From $512,183",512183,"754 Elizabeth St, Dee Why NSW 2599",Dee Why,6,1,3,Villa,https://www.realestate.com.au/property-villa-dee-why-764,realestate.com.au
+"$1,529,546",1529546,"818 Anzac Parade, Woolwich NSW 2503",Woolwich,5,4,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-woolwich-765,realestate.com.au
+"$2,056,034",2056034,"350 Church St, Maroubra NSW 2951",Maroubra,3,3,1,Townhouse,https://www.realestate.com.au/property-townhouse-maroubra-766,realestate.com.au
+"$2,461,216",2461216,"139 Church St, Clovelly NSW 2563",Clovelly,0,1,2,Studio,https://www.realestate.com.au/property-studio-clovelly-767,realestate.com.au
+"$1,128,814",1128814,"311 Oxford St, Lakemba NSW 2805",Lakemba,3,3,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-lakemba-768,realestate.com.au
+"$415,558",415558,"184 Thomas St, Bankstown NSW 2828",Bankstown,5,2,3,House,https://www.realestate.com.au/property-house-bankstown-769,realestate.com.au
+"$1,813,885",1813885,"739 William St, Surry Hills NSW 2209",Surry Hills,3,1,4,Townhouse,https://www.realestate.com.au/property-townhouse-surry-hills-770,realestate.com.au
+Contact Agent,,"937 Victoria St, Peakhurst NSW 2155",Peakhurst,1,1,0,Duplex,https://www.realestate.com.au/property-duplex-peakhurst-771,realestate.com.au
+"From $443,582",443582,"417 Edward St, Macquarie Park NSW 2562",Macquarie Park,4,1,0,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-macquarie-park-772,realestate.com.au
+"$333,941",333941,"11 Anzac Parade, Auburn NSW 2248",Auburn,0,1,0,Studio,https://www.realestate.com.au/property-studio-auburn-773,realestate.com.au
+"$2,128,805",2128805,"936 George St, Pymble NSW 2184",Pymble,4,4,0,Villa,https://www.realestate.com.au/property-villa-pymble-774,realestate.com.au
+Auction,,"53 Elizabeth St, Lalor Park NSW 2365",Lalor Park,2,2,1,Terrace,https://www.realestate.com.au/property-terrace-lalor-park-775,realestate.com.au
+"From $817,958",817958,"392 School St, Burwood NSW 2391",Burwood,4,4,3,Townhouse,https://www.realestate.com.au/property-townhouse-burwood-776,realestate.com.au
+"$2,310,674",2310674,"75 Beach Rd, Kirribilli NSW 2232",Kirribilli,5,1,2,Villa,https://www.realestate.com.au/property-villa-kirribilli-777,realestate.com.au
+"$1,707,939",1707939,"352 Oxford St, Bronte NSW 2540",Bronte,0,1,3,Studio,https://www.realestate.com.au/property-studio-bronte-778,realestate.com.au
+"$707,578",707578,"293 School St, St Leonards NSW 2294",St Leonards,2,2,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-st-leonards-779,realestate.com.au
+"$1,699,022",1699022,"871 High St, Alexandria NSW 2150",Alexandria,5,2,1,Semi-Detached,https://www.realestate.com.au/property-semi-detached-alexandria-780,realestate.com.au
+"$1,214,753",1214753,"142 Crown St, Alexandria NSW 2494",Alexandria,4,1,3,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-alexandria-781,realestate.com.au
+"$2,129,985",2129985,"785 Market St, Roseville NSW 2128",Roseville,4,2,0,Villa,https://www.realestate.com.au/property-villa-roseville-782,realestate.com.au
+"$853,571",853571,"503 School St, Bexley NSW 2226",Bexley,0,1,1,Studio,https://www.realestate.com.au/property-studio-bexley-783,realestate.com.au
+"$1,070,897",1070897,"201 Princes Highway, North Sydney NSW 2038",North Sydney,3,3,2,Villa,https://www.realestate.com.au/property-villa-north-sydney-784,realestate.com.au
+POA,,"922 Falcon St, Ashbury NSW 2743",Ashbury,6,3,1,Townhouse,https://www.realestate.com.au/property-townhouse-ashbury-785,realestate.com.au
+"$1,084,950",1084950,"43 Mona Vale Rd, Monterey NSW 2038",Monterey,4,3,1,Terrace,https://www.realestate.com.au/property-terrace-monterey-786,realestate.com.au
+"$1,693,240",1693240,"580 Parramatta Rd, Ashfield NSW 2114",Ashfield,0,1,1,Studio,https://www.realestate.com.au/property-studio-ashfield-787,realestate.com.au
+"$1,767,129",1767129,"806 Albert St, Westmead NSW 2560",Westmead,2,2,1,Townhouse,https://www.realestate.com.au/property-townhouse-westmead-788,realestate.com.au
+"$980,014",980014,"787 Princes Highway, Auburn NSW 2140",Auburn,6,3,2,House,https://www.realestate.com.au/property-house-auburn-789,realestate.com.au
+POA,,"961 William St, Bondi Beach NSW 2059",Bondi Beach,5,3,2,Townhouse,https://www.realestate.com.au/property-townhouse-bondi-beach-790,realestate.com.au
+"$1,076,476",1076476,"527 King St, Penshurst NSW 2206",Penshurst,3,3,4,Villa,https://www.realestate.com.au/property-villa-penshurst-791,realestate.com.au
+"From $1,765,076",1765076,"80 High St, Killara NSW 2421",Killara,0,1,0,Studio,https://www.realestate.com.au/property-studio-killara-792,realestate.com.au
+"From $2,176,200",2176200,"9 Spit Rd, Botany NSW 2614",Botany,3,1,1,Terrace,https://www.realestate.com.au/property-terrace-botany-793,realestate.com.au
+"$1,367,073",1367073,"488 Canterbury Rd, Summer Hill NSW 2507",Summer Hill,6,3,2,Semi-Detached,https://www.realestate.com.au/property-semi-detached-summer-hill-794,realestate.com.au
+"$459,168",459168,"491 Anzac Parade, Chatswood NSW 2097",Chatswood,2,2,0,House,https://www.realestate.com.au/property-house-chatswood-795,realestate.com.au
+"$2,196,478",2196478,"144 John St, Punchbowl NSW 2807",Punchbowl,0,1,0,Studio,https://www.realestate.com.au/property-studio-punchbowl-796,realestate.com.au
+"From $972,146",972146,"296 Market St, Ryde NSW 2522",Ryde,3,2,3,Villa,https://www.realestate.com.au/property-villa-ryde-797,realestate.com.au
+"$1,406,637",1406637,"932 Crown St, Allawah NSW 2097",Allawah,1,2,2,Apartment / Unit / Flat,https://www.realestate.com.au/property-apartment--unit--flat-allawah-798,realestate.com.au
+"$1,951,778",1951778,"332 Spit Rd, Lugarno NSW 2768",Lugarno,4,2,4,Duplex,https://www.realestate.com.au/property-duplex-lugarno-799,realestate.com.au
+"$2,369,471",2369471,"766 Frederick St, Pymble NSW 2478",Pymble,3,2,4,House,https://www.realestate.com.au/property-house-pymble-800,realestate.com.au

@@ -1,0 +1,16 @@
+price,price_numeric,address,suburb,bedrooms,bathrooms,parking,property_type,link,source
+"$1,135,474 ONO",1135474.0,"617 Pacific Highway, Liverpool NSW 2606",Liverpool,1,2,1,House,https://www.rent.com.au/property/liverpool/house-0,rent.com.au
+"$888,348",888348.0,"206 Market St, Liverpool NSW 2358",Liverpool,4,3,0,Townhouse,https://www.realestateview.com.au/property/liverpool/townhouse-1,realestateview.com.au
+"$980,642 ONO",980642.0,"12 Queen St, Liverpool NSW 2421",Liverpool,2,1,1,Townhouse,https://www.domain.com.au/property/liverpool/townhouse-2,domain.com.au
+"Guide $998,756",998756.0,"474 James St, Liverpool NSW 2516",Liverpool,3,2,0,Penthouse,https://www.rent.com.au/property/liverpool/penthouse-3,rent.com.au
+"From $683,299",683299.0,"465 Main St, Liverpool NSW 2895",Liverpool,2,1,1,Apartment / Unit / Flat,https://www.realestate.com.au/property/liverpool/apartment--unit--flat-5,realestate.com.au
+"$1,001,076 ONO",1001076.0,"668 Church St, Liverpool NSW 2911",Liverpool,0,1,0,Studio,https://www.domain.com.au/property/liverpool/studio-6,domain.com.au
+"Guide $749,341",749341.0,"192 Park Ave, Liverpool NSW 2474",Liverpool,2,1,0,Townhouse,https://www.rent.com.au/property/liverpool/townhouse-8,rent.com.au
+"$569,129 ONO",569129.0,"256 George St, Liverpool NSW 2157",Liverpool,0,1,1,Studio,https://www.domain.com.au/property/liverpool/studio-11,domain.com.au
+"Guide $1,112,108",1112108.0,"103 James St, Liverpool NSW 2386",Liverpool,2,1,2,Townhouse,https://www.realestate.com.au/property/liverpool/townhouse-13,realestate.com.au
+"$727,748 - $799,925",727748.0,"120 William St, Liverpool NSW 2420",Liverpool,2,3,1,Townhouse,https://www.rent.com.au/property/liverpool/townhouse-14,rent.com.au
+"Guide $1,120,868",1120868.0,"613 Victoria St, Liverpool NSW 2489",Liverpool,2,3,1,Townhouse,https://www.realestate.com.au/property/liverpool/townhouse-17,realestate.com.au
+"$836,536",836536.0,"253 Beach Rd, Liverpool NSW 2530",Liverpool,5,4,1,House,https://www.rent.com.au/property/liverpool/house-19,rent.com.au
+"$919,196 ONO",919196.0,"202 Queen St, Liverpool NSW 2918",Liverpool,4,2,4,Penthouse,https://www.realestateview.com.au/property/liverpool/penthouse-20,realestateview.com.au
+"$807,980 - $906,113",807980.0,"305 Church St, Liverpool NSW 2463",Liverpool,2,2,4,Villa,https://www.rent.com.au/property/liverpool/villa-22,rent.com.au
+"$754,555",754555.0,"674 Park Ave, Liverpool NSW 2868",Liverpool,1,1,3,House,https://www.realestateview.com.au/property/liverpool/house-24,realestateview.com.au

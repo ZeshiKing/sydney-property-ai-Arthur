@@ -1,0 +1,23 @@
+price,price_numeric,address,suburb,bedrooms,bathrooms,parking,property_type,link,source
+"$1,591,315 - $1,878,572",1591315.0,"919 George St, Padstow NSW 2569",Padstow,4,1,0,Townhouse,https://www.domain.com.au/property/padstow/townhouse-0,domain.com.au
+"Guide $1,662,350",1662350.0,"265 Main St, Padstow NSW 2550",Padstow,5,4,2,House,https://www.rent.com.au/property/padstow/house-1,rent.com.au
+"Guide $549,755",549755.0,"393 Queen St, Padstow NSW 2174",Padstow,1,2,0,Villa,https://www.rent.com.au/property/padstow/villa-2,rent.com.au
+"$1,000,436 - $1,206,615",1000436.0,"673 The Boulevarde, Padstow NSW 2679",Padstow,4,4,0,Villa,https://www.realestateview.com.au/property/padstow/villa-3,realestateview.com.au
+"Guide $687,462",687462.0,"865 Edward St, Padstow NSW 2271",Padstow,3,1,3,Townhouse,https://www.realestateview.com.au/property/padstow/townhouse-4,realestateview.com.au
+"Guide $2,490,792",2490792.0,"194 Church St, Padstow NSW 2094",Padstow,2,1,0,Apartment / Unit / Flat,https://www.realestate.com.au/property/padstow/apartment--unit--flat-5,realestate.com.au
+"Guide $825,054",825054.0,"718 Ocean Rd, Padstow NSW 2701",Padstow,2,3,1,House,https://www.domain.com.au/property/padstow/house-6,domain.com.au
+"$1,592,452",1592452.0,"342 Park Ave, Padstow NSW 2592",Padstow,0,1,3,Studio,https://www.rent.com.au/property/padstow/studio-7,rent.com.au
+"From $1,988,447",1988447.0,"828 Church St, Padstow NSW 2583",Padstow,5,3,1,Apartment / Unit / Flat,https://www.realestate.com.au/property/padstow/apartment--unit--flat-8,realestate.com.au
+"$2,350,365 - $2,606,447",2350365.0,"851 Park Ave, Padstow NSW 2353",Padstow,2,2,0,Townhouse,https://www.realestate.com.au/property/padstow/townhouse-12,realestate.com.au
+"Guide $858,571",858571.0,"24 Queen St, Padstow NSW 2028",Padstow,5,2,0,Penthouse,https://www.realestate.com.au/property/padstow/penthouse-13,realestate.com.au
+"From $1,533,282",1533282.0,"453 Railway St, Padstow NSW 2195",Padstow,3,2,3,House,https://www.realestate.com.au/property/padstow/house-14,realestate.com.au
+"Guide $2,139,783",2139783.0,"883 Main St, Padstow NSW 2808",Padstow,2,2,0,House,https://www.realestateview.com.au/property/padstow/house-15,realestateview.com.au
+"Guide $1,217,718",1217718.0,"64 George St, Padstow NSW 2409",Padstow,2,1,0,House,https://www.rent.com.au/property/padstow/house-16,rent.com.au
+"From $1,390,505",1390505.0,"952 Church St, Padstow NSW 2511",Padstow,3,4,3,Apartment / Unit / Flat,https://www.realestateview.com.au/property/padstow/apartment--unit--flat-17,realestateview.com.au
+"$1,196,093 ONO",1196093.0,"598 Albert St, Padstow NSW 2031",Padstow,0,1,1,Studio,https://www.rent.com.au/property/padstow/studio-18,rent.com.au
+"Guide $2,459,980",2459980.0,"838 Church St, Padstow NSW 2112",Padstow,0,1,1,Studio,https://www.realestateview.com.au/property/padstow/studio-19,realestateview.com.au
+"$1,703,890 - $1,858,292",1703890.0,"933 King St, Padstow NSW 2402",Padstow,0,1,1,Studio,https://www.rent.com.au/property/padstow/studio-20,rent.com.au
+"From $1,248,013",1248013.0,"955 Pacific Highway, Padstow NSW 2604",Padstow,0,1,0,Studio,https://www.realestate.com.au/property/padstow/studio-21,realestate.com.au
+"$1,206,203",1206203.0,"539 James St, Padstow NSW 2362",Padstow,4,3,1,Townhouse,https://www.rent.com.au/property/padstow/townhouse-22,rent.com.au
+"$1,936,086 ONO",1936086.0,"213 William St, Padstow NSW 2805",Padstow,0,1,3,Studio,https://www.domain.com.au/property/padstow/studio-23,domain.com.au
+"$1,768,414",1768414.0,"538 Pacific Highway, Padstow NSW 2603",Padstow,3,2,3,Townhouse,https://www.domain.com.au/property/padstow/townhouse-24,domain.com.au

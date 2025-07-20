@@ -1,0 +1,19 @@
+price,price_numeric,address,suburb,bedrooms,bathrooms,parking,property_type,link,source
+"From $1,567,135",1567135.0,"920 Albert St, Hinchinbrook NSW 2567",Hinchinbrook,4,2,4,Apartment / Unit / Flat,https://www.realestate.com.au/property/hinchinbrook/apartment--unit--flat-0,realestate.com.au
+"$1,368,004 ONO",1368004.0,"650 George St, Hinchinbrook NSW 2071",Hinchinbrook,0,1,3,Studio,https://www.rent.com.au/property/hinchinbrook/studio-1,rent.com.au
+"From $1,195,152",1195152.0,"189 James St, Hinchinbrook NSW 2217",Hinchinbrook,3,2,2,Apartment / Unit / Flat,https://www.domain.com.au/property/hinchinbrook/apartment--unit--flat-2,domain.com.au
+"$2,112,042 ONO",2112042.0,"372 Main St, Hinchinbrook NSW 2556",Hinchinbrook,3,4,2,House,https://www.realestateview.com.au/property/hinchinbrook/house-3,realestateview.com.au
+"$1,164,892 - $1,228,299",1164892.0,"571 High St, Hinchinbrook NSW 2292",Hinchinbrook,0,1,3,Studio,https://www.rent.com.au/property/hinchinbrook/studio-4,rent.com.au
+"$811,795",811795.0,"71 The Boulevarde, Hinchinbrook NSW 2178",Hinchinbrook,6,4,1,Townhouse,https://www.realestateview.com.au/property/hinchinbrook/townhouse-5,realestateview.com.au
+"$1,160,741",1160741.0,"33 Elizabeth St, Hinchinbrook NSW 2391",Hinchinbrook,2,3,0,Townhouse,https://www.realestate.com.au/property/hinchinbrook/townhouse-6,realestate.com.au
+"Guide $2,243,885",2243885.0,"564 Princes Highway, Hinchinbrook NSW 2088",Hinchinbrook,5,4,0,Villa,https://www.domain.com.au/property/hinchinbrook/villa-7,domain.com.au
+"From $1,335,076",1335076.0,"854 Railway St, Hinchinbrook NSW 2803",Hinchinbrook,3,1,3,Villa,https://www.rent.com.au/property/hinchinbrook/villa-10,rent.com.au
+"Guide $2,111,852",2111852.0,"391 Ocean Rd, Hinchinbrook NSW 2921",Hinchinbrook,4,1,0,House,https://www.domain.com.au/property/hinchinbrook/house-13,domain.com.au
+"$732,401",732401.0,"398 Pacific Highway, Hinchinbrook NSW 2801",Hinchinbrook,0,1,0,Studio,https://www.realestate.com.au/property/hinchinbrook/studio-15,realestate.com.au
+"$1,230,410 ONO",1230410.0,"21 Ocean Rd, Hinchinbrook NSW 2740",Hinchinbrook,0,1,0,Studio,https://www.rent.com.au/property/hinchinbrook/studio-18,rent.com.au
+"$1,266,588 - $1,327,462",1266588.0,"82 Victoria St, Hinchinbrook NSW 2885",Hinchinbrook,4,3,3,Penthouse,https://www.rent.com.au/property/hinchinbrook/penthouse-19,rent.com.au
+"$2,426,257",2426257.0,"636 High St, Hinchinbrook NSW 2950",Hinchinbrook,6,2,0,Penthouse,https://www.domain.com.au/property/hinchinbrook/penthouse-20,domain.com.au
+"From $1,589,643",1589643.0,"452 Military Rd, Hinchinbrook NSW 2706",Hinchinbrook,3,2,1,House,https://www.realestate.com.au/property/hinchinbrook/house-21,realestate.com.au
+"Guide $2,111,502",2111502.0,"136 George St, Hinchinbrook NSW 2146",Hinchinbrook,3,4,1,House,https://www.realestateview.com.au/property/hinchinbrook/house-22,realestateview.com.au
+"From $1,838,295",1838295.0,"733 Pacific Highway, Hinchinbrook NSW 2714",Hinchinbrook,0,1,0,Studio,https://www.rent.com.au/property/hinchinbrook/studio-23,rent.com.au
+"From $1,915,035",1915035.0,"17 Pacific Highway, Hinchinbrook NSW 2277",Hinchinbrook,0,1,1,Studio,https://www.domain.com.au/property/hinchinbrook/studio-24,domain.com.au

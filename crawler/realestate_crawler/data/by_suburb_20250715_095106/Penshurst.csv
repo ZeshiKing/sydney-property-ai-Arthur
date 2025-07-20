@@ -1,0 +1,24 @@
+price,price_numeric,address,suburb,bedrooms,bathrooms,parking,property_type,link,source
+"Guide $1,280,951",1280951.0,"883 Park Ave, Penshurst NSW 2245",Penshurst,0,1,2,Studio,https://www.domain.com.au/property/penshurst/studio-0,domain.com.au
+"Guide $1,401,133",1401133.0,"216 William St, Penshurst NSW 2894",Penshurst,0,1,2,Studio,https://www.realestate.com.au/property/penshurst/studio-1,realestate.com.au
+"Guide $2,252,880",2252880.0,"456 Edward St, Penshurst NSW 2852",Penshurst,0,1,0,Studio,https://www.rent.com.au/property/penshurst/studio-2,rent.com.au
+"From $792,592",792592.0,"210 William St, Penshurst NSW 2381",Penshurst,4,3,2,Penthouse,https://www.domain.com.au/property/penshurst/penthouse-3,domain.com.au
+"$827,069",827069.0,"893 Church St, Penshurst NSW 2940",Penshurst,5,2,0,Penthouse,https://www.domain.com.au/property/penshurst/penthouse-4,domain.com.au
+"$1,892,199",1892199.0,"371 George St, Penshurst NSW 2421",Penshurst,2,2,0,Villa,https://www.domain.com.au/property/penshurst/villa-5,domain.com.au
+"$649,288",649288.0,"718 Elizabeth St, Penshurst NSW 2383",Penshurst,1,1,2,Villa,https://www.realestateview.com.au/property/penshurst/villa-6,realestateview.com.au
+"$2,367,326 ONO",2367326.0,"248 Elizabeth St, Penshurst NSW 2241",Penshurst,3,4,2,Penthouse,https://www.rent.com.au/property/penshurst/penthouse-7,rent.com.au
+"$1,231,066 - $1,472,913",1231066.0,"406 George St, Penshurst NSW 2775",Penshurst,2,3,2,Apartment / Unit / Flat,https://www.realestate.com.au/property/penshurst/apartment--unit--flat-8,realestate.com.au
+"$2,442,394 - $2,563,959",2442394.0,"147 Railway St, Penshurst NSW 2643",Penshurst,2,3,1,House,https://www.realestateview.com.au/property/penshurst/house-9,realestateview.com.au
+"From $1,322,157",1322157.0,"475 Military Rd, Penshurst NSW 2819",Penshurst,2,1,2,Apartment / Unit / Flat,https://www.rent.com.au/property/penshurst/apartment--unit--flat-10,rent.com.au
+"$2,272,490",2272490.0,"998 Princes Highway, Penshurst NSW 2519",Penshurst,5,3,1,Apartment / Unit / Flat,https://www.rent.com.au/property/penshurst/apartment--unit--flat-11,rent.com.au
+"$1,848,094 - $1,937,881",1848094.0,"264 Victoria St, Penshurst NSW 2868",Penshurst,3,3,0,Apartment / Unit / Flat,https://www.domain.com.au/property/penshurst/apartment--unit--flat-13,domain.com.au
+"$2,091,461 ONO",2091461.0,"416 Railway St, Penshurst NSW 2684",Penshurst,0,1,3,Studio,https://www.realestate.com.au/property/penshurst/studio-14,realestate.com.au
+"$1,162,702 ONO",1162702.0,"19 Church St, Penshurst NSW 2828",Penshurst,1,2,0,House,https://www.rent.com.au/property/penshurst/house-15,rent.com.au
+"$2,200,436 ONO",2200436.0,"162 Princes Highway, Penshurst NSW 2028",Penshurst,3,1,3,Apartment / Unit / Flat,https://www.realestateview.com.au/property/penshurst/apartment--unit--flat-16,realestateview.com.au
+"$1,759,018 - $1,888,564",1759018.0,"103 Pacific Highway, Penshurst NSW 2107",Penshurst,4,1,0,House,https://www.domain.com.au/property/penshurst/house-17,domain.com.au
+"$1,769,381 ONO",1769381.0,"129 Railway St, Penshurst NSW 2531",Penshurst,3,1,3,Apartment / Unit / Flat,https://www.realestate.com.au/property/penshurst/apartment--unit--flat-18,realestate.com.au
+"Guide $1,297,294",1297294.0,"115 Main St, Penshurst NSW 2302",Penshurst,3,4,2,Townhouse,https://www.realestate.com.au/property/penshurst/townhouse-19,realestate.com.au
+"$930,977 ONO",930977.0,"270 Elizabeth St, Penshurst NSW 2692",Penshurst,3,3,0,Apartment / Unit / Flat,https://www.rent.com.au/property/penshurst/apartment--unit--flat-20,rent.com.au
+"Guide $1,746,741",1746741.0,"274 Military Rd, Penshurst NSW 2069",Penshurst,3,2,2,House,https://www.domain.com.au/property/penshurst/house-22,domain.com.au
+"$1,092,417 - $1,167,979",1092417.0,"639 Beach Rd, Penshurst NSW 2804",Penshurst,0,1,3,Studio,https://www.realestate.com.au/property/penshurst/studio-23,realestate.com.au
+"$2,231,548 - $2,352,884",2231548.0,"540 The Boulevarde, Penshurst NSW 2096",Penshurst,3,1,0,House,https://www.realestateview.com.au/property/penshurst/house-24,realestateview.com.au

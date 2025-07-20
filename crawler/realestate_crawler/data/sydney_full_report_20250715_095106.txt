@@ -1,0 +1,38 @@
+# 房产数据摘要报告
+生成时间: 2025-07-15T09:51:06.678086
+
+总房产数量: 8292
+
+## 价格统计
+- 平均价格: $1,548,336.23
+- 中位价格: $1,518,608.50
+- 最低价格: $514,334.00
+- 最高价格: $5,458,718.00
+- 标准差: $657,050.40
+
+## 按来源统计
+- rent.com.au: 2125
+- realestate.com.au: 2112
+- realestateview.com.au: 2034
+- domain.com.au: 2021
+
+## 热门区域 (前10)
+- Wolli Creek: 47
+- Bardwell Valley: 47
+- Turrella: 46
+- Naremburn: 46
+- McMahons Point: 44
+- Illawong: 42
+- Homebush: 42
+- Kingsgrove: 40
+- Mount Druitt: 38
+- Elanora Heights: 25
+
+## 按房产类型统计
+- Studio: 1444
+- Apartment / Unit / Flat: 1432
+- Penthouse: 1393
+- Villa: 1385
+- Townhouse: 1312
+- House: 1302
+- Terrace: 24

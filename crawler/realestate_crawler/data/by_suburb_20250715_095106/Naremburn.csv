@@ -1,0 +1,47 @@
+price,price_numeric,address,suburb,bedrooms,bathrooms,parking,property_type,link,source
+"$939,843",939843.0,"554 Queen St, Naremburn NSW 2422",Naremburn,2,3,0,House,https://www.domain.com.au/property/naremburn/house-0,domain.com.au
+"Guide $723,733",723733.0,"261 Pacific Highway, Naremburn NSW 2524",Naremburn,2,1,2,Villa,https://www.domain.com.au/property/naremburn/villa-1,domain.com.au
+"$1,766,319",1766319.0,"47 King St, Naremburn NSW 2873",Naremburn,2,1,1,Townhouse,https://www.rent.com.au/property/naremburn/townhouse-2,rent.com.au
+"Guide $871,129",871129.0,"666 Pacific Highway, Naremburn NSW 2106",Naremburn,2,1,3,Townhouse,https://www.realestate.com.au/property/naremburn/townhouse-3,realestate.com.au
+"$578,917 - $739,107",578917.0,"58 Market St, Naremburn NSW 2080",Naremburn,4,3,3,Apartment / Unit / Flat,https://www.realestate.com.au/property/naremburn/apartment--unit--flat-5,realestate.com.au
+"$752,116 - $1,020,253",752116.0,"582 High St, Naremburn NSW 2470",Naremburn,5,2,3,Apartment / Unit / Flat,https://www.realestate.com.au/property/naremburn/apartment--unit--flat-6,realestate.com.au
+"$1,846,574 - $1,987,754",1846574.0,"230 James St, Naremburn NSW 2557",Naremburn,3,2,1,House,https://www.realestate.com.au/property/naremburn/house-7,realestate.com.au
+"Guide $1,355,596",1355596.0,"795 George St, Naremburn NSW 2982",Naremburn,4,2,2,Penthouse,https://www.rent.com.au/property/naremburn/penthouse-8,rent.com.au
+"$1,887,378",1887378.0,"648 Main St, Naremburn NSW 2200",Naremburn,6,2,1,Penthouse,https://www.rent.com.au/property/naremburn/penthouse-9,rent.com.au
+"From $1,797,628",1797628.0,"803 Railway St, Naremburn NSW 2689",Naremburn,1,1,0,Apartment / Unit / Flat,https://www.realestateview.com.au/property/naremburn/apartment--unit--flat-10,realestateview.com.au
+"$1,970,477",1970477.0,"677 George St, Naremburn NSW 2725",Naremburn,3,4,2,Penthouse,https://www.rent.com.au/property/naremburn/penthouse-11,rent.com.au
+"Guide $2,476,168",2476168.0,"345 Albert St, Naremburn NSW 2743",Naremburn,0,1,3,Studio,https://www.domain.com.au/property/naremburn/studio-12,domain.com.au
+"$556,993 ONO",556993.0,"524 Edward St, Naremburn NSW 2616",Naremburn,3,3,3,House,https://www.realestate.com.au/property/naremburn/house-13,realestate.com.au
+"$1,045,489 - $1,284,785",1045489.0,"877 James St, Naremburn NSW 2350",Naremburn,5,2,3,Villa,https://www.domain.com.au/property/naremburn/villa-14,domain.com.au
+"From $2,315,003",2315003.0,"836 James St, Naremburn NSW 2133",Naremburn,2,1,1,Townhouse,https://www.realestate.com.au/property/naremburn/townhouse-15,realestate.com.au
+"From $1,253,504",1253504.0,"223 Pacific Highway, Naremburn NSW 2233",Naremburn,3,3,2,Penthouse,https://www.realestate.com.au/property/naremburn/penthouse-16,realestate.com.au
+"$2,072,152 - $2,274,593",2072152.0,"299 Edward St, Naremburn NSW 2090",Naremburn,5,1,0,House,https://www.realestate.com.au/property/naremburn/house-17,realestate.com.au
+"Guide $1,324,854",1324854.0,"654 Victoria St, Naremburn NSW 2680",Naremburn,4,2,3,Penthouse,https://www.rent.com.au/property/naremburn/penthouse-18,rent.com.au
+"$899,557 ONO",899557.0,"398 James St, Naremburn NSW 2824",Naremburn,2,2,1,House,https://www.realestate.com.au/property/naremburn/house-19,realestate.com.au
+"$1,607,030 - $1,895,794",1607030.0,"693 Beach Rd, Naremburn NSW 2202",Naremburn,1,1,3,House,https://www.realestate.com.au/property/naremburn/house-20,realestate.com.au
+"$2,227,353 ONO",2227353.0,"980 Main St, Naremburn NSW 2544",Naremburn,2,1,2,Townhouse,https://www.realestateview.com.au/property/naremburn/townhouse-21,realestateview.com.au
+"$1,209,223 - $1,487,805",1209223.0,"531 Park Ave, Naremburn NSW 2161",Naremburn,2,3,0,Apartment / Unit / Flat,https://www.rent.com.au/property/naremburn/apartment--unit--flat-23,rent.com.au
+"$2,469,603 ONO",2469603.0,"641 Princes Highway, Naremburn NSW 2494",Naremburn,2,3,3,Townhouse,https://www.realestate.com.au/property/naremburn/townhouse-24,realestate.com.au
+"From $1,089,406",1089406.0,"303 James St, Naremburn NSW 2598",Naremburn,3,2,1,House,https://www.rent.com.au/property/naremburn/house-1,rent.com.au
+"$862,133",862133.0,"471 William St, Naremburn NSW 2665",Naremburn,0,1,2,Studio,https://www.domain.com.au/property/naremburn/studio-2,domain.com.au
+"$1,647,806",1647806.0,"464 Main St, Naremburn NSW 2943",Naremburn,3,3,3,Villa,https://www.domain.com.au/property/naremburn/villa-3,domain.com.au
+"From $1,485,057",1485057.0,"381 Beach Rd, Naremburn NSW 2261",Naremburn,0,1,1,Studio,https://www.realestate.com.au/property/naremburn/studio-4,realestate.com.au
+"Guide $2,132,373",2132373.0,"694 Ocean Rd, Naremburn NSW 2654",Naremburn,3,1,1,Villa,https://www.realestateview.com.au/property/naremburn/villa-5,realestateview.com.au
+"From $1,843,657",1843657.0,"234 Edward St, Naremburn NSW 2865",Naremburn,3,2,2,Penthouse,https://www.rent.com.au/property/naremburn/penthouse-6,rent.com.au
+"$2,277,891 - $2,499,640",2277891.0,"943 Park Ave, Naremburn NSW 2654",Naremburn,3,2,0,Penthouse,https://www.realestateview.com.au/property/naremburn/penthouse-7,realestateview.com.au
+"$1,743,206 - $1,872,262",1743206.0,"304 High St, Naremburn NSW 2409",Naremburn,5,3,0,Penthouse,https://www.realestateview.com.au/property/naremburn/penthouse-8,realestateview.com.au
+"$1,502,588 - $1,649,667",1502588.0,"686 Park Ave, Naremburn NSW 2580",Naremburn,3,2,0,Townhouse,https://www.domain.com.au/property/naremburn/townhouse-9,domain.com.au
+"From $1,813,154",1813154.0,"120 Beach Rd, Naremburn NSW 2378",Naremburn,0,1,0,Studio,https://www.realestateview.com.au/property/naremburn/studio-10,realestateview.com.au
+"$1,424,632 - $1,563,968",1424632.0,"433 Church St, Naremburn NSW 2502",Naremburn,2,3,0,Apartment / Unit / Flat,https://www.realestate.com.au/property/naremburn/apartment--unit--flat-11,realestate.com.au
+"$2,480,484 - $2,718,533",2480484.0,"261 Church St, Naremburn NSW 2716",Naremburn,5,4,0,Villa,https://www.realestateview.com.au/property/naremburn/villa-12,realestateview.com.au
+"$1,453,486",1453486.0,"35 Military Rd, Naremburn NSW 2837",Naremburn,3,1,0,House,https://www.realestateview.com.au/property/naremburn/house-13,realestateview.com.au
+"$558,730 ONO",558730.0,"223 The Boulevarde, Naremburn NSW 2104",Naremburn,2,1,0,House,https://www.domain.com.au/property/naremburn/house-14,domain.com.au
+"Guide $1,549,839",1549839.0,"499 King St, Naremburn NSW 2079",Naremburn,3,4,2,Apartment / Unit / Flat,https://www.rent.com.au/property/naremburn/apartment--unit--flat-15,rent.com.au
+"$787,361 ONO",787361.0,"399 George St, Naremburn NSW 2376",Naremburn,3,4,1,Apartment / Unit / Flat,https://www.rent.com.au/property/naremburn/apartment--unit--flat-16,rent.com.au
+"$2,064,891 ONO",2064891.0,"11 Railway St, Naremburn NSW 2667",Naremburn,1,2,0,Villa,https://www.realestateview.com.au/property/naremburn/villa-17,realestateview.com.au
+"$988,777",988777.0,"440 Edward St, Naremburn NSW 2217",Naremburn,2,2,1,Villa,https://www.rent.com.au/property/naremburn/villa-18,rent.com.au
+"From $637,544",637544.0,"675 George St, Naremburn NSW 2440",Naremburn,0,1,1,Studio,https://www.realestateview.com.au/property/naremburn/studio-19,realestateview.com.au
+"$1,858,724 - $1,967,607",1858724.0,"363 The Boulevarde, Naremburn NSW 2925",Naremburn,5,4,2,Penthouse,https://www.domain.com.au/property/naremburn/penthouse-20,domain.com.au
+"$1,037,813 - $1,130,972",1037813.0,"373 The Boulevarde, Naremburn NSW 2917",Naremburn,3,4,1,Apartment / Unit / Flat,https://www.realestateview.com.au/property/naremburn/apartment--unit--flat-21,realestateview.com.au
+"$2,251,883 ONO",2251883.0,"324 Princes Highway, Naremburn NSW 2386",Naremburn,1,2,2,House,https://www.realestate.com.au/property/naremburn/house-22,realestate.com.au
+"$1,225,819 ONO",1225819.0,"9 Albert St, Naremburn NSW 2811",Naremburn,1,2,1,Apartment / Unit / Flat,https://www.realestate.com.au/property/naremburn/apartment--unit--flat-23,realestate.com.au

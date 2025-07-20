@@ -1,0 +1,19 @@
+price,price_numeric,address,suburb,bedrooms,bathrooms,parking,property_type,link,source
+"Guide $1,392,242",1392242.0,"984 King St, Denistone NSW 2743",Denistone,0,1,1,Studio,https://www.realestateview.com.au/property/denistone/studio-0,realestateview.com.au
+"$899,566 ONO",899566.0,"534 Victoria St, Denistone NSW 2778",Denistone,4,3,0,Apartment / Unit / Flat,https://www.rent.com.au/property/denistone/apartment--unit--flat-1,rent.com.au
+"$1,034,487 ONO",1034487.0,"456 Church St, Denistone NSW 2186",Denistone,4,3,0,Apartment / Unit / Flat,https://www.realestateview.com.au/property/denistone/apartment--unit--flat-2,realestateview.com.au
+"$1,277,107",1277107.0,"203 Victoria St, Denistone NSW 2100",Denistone,6,3,3,Penthouse,https://www.rent.com.au/property/denistone/penthouse-3,rent.com.au
+"$552,726 ONO",552726.0,"30 Queen St, Denistone NSW 2021",Denistone,2,1,3,Townhouse,https://www.domain.com.au/property/denistone/townhouse-4,domain.com.au
+"From $1,021,085",1021085.0,"366 Pacific Highway, Denistone NSW 2028",Denistone,0,1,1,Studio,https://www.rent.com.au/property/denistone/studio-6,rent.com.au
+"$546,096 - $725,419",546096.0,"645 Edward St, Denistone NSW 2376",Denistone,2,1,0,Villa,https://www.realestateview.com.au/property/denistone/villa-9,realestateview.com.au
+"$544,382 ONO",544382.0,"433 Railway St, Denistone NSW 2616",Denistone,2,1,1,Villa,https://www.rent.com.au/property/denistone/villa-10,rent.com.au
+"$606,853",606853.0,"978 Church St, Denistone NSW 2808",Denistone,3,1,2,Villa,https://www.domain.com.au/property/denistone/villa-11,domain.com.au
+"$2,016,452 - $2,242,086",2016452.0,"648 George St, Denistone NSW 2585",Denistone,1,1,1,Villa,https://www.domain.com.au/property/denistone/villa-12,domain.com.au
+"$656,925",656925.0,"442 George St, Denistone NSW 2042",Denistone,5,3,1,Penthouse,https://www.realestateview.com.au/property/denistone/penthouse-13,realestateview.com.au
+"$1,682,096 - $1,913,974",1682096.0,"578 High St, Denistone NSW 2488",Denistone,1,1,2,Villa,https://www.rent.com.au/property/denistone/villa-14,rent.com.au
+"$1,365,727 ONO",1365727.0,"383 Main St, Denistone NSW 2172",Denistone,3,4,2,Apartment / Unit / Flat,https://www.realestate.com.au/property/denistone/apartment--unit--flat-15,realestate.com.au
+"$1,144,007",1144007.0,"717 William St, Denistone NSW 2209",Denistone,2,1,0,Apartment / Unit / Flat,https://www.realestateview.com.au/property/denistone/apartment--unit--flat-16,realestateview.com.au
+"$854,793 - $1,015,460",854793.0,"570 Main St, Denistone NSW 2435",Denistone,2,3,2,Townhouse,https://www.domain.com.au/property/denistone/townhouse-18,domain.com.au
+"$1,715,294 - $1,838,875",1715294.0,"431 James St, Denistone NSW 2996",Denistone,4,1,0,Apartment / Unit / Flat,https://www.realestate.com.au/property/denistone/apartment--unit--flat-19,realestate.com.au
+"From $2,176,815",2176815.0,"844 King St, Denistone NSW 2440",Denistone,1,2,2,Villa,https://www.realestateview.com.au/property/denistone/villa-21,realestateview.com.au
+"$2,295,968 - $2,591,404",2295968.0,"146 Beach Rd, Denistone NSW 2750",Denistone,6,3,1,Penthouse,https://www.realestate.com.au/property/denistone/penthouse-22,realestate.com.au

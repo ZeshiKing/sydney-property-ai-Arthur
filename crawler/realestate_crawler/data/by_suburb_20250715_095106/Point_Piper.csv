@@ -1,0 +1,16 @@
+price,price_numeric,address,suburb,bedrooms,bathrooms,parking,property_type,link,source
+"Guide $3,179,011",3179011.0,"225 Main St, Point Piper NSW 2125",Point Piper,0,1,0,Studio,https://www.domain.com.au/property/point-piper/studio-2,domain.com.au
+"$3,088,723 - $3,274,369",3088723.0,"120 The Boulevarde, Point Piper NSW 2722",Point Piper,2,3,3,Terrace,https://www.realestate.com.au/property/point-piper/terrace-3,realestate.com.au
+"$3,039,822 - $3,298,612",3039822.0,"221 Railway St, Point Piper NSW 2553",Point Piper,0,1,4,Studio,https://www.realestate.com.au/property/point-piper/studio-5,realestate.com.au
+"$2,936,362",2936362.0,"19 Church St, Point Piper NSW 2709",Point Piper,2,3,0,Apartment / Unit / Flat,https://www.realestate.com.au/property/point-piper/apartment--unit--flat-6,realestate.com.au
+"$1,991,523",1991523.0,"184 The Boulevarde, Point Piper NSW 2329",Point Piper,2,1,1,Apartment / Unit / Flat,https://www.domain.com.au/property/point-piper/apartment--unit--flat-8,domain.com.au
+"$4,556,477",4556477.0,"371 Market St, Point Piper NSW 2852",Point Piper,0,1,2,Studio,https://www.rent.com.au/property/point-piper/studio-9,rent.com.au
+"$4,539,955 ONO",4539955.0,"381 The Boulevarde, Point Piper NSW 2873",Point Piper,3,4,0,Terrace,https://www.realestate.com.au/property/point-piper/terrace-11,realestate.com.au
+"$5,082,843",5082843.0,"241 Albert St, Point Piper NSW 2822",Point Piper,2,3,2,House,https://www.realestate.com.au/property/point-piper/house-13,realestate.com.au
+"Guide $4,195,274",4195274.0,"333 Edward St, Point Piper NSW 2033",Point Piper,3,4,3,Apartment / Unit / Flat,https://www.domain.com.au/property/point-piper/apartment--unit--flat-15,domain.com.au
+"Guide $2,653,193",2653193.0,"877 Park Ave, Point Piper NSW 2082",Point Piper,3,3,1,Penthouse,https://www.domain.com.au/property/point-piper/penthouse-16,domain.com.au
+"Guide $5,402,406",5402406.0,"921 George St, Point Piper NSW 2935",Point Piper,3,2,2,Apartment / Unit / Flat,https://www.domain.com.au/property/point-piper/apartment--unit--flat-17,domain.com.au
+"$3,695,673 - $3,830,951",3695673.0,"867 Elizabeth St, Point Piper NSW 2325",Point Piper,4,4,1,House,https://www.rent.com.au/property/point-piper/house-19,rent.com.au
+"From $2,014,553",2014553.0,"558 Elizabeth St, Point Piper NSW 2690",Point Piper,5,4,3,Penthouse,https://www.domain.com.au/property/point-piper/penthouse-20,domain.com.au
+"Guide $4,314,355",4314355.0,"153 Church St, Point Piper NSW 2790",Point Piper,3,3,1,Penthouse,https://www.realestateview.com.au/property/point-piper/penthouse-22,realestateview.com.au
+"$2,064,822",2064822.0,"181 James St, Point Piper NSW 2060",Point Piper,3,3,1,Penthouse,https://www.domain.com.au/property/point-piper/penthouse-23,domain.com.au

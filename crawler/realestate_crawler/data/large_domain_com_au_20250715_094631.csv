@@ -1,0 +1,601 @@
+price,price_numeric,address,suburb,bedrooms,bathrooms,parking,property_type,link,source
+"$2,182,476",2182476,"206 Crown St, McMahons Point NSW 2351",McMahons Point,3,1,2,Townhouse,https://www.domain.com.au/property-townhouse-mcmahons-point-801,domain.com.au
+"$940,960",940960,"520 High St, Tennyson Point NSW 2682",Tennyson Point,4,3,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-tennyson-point-802,domain.com.au
+Under Contract,,"837 Anzac Parade, Pymble NSW 2229",Pymble,2,3,3,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-pymble-803,domain.com.au
+POA,,"533 Parramatta Rd, Lane Cove NSW 2502",Lane Cove,3,3,3,Semi-Detached,https://www.domain.com.au/property-semi-detached-lane-cove-804,domain.com.au
+POA,,"580 Edward St, Canterbury NSW 2239",Canterbury,6,1,4,House,https://www.domain.com.au/property-house-canterbury-805,domain.com.au
+Auction,,"545 Mona Vale Rd, Manly NSW 2553",Manly,2,2,2,Villa,https://www.domain.com.au/property-villa-manly-806,domain.com.au
+"From $897,994",897994,"209 Princes Highway, Cammeray NSW 2461",Cammeray,6,4,0,Villa,https://www.domain.com.au/property-villa-cammeray-807,domain.com.au
+"$1,656,552",1656552,"896 The Boulevarde, Kyeemagh NSW 2905",Kyeemagh,3,2,0,House,https://www.domain.com.au/property-house-kyeemagh-808,domain.com.au
+"$1,190,159",1190159,"415 The Boulevarde, Vaucluse NSW 2369",Vaucluse,1,2,1,Duplex,https://www.domain.com.au/property-duplex-vaucluse-809,domain.com.au
+Auction,,"968 Barrenjoey Rd, Eastwood NSW 2446",Eastwood,1,1,2,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-eastwood-810,domain.com.au
+"From $1,073,181",1073181,"611 Pacific Highway, Lavender Bay NSW 2106",Lavender Bay,4,1,2,Duplex,https://www.domain.com.au/property-duplex-lavender-bay-811,domain.com.au
+"From $2,302,374",2302374,"189 Railway St, Forest Road NSW 2169",Forest Road,5,1,1,House,https://www.domain.com.au/property-house-forest-road-812,domain.com.au
+"$2,152,113",2152113,"989 Queen St, Watsons Bay NSW 2562",Watsons Bay,2,1,0,House,https://www.domain.com.au/property-house-watsons-bay-813,domain.com.au
+"$460,000",460000,"268 Anzac Parade, Liverpool NSW 2953",Liverpool,5,1,1,House,https://www.domain.com.au/property-house-liverpool-814,domain.com.au
+POA,,"238 Barrenjoey Rd, Beverly Hills NSW 2407",Beverly Hills,6,4,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-beverly-hills-815,domain.com.au
+"$829,288",829288,"412 Charles St, Lugarno NSW 2599",Lugarno,4,4,2,Villa,https://www.domain.com.au/property-villa-lugarno-816,domain.com.au
+"$1,846,297",1846297,"585 George St, West Ryde NSW 2396",West Ryde,3,3,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-west-ryde-817,domain.com.au
+"$624,006",624006,"881 Frederick St, Ashbury NSW 2419",Ashbury,2,1,1,House,https://www.domain.com.au/property-house-ashbury-818,domain.com.au
+"$1,585,702",1585702,"765 King St, Kyeemagh NSW 2047",Kyeemagh,5,4,2,Terrace,https://www.domain.com.au/property-terrace-kyeemagh-819,domain.com.au
+Under Contract,,"48 Parramatta Rd, Dover Heights NSW 2393",Dover Heights,4,1,0,Villa,https://www.domain.com.au/property-villa-dover-heights-820,domain.com.au
+POA,,"150 Forest Rd, Strathfield NSW 2582",Strathfield,3,2,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-strathfield-821,domain.com.au
+"$799,746",799746,"649 Park Ave, Hunters Hill NSW 2432",Hunters Hill,6,4,3,Terrace,https://www.domain.com.au/property-terrace-hunters-hill-822,domain.com.au
+"$558,919",558919,"890 Queen St, Ashbury NSW 2136",Ashbury,5,4,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-ashbury-823,domain.com.au
+"$2,385,819",2385819,"328 High St, Homebush NSW 2635",Homebush,0,1,2,Studio,https://www.domain.com.au/property-studio-homebush-824,domain.com.au
+"$1,914,207",1914207,"174 Pittwater Rd, Allawah NSW 2120",Allawah,1,1,0,Duplex,https://www.domain.com.au/property-duplex-allawah-825,domain.com.au
+"$2,230,491",2230491,"888 Market St, West Ryde NSW 2563",West Ryde,5,1,1,House,https://www.domain.com.au/property-house-west-ryde-826,domain.com.au
+"$1,076,031",1076031,"904 Mona Vale Rd, Beverly Hills NSW 2062",Beverly Hills,4,4,0,Semi-Detached,https://www.domain.com.au/property-semi-detached-beverly-hills-827,domain.com.au
+"$716,537",716537,"674 James St, Bronte NSW 2783",Bronte,1,2,3,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-bronte-828,domain.com.au
+"$1,623,303",1623303,"885 Spit Rd, Peakhurst NSW 2459",Peakhurst,5,3,1,House,https://www.domain.com.au/property-house-peakhurst-829,domain.com.au
+"$1,038,774",1038774,"521 William St, Rockdale NSW 2081",Rockdale,5,1,1,Townhouse,https://www.domain.com.au/property-townhouse-rockdale-830,domain.com.au
+"$2,204,735",2204735,"542 Military Rd, Artarmon NSW 2548",Artarmon,4,2,2,Townhouse,https://www.domain.com.au/property-townhouse-artarmon-831,domain.com.au
+"$940,749",940749,"685 Park Ave, Monterey NSW 2063",Monterey,5,4,1,House,https://www.domain.com.au/property-house-monterey-832,domain.com.au
+"$554,296",554296,"279 Forest Rd, Wentworthville NSW 2740",Wentworthville,2,1,3,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-wentworthville-833,domain.com.au
+"$654,210",654210,"389 Condamine St, Concord NSW 2304",Concord,3,2,4,Terrace,https://www.domain.com.au/property-terrace-concord-834,domain.com.au
+"$638,768",638768,"273 Barrenjoey Rd, St Leonards NSW 2365",St Leonards,2,1,4,Villa,https://www.domain.com.au/property-villa-st-leonards-835,domain.com.au
+"$1,125,163",1125163,"961 King St, Wiley Park NSW 2430",Wiley Park,0,1,0,Studio,https://www.domain.com.au/property-studio-wiley-park-836,domain.com.au
+"$1,023,811",1023811,"727 Ocean Rd, Kirribilli NSW 2977",Kirribilli,3,3,0,Duplex,https://www.domain.com.au/property-duplex-kirribilli-837,domain.com.au
+"$1,816,793",1816793,"532 John St, Little Bay NSW 2485",Little Bay,2,3,3,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-little-bay-838,domain.com.au
+"$2,038,801",2038801,"952 King St, Epping NSW 2124",Epping,5,2,2,House,https://www.domain.com.au/property-house-epping-839,domain.com.au
+"$1,306,442",1306442,"44 Condamine St, Alexandria NSW 2860",Alexandria,3,1,1,Townhouse,https://www.domain.com.au/property-townhouse-alexandria-840,domain.com.au
+Under Contract,,"532 Thomas St, Mount Druitt NSW 2264",Mount Druitt,1,1,1,Duplex,https://www.domain.com.au/property-duplex-mount-druitt-841,domain.com.au
+"$654,817",654817,"46 William St, Hornsby NSW 2281",Hornsby,0,1,3,Studio,https://www.domain.com.au/property-studio-hornsby-842,domain.com.au
+"From $1,233,064",1233064,"199 Parramatta Rd, Wolli Creek NSW 2191",Wolli Creek,2,1,1,Duplex,https://www.domain.com.au/property-duplex-wolli-creek-843,domain.com.au
+"$536,540",536540,"614 School St, Surry Hills NSW 2983",Surry Hills,4,1,2,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-surry-hills-844,domain.com.au
+"From $2,262,569",2262569,"786 John St, Parramatta NSW 2398",Parramatta,2,1,3,Townhouse,https://www.domain.com.au/property-townhouse-parramatta-845,domain.com.au
+"$1,154,474",1154474,"898 Parramatta Rd, Dee Why NSW 2990",Dee Why,3,1,1,Villa,https://www.domain.com.au/property-villa-dee-why-846,domain.com.au
+POA,,"871 Henry St, Bondi NSW 2980",Bondi,2,2,2,Villa,https://www.domain.com.au/property-villa-bondi-847,domain.com.au
+"$857,042",857042,"298 Ocean Rd, Carlton NSW 2158",Carlton,2,2,1,Villa,https://www.domain.com.au/property-villa-carlton-848,domain.com.au
+"$1,033,976",1033976,"207 Park Ave, Milsons Point NSW 2084",Milsons Point,4,1,1,Townhouse,https://www.domain.com.au/property-townhouse-milsons-point-849,domain.com.au
+"$732,209",732209,"977 James St, Gordon NSW 2269",Gordon,4,1,3,Terrace,https://www.domain.com.au/property-terrace-gordon-850,domain.com.au
+"$515,821",515821,"1 Princes Highway, Auburn NSW 2093",Auburn,6,3,3,House,https://www.domain.com.au/property-house-auburn-851,domain.com.au
+POA,,"836 King Georges Rd, Cronulla NSW 2092",Cronulla,5,2,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-cronulla-852,domain.com.au
+"$1,060,078",1060078,"689 Main St, Cammeray NSW 2353",Cammeray,5,2,3,Terrace,https://www.domain.com.au/property-terrace-cammeray-853,domain.com.au
+"$420,517",420517,"887 Thomas St, Northbridge NSW 2637",Northbridge,3,3,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-northbridge-854,domain.com.au
+"From $1,208,575",1208575,"520 Spit Rd, Seven Hills NSW 2274",Seven Hills,0,1,1,Studio,https://www.domain.com.au/property-studio-seven-hills-855,domain.com.au
+POA,,"936 George St, Mount Druitt NSW 2327",Mount Druitt,2,1,0,Townhouse,https://www.domain.com.au/property-townhouse-mount-druitt-856,domain.com.au
+"$1,621,235",1621235,"603 Liverpool Rd, Manly NSW 2173",Manly,2,2,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-manly-857,domain.com.au
+"$1,516,787",1516787,"87 Park Ave, Cronulla NSW 2409",Cronulla,1,2,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-cronulla-858,domain.com.au
+"From $1,655,668",1655668,"659 John St, Homebush NSW 2127",Homebush,4,4,2,House,https://www.domain.com.au/property-house-homebush-859,domain.com.au
+"$2,399,092",2399092,"974 Queen St, Double Bay NSW 2963",Double Bay,3,3,2,House,https://www.domain.com.au/property-house-double-bay-860,domain.com.au
+"$2,157,539",2157539,"447 Condamine St, Point Piper NSW 2250",Point Piper,6,2,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-point-piper-861,domain.com.au
+"From $1,554,032",1554032,"456 Beach Rd, Little Bay NSW 2550",Little Bay,2,2,3,Townhouse,https://www.domain.com.au/property-townhouse-little-bay-862,domain.com.au
+Contact Agent,,"20 School St, Mortdale NSW 2061",Mortdale,6,3,3,House,https://www.domain.com.au/property-house-mortdale-863,domain.com.au
+"$2,201,737",2201737,"326 William St, Peakhurst NSW 2085",Peakhurst,4,1,1,Duplex,https://www.domain.com.au/property-duplex-peakhurst-864,domain.com.au
+Auction,,"397 Condamine St, Ramsgate NSW 2178",Ramsgate,0,1,1,Studio,https://www.domain.com.au/property-studio-ramsgate-865,domain.com.au
+"$539,610",539610,"418 Forest Rd, Tempe NSW 2420",Tempe,2,1,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-tempe-866,domain.com.au
+"$2,300,917",2300917,"140 Church St, Toongabbie NSW 2509",Toongabbie,3,3,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-toongabbie-867,domain.com.au
+"$1,957,894",1957894,"539 Elizabeth St, Mascot NSW 2766",Mascot,5,2,0,Villa,https://www.domain.com.au/property-villa-mascot-868,domain.com.au
+Contact Agent,,"135 Condamine St, Bankstown NSW 2867",Bankstown,5,2,1,House,https://www.domain.com.au/property-house-bankstown-869,domain.com.au
+"$836,356",836356,"233 Church St, Macquarie Park NSW 2330",Macquarie Park,1,2,0,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-macquarie-park-870,domain.com.au
+"From $1,054,999",1054999,"456 Canterbury Rd, Newtown NSW 2289",Newtown,2,1,2,Villa,https://www.domain.com.au/property-villa-newtown-871,domain.com.au
+"$2,225,010",2225010,"444 Victoria St, Artarmon NSW 2430",Artarmon,0,1,3,Studio,https://www.domain.com.au/property-studio-artarmon-872,domain.com.au
+"$833,537",833537,"229 Elizabeth St, Dee Why NSW 2643",Dee Why,4,4,2,Villa,https://www.domain.com.au/property-villa-dee-why-873,domain.com.au
+"$1,804,904",1804904,"185 The Boulevarde, Castle Cove NSW 2275",Castle Cove,2,1,2,Terrace,https://www.domain.com.au/property-terrace-castle-cove-874,domain.com.au
+"$1,689,647",1689647,"387 Edward St, Cronulla NSW 2586",Cronulla,1,1,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-cronulla-875,domain.com.au
+"$865,999",865999,"894 Main St, Hurstville Grove NSW 2234",Hurstville Grove,5,3,2,Terrace,https://www.domain.com.au/property-terrace-hurstville-grove-876,domain.com.au
+"$1,108,792",1108792,"900 Market St, Bankstown NSW 2453",Bankstown,4,4,3,Terrace,https://www.domain.com.au/property-terrace-bankstown-877,domain.com.au
+"$967,374",967374,"869 Church St, Point Piper NSW 2369",Point Piper,1,1,0,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-point-piper-878,domain.com.au
+"From $944,968",944968,"729 Park Ave, Penshurst NSW 2529",Penshurst,2,1,2,Duplex,https://www.domain.com.au/property-duplex-penshurst-879,domain.com.au
+Under Contract,,"832 Edward St, Oatley NSW 2592",Oatley,2,1,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-oatley-880,domain.com.au
+"$2,119,229",2119229,"243 High St, Beverley Park NSW 2295",Beverley Park,5,1,1,Villa,https://www.domain.com.au/property-villa-beverley-park-881,domain.com.au
+"$1,113,300",1113300,"417 Canterbury Rd, St Peters NSW 2827",St Peters,5,1,1,Villa,https://www.domain.com.au/property-villa-st-peters-882,domain.com.au
+POA,,"49 Thomas St, Sans Souci NSW 2853",Sans Souci,3,2,1,Terrace,https://www.domain.com.au/property-terrace-sans-souci-883,domain.com.au
+"$1,636,719",1636719,"820 Railway St, Castle Cove NSW 2665",Castle Cove,5,4,3,Villa,https://www.domain.com.au/property-villa-castle-cove-884,domain.com.au
+"From $626,162",626162,"743 Railway St, Hornsby NSW 2151",Hornsby,5,4,0,Semi-Detached,https://www.domain.com.au/property-semi-detached-hornsby-885,domain.com.au
+"$2,080,807",2080807,"154 Thomas St, Monterey NSW 2949",Monterey,4,2,4,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-monterey-886,domain.com.au
+POA,,"52 School St, Watsons Bay NSW 2191",Watsons Bay,4,3,1,Terrace,https://www.domain.com.au/property-terrace-watsons-bay-887,domain.com.au
+"$1,901,307",1901307,"236 School St, Clovelly NSW 2930",Clovelly,3,3,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-clovelly-888,domain.com.au
+"$1,455,263",1455263,"601 High St, Ashbury NSW 2413",Ashbury,3,2,1,House,https://www.domain.com.au/property-house-ashbury-889,domain.com.au
+Auction,,"210 Pittwater Rd, Point Piper NSW 2194",Point Piper,5,3,0,House,https://www.domain.com.au/property-house-point-piper-890,domain.com.au
+"$941,069",941069,"102 King St, Sydney NSW 2676",Sydney,2,3,1,Duplex,https://www.domain.com.au/property-duplex-sydney-891,domain.com.au
+"$2,038,796",2038796,"248 Anzac Parade, Lugarno NSW 2397",Lugarno,4,3,2,Terrace,https://www.domain.com.au/property-terrace-lugarno-892,domain.com.au
+"$1,299,745",1299745,"175 Warringah Rd, Lalor Park NSW 2355",Lalor Park,4,1,1,Townhouse,https://www.domain.com.au/property-townhouse-lalor-park-893,domain.com.au
+"$755,027",755027,"435 Charles St, Mascot NSW 2748",Mascot,3,3,0,Townhouse,https://www.domain.com.au/property-townhouse-mascot-894,domain.com.au
+"$869,461",869461,"112 High St, Maroubra NSW 2286",Maroubra,2,3,0,Duplex,https://www.domain.com.au/property-duplex-maroubra-895,domain.com.au
+"$1,177,459",1177459,"441 Edward St, St Peters NSW 2644",St Peters,4,3,0,Townhouse,https://www.domain.com.au/property-townhouse-st-peters-896,domain.com.au
+"From $2,383,270",2383270,"219 King St, Gordon NSW 2676",Gordon,4,1,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-gordon-897,domain.com.au
+"$2,236,771",2236771,"148 Condamine St, Cammeray NSW 2317",Cammeray,0,1,1,Studio,https://www.domain.com.au/property-studio-cammeray-898,domain.com.au
+"$1,556,898",1556898,"268 Anzac Parade, Killara NSW 2956",Killara,2,1,1,Townhouse,https://www.domain.com.au/property-townhouse-killara-899,domain.com.au
+"$1,571,339",1571339,"116 King Georges Rd, Epping NSW 2404",Epping,6,4,4,Terrace,https://www.domain.com.au/property-terrace-epping-900,domain.com.au
+"$767,519",767519,"253 Elizabeth St, Beverly Hills NSW 2317",Beverly Hills,3,3,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-beverly-hills-901,domain.com.au
+"$1,827,933",1827933,"357 Ocean Rd, Alexandria NSW 2487",Alexandria,3,2,3,Duplex,https://www.domain.com.au/property-duplex-alexandria-902,domain.com.au
+"From $980,295",980295,"116 Henry St, Auburn NSW 2044",Auburn,3,3,1,Villa,https://www.domain.com.au/property-villa-auburn-903,domain.com.au
+POA,,"652 Albert St, Westmead NSW 2977",Westmead,5,4,1,Terrace,https://www.domain.com.au/property-terrace-westmead-904,domain.com.au
+"$616,696",616696,"414 Princes Highway, Roselands NSW 2728",Roselands,6,1,1,Townhouse,https://www.domain.com.au/property-townhouse-roselands-905,domain.com.au
+"$1,554,573",1554573,"248 Queen St, Granville NSW 2501",Granville,1,1,0,Duplex,https://www.domain.com.au/property-duplex-granville-906,domain.com.au
+"$912,014",912014,"517 The Boulevarde, Rooty Hill NSW 2228",Rooty Hill,3,1,4,House,https://www.domain.com.au/property-house-rooty-hill-907,domain.com.au
+"$2,477,235",2477235,"863 Parramatta Rd, Seven Hills NSW 2447",Seven Hills,3,3,3,Townhouse,https://www.domain.com.au/property-townhouse-seven-hills-908,domain.com.au
+"$606,416",606416,"659 Beach Rd, Auburn NSW 2280",Auburn,2,1,2,Townhouse,https://www.domain.com.au/property-townhouse-auburn-909,domain.com.au
+"$458,068",458068,"333 Military Rd, Sans Souci NSW 2287",Sans Souci,4,1,2,Villa,https://www.domain.com.au/property-villa-sans-souci-910,domain.com.au
+"$2,417,858",2417858,"540 Warringah Rd, Penshurst NSW 2811",Penshurst,4,1,0,Semi-Detached,https://www.domain.com.au/property-semi-detached-penshurst-911,domain.com.au
+Auction,,"747 Falcon St, Roseville NSW 2759",Roseville,3,2,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-roseville-912,domain.com.au
+"$1,116,377",1116377,"210 William St, Monterey NSW 2281",Monterey,4,4,1,Townhouse,https://www.domain.com.au/property-townhouse-monterey-913,domain.com.au
+"$1,045,866",1045866,"941 High St, West Ryde NSW 2257",West Ryde,6,4,1,Townhouse,https://www.domain.com.au/property-townhouse-west-ryde-914,domain.com.au
+Under Contract,,"799 Victoria St, Kingsgrove NSW 2953",Kingsgrove,4,4,4,Villa,https://www.domain.com.au/property-villa-kingsgrove-915,domain.com.au
+"$2,219,753",2219753,"895 Thomas St, Gladesville NSW 2658",Gladesville,2,1,3,Semi-Detached,https://www.domain.com.au/property-semi-detached-gladesville-916,domain.com.au
+"$666,980",666980,"137 Park Ave, La Perouse NSW 2637",La Perouse,0,1,1,Studio,https://www.domain.com.au/property-studio-la-perouse-917,domain.com.au
+"$2,028,703",2028703,"206 Forest Rd, Doonside NSW 2494",Doonside,3,1,2,Villa,https://www.domain.com.au/property-villa-doonside-918,domain.com.au
+"$1,026,899",1026899,"85 William St, Strathfield NSW 2532",Strathfield,6,2,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-strathfield-919,domain.com.au
+Auction,,"728 Henry St, Campsie NSW 2658",Campsie,3,3,1,Townhouse,https://www.domain.com.au/property-townhouse-campsie-920,domain.com.au
+"$2,111,444",2111444,"451 Liverpool Rd, Peakhurst NSW 2664",Peakhurst,4,3,3,Duplex,https://www.domain.com.au/property-duplex-peakhurst-921,domain.com.au
+"$1,142,171",1142171,"303 King Georges Rd, Dee Why NSW 2006",Dee Why,0,1,2,Studio,https://www.domain.com.au/property-studio-dee-why-922,domain.com.au
+"$1,789,077",1789077,"841 Anzac Parade, Cronulla NSW 2977",Cronulla,2,1,2,Duplex,https://www.domain.com.au/property-duplex-cronulla-923,domain.com.au
+"$1,087,426",1087426,"862 School St, Belmore NSW 2274",Belmore,1,2,2,Duplex,https://www.domain.com.au/property-duplex-belmore-924,domain.com.au
+Under Contract,,"4 George St, Mount Druitt NSW 2421",Mount Druitt,3,2,4,Duplex,https://www.domain.com.au/property-duplex-mount-druitt-925,domain.com.au
+"$2,120,404",2120404,"492 King Georges Rd, Roselands NSW 2312",Roselands,2,2,3,Terrace,https://www.domain.com.au/property-terrace-roselands-926,domain.com.au
+"$1,413,527",1413527,"77 Military Rd, Gordon NSW 2027",Gordon,1,2,2,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-gordon-927,domain.com.au
+"$1,342,841",1342841,"225 High St, Newtown NSW 2263",Newtown,2,1,2,Villa,https://www.domain.com.au/property-villa-newtown-928,domain.com.au
+"From $509,361",509361,"512 Liverpool Rd, Maroubra NSW 2123",Maroubra,4,3,0,Terrace,https://www.domain.com.au/property-terrace-maroubra-929,domain.com.au
+"$1,810,176",1810176,"856 Railway St, Westmead NSW 2547",Westmead,4,3,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-westmead-930,domain.com.au
+"$1,684,431",1684431,"138 Canterbury Rd, Watsons Bay NSW 2120",Watsons Bay,3,1,3,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-watsons-bay-931,domain.com.au
+"$1,027,624",1027624,"139 Liverpool Rd, Wollstonecraft NSW 2089",Wollstonecraft,3,1,2,House,https://www.domain.com.au/property-house-wollstonecraft-932,domain.com.au
+"$2,077,038",2077038,"568 Frederick St, Beverly Hills NSW 2527",Beverly Hills,3,2,1,Townhouse,https://www.domain.com.au/property-townhouse-beverly-hills-933,domain.com.au
+"$2,085,891",2085891,"423 Condamine St, Roseville NSW 2320",Roseville,3,2,1,Townhouse,https://www.domain.com.au/property-townhouse-roseville-934,domain.com.au
+"From $2,125,638",2125638,"45 Liverpool Rd, Dee Why NSW 2345",Dee Why,3,1,0,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-dee-why-935,domain.com.au
+"$771,859",771859,"87 Forest Rd, Burwood NSW 2702",Burwood,0,1,3,Studio,https://www.domain.com.au/property-studio-burwood-936,domain.com.au
+"$665,764",665764,"173 Canterbury Rd, Auburn NSW 2871",Auburn,1,1,3,Duplex,https://www.domain.com.au/property-duplex-auburn-937,domain.com.au
+"$1,025,674",1025674,"293 Ocean Rd, Little Bay NSW 2996",Little Bay,4,4,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-little-bay-938,domain.com.au
+"$883,947",883947,"810 Edward St, Wollstonecraft NSW 2808",Wollstonecraft,3,1,3,Townhouse,https://www.domain.com.au/property-townhouse-wollstonecraft-939,domain.com.au
+"$1,749,459",1749459,"871 Oxford St, Lakemba NSW 2647",Lakemba,2,2,1,Townhouse,https://www.domain.com.au/property-townhouse-lakemba-940,domain.com.au
+"From $846,147",846147,"969 Princes Highway, Bellevue Hill NSW 2520",Bellevue Hill,3,3,1,Townhouse,https://www.domain.com.au/property-townhouse-bellevue-hill-941,domain.com.au
+"$1,050,306",1050306,"464 James St, Rooty Hill NSW 2364",Rooty Hill,4,4,0,Terrace,https://www.domain.com.au/property-terrace-rooty-hill-942,domain.com.au
+"$1,519,305",1519305,"237 George St, Oatley NSW 2541",Oatley,4,3,2,Duplex,https://www.domain.com.au/property-duplex-oatley-943,domain.com.au
+"$2,344,088",2344088,"147 Princes Highway, Toongabbie NSW 2590",Toongabbie,0,1,3,Studio,https://www.domain.com.au/property-studio-toongabbie-944,domain.com.au
+Auction,,"758 James St, Forest Road NSW 2674",Forest Road,2,2,0,Townhouse,https://www.domain.com.au/property-townhouse-forest-road-945,domain.com.au
+"$2,336,314",2336314,"859 Main St, Cronulla NSW 2346",Cronulla,3,2,1,Villa,https://www.domain.com.au/property-villa-cronulla-946,domain.com.au
+"From $1,412,509",1412509,"405 Spit Rd, Erskineville NSW 2274",Erskineville,3,2,0,Townhouse,https://www.domain.com.au/property-townhouse-erskineville-947,domain.com.au
+"$981,571",981571,"187 Beach Rd, Milsons Point NSW 2637",Milsons Point,3,1,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-milsons-point-948,domain.com.au
+"$2,073,854",2073854,"895 Parramatta Rd, Beverley Park NSW 2103",Beverley Park,2,2,2,Villa,https://www.domain.com.au/property-villa-beverley-park-949,domain.com.au
+"$1,961,306",1961306,"326 Anzac Parade, Dulwich Hill NSW 2015",Dulwich Hill,2,2,0,Semi-Detached,https://www.domain.com.au/property-semi-detached-dulwich-hill-950,domain.com.au
+"From $804,397",804397,"58 Crown St, Summer Hill NSW 2698",Summer Hill,0,1,3,Studio,https://www.domain.com.au/property-studio-summer-hill-951,domain.com.au
+"From $1,231,930",1231930,"659 Princes Highway, Malabar NSW 2815",Malabar,2,2,2,Townhouse,https://www.domain.com.au/property-townhouse-malabar-952,domain.com.au
+Contact Agent,,"223 Pacific Highway, Newtown NSW 2024",Newtown,1,2,0,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-newtown-953,domain.com.au
+"$2,245,140",2245140,"254 Barrenjoey Rd, Wolli Creek NSW 2312",Wolli Creek,3,1,2,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-wolli-creek-954,domain.com.au
+"$426,267",426267,"277 Albert St, Belmore NSW 2400",Belmore,4,3,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-belmore-955,domain.com.au
+"$1,932,923",1932923,"929 Market St, McMahons Point NSW 2285",McMahons Point,5,3,3,Semi-Detached,https://www.domain.com.au/property-semi-detached-mcmahons-point-956,domain.com.au
+Auction,,"543 Railway St, Oatley NSW 2609",Oatley,6,1,0,Townhouse,https://www.domain.com.au/property-townhouse-oatley-957,domain.com.au
+"$2,047,894",2047894,"540 King St, Bondi Beach NSW 2779",Bondi Beach,2,1,2,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-bondi-beach-958,domain.com.au
+"$1,469,182",1469182,"94 William St, Gordon NSW 2166",Gordon,5,3,2,Townhouse,https://www.domain.com.au/property-townhouse-gordon-959,domain.com.au
+"$593,798",593798,"428 Beach Rd, Crows Nest NSW 2851",Crows Nest,3,3,2,Terrace,https://www.domain.com.au/property-terrace-crows-nest-960,domain.com.au
+"$1,696,949",1696949,"453 Albert St, La Perouse NSW 2698",La Perouse,2,3,1,Duplex,https://www.domain.com.au/property-duplex-la-perouse-961,domain.com.au
+"$961,867",961867,"552 Charles St, Marrickville NSW 2526",Marrickville,4,4,2,Terrace,https://www.domain.com.au/property-terrace-marrickville-962,domain.com.au
+"$450,722",450722,"880 Edward St, Greenwich NSW 2141",Greenwich,2,2,1,Terrace,https://www.domain.com.au/property-terrace-greenwich-963,domain.com.au
+"$1,614,669",1614669,"450 Pacific Highway, Woolwich NSW 2752",Woolwich,6,2,2,Villa,https://www.domain.com.au/property-villa-woolwich-964,domain.com.au
+"$455,973",455973,"776 William St, Clovelly NSW 2868",Clovelly,1,2,3,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-clovelly-965,domain.com.au
+Auction,,"852 George St, Lalor Park NSW 2479",Lalor Park,2,2,3,Semi-Detached,https://www.domain.com.au/property-semi-detached-lalor-park-966,domain.com.au
+"From $1,669,166",1669166,"219 James St, Penshurst NSW 2311",Penshurst,6,3,2,Villa,https://www.domain.com.au/property-villa-penshurst-967,domain.com.au
+"$4,057,791",4057791,"362 William St, Bondi NSW 2766",Bondi,2,2,3,House,https://www.domain.com.au/property-house-bondi-968,domain.com.au
+"$522,286",522286,"216 Queen St, Little Bay NSW 2772",Little Bay,6,2,0,Semi-Detached,https://www.domain.com.au/property-semi-detached-little-bay-969,domain.com.au
+"$1,942,218",1942218,"641 Park Ave, Cronulla NSW 2429",Cronulla,5,1,4,Townhouse,https://www.domain.com.au/property-townhouse-cronulla-970,domain.com.au
+"$958,399",958399,"651 Ocean Rd, Mosman NSW 2325",Mosman,3,3,2,House,https://www.domain.com.au/property-house-mosman-971,domain.com.au
+"$1,449,636",1449636,"678 King St, St Leonards NSW 2651",St Leonards,5,4,2,House,https://www.domain.com.au/property-house-st-leonards-972,domain.com.au
+POA,,"96 Market St, Malabar NSW 2966",Malabar,6,2,4,House,https://www.domain.com.au/property-house-malabar-973,domain.com.au
+"From $2,324,887",2324887,"311 Canterbury Rd, Gladesville NSW 2189",Gladesville,3,1,2,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-gladesville-974,domain.com.au
+"$866,767",866767,"742 School St, Liverpool NSW 2765",Liverpool,1,2,1,Duplex,https://www.domain.com.au/property-duplex-liverpool-975,domain.com.au
+POA,,"197 High St, Westmead NSW 2543",Westmead,4,3,0,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-westmead-976,domain.com.au
+POA,,"632 Spit Rd, Greenwich NSW 2800",Greenwich,4,2,0,House,https://www.domain.com.au/property-house-greenwich-977,domain.com.au
+"$1,325,073",1325073,"615 Princes Highway, Coogee NSW 2173",Coogee,3,2,2,House,https://www.domain.com.au/property-house-coogee-978,domain.com.au
+"$1,487,271",1487271,"47 Market St, Tempe NSW 2138",Tempe,6,3,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-tempe-979,domain.com.au
+Contact Agent,,"788 John St, Northbridge NSW 2957",Northbridge,4,1,3,Semi-Detached,https://www.domain.com.au/property-semi-detached-northbridge-980,domain.com.au
+Under Contract,,"331 Condamine St, Ashbury NSW 2201",Ashbury,2,1,2,Townhouse,https://www.domain.com.au/property-townhouse-ashbury-981,domain.com.au
+"$739,741",739741,"450 Church St, Ryde NSW 2514",Ryde,0,1,0,Studio,https://www.domain.com.au/property-studio-ryde-982,domain.com.au
+"$1,847,912",1847912,"280 Anzac Parade, Northbridge NSW 2691",Northbridge,3,3,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-northbridge-983,domain.com.au
+"From $1,225,997",1225997,"435 Elizabeth St, Punchbowl NSW 2339",Punchbowl,1,2,0,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-punchbowl-984,domain.com.au
+"$1,672,882",1672882,"420 Thomas St, Concord NSW 2831",Concord,6,3,1,Townhouse,https://www.domain.com.au/property-townhouse-concord-985,domain.com.au
+"$2,317,686",2317686,"742 Ocean Rd, Kirribilli NSW 2102",Kirribilli,6,3,0,House,https://www.domain.com.au/property-house-kirribilli-986,domain.com.au
+Auction,,"176 Albert St, Penshurst NSW 2776",Penshurst,4,4,2,Villa,https://www.domain.com.au/property-villa-penshurst-987,domain.com.au
+"$1,903,313",1903313,"543 James St, Eastwood NSW 2210",Eastwood,3,2,1,Villa,https://www.domain.com.au/property-villa-eastwood-988,domain.com.au
+"$2,226,262",2226262,"74 John St, Ashfield NSW 2479",Ashfield,6,4,2,Townhouse,https://www.domain.com.au/property-townhouse-ashfield-989,domain.com.au
+Contact Agent,,"479 George St, Tempe NSW 2749",Tempe,2,2,0,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-tempe-990,domain.com.au
+"From $789,630",789630,"487 George St, Oatley NSW 2599",Oatley,1,2,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-oatley-991,domain.com.au
+"$1,599,236",1599236,"433 Anzac Parade, Mortdale NSW 2444",Mortdale,4,4,1,Townhouse,https://www.domain.com.au/property-townhouse-mortdale-992,domain.com.au
+"From $854,531",854531,"939 Oxford St, Hornsby NSW 2363",Hornsby,6,4,1,Townhouse,https://www.domain.com.au/property-townhouse-hornsby-993,domain.com.au
+"$1,813,848",1813848,"462 Oxford St, Peakhurst NSW 2268",Peakhurst,5,4,1,Terrace,https://www.domain.com.au/property-terrace-peakhurst-994,domain.com.au
+"$2,188,731",2188731,"389 Mona Vale Rd, Mortdale NSW 2606",Mortdale,5,4,2,Terrace,https://www.domain.com.au/property-terrace-mortdale-995,domain.com.au
+"$993,185",993185,"776 Thomas St, Wolli Creek NSW 2739",Wolli Creek,2,2,1,Villa,https://www.domain.com.au/property-villa-wolli-creek-996,domain.com.au
+POA,,"36 Mona Vale Rd, Sans Souci NSW 2104",Sans Souci,0,1,0,Studio,https://www.domain.com.au/property-studio-sans-souci-997,domain.com.au
+"$2,008,561",2008561,"589 Pittwater Rd, Lavender Bay NSW 2897",Lavender Bay,6,2,1,Terrace,https://www.domain.com.au/property-terrace-lavender-bay-998,domain.com.au
+Auction,,"150 Pacific Highway, Middle Cove NSW 2069",Middle Cove,5,2,1,Townhouse,https://www.domain.com.au/property-townhouse-middle-cove-999,domain.com.au
+Auction,,"402 Pittwater Rd, Dover Heights NSW 2049",Dover Heights,3,1,2,Villa,https://www.domain.com.au/property-villa-dover-heights-1000,domain.com.au
+"$2,124,166",2124166,"441 Charles St, Vaucluse NSW 2428",Vaucluse,6,1,2,House,https://www.domain.com.au/property-house-vaucluse-1001,domain.com.au
+"From $1,732,615",1732615,"28 Thomas St, St Peters NSW 2667",St Peters,5,2,1,Terrace,https://www.domain.com.au/property-terrace-st-peters-1002,domain.com.au
+"$754,566",754566,"155 George St, Manly NSW 2714",Manly,4,1,2,Terrace,https://www.domain.com.au/property-terrace-manly-1003,domain.com.au
+"$2,255,987",2255987,"102 School St, Waverton NSW 2384",Waverton,0,1,1,Studio,https://www.domain.com.au/property-studio-waverton-1004,domain.com.au
+"$2,444,219",2444219,"875 Frederick St, Dover Heights NSW 2496",Dover Heights,6,1,3,Townhouse,https://www.domain.com.au/property-townhouse-dover-heights-1005,domain.com.au
+"$1,013,808",1013808,"128 George St, Hornsby NSW 2396",Hornsby,0,1,0,Studio,https://www.domain.com.au/property-studio-hornsby-1006,domain.com.au
+"$732,870",732870,"73 Barrenjoey Rd, Rooty Hill NSW 2138",Rooty Hill,0,1,2,Studio,https://www.domain.com.au/property-studio-rooty-hill-1007,domain.com.au
+"$570,027",570027,"733 Edward St, Gordon NSW 2073",Gordon,4,1,2,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-gordon-1008,domain.com.au
+"$866,285",866285,"966 Market St, Hurstville Grove NSW 2368",Hurstville Grove,5,4,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-hurstville-grove-1009,domain.com.au
+"$2,059,427",2059427,"109 Victoria St, Erskineville NSW 2233",Erskineville,2,1,2,Terrace,https://www.domain.com.au/property-terrace-erskineville-1010,domain.com.au
+"$423,179",423179,"306 Main St, Monterey NSW 2843",Monterey,2,2,1,Terrace,https://www.domain.com.au/property-terrace-monterey-1011,domain.com.au
+"$1,580,584",1580584,"497 Military Rd, Kogarah NSW 2969",Kogarah,3,3,2,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-kogarah-1012,domain.com.au
+Contact Agent,,"815 Canterbury Rd, Mortdale NSW 2586",Mortdale,0,1,2,Studio,https://www.domain.com.au/property-studio-mortdale-1013,domain.com.au
+"$671,226",671226,"993 George St, Little Bay NSW 2372",Little Bay,4,2,4,Townhouse,https://www.domain.com.au/property-townhouse-little-bay-1014,domain.com.au
+Under Contract,,"74 John St, Wiley Park NSW 2187",Wiley Park,5,4,1,Terrace,https://www.domain.com.au/property-terrace-wiley-park-1015,domain.com.au
+"$1,436,925",1436925,"953 Church St, Chatswood NSW 2574",Chatswood,2,2,3,Semi-Detached,https://www.domain.com.au/property-semi-detached-chatswood-1016,domain.com.au
+"From $969,022",969022,"218 Thomas St, Marrickville NSW 2360",Marrickville,4,3,2,Duplex,https://www.domain.com.au/property-duplex-marrickville-1017,domain.com.au
+"From $1,856,293",1856293,"500 Elizabeth St, Clovelly NSW 2277",Clovelly,6,1,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-clovelly-1018,domain.com.au
+"$2,083,370",2083370,"14 Beach Rd, Cammeray NSW 2247",Cammeray,6,4,2,Villa,https://www.domain.com.au/property-villa-cammeray-1019,domain.com.au
+"$642,422",642422,"81 Barrenjoey Rd, La Perouse NSW 2095",La Perouse,3,2,2,House,https://www.domain.com.au/property-house-la-perouse-1020,domain.com.au
+"$1,386,278",1386278,"963 Market St, Kogarah NSW 2329",Kogarah,2,2,1,Duplex,https://www.domain.com.au/property-duplex-kogarah-1021,domain.com.au
+Under Contract,,"8 Main St, Ashbury NSW 2263",Ashbury,6,1,1,Villa,https://www.domain.com.au/property-villa-ashbury-1022,domain.com.au
+Contact Agent,,"430 Pacific Highway, Tennyson Point NSW 2442",Tennyson Point,6,1,1,Terrace,https://www.domain.com.au/property-terrace-tennyson-point-1023,domain.com.au
+"$1,646,248",1646248,"511 Crown St, Surry Hills NSW 2249",Surry Hills,6,2,2,Terrace,https://www.domain.com.au/property-terrace-surry-hills-1024,domain.com.au
+Contact Agent,,"3 King St, Eastwood NSW 2374",Eastwood,4,1,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-eastwood-1025,domain.com.au
+Under Contract,,"326 School St, Carlton NSW 2542",Carlton,2,2,1,Villa,https://www.domain.com.au/property-villa-carlton-1026,domain.com.au
+POA,,"957 Park Ave, Bronte NSW 2909",Bronte,4,1,2,Villa,https://www.domain.com.au/property-villa-bronte-1027,domain.com.au
+"From $1,141,470",1141470,"655 Falcon St, Hornsby NSW 2925",Hornsby,6,2,3,Semi-Detached,https://www.domain.com.au/property-semi-detached-hornsby-1028,domain.com.au
+"$846,073",846073,"375 Park Ave, North Sydney NSW 2583",North Sydney,6,4,2,Townhouse,https://www.domain.com.au/property-townhouse-north-sydney-1029,domain.com.au
+"$1,051,163",1051163,"246 Oxford St, Kyeemagh NSW 2087",Kyeemagh,2,1,1,Terrace,https://www.domain.com.au/property-terrace-kyeemagh-1030,domain.com.au
+"$405,215",405215,"564 Mona Vale Rd, Wollstonecraft NSW 2916",Wollstonecraft,3,3,4,Villa,https://www.domain.com.au/property-villa-wollstonecraft-1031,domain.com.au
+"From $1,375,886",1375886,"408 Frederick St, Ashfield NSW 2106",Ashfield,6,4,4,Townhouse,https://www.domain.com.au/property-townhouse-ashfield-1032,domain.com.au
+Under Contract,,"555 Church St, Brighton-Le-Sands NSW 2731",Brighton-Le-Sands,0,1,0,Studio,https://www.domain.com.au/property-studio-brighton-le-sands-1033,domain.com.au
+Under Contract,,"828 Frederick St, Dover Heights NSW 2324",Dover Heights,2,2,1,Townhouse,https://www.domain.com.au/property-townhouse-dover-heights-1034,domain.com.au
+"From $1,154,860",1154860,"951 The Boulevarde, Dee Why NSW 2963",Dee Why,4,4,1,Villa,https://www.domain.com.au/property-villa-dee-why-1035,domain.com.au
+"$403,908",403908,"93 Mona Vale Rd, St Peters NSW 2898",St Peters,4,4,1,Townhouse,https://www.domain.com.au/property-townhouse-st-peters-1036,domain.com.au
+"From $2,355,265",2355265,"890 James St, Lugarno NSW 2609",Lugarno,6,2,4,Townhouse,https://www.domain.com.au/property-townhouse-lugarno-1037,domain.com.au
+"$1,034,104",1034104,"716 Albert St, Kogarah NSW 2809",Kogarah,4,4,3,Villa,https://www.domain.com.au/property-villa-kogarah-1038,domain.com.au
+"$1,260,112",1260112,"16 John St, Punchbowl NSW 2169",Punchbowl,4,2,3,Villa,https://www.domain.com.au/property-villa-punchbowl-1039,domain.com.au
+"$1,979,821",1979821,"343 Falcon St, Belmore NSW 2336",Belmore,4,3,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-belmore-1040,domain.com.au
+"$1,576,915",1576915,"161 Liverpool Rd, St Leonards NSW 2384",St Leonards,4,2,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-st-leonards-1041,domain.com.au
+"From $1,089,520",1089520,"298 Park Ave, Mortdale NSW 2097",Mortdale,3,3,2,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-mortdale-1042,domain.com.au
+"$2,172,358",2172358,"471 Anzac Parade, Belmore NSW 2303",Belmore,3,1,3,Duplex,https://www.domain.com.au/property-duplex-belmore-1043,domain.com.au
+"$1,832,562",1832562,"189 William St, West Ryde NSW 2873",West Ryde,2,1,0,Terrace,https://www.domain.com.au/property-terrace-west-ryde-1044,domain.com.au
+"$1,223,217",1223217,"268 Beach Rd, Pymble NSW 2046",Pymble,2,1,0,Villa,https://www.domain.com.au/property-villa-pymble-1045,domain.com.au
+"$703,874",703874,"396 William St, Liverpool NSW 2054",Liverpool,2,2,1,Townhouse,https://www.domain.com.au/property-townhouse-liverpool-1046,domain.com.au
+"From $1,366,450",1366450,"211 Forest Rd, Greenwich NSW 2539",Greenwich,2,2,4,House,https://www.domain.com.au/property-house-greenwich-1047,domain.com.au
+"$1,369,689",1369689,"737 Church St, Roseville NSW 2112",Roseville,4,4,1,Townhouse,https://www.domain.com.au/property-townhouse-roseville-1048,domain.com.au
+"$2,139,890",2139890,"688 Queen St, Rooty Hill NSW 2377",Rooty Hill,5,3,0,Semi-Detached,https://www.domain.com.au/property-semi-detached-rooty-hill-1049,domain.com.au
+"$2,187,136",2187136,"921 George St, Woolwich NSW 2785",Woolwich,3,1,0,Townhouse,https://www.domain.com.au/property-townhouse-woolwich-1050,domain.com.au
+"$626,408",626408,"725 William St, Tempe NSW 2329",Tempe,6,2,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-tempe-1051,domain.com.au
+"$444,570",444570,"830 Parramatta Rd, Dee Why NSW 2622",Dee Why,1,2,1,Duplex,https://www.domain.com.au/property-duplex-dee-why-1052,domain.com.au
+"$834,723",834723,"975 Park Ave, Ryde NSW 2316",Ryde,1,2,3,Duplex,https://www.domain.com.au/property-duplex-ryde-1053,domain.com.au
+"$1,687,560",1687560,"863 Thomas St, La Perouse NSW 2369",La Perouse,6,1,1,Villa,https://www.domain.com.au/property-villa-la-perouse-1054,domain.com.au
+Under Contract,,"404 King St, Surry Hills NSW 2528",Surry Hills,3,2,1,Townhouse,https://www.domain.com.au/property-townhouse-surry-hills-1055,domain.com.au
+Contact Agent,,"319 Falcon St, Alexandria NSW 2949",Alexandria,2,1,1,Duplex,https://www.domain.com.au/property-duplex-alexandria-1056,domain.com.au
+"$2,400,199",2400199,"986 Market St, Watsons Bay NSW 2480",Watsons Bay,4,2,4,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-watsons-bay-1057,domain.com.au
+"$2,171,102",2171102,"73 George St, Kirribilli NSW 2766",Kirribilli,2,1,3,Semi-Detached,https://www.domain.com.au/property-semi-detached-kirribilli-1058,domain.com.au
+"$4,777,151",4777151,"911 Albert St, Point Piper NSW 2197",Point Piper,5,3,1,Villa,https://www.domain.com.au/property-villa-point-piper-1059,domain.com.au
+"$981,813",981813,"858 William St, Kirribilli NSW 2445",Kirribilli,5,2,0,House,https://www.domain.com.au/property-house-kirribilli-1060,domain.com.au
+"From $1,365,768",1365768,"266 Military Rd, Willoughby NSW 2155",Willoughby,6,2,0,Villa,https://www.domain.com.au/property-villa-willoughby-1061,domain.com.au
+Contact Agent,,"906 Falcon St, Manly NSW 2823",Manly,4,2,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-manly-1062,domain.com.au
+"$2,051,015",2051015,"620 Church St, Canterbury NSW 2906",Canterbury,2,3,2,Duplex,https://www.domain.com.au/property-duplex-canterbury-1063,domain.com.au
+"From $1,667,059",1667059,"391 Crown St, McMahons Point NSW 2817",McMahons Point,6,1,1,Townhouse,https://www.domain.com.au/property-townhouse-mcmahons-point-1064,domain.com.au
+"$1,568,331",1568331,"216 High St, Manly NSW 2619",Manly,3,1,2,Villa,https://www.domain.com.au/property-villa-manly-1065,domain.com.au
+"$2,417,977",2417977,"61 Elizabeth St, St Peters NSW 2776",St Peters,4,1,1,House,https://www.domain.com.au/property-house-st-peters-1066,domain.com.au
+"$1,216,266",1216266,"592 Railway St, Bondi Junction NSW 2044",Bondi Junction,3,2,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-bondi-junction-1067,domain.com.au
+"$1,392,702",1392702,"333 Canterbury Rd, Rhodes NSW 2875",Rhodes,5,1,2,House,https://www.domain.com.au/property-house-rhodes-1068,domain.com.au
+"$1,957,742",1957742,"517 Railway St, Brighton-Le-Sands NSW 2782",Brighton-Le-Sands,6,4,2,House,https://www.domain.com.au/property-house-brighton-le-sands-1069,domain.com.au
+"$2,122,437",2122437,"662 Oxford St, Homebush NSW 2623",Homebush,5,3,1,Townhouse,https://www.domain.com.au/property-townhouse-homebush-1070,domain.com.au
+Under Contract,,"36 Henry St, Strathfield NSW 2672",Strathfield,4,2,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-strathfield-1071,domain.com.au
+"$1,356,005",1356005,"100 Main St, Lidcombe NSW 2044",Lidcombe,3,1,3,Semi-Detached,https://www.domain.com.au/property-semi-detached-lidcombe-1072,domain.com.au
+"$866,957",866957,"506 William St, Mount Druitt NSW 2369",Mount Druitt,5,1,2,Townhouse,https://www.domain.com.au/property-townhouse-mount-druitt-1073,domain.com.au
+"$1,956,687",1956687,"19 Victoria St, Bondi Beach NSW 2505",Bondi Beach,6,3,0,Townhouse,https://www.domain.com.au/property-townhouse-bondi-beach-1074,domain.com.au
+"$2,411,540",2411540,"351 King St, Ashbury NSW 2912",Ashbury,6,3,2,Terrace,https://www.domain.com.au/property-terrace-ashbury-1075,domain.com.au
+"$841,678",841678,"279 Mona Vale Rd, Wiley Park NSW 2630",Wiley Park,3,2,4,House,https://www.domain.com.au/property-house-wiley-park-1076,domain.com.au
+"$1,800,979",1800979,"276 Parramatta Rd, Monterey NSW 2500",Monterey,4,1,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-monterey-1077,domain.com.au
+Auction,,"648 Military Rd, Little Bay NSW 2850",Little Bay,2,2,3,Terrace,https://www.domain.com.au/property-terrace-little-bay-1078,domain.com.au
+Under Contract,,"84 Oxford St, Botany NSW 2282",Botany,4,4,3,House,https://www.domain.com.au/property-house-botany-1079,domain.com.au
+"$1,923,508",1923508,"591 Mona Vale Rd, Gordon NSW 2893",Gordon,2,1,2,Duplex,https://www.domain.com.au/property-duplex-gordon-1080,domain.com.au
+Under Contract,,"352 Edward St, Vaucluse NSW 2987",Vaucluse,4,2,2,Townhouse,https://www.domain.com.au/property-townhouse-vaucluse-1081,domain.com.au
+"$712,335",712335,"58 Beach Rd, Clovelly NSW 2835",Clovelly,6,1,0,Villa,https://www.domain.com.au/property-villa-clovelly-1082,domain.com.au
+"$1,870,955",1870955,"265 School St, Wentworthville NSW 2050",Wentworthville,4,4,1,Villa,https://www.domain.com.au/property-villa-wentworthville-1083,domain.com.au
+"$2,202,315",2202315,"520 The Boulevarde, St Leonards NSW 2812",St Leonards,4,1,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-st-leonards-1084,domain.com.au
+Contact Agent,,"642 Market St, Blacktown NSW 2702",Blacktown,5,2,3,Villa,https://www.domain.com.au/property-villa-blacktown-1085,domain.com.au
+"From $1,550,476",1550476,"486 Henry St, McMahons Point NSW 2939",McMahons Point,6,1,1,Villa,https://www.domain.com.au/property-villa-mcmahons-point-1086,domain.com.au
+"$426,434",426434,"584 Falcon St, Rockdale NSW 2579",Rockdale,3,3,0,Villa,https://www.domain.com.au/property-villa-rockdale-1087,domain.com.au
+Under Contract,,"406 Charles St, Wentworthville NSW 2930",Wentworthville,1,2,2,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-wentworthville-1088,domain.com.au
+"$1,090,887",1090887,"439 Edward St, Wiley Park NSW 2657",Wiley Park,1,2,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-wiley-park-1089,domain.com.au
+"$1,775,171",1775171,"262 Market St, Botany NSW 2720",Botany,3,2,4,Villa,https://www.domain.com.au/property-villa-botany-1090,domain.com.au
+"$821,350",821350,"343 Charles St, Rhodes NSW 2570",Rhodes,4,3,2,Duplex,https://www.domain.com.au/property-duplex-rhodes-1091,domain.com.au
+"$2,315,891",2315891,"362 Condamine St, Beverly Hills NSW 2084",Beverly Hills,5,1,0,Townhouse,https://www.domain.com.au/property-townhouse-beverly-hills-1092,domain.com.au
+"$2,297,159",2297159,"986 Pittwater Rd, Rooty Hill NSW 2346",Rooty Hill,0,1,2,Studio,https://www.domain.com.au/property-studio-rooty-hill-1093,domain.com.au
+"$2,165,844",2165844,"491 Crown St, Penshurst NSW 2388",Penshurst,5,3,2,Terrace,https://www.domain.com.au/property-terrace-penshurst-1094,domain.com.au
+"$965,413",965413,"670 Canterbury Rd, Lakemba NSW 2647",Lakemba,6,2,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-lakemba-1095,domain.com.au
+"From $671,097",671097,"69 The Boulevarde, Pymble NSW 2524",Pymble,2,2,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-pymble-1096,domain.com.au
+"$1,069,797",1069797,"161 John St, Neutral Bay NSW 2130",Neutral Bay,1,1,3,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-neutral-bay-1097,domain.com.au
+"$1,620,148",1620148,"599 Pacific Highway, Rose Bay NSW 2844",Rose Bay,3,3,3,Terrace,https://www.domain.com.au/property-terrace-rose-bay-1098,domain.com.au
+"$1,305,687",1305687,"440 Frederick St, Peakhurst NSW 2515",Peakhurst,6,3,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-peakhurst-1099,domain.com.au
+"$1,092,637",1092637,"394 William St, Rhodes NSW 2618",Rhodes,3,1,0,Duplex,https://www.domain.com.au/property-duplex-rhodes-1100,domain.com.au
+POA,,"861 Spit Rd, Artarmon NSW 2290",Artarmon,3,2,1,Villa,https://www.domain.com.au/property-villa-artarmon-1101,domain.com.au
+"From $2,402,577",2402577,"120 Warringah Rd, Lakemba NSW 2751",Lakemba,5,1,3,Villa,https://www.domain.com.au/property-villa-lakemba-1102,domain.com.au
+Contact Agent,,"971 Forest Rd, Wiley Park NSW 2550",Wiley Park,4,2,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-wiley-park-1103,domain.com.au
+"$1,291,875",1291875,"278 Railway St, Double Bay NSW 2448",Double Bay,6,3,1,Terrace,https://www.domain.com.au/property-terrace-double-bay-1104,domain.com.au
+"From $4,663,636",4663636,"261 Thomas St, Vaucluse NSW 2389",Vaucluse,3,1,4,Semi-Detached,https://www.domain.com.au/property-semi-detached-vaucluse-1105,domain.com.au
+"$1,970,489",1970489,"580 John St, Kyeemagh NSW 2558",Kyeemagh,1,1,2,Duplex,https://www.domain.com.au/property-duplex-kyeemagh-1106,domain.com.au
+POA,,"361 The Boulevarde, Manly NSW 2662",Manly,3,3,3,Terrace,https://www.domain.com.au/property-terrace-manly-1107,domain.com.au
+"$1,762,507",1762507,"472 Mona Vale Rd, Ashbury NSW 2030",Ashbury,4,2,4,Semi-Detached,https://www.domain.com.au/property-semi-detached-ashbury-1108,domain.com.au
+"$1,601,936",1601936,"549 Parramatta Rd, Kirribilli NSW 2584",Kirribilli,0,1,0,Studio,https://www.domain.com.au/property-studio-kirribilli-1109,domain.com.au
+"From $1,731,562",1731562,"769 Pittwater Rd, Macquarie Park NSW 2828",Macquarie Park,4,3,2,Villa,https://www.domain.com.au/property-villa-macquarie-park-1110,domain.com.au
+"$1,195,824",1195824,"646 Liverpool Rd, Canterbury NSW 2687",Canterbury,0,1,3,Studio,https://www.domain.com.au/property-studio-canterbury-1111,domain.com.au
+Contact Agent,,"147 Pacific Highway, McMahons Point NSW 2899",McMahons Point,6,1,1,Villa,https://www.domain.com.au/property-villa-mcmahons-point-1112,domain.com.au
+"$2,389,643",2389643,"82 Thomas St, Harris Park NSW 2866",Harris Park,6,1,2,House,https://www.domain.com.au/property-house-harris-park-1113,domain.com.au
+"$2,399,560",2399560,"289 Charles St, Milsons Point NSW 2178",Milsons Point,2,1,3,Townhouse,https://www.domain.com.au/property-townhouse-milsons-point-1114,domain.com.au
+"$1,194,901",1194901,"959 King Georges Rd, Ashbury NSW 2097",Ashbury,2,2,1,Duplex,https://www.domain.com.au/property-duplex-ashbury-1115,domain.com.au
+"$1,045,134",1045134,"250 Pacific Highway, Kingsgrove NSW 2840",Kingsgrove,4,3,2,House,https://www.domain.com.au/property-house-kingsgrove-1116,domain.com.au
+Under Contract,,"106 Anzac Parade, Monterey NSW 2339",Monterey,2,2,0,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-monterey-1117,domain.com.au
+"$1,863,237",1863237,"737 King Georges Rd, Wiley Park NSW 2768",Wiley Park,3,1,2,House,https://www.domain.com.au/property-house-wiley-park-1118,domain.com.au
+"$958,862",958862,"509 Oxford St, Belmore NSW 2220",Belmore,5,3,2,Villa,https://www.domain.com.au/property-villa-belmore-1119,domain.com.au
+"$1,571,342",1571342,"627 Frederick St, Wollstonecraft NSW 2140",Wollstonecraft,2,1,3,Villa,https://www.domain.com.au/property-villa-wollstonecraft-1120,domain.com.au
+"$2,194,806",2194806,"24 Canterbury Rd, Castle Cove NSW 2366",Castle Cove,6,4,0,Semi-Detached,https://www.domain.com.au/property-semi-detached-castle-cove-1121,domain.com.au
+POA,,"97 Market St, Westmead NSW 2828",Westmead,0,1,2,Studio,https://www.domain.com.au/property-studio-westmead-1122,domain.com.au
+"$1,060,713",1060713,"71 George St, Oatley NSW 2071",Oatley,2,2,3,Terrace,https://www.domain.com.au/property-terrace-oatley-1123,domain.com.au
+"$2,015,680",2015680,"773 Victoria St, Peakhurst NSW 2858",Peakhurst,5,3,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-peakhurst-1124,domain.com.au
+"$2,307,331",2307331,"874 George St, Greenwich NSW 2025",Greenwich,6,4,2,Terrace,https://www.domain.com.au/property-terrace-greenwich-1125,domain.com.au
+Under Contract,,"435 Parramatta Rd, Bankstown NSW 2517",Bankstown,5,3,2,House,https://www.domain.com.au/property-house-bankstown-1126,domain.com.au
+"$1,497,139",1497139,"107 William St, Tempe NSW 2471",Tempe,6,3,2,Terrace,https://www.domain.com.au/property-terrace-tempe-1127,domain.com.au
+"From $2,238,702",2238702,"201 Queen St, Penshurst NSW 2742",Penshurst,5,2,0,Villa,https://www.domain.com.au/property-villa-penshurst-1128,domain.com.au
+"$1,487,943",1487943,"558 Charles St, Manly NSW 2167",Manly,3,2,1,House,https://www.domain.com.au/property-house-manly-1129,domain.com.au
+"$2,859,865",2859865,"978 Barrenjoey Rd, Bondi NSW 2779",Bondi,4,2,2,Duplex,https://www.domain.com.au/property-duplex-bondi-1130,domain.com.au
+"$1,996,306",1996306,"78 Church St, Tempe NSW 2998",Tempe,3,3,3,Semi-Detached,https://www.domain.com.au/property-semi-detached-tempe-1131,domain.com.au
+"$2,237,397",2237397,"788 Oxford St, Bexley NSW 2025",Bexley,2,2,1,Duplex,https://www.domain.com.au/property-duplex-bexley-1132,domain.com.au
+"$403,662",403662,"189 Mona Vale Rd, Bondi Beach NSW 2933",Bondi Beach,6,2,3,Terrace,https://www.domain.com.au/property-terrace-bondi-beach-1133,domain.com.au
+"$1,675,184",1675184,"315 Church St, Hornsby NSW 2492",Hornsby,3,1,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-hornsby-1134,domain.com.au
+POA,,"795 King Georges Rd, Bronte NSW 2954",Bronte,2,1,2,Townhouse,https://www.domain.com.au/property-townhouse-bronte-1135,domain.com.au
+"$1,158,473",1158473,"520 Crown St, Hornsby NSW 2561",Hornsby,3,1,3,Duplex,https://www.domain.com.au/property-duplex-hornsby-1136,domain.com.au
+"$1,043,384",1043384,"363 The Boulevarde, Cammeray NSW 2871",Cammeray,4,3,1,Townhouse,https://www.domain.com.au/property-townhouse-cammeray-1137,domain.com.au
+"$2,396,308",2396308,"253 Market St, West Ryde NSW 2872",West Ryde,3,3,2,Villa,https://www.domain.com.au/property-villa-west-ryde-1138,domain.com.au
+"$2,454,041",2454041,"119 Main St, Ashfield NSW 2287",Ashfield,5,1,0,Villa,https://www.domain.com.au/property-villa-ashfield-1139,domain.com.au
+"$2,228,331",2228331,"823 Falcon St, Peakhurst NSW 2954",Peakhurst,4,1,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-peakhurst-1140,domain.com.au
+"$418,118",418118,"34 Falcon St, Bronte NSW 2676",Bronte,6,1,0,Terrace,https://www.domain.com.au/property-terrace-bronte-1141,domain.com.au
+"From $1,801,349",1801349,"295 King St, Campsie NSW 2155",Campsie,0,1,0,Studio,https://www.domain.com.au/property-studio-campsie-1142,domain.com.au
+"$797,179",797179,"290 School St, Cammeray NSW 2610",Cammeray,5,2,1,Townhouse,https://www.domain.com.au/property-townhouse-cammeray-1143,domain.com.au
+"$1,681,645",1681645,"242 Ocean Rd, Marrickville NSW 2221",Marrickville,6,2,1,Villa,https://www.domain.com.au/property-villa-marrickville-1144,domain.com.au
+POA,,"647 King St, Rose Bay NSW 2848",Rose Bay,1,1,4,Duplex,https://www.domain.com.au/property-duplex-rose-bay-1145,domain.com.au
+"$1,551,283",1551283,"195 Market St, Botany NSW 2819",Botany,2,1,1,Villa,https://www.domain.com.au/property-villa-botany-1146,domain.com.au
+"$584,436",584436,"416 George St, St Peters NSW 2654",St Peters,6,3,3,Villa,https://www.domain.com.au/property-villa-st-peters-1147,domain.com.au
+"$503,757",503757,"786 Market St, West Ryde NSW 2579",West Ryde,3,2,2,Townhouse,https://www.domain.com.au/property-townhouse-west-ryde-1148,domain.com.au
+"$1,529,003",1529003,"439 The Boulevarde, St Peters NSW 2603",St Peters,3,2,0,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-st-peters-1149,domain.com.au
+"$425,593",425593,"559 The Boulevarde, Blacktown NSW 2724",Blacktown,3,3,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-blacktown-1150,domain.com.au
+"$2,040,476",2040476,"641 Elizabeth St, Lidcombe NSW 2414",Lidcombe,2,2,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-lidcombe-1151,domain.com.au
+"$1,141,815",1141815,"676 The Boulevarde, Hunters Hill NSW 2027",Hunters Hill,1,1,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-hunters-hill-1152,domain.com.au
+"$1,231,585",1231585,"817 The Boulevarde, Watsons Bay NSW 2177",Watsons Bay,5,4,2,Townhouse,https://www.domain.com.au/property-townhouse-watsons-bay-1153,domain.com.au
+"$382,524",382524,"892 Forest Rd, Mount Druitt NSW 2039",Mount Druitt,2,2,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-mount-druitt-1154,domain.com.au
+"From $931,656",931656,"269 William St, Mortdale NSW 2863",Mortdale,6,2,0,House,https://www.domain.com.au/property-house-mortdale-1155,domain.com.au
+Auction,,"254 Parramatta Rd, Bronte NSW 2275",Bronte,0,1,2,Studio,https://www.domain.com.au/property-studio-bronte-1156,domain.com.au
+"$944,635",944635,"243 Park Ave, Mortdale NSW 2668",Mortdale,6,3,1,House,https://www.domain.com.au/property-house-mortdale-1157,domain.com.au
+"$2,256,701",2256701,"305 Oxford St, Penshurst NSW 2872",Penshurst,4,3,0,Villa,https://www.domain.com.au/property-villa-penshurst-1158,domain.com.au
+"$715,107",715107,"567 Princes Highway, Mascot NSW 2376",Mascot,6,1,4,Villa,https://www.domain.com.au/property-villa-mascot-1159,domain.com.au
+"$1,370,710",1370710,"391 Condamine St, Ashfield NSW 2405",Ashfield,5,1,4,Townhouse,https://www.domain.com.au/property-townhouse-ashfield-1160,domain.com.au
+"$1,064,498",1064498,"519 Liverpool Rd, Carlton NSW 2255",Carlton,4,2,0,Townhouse,https://www.domain.com.au/property-townhouse-carlton-1161,domain.com.au
+"$1,249,605",1249605,"479 Henry St, Artarmon NSW 2441",Artarmon,4,2,2,House,https://www.domain.com.au/property-house-artarmon-1162,domain.com.au
+"$969,049",969049,"468 William St, Lakemba NSW 2060",Lakemba,3,3,1,Townhouse,https://www.domain.com.au/property-townhouse-lakemba-1163,domain.com.au
+"$486,807",486807,"311 Oxford St, Woolwich NSW 2597",Woolwich,2,1,1,Duplex,https://www.domain.com.au/property-duplex-woolwich-1164,domain.com.au
+"$1,800,867",1800867,"205 Canterbury Rd, Putney NSW 2276",Putney,4,1,2,Duplex,https://www.domain.com.au/property-duplex-putney-1165,domain.com.au
+"$2,031,057",2031057,"401 High St, Concord NSW 2609",Concord,2,2,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-concord-1166,domain.com.au
+"$1,107,907",1107907,"662 Spit Rd, Clovelly NSW 2647",Clovelly,5,1,2,Terrace,https://www.domain.com.au/property-terrace-clovelly-1167,domain.com.au
+"From $415,891",415891,"806 School St, Hornsby NSW 2371",Hornsby,5,3,1,Villa,https://www.domain.com.au/property-villa-hornsby-1168,domain.com.au
+"$2,126,000",2126000,"23 Elizabeth St, Canterbury NSW 2619",Canterbury,2,2,2,Villa,https://www.domain.com.au/property-villa-canterbury-1169,domain.com.au
+"$743,470",743470,"901 Victoria St, Summer Hill NSW 2453",Summer Hill,5,4,0,Townhouse,https://www.domain.com.au/property-townhouse-summer-hill-1170,domain.com.au
+"$1,438,290",1438290,"627 King Georges Rd, Mortdale NSW 2099",Mortdale,4,3,1,Townhouse,https://www.domain.com.au/property-townhouse-mortdale-1171,domain.com.au
+"$4,909,512",4909512,"298 Liverpool Rd, Point Piper NSW 2243",Point Piper,6,2,0,Townhouse,https://www.domain.com.au/property-townhouse-point-piper-1172,domain.com.au
+Contact Agent,,"668 Henry St, Hornsby NSW 2362",Hornsby,6,4,0,Townhouse,https://www.domain.com.au/property-townhouse-hornsby-1173,domain.com.au
+POA,,"20 George St, Killara NSW 2692",Killara,0,1,1,Studio,https://www.domain.com.au/property-studio-killara-1174,domain.com.au
+"$2,097,967",2097967,"350 Pittwater Rd, Castle Cove NSW 2023",Castle Cove,3,1,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-castle-cove-1175,domain.com.au
+Auction,,"265 Railway St, Tennyson Point NSW 2222",Tennyson Point,3,2,1,Terrace,https://www.domain.com.au/property-terrace-tennyson-point-1176,domain.com.au
+"$883,638",883638,"890 King Georges Rd, Botany NSW 2807",Botany,5,1,0,Semi-Detached,https://www.domain.com.au/property-semi-detached-botany-1177,domain.com.au
+"$1,166,591",1166591,"73 John St, Seven Hills NSW 2315",Seven Hills,6,2,3,House,https://www.domain.com.au/property-house-seven-hills-1178,domain.com.au
+"$2,128,495",2128495,"170 Park Ave, Lane Cove NSW 2280",Lane Cove,5,4,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-lane-cove-1179,domain.com.au
+"From $588,013",588013,"721 John St, Homebush NSW 2029",Homebush,3,1,2,Terrace,https://www.domain.com.au/property-terrace-homebush-1180,domain.com.au
+"$1,901,881",1901881,"527 High St, Crows Nest NSW 2774",Crows Nest,4,3,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-crows-nest-1181,domain.com.au
+"$2,469,193",2469193,"252 Barrenjoey Rd, Coogee NSW 2450",Coogee,2,1,1,Townhouse,https://www.domain.com.au/property-townhouse-coogee-1182,domain.com.au
+"$1,805,782",1805782,"627 Liverpool Rd, Lane Cove NSW 2479",Lane Cove,3,1,3,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-lane-cove-1183,domain.com.au
+"$1,011,382",1011382,"904 Park Ave, Forest Road NSW 2410",Forest Road,3,1,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-forest-road-1184,domain.com.au
+"From $1,769,955",1769955,"420 Liverpool Rd, Paddington NSW 2126",Paddington,1,2,0,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-paddington-1185,domain.com.au
+"$556,068",556068,"522 Thomas St, Bronte NSW 2039",Bronte,4,1,1,Townhouse,https://www.domain.com.au/property-townhouse-bronte-1186,domain.com.au
+"$895,993",895993,"802 Main St, Wentworthville NSW 2253",Wentworthville,6,3,0,House,https://www.domain.com.au/property-house-wentworthville-1187,domain.com.au
+"$412,509",412509,"863 Thomas St, Northbridge NSW 2078",Northbridge,2,2,1,House,https://www.domain.com.au/property-house-northbridge-1188,domain.com.au
+"$1,038,390",1038390,"103 School St, Lugarno NSW 2565",Lugarno,2,2,2,Duplex,https://www.domain.com.au/property-duplex-lugarno-1189,domain.com.au
+"$1,084,849",1084849,"144 Liverpool Rd, Punchbowl NSW 2749",Punchbowl,3,3,0,Semi-Detached,https://www.domain.com.au/property-semi-detached-punchbowl-1190,domain.com.au
+Contact Agent,,"649 King Georges Rd, La Perouse NSW 2592",La Perouse,5,2,0,House,https://www.domain.com.au/property-house-la-perouse-1191,domain.com.au
+Auction,,"803 School St, Peakhurst NSW 2401",Peakhurst,5,4,0,House,https://www.domain.com.au/property-house-peakhurst-1192,domain.com.au
+"From $789,401",789401,"756 Military Rd, Chatswood NSW 2561",Chatswood,2,1,0,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-chatswood-1193,domain.com.au
+POA,,"60 Pacific Highway, Seven Hills NSW 2864",Seven Hills,3,1,2,Terrace,https://www.domain.com.au/property-terrace-seven-hills-1194,domain.com.au
+"$1,585,829",1585829,"193 Elizabeth St, Rooty Hill NSW 2117",Rooty Hill,4,3,2,House,https://www.domain.com.au/property-house-rooty-hill-1195,domain.com.au
+Under Contract,,"539 Anzac Parade, Allawah NSW 2389",Allawah,4,2,1,Duplex,https://www.domain.com.au/property-duplex-allawah-1196,domain.com.au
+POA,,"617 Frederick St, Pymble NSW 2207",Pymble,4,3,2,Terrace,https://www.domain.com.au/property-terrace-pymble-1197,domain.com.au
+"$407,117",407117,"963 Main St, Castle Cove NSW 2222",Castle Cove,6,1,3,Semi-Detached,https://www.domain.com.au/property-semi-detached-castle-cove-1198,domain.com.au
+Contact Agent,,"315 Mona Vale Rd, Tennyson Point NSW 2647",Tennyson Point,3,2,4,Duplex,https://www.domain.com.au/property-duplex-tennyson-point-1199,domain.com.au
+POA,,"277 Queen St, Naremburn NSW 2648",Naremburn,3,3,3,House,https://www.domain.com.au/property-house-naremburn-1200,domain.com.au
+"$1,338,146",1338146,"66 Falcon St, Kyeemagh NSW 2018",Kyeemagh,6,4,3,House,https://www.domain.com.au/property-house-kyeemagh-1201,domain.com.au
+"$1,644,112",1644112,"503 High St, Artarmon NSW 2823",Artarmon,4,1,0,Semi-Detached,https://www.domain.com.au/property-semi-detached-artarmon-1202,domain.com.au
+"$937,977",937977,"484 Mona Vale Rd, Auburn NSW 2223",Auburn,1,2,2,Duplex,https://www.domain.com.au/property-duplex-auburn-1203,domain.com.au
+"From $926,038",926038,"764 Main St, Greenwich NSW 2889",Greenwich,0,1,1,Studio,https://www.domain.com.au/property-studio-greenwich-1204,domain.com.au
+"$615,476",615476,"123 Liverpool Rd, Narwee NSW 2827",Narwee,1,2,3,Duplex,https://www.domain.com.au/property-duplex-narwee-1205,domain.com.au
+"$1,599,437",1599437,"64 Charles St, Marrickville NSW 2029",Marrickville,2,1,1,House,https://www.domain.com.au/property-house-marrickville-1206,domain.com.au
+"$1,946,012",1946012,"121 Frederick St, Tennyson Point NSW 2803",Tennyson Point,0,1,2,Studio,https://www.domain.com.au/property-studio-tennyson-point-1207,domain.com.au
+"$1,460,880",1460880,"630 Thomas St, Mortdale NSW 2139",Mortdale,1,1,0,Duplex,https://www.domain.com.au/property-duplex-mortdale-1208,domain.com.au
+"$514,746",514746,"492 John St, Rockdale NSW 2377",Rockdale,3,2,3,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-rockdale-1209,domain.com.au
+"From $2,220,204",2220204,"890 Queen St, Punchbowl NSW 2302",Punchbowl,6,3,2,Terrace,https://www.domain.com.au/property-terrace-punchbowl-1210,domain.com.au
+Under Contract,,"473 Main St, Maroubra NSW 2391",Maroubra,3,2,2,Townhouse,https://www.domain.com.au/property-townhouse-maroubra-1211,domain.com.au
+"$1,627,693",1627693,"769 Canterbury Rd, Killara NSW 2899",Killara,6,3,1,House,https://www.domain.com.au/property-house-killara-1212,domain.com.au
+"$548,220",548220,"59 Spit Rd, Rhodes NSW 2226",Rhodes,0,1,4,Studio,https://www.domain.com.au/property-studio-rhodes-1213,domain.com.au
+"$1,836,947",1836947,"436 Elizabeth St, Wentworthville NSW 2964",Wentworthville,4,1,1,Terrace,https://www.domain.com.au/property-terrace-wentworthville-1214,domain.com.au
+"$2,272,415",2272415,"702 Liverpool Rd, Tempe NSW 2364",Tempe,6,1,2,Terrace,https://www.domain.com.au/property-terrace-tempe-1215,domain.com.au
+Under Contract,,"147 The Boulevarde, Beverly Hills NSW 2262",Beverly Hills,2,1,1,Duplex,https://www.domain.com.au/property-duplex-beverly-hills-1216,domain.com.au
+"$2,055,764",2055764,"956 Railway St, Erskineville NSW 2717",Erskineville,2,2,3,Townhouse,https://www.domain.com.au/property-townhouse-erskineville-1217,domain.com.au
+"$1,212,737",1212737,"771 Forest Rd, Milsons Point NSW 2748",Milsons Point,4,2,3,Duplex,https://www.domain.com.au/property-duplex-milsons-point-1218,domain.com.au
+Auction,,"10 James St, Oatley NSW 2078",Oatley,3,2,2,Duplex,https://www.domain.com.au/property-duplex-oatley-1219,domain.com.au
+"From $2,324,604",2324604,"899 George St, Point Piper NSW 2657",Point Piper,2,2,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-point-piper-1220,domain.com.au
+"$1,846,896",1846896,"392 Main St, Bexley NSW 2946",Bexley,4,2,0,Semi-Detached,https://www.domain.com.au/property-semi-detached-bexley-1221,domain.com.au
+"$900,273",900273,"42 Ocean Rd, Sans Souci NSW 2411",Sans Souci,1,2,2,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-sans-souci-1222,domain.com.au
+"$458,426",458426,"24 Falcon St, Bankstown NSW 2384",Bankstown,2,1,2,Townhouse,https://www.domain.com.au/property-townhouse-bankstown-1223,domain.com.au
+"$1,488,147",1488147,"411 Liverpool Rd, Putney NSW 2412",Putney,3,1,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-putney-1224,domain.com.au
+"$568,932",568932,"248 Warringah Rd, Marrickville NSW 2027",Marrickville,0,1,0,Studio,https://www.domain.com.au/property-studio-marrickville-1225,domain.com.au
+"$1,946,567",1946567,"368 Church St, Middle Cove NSW 2732",Middle Cove,0,1,1,Studio,https://www.domain.com.au/property-studio-middle-cove-1226,domain.com.au
+"$741,519",741519,"888 Market St, Mount Druitt NSW 2090",Mount Druitt,3,2,3,Townhouse,https://www.domain.com.au/property-townhouse-mount-druitt-1227,domain.com.au
+"$1,680,853",1680853,"961 Spit Rd, North Sydney NSW 2812",North Sydney,2,1,1,Terrace,https://www.domain.com.au/property-terrace-north-sydney-1228,domain.com.au
+Auction,,"632 Pittwater Rd, Wollstonecraft NSW 2167",Wollstonecraft,5,3,0,House,https://www.domain.com.au/property-house-wollstonecraft-1229,domain.com.au
+Auction,,"506 Ocean Rd, Kirribilli NSW 2666",Kirribilli,6,3,2,Townhouse,https://www.domain.com.au/property-townhouse-kirribilli-1230,domain.com.au
+Under Contract,,"974 Park Ave, Campsie NSW 2172",Campsie,2,1,2,Townhouse,https://www.domain.com.au/property-townhouse-campsie-1231,domain.com.au
+"$1,299,046",1299046,"660 Pittwater Rd, Chatswood NSW 2535",Chatswood,0,1,3,Studio,https://www.domain.com.au/property-studio-chatswood-1232,domain.com.au
+"$2,064,093",2064093,"606 Edward St, Rose Bay NSW 2085",Rose Bay,0,1,2,Studio,https://www.domain.com.au/property-studio-rose-bay-1233,domain.com.au
+"$2,478,564",2478564,"915 Canterbury Rd, Willoughby NSW 2531",Willoughby,6,4,0,Townhouse,https://www.domain.com.au/property-townhouse-willoughby-1234,domain.com.au
+"$765,076",765076,"909 King Georges Rd, Allawah NSW 2436",Allawah,2,3,1,Duplex,https://www.domain.com.au/property-duplex-allawah-1235,domain.com.au
+"$1,352,327",1352327,"795 Pittwater Rd, Castle Cove NSW 2421",Castle Cove,4,2,0,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-castle-cove-1236,domain.com.au
+Auction,,"77 Thomas St, Kingsgrove NSW 2495",Kingsgrove,6,1,1,Townhouse,https://www.domain.com.au/property-townhouse-kingsgrove-1237,domain.com.au
+"$2,482,566",2482566,"607 William St, Dover Heights NSW 2722",Dover Heights,4,1,1,Villa,https://www.domain.com.au/property-villa-dover-heights-1238,domain.com.au
+"From $1,813,401",1813401,"83 Canterbury Rd, Lugarno NSW 2955",Lugarno,1,1,2,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-lugarno-1239,domain.com.au
+POA,,"227 Elizabeth St, La Perouse NSW 2696",La Perouse,3,1,0,House,https://www.domain.com.au/property-house-la-perouse-1240,domain.com.au
+"$855,348",855348,"940 King St, Kirribilli NSW 2062",Kirribilli,5,4,3,House,https://www.domain.com.au/property-house-kirribilli-1241,domain.com.au
+"From $647,752",647752,"908 Canterbury Rd, Waverton NSW 2472",Waverton,4,4,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-waverton-1242,domain.com.au
+"$1,232,340",1232340,"353 Crown St, Bronte NSW 2965",Bronte,5,3,1,Villa,https://www.domain.com.au/property-villa-bronte-1243,domain.com.au
+"$1,602,049",1602049,"546 Park Ave, Newtown NSW 2969",Newtown,4,1,1,House,https://www.domain.com.au/property-house-newtown-1244,domain.com.au
+POA,,"305 Beach Rd, Oatley NSW 2257",Oatley,3,3,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-oatley-1245,domain.com.au
+"$867,455",867455,"965 Market St, Ashfield NSW 2949",Ashfield,2,3,0,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-ashfield-1246,domain.com.au
+"$657,987",657987,"108 Canterbury Rd, Parramatta NSW 2393",Parramatta,3,1,2,Townhouse,https://www.domain.com.au/property-townhouse-parramatta-1247,domain.com.au
+"$2,423,873",2423873,"27 Oxford St, Rockdale NSW 2098",Rockdale,2,1,3,Semi-Detached,https://www.domain.com.au/property-semi-detached-rockdale-1248,domain.com.au
+Under Contract,,"281 Albert St, North Sydney NSW 2484",North Sydney,5,2,3,Townhouse,https://www.domain.com.au/property-townhouse-north-sydney-1249,domain.com.au
+"$2,447,813",2447813,"857 School St, Watsons Bay NSW 2312",Watsons Bay,4,4,1,House,https://www.domain.com.au/property-house-watsons-bay-1250,domain.com.au
+"$1,975,934",1975934,"814 Oxford St, Hurstville NSW 2780",Hurstville,3,3,3,Villa,https://www.domain.com.au/property-villa-hurstville-1251,domain.com.au
+"$1,516,865",1516865,"765 Oxford St, Rose Bay NSW 2471",Rose Bay,4,2,3,Townhouse,https://www.domain.com.au/property-townhouse-rose-bay-1252,domain.com.au
+Under Contract,,"377 Liverpool Rd, Campsie NSW 2472",Campsie,1,1,2,Duplex,https://www.domain.com.au/property-duplex-campsie-1253,domain.com.au
+Under Contract,,"441 Falcon St, Killara NSW 2097",Killara,4,1,1,Duplex,https://www.domain.com.au/property-duplex-killara-1254,domain.com.au
+"$1,913,572",1913572,"453 Beach Rd, Strathfield NSW 2443",Strathfield,1,2,2,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-strathfield-1255,domain.com.au
+"$1,558,284",1558284,"140 Albert St, Rockdale NSW 2685",Rockdale,2,1,4,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-rockdale-1256,domain.com.au
+"$813,629",813629,"71 King St, Chatswood NSW 2523",Chatswood,2,2,2,House,https://www.domain.com.au/property-house-chatswood-1257,domain.com.au
+"$572,867",572867,"338 Crown St, Beverley Park NSW 2325",Beverley Park,3,1,1,Townhouse,https://www.domain.com.au/property-townhouse-beverley-park-1258,domain.com.au
+POA,,"542 The Boulevarde, Middle Cove NSW 2796",Middle Cove,0,1,1,Studio,https://www.domain.com.au/property-studio-middle-cove-1259,domain.com.au
+Auction,,"126 Beach Rd, Gordon NSW 2316",Gordon,4,2,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-gordon-1260,domain.com.au
+"$1,241,914",1241914,"854 James St, Seven Hills NSW 2379",Seven Hills,4,3,2,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-seven-hills-1261,domain.com.au
+"$1,562,987",1562987,"39 Spit Rd, Hornsby NSW 2116",Hornsby,2,2,1,House,https://www.domain.com.au/property-house-hornsby-1262,domain.com.au
+"$2,211,937",2211937,"38 Canterbury Rd, Brighton-Le-Sands NSW 2172",Brighton-Le-Sands,0,1,4,Studio,https://www.domain.com.au/property-studio-brighton-le-sands-1263,domain.com.au
+"$592,804",592804,"629 Queen St, Tempe NSW 2756",Tempe,3,1,2,Villa,https://www.domain.com.au/property-villa-tempe-1264,domain.com.au
+"$1,287,761",1287761,"485 Pacific Highway, Newtown NSW 2295",Newtown,4,2,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-newtown-1265,domain.com.au
+"$1,170,764",1170764,"343 Market St, Doonside NSW 2968",Doonside,2,3,3,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-doonside-1266,domain.com.au
+"$1,320,337",1320337,"47 High St, McMahons Point NSW 2256",McMahons Point,3,1,1,Villa,https://www.domain.com.au/property-villa-mcmahons-point-1267,domain.com.au
+POA,,"825 Forest Rd, Punchbowl NSW 2875",Punchbowl,6,1,0,Villa,https://www.domain.com.au/property-villa-punchbowl-1268,domain.com.au
+"$873,594",873594,"909 George St, St Peters NSW 2082",St Peters,6,3,3,Terrace,https://www.domain.com.au/property-terrace-st-peters-1269,domain.com.au
+"$1,296,037",1296037,"883 Park Ave, Double Bay NSW 2313",Double Bay,4,2,1,Terrace,https://www.domain.com.au/property-terrace-double-bay-1270,domain.com.au
+"$1,397,064",1397064,"921 Henry St, Mosman NSW 2172",Mosman,5,1,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-mosman-1271,domain.com.au
+"$820,430",820430,"619 Queen St, Tennyson Point NSW 2485",Tennyson Point,2,1,3,Townhouse,https://www.domain.com.au/property-townhouse-tennyson-point-1272,domain.com.au
+"$1,995,667",1995667,"893 Pittwater Rd, Dee Why NSW 2374",Dee Why,4,2,4,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-dee-why-1273,domain.com.au
+"From $1,918,427",1918427,"262 Park Ave, Ashfield NSW 2548",Ashfield,4,3,0,Duplex,https://www.domain.com.au/property-duplex-ashfield-1274,domain.com.au
+"$979,936",979936,"530 Anzac Parade, Kirribilli NSW 2782",Kirribilli,5,4,2,Terrace,https://www.domain.com.au/property-terrace-kirribilli-1275,domain.com.au
+"$2,420,874",2420874,"433 Falcon St, Lugarno NSW 2086",Lugarno,4,4,0,House,https://www.domain.com.au/property-house-lugarno-1276,domain.com.au
+"$2,070,036",2070036,"797 Condamine St, Pymble NSW 2892",Pymble,5,3,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-pymble-1277,domain.com.au
+"From $960,477",960477,"936 Mona Vale Rd, Hunters Hill NSW 2667",Hunters Hill,2,1,2,Townhouse,https://www.domain.com.au/property-townhouse-hunters-hill-1278,domain.com.au
+"From $685,575",685575,"415 Albert St, Summer Hill NSW 2096",Summer Hill,6,3,0,Semi-Detached,https://www.domain.com.au/property-semi-detached-summer-hill-1279,domain.com.au
+"$1,219,431",1219431,"7 Church St, Clovelly NSW 2145",Clovelly,4,2,2,Townhouse,https://www.domain.com.au/property-townhouse-clovelly-1280,domain.com.au
+"$482,529",482529,"142 Forest Rd, Watsons Bay NSW 2155",Watsons Bay,3,3,0,Villa,https://www.domain.com.au/property-villa-watsons-bay-1281,domain.com.au
+"$1,880,157",1880157,"453 Henry St, Summer Hill NSW 2456",Summer Hill,6,1,3,House,https://www.domain.com.au/property-house-summer-hill-1282,domain.com.au
+"$1,047,778",1047778,"898 Henry St, Gladesville NSW 2918",Gladesville,3,3,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-gladesville-1283,domain.com.au
+"$2,484,506",2484506,"6 Falcon St, Macquarie Park NSW 2056",Macquarie Park,5,4,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-macquarie-park-1284,domain.com.au
+"$1,297,468",1297468,"488 Liverpool Rd, Coogee NSW 2194",Coogee,6,2,0,House,https://www.domain.com.au/property-house-coogee-1285,domain.com.au
+"$1,984,437",1984437,"30 Mona Vale Rd, Penshurst NSW 2424",Penshurst,4,1,1,Villa,https://www.domain.com.au/property-villa-penshurst-1286,domain.com.au
+"$4,688,262",4688262,"874 Market St, Point Piper NSW 2647",Point Piper,2,1,2,Terrace,https://www.domain.com.au/property-terrace-point-piper-1287,domain.com.au
+"$765,959",765959,"613 Spit Rd, Roseville NSW 2264",Roseville,2,1,0,Villa,https://www.domain.com.au/property-villa-roseville-1288,domain.com.au
+"$1,912,700",1912700,"461 Pittwater Rd, Double Bay NSW 2972",Double Bay,4,1,1,Townhouse,https://www.domain.com.au/property-townhouse-double-bay-1289,domain.com.au
+"$2,098,459",2098459,"605 Main St, Allawah NSW 2956",Allawah,4,4,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-allawah-1290,domain.com.au
+"$1,014,193",1014193,"201 Queen St, Penshurst NSW 2326",Penshurst,4,3,2,Townhouse,https://www.domain.com.au/property-townhouse-penshurst-1291,domain.com.au
+Under Contract,,"879 Pittwater Rd, Tennyson Point NSW 2726",Tennyson Point,6,3,1,House,https://www.domain.com.au/property-house-tennyson-point-1292,domain.com.au
+Auction,,"427 James St, Kyeemagh NSW 2894",Kyeemagh,4,4,1,House,https://www.domain.com.au/property-house-kyeemagh-1293,domain.com.au
+"$1,965,554",1965554,"249 Albert St, Crows Nest NSW 2738",Crows Nest,2,1,1,Villa,https://www.domain.com.au/property-villa-crows-nest-1294,domain.com.au
+"$546,067",546067,"728 School St, Pymble NSW 2555",Pymble,5,1,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-pymble-1295,domain.com.au
+Auction,,"233 The Boulevarde, Crows Nest NSW 2668",Crows Nest,4,1,2,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-crows-nest-1296,domain.com.au
+"$3,841,320",3841320,"706 King Georges Rd, Point Piper NSW 2732",Point Piper,6,4,2,Townhouse,https://www.domain.com.au/property-townhouse-point-piper-1297,domain.com.au
+Contact Agent,,"292 Canterbury Rd, Doonside NSW 2520",Doonside,3,1,1,House,https://www.domain.com.au/property-house-doonside-1298,domain.com.au
+"$2,477,487",2477487,"662 Military Rd, Rose Bay NSW 2474",Rose Bay,5,1,3,Villa,https://www.domain.com.au/property-villa-rose-bay-1299,domain.com.au
+"From $1,805,581",1805581,"40 William St, Penshurst NSW 2172",Penshurst,3,2,0,Villa,https://www.domain.com.au/property-villa-penshurst-1300,domain.com.au
+Auction,,"598 Charles St, Rose Bay NSW 2839",Rose Bay,3,3,1,Duplex,https://www.domain.com.au/property-duplex-rose-bay-1301,domain.com.au
+"From $1,086,126",1086126,"103 Liverpool Rd, Lane Cove NSW 2201",Lane Cove,0,1,0,Studio,https://www.domain.com.au/property-studio-lane-cove-1302,domain.com.au
+"$1,530,069",1530069,"746 William St, Gladesville NSW 2304",Gladesville,2,1,2,Townhouse,https://www.domain.com.au/property-townhouse-gladesville-1303,domain.com.au
+"From $965,633",965633,"145 Church St, Blacktown NSW 2474",Blacktown,5,1,2,Terrace,https://www.domain.com.au/property-terrace-blacktown-1304,domain.com.au
+"$871,840",871840,"625 William St, Bondi NSW 2865",Bondi,4,1,3,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-bondi-1305,domain.com.au
+"$888,126",888126,"649 Thomas St, Cronulla NSW 2300",Cronulla,0,1,1,Studio,https://www.domain.com.au/property-studio-cronulla-1306,domain.com.au
+"$2,017,778",2017778,"995 Spit Rd, Castle Cove NSW 2163",Castle Cove,0,1,3,Studio,https://www.domain.com.au/property-studio-castle-cove-1307,domain.com.au
+"$935,872",935872,"146 Barrenjoey Rd, Maroubra NSW 2755",Maroubra,0,1,3,Studio,https://www.domain.com.au/property-studio-maroubra-1308,domain.com.au
+"From $1,084,841",1084841,"662 Liverpool Rd, Liverpool NSW 2873",Liverpool,5,2,1,Terrace,https://www.domain.com.au/property-terrace-liverpool-1309,domain.com.au
+"$829,867",829867,"611 King Georges Rd, Lakemba NSW 2037",Lakemba,2,1,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-lakemba-1310,domain.com.au
+"$888,616",888616,"637 Princes Highway, Kogarah NSW 2808",Kogarah,3,1,2,Villa,https://www.domain.com.au/property-villa-kogarah-1311,domain.com.au
+"$1,537,064",1537064,"673 James St, Allawah NSW 2440",Allawah,3,1,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-allawah-1312,domain.com.au
+"From $4,990,276",4990276,"890 Ocean Rd, Double Bay NSW 2067",Double Bay,1,1,0,Duplex,https://www.domain.com.au/property-duplex-double-bay-1313,domain.com.au
+"$764,537",764537,"534 High St, Wiley Park NSW 2140",Wiley Park,6,4,1,Terrace,https://www.domain.com.au/property-terrace-wiley-park-1314,domain.com.au
+Contact Agent,,"581 Spit Rd, Greenwich NSW 2423",Greenwich,2,1,1,Duplex,https://www.domain.com.au/property-duplex-greenwich-1315,domain.com.au
+"$2,184,110",2184110,"94 Victoria St, Oatley NSW 2439",Oatley,2,2,0,Terrace,https://www.domain.com.au/property-terrace-oatley-1316,domain.com.au
+Contact Agent,,"450 Ocean Rd, Gladesville NSW 2225",Gladesville,2,1,2,Terrace,https://www.domain.com.au/property-terrace-gladesville-1317,domain.com.au
+"$2,033,671",2033671,"123 Anzac Parade, Summer Hill NSW 2534",Summer Hill,5,1,1,Townhouse,https://www.domain.com.au/property-townhouse-summer-hill-1318,domain.com.au
+"$2,071,192",2071192,"981 Crown St, Kingsgrove NSW 2688",Kingsgrove,5,4,1,House,https://www.domain.com.au/property-house-kingsgrove-1319,domain.com.au
+"From $847,736",847736,"788 Henry St, Gordon NSW 2044",Gordon,0,1,1,Studio,https://www.domain.com.au/property-studio-gordon-1320,domain.com.au
+"$1,604,214",1604214,"976 Forest Rd, Toongabbie NSW 2432",Toongabbie,6,2,1,Townhouse,https://www.domain.com.au/property-townhouse-toongabbie-1321,domain.com.au
+"$1,163,099",1163099,"877 Military Rd, Monterey NSW 2996",Monterey,6,1,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-monterey-1322,domain.com.au
+"$603,918",603918,"645 The Boulevarde, Bankstown NSW 2212",Bankstown,4,1,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-bankstown-1323,domain.com.au
+"From $1,031,428",1031428,"561 William St, Granville NSW 2446",Granville,6,3,1,Villa,https://www.domain.com.au/property-villa-granville-1324,domain.com.au
+"$2,489,660",2489660,"443 Forest Rd, Artarmon NSW 2852",Artarmon,3,2,3,Terrace,https://www.domain.com.au/property-terrace-artarmon-1325,domain.com.au
+"$1,855,360",1855360,"856 Beach Rd, Tempe NSW 2167",Tempe,0,1,2,Studio,https://www.domain.com.au/property-studio-tempe-1326,domain.com.au
+"$1,261,724",1261724,"812 Spit Rd, Rockdale NSW 2571",Rockdale,6,1,1,Terrace,https://www.domain.com.au/property-terrace-rockdale-1327,domain.com.au
+Under Contract,,"177 Main St, Parramatta NSW 2200",Parramatta,1,1,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-parramatta-1328,domain.com.au
+"From $1,978,777",1978777,"844 Mona Vale Rd, Castle Cove NSW 2046",Castle Cove,2,2,4,Villa,https://www.domain.com.au/property-villa-castle-cove-1329,domain.com.au
+"$1,215,606",1215606,"219 Thomas St, Bronte NSW 2543",Bronte,2,2,0,House,https://www.domain.com.au/property-house-bronte-1330,domain.com.au
+POA,,"801 Beach Rd, Tempe NSW 2592",Tempe,3,3,1,Terrace,https://www.domain.com.au/property-terrace-tempe-1331,domain.com.au
+"$810,137",810137,"818 Falcon St, Gordon NSW 2838",Gordon,0,1,0,Studio,https://www.domain.com.au/property-studio-gordon-1332,domain.com.au
+"$498,947",498947,"849 Anzac Parade, Mortdale NSW 2732",Mortdale,2,1,2,Duplex,https://www.domain.com.au/property-duplex-mortdale-1333,domain.com.au
+"$2,222,068",2222068,"306 Thomas St, Brighton-Le-Sands NSW 2953",Brighton-Le-Sands,1,2,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-brighton-le-sands-1334,domain.com.au
+Auction,,"444 Albert St, Point Piper NSW 2885",Point Piper,4,2,2,Duplex,https://www.domain.com.au/property-duplex-point-piper-1335,domain.com.au
+Under Contract,,"824 James St, Rhodes NSW 2543",Rhodes,0,1,2,Studio,https://www.domain.com.au/property-studio-rhodes-1336,domain.com.au
+"$1,238,395",1238395,"770 Henry St, Little Bay NSW 2341",Little Bay,6,4,1,Villa,https://www.domain.com.au/property-villa-little-bay-1337,domain.com.au
+"$318,409",318409,"176 Queen St, Mount Druitt NSW 2822",Mount Druitt,4,3,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-mount-druitt-1338,domain.com.au
+"From $570,411",570411,"918 Park Ave, Auburn NSW 2683",Auburn,4,3,4,Villa,https://www.domain.com.au/property-villa-auburn-1339,domain.com.au
+"$1,875,402",1875402,"719 Canterbury Rd, Wentworthville NSW 2714",Wentworthville,6,4,2,Townhouse,https://www.domain.com.au/property-townhouse-wentworthville-1340,domain.com.au
+"$2,267,625",2267625,"733 School St, Chatswood NSW 2082",Chatswood,2,2,1,Townhouse,https://www.domain.com.au/property-townhouse-chatswood-1341,domain.com.au
+Under Contract,,"787 Oxford St, Hornsby NSW 2618",Hornsby,6,4,2,Townhouse,https://www.domain.com.au/property-townhouse-hornsby-1342,domain.com.au
+"$1,839,822",1839822,"457 Frederick St, Ramsgate NSW 2536",Ramsgate,4,1,3,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-ramsgate-1343,domain.com.au
+"$2,310,183",2310183,"487 John St, Lane Cove NSW 2333",Lane Cove,2,1,2,Villa,https://www.domain.com.au/property-villa-lane-cove-1344,domain.com.au
+Contact Agent,,"310 Ocean Rd, Ashfield NSW 2417",Ashfield,3,1,1,Duplex,https://www.domain.com.au/property-duplex-ashfield-1345,domain.com.au
+"From $1,503,347",1503347,"227 Spit Rd, Mascot NSW 2548",Mascot,6,2,1,Villa,https://www.domain.com.au/property-villa-mascot-1346,domain.com.au
+"$2,448,109",2448109,"393 Condamine St, Westmead NSW 2861",Westmead,5,4,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-westmead-1347,domain.com.au
+Under Contract,,"20 Pittwater Rd, Bellevue Hill NSW 2037",Bellevue Hill,3,3,0,Villa,https://www.domain.com.au/property-villa-bellevue-hill-1348,domain.com.au
+"$1,534,631",1534631,"919 Anzac Parade, Bondi Junction NSW 2723",Bondi Junction,6,3,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-bondi-junction-1349,domain.com.au
+"$1,944,897",1944897,"327 School St, Lavender Bay NSW 2597",Lavender Bay,1,2,2,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-lavender-bay-1350,domain.com.au
+"$2,452,780",2452780,"874 Spit Rd, Lugarno NSW 2859",Lugarno,1,2,3,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-lugarno-1351,domain.com.au
+"$966,645",966645,"692 Queen St, Middle Cove NSW 2344",Middle Cove,4,1,3,Terrace,https://www.domain.com.au/property-terrace-middle-cove-1352,domain.com.au
+"$1,782,880",1782880,"215 Edward St, Vaucluse NSW 2228",Vaucluse,2,1,3,Townhouse,https://www.domain.com.au/property-townhouse-vaucluse-1353,domain.com.au
+"$1,541,586",1541586,"803 James St, Forest Road NSW 2587",Forest Road,3,1,4,Duplex,https://www.domain.com.au/property-duplex-forest-road-1354,domain.com.au
+Contact Agent,,"884 Forest Rd, Botany NSW 2244",Botany,4,1,0,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-botany-1355,domain.com.au
+"$1,009,433",1009433,"688 Edward St, Rockdale NSW 2504",Rockdale,4,4,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-rockdale-1356,domain.com.au
+"$1,395,061",1395061,"375 Barrenjoey Rd, Cammeray NSW 2642",Cammeray,3,2,3,Townhouse,https://www.domain.com.au/property-townhouse-cammeray-1357,domain.com.au
+"$481,682",481682,"670 James St, Roselands NSW 2380",Roselands,6,3,4,Terrace,https://www.domain.com.au/property-terrace-roselands-1358,domain.com.au
+"From $1,467,615",1467615,"878 Warringah Rd, Oatley NSW 2945",Oatley,4,1,1,Duplex,https://www.domain.com.au/property-duplex-oatley-1359,domain.com.au
+Contact Agent,,"564 Spit Rd, Allawah NSW 2634",Allawah,6,2,1,Townhouse,https://www.domain.com.au/property-townhouse-allawah-1360,domain.com.au
+"$939,412",939412,"988 Elizabeth St, Concord NSW 2730",Concord,2,2,3,Duplex,https://www.domain.com.au/property-duplex-concord-1361,domain.com.au
+POA,,"478 John St, Punchbowl NSW 2398",Punchbowl,1,2,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-punchbowl-1362,domain.com.au
+"$637,755",637755,"427 Princes Highway, Ryde NSW 2993",Ryde,2,1,1,Duplex,https://www.domain.com.au/property-duplex-ryde-1363,domain.com.au
+"$1,003,747",1003747,"239 Church St, Killara NSW 2241",Killara,0,1,1,Studio,https://www.domain.com.au/property-studio-killara-1364,domain.com.au
+"$536,254",536254,"316 Liverpool Rd, McMahons Point NSW 2124",McMahons Point,1,2,2,Duplex,https://www.domain.com.au/property-duplex-mcmahons-point-1365,domain.com.au
+"$1,243,872",1243872,"802 Mona Vale Rd, Monterey NSW 2320",Monterey,5,3,3,Semi-Detached,https://www.domain.com.au/property-semi-detached-monterey-1366,domain.com.au
+"$2,196,800",2196800,"470 Princes Highway, Newtown NSW 2932",Newtown,4,1,4,Semi-Detached,https://www.domain.com.au/property-semi-detached-newtown-1367,domain.com.au
+"From $1,575,240",1575240,"305 Forest Rd, Kingsgrove NSW 2898",Kingsgrove,1,2,1,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-kingsgrove-1368,domain.com.au
+"$1,162,765",1162765,"453 Park Ave, Hurstville Grove NSW 2058",Hurstville Grove,6,3,0,House,https://www.domain.com.au/property-house-hurstville-grove-1369,domain.com.au
+"$642,094",642094,"141 William St, Mascot NSW 2046",Mascot,0,1,2,Studio,https://www.domain.com.au/property-studio-mascot-1370,domain.com.au
+"$639,898",639898,"203 Church St, St Leonards NSW 2759",St Leonards,4,2,2,Duplex,https://www.domain.com.au/property-duplex-st-leonards-1371,domain.com.au
+"From $2,294,452",2294452,"765 Charles St, Rhodes NSW 2451",Rhodes,4,1,0,Townhouse,https://www.domain.com.au/property-townhouse-rhodes-1372,domain.com.au
+"$1,974,438",1974438,"730 Ocean Rd, Lane Cove NSW 2301",Lane Cove,6,3,2,House,https://www.domain.com.au/property-house-lane-cove-1373,domain.com.au
+POA,,"496 Military Rd, Double Bay NSW 2620",Double Bay,6,4,2,Villa,https://www.domain.com.au/property-villa-double-bay-1374,domain.com.au
+"$1,060,630",1060630,"871 King Georges Rd, Sans Souci NSW 2395",Sans Souci,3,2,0,Apartment / Unit / Flat,https://www.domain.com.au/property-apartment--unit--flat-sans-souci-1375,domain.com.au
+"$2,127,952",2127952,"113 Warringah Rd, Lakemba NSW 2169",Lakemba,3,1,2,House,https://www.domain.com.au/property-house-lakemba-1376,domain.com.au
+"$953,611",953611,"685 Spit Rd, Bondi Junction NSW 2251",Bondi Junction,2,2,2,House,https://www.domain.com.au/property-house-bondi-junction-1377,domain.com.au
+"$2,484,896",2484896,"373 Queen St, Roseville NSW 2247",Roseville,6,2,0,Terrace,https://www.domain.com.au/property-terrace-roseville-1378,domain.com.au
+"$1,024,875",1024875,"827 Oxford St, Erskineville NSW 2238",Erskineville,4,3,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-erskineville-1379,domain.com.au
+"$1,302,539",1302539,"354 Barrenjoey Rd, Paddington NSW 2733",Paddington,0,1,3,Studio,https://www.domain.com.au/property-studio-paddington-1380,domain.com.au
+"$518,175",518175,"710 Albert St, Mascot NSW 2466",Mascot,6,3,1,Villa,https://www.domain.com.au/property-villa-mascot-1381,domain.com.au
+"$2,186,202",2186202,"377 Oxford St, North Sydney NSW 2084",North Sydney,1,1,1,Duplex,https://www.domain.com.au/property-duplex-north-sydney-1382,domain.com.au
+"$1,658,508",1658508,"288 Railway St, Carlton NSW 2513",Carlton,4,3,2,Semi-Detached,https://www.domain.com.au/property-semi-detached-carlton-1383,domain.com.au
+"$1,057,185",1057185,"2 Victoria St, Roselands NSW 2420",Roselands,5,1,0,House,https://www.domain.com.au/property-house-roselands-1384,domain.com.au
+"$1,721,068",1721068,"643 Park Ave, Hunters Hill NSW 2856",Hunters Hill,4,3,1,Duplex,https://www.domain.com.au/property-duplex-hunters-hill-1385,domain.com.au
+"$2,314,161",2314161,"178 Charles St, Malabar NSW 2445",Malabar,2,1,2,Townhouse,https://www.domain.com.au/property-townhouse-malabar-1386,domain.com.au
+"$2,231,879",2231879,"856 Canterbury Rd, Rockdale NSW 2436",Rockdale,4,4,2,Villa,https://www.domain.com.au/property-villa-rockdale-1387,domain.com.au
+"$919,955",919955,"804 Edward St, Vaucluse NSW 2307",Vaucluse,6,2,1,Terrace,https://www.domain.com.au/property-terrace-vaucluse-1388,domain.com.au
+"$1,621,703",1621703,"987 Beach Rd, Watsons Bay NSW 2966",Watsons Bay,3,1,0,Duplex,https://www.domain.com.au/property-duplex-watsons-bay-1389,domain.com.au
+"$1,324,498",1324498,"15 Elizabeth St, Northbridge NSW 2853",Northbridge,6,4,1,House,https://www.domain.com.au/property-house-northbridge-1390,domain.com.au
+"$2,034,768",2034768,"426 Pacific Highway, Manly NSW 2976",Manly,6,1,4,Villa,https://www.domain.com.au/property-villa-manly-1391,domain.com.au
+"$1,457,173",1457173,"223 Victoria St, Bexley NSW 2273",Bexley,4,4,2,Terrace,https://www.domain.com.au/property-terrace-bexley-1392,domain.com.au
+"$2,128,607",2128607,"793 King Georges Rd, Gladesville NSW 2480",Gladesville,5,1,1,Semi-Detached,https://www.domain.com.au/property-semi-detached-gladesville-1393,domain.com.au
+"From $1,446,942",1446942,"925 William St, Crows Nest NSW 2926",Crows Nest,6,1,3,Terrace,https://www.domain.com.au/property-terrace-crows-nest-1394,domain.com.au
+"$639,526",639526,"97 Park Ave, Roselands NSW 2426",Roselands,2,1,2,Townhouse,https://www.domain.com.au/property-townhouse-roselands-1395,domain.com.au
+"$2,379,478",2379478,"603 Beach Rd, Sydney NSW 2402",Sydney,4,4,2,Terrace,https://www.domain.com.au/property-terrace-sydney-1396,domain.com.au
+"$2,240,828",2240828,"642 Crown St, Mascot NSW 2973",Mascot,4,2,2,Terrace,https://www.domain.com.au/property-terrace-mascot-1397,domain.com.au
+"$1,683,984",1683984,"815 Albert St, Peakhurst NSW 2114",Peakhurst,0,1,4,Studio,https://www.domain.com.au/property-studio-peakhurst-1398,domain.com.au
+"$1,341,075",1341075,"855 Main St, St Peters NSW 2848",St Peters,4,3,1,Duplex,https://www.domain.com.au/property-duplex-st-peters-1399,domain.com.au
+"$1,914,520",1914520,"814 Park Ave, Kingsgrove NSW 2089",Kingsgrove,6,1,3,Terrace,https://www.domain.com.au/property-terrace-kingsgrove-1400,domain.com.au

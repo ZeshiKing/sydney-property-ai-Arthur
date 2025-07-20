@@ -1,0 +1,39 @@
+# 房产数据摘要报告
+生成时间: 2025-07-15T09:46:31.767424
+
+总房产数量: 1716
+
+## 价格统计
+- 平均价格: $1,469,507.02
+- 中位价格: $1,435,722.00
+- 最低价格: $411,195.00
+- 最高价格: $4,242,655.00
+- 标准差: $645,442.08
+
+## 按来源统计
+- realestate.com.au: 671
+- domain.com.au: 480
+- rent.com.au: 312
+- realestateview.com.au: 253
+
+## 热门区域 (前10)
+- Tempe: 28
+- Seven Hills: 23
+- Pymble: 23
+- Brighton-Le-Sands: 22
+- Gordon: 22
+- Newtown: 22
+- Hornsby: 21
+- Roselands: 21
+- Punchbowl: 21
+- Kirribilli: 21
+
+## 按房产类型统计
+- Villa: 240
+- House: 228
+- Apartment / Unit / Flat: 226
+- Semi-Detached: 215
+- Townhouse: 214
+- Duplex: 204
+- Terrace: 201
+- Studio: 188
