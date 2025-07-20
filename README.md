@@ -34,6 +34,7 @@ streamlit run app.py
 
 - "我要个大一点的房子在Bondi，预算100万"
 - "离市区远的地方，安静环境，2室"
+
 - "海边的公寓，80万以内"
 
 ### 技术架构
@@ -44,5 +45,10 @@ streamlit run app.py
 - **部署**: Streamlit Cloud
 
 ---
+### ⚠️免责声明
 
-**Made with ❤️ in Australia** | Powered by Claude AI
+本项目仅用于技术学习和交流目的，爬虫脚本仅用于演示如何从公开网页中提取结构化信息。
+请勿将该代码用于未经授权的商业用途，也请尊重目标网站的 robots.txt 协议与使用条款。
+
+若您是站点所有者并对此内容有任何异议，请联系我们及时下架或调整。
+**Made by Arthur and Ryan in whitemirror** | Powered by Claude AI
