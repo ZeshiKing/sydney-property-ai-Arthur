@@ -10,6 +10,13 @@
 - Git
 - 一个Firecrawl API账户（免费注册：https://firecrawl.dev）
 
+> 📖 **重要提醒**：我们的团队使用不同操作系统（macOS、Windows、Linux）进行开发。
+> 
+> 🔧 **跨平台协作必读**：请先阅读 [DEVELOPMENT.md](DEVELOPMENT.md) 了解系统特定的配置和注意事项，特别是：
+> - **macOS用户**：避免提交 `.DS_Store` 等系统文件
+> - **Windows用户**：正确配置Git行结束符
+> - **所有用户**：Docker和环境变量的最佳实践
+
 ### 1. 克隆并配置项目
 ```bash
 # 克隆项目

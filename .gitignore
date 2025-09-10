@@ -139,9 +139,39 @@ credentials.json
 *.backup
 *.bak
 
-# Ignore macOS specific files
+# ===========================================
+# macOS 系统文件 (重要：Mac用户请注意)
+# ===========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
 .AppleDouble
 .LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
 
-# Windows specific
+# macOS 开发工具缓存
+.CFUserTextEncoding
+
+# macOS Finder 信息文件
+Desktop.ini
+thumbs.db
+
+# ===========================================
+# Windows 系统文件
+# ===========================================
 desktop.ini
+Thumbs.db
+ehthumbs.db
+*.tmp
+
+# ===========================================
+# Linux 系统文件
+# ===========================================
+*~
+.nfs*
