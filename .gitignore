@@ -80,3 +80,68 @@ test-results/
 
 # Documentation build
 docs/build/
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ESLint cache
+.eslintcache
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Parcel cache
+.parcel-cache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# SvelteKit build
+.svelte-kit
+
+# Prisma
+prisma/migrations/
+
+# Sentry
+.sentryclirc
+
+# Local Netlify folder
+.netlify
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Ignore test screenshots and videos
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Ignore API keys and secrets
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.json
+credentials.json
+
+# Ignore backup files
+*.backup
+*.bak
+
+# Ignore macOS specific files
+.AppleDouble
+.LSOverride
+
+# Windows specific
+desktop.ini
