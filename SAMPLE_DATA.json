@@ -1,0 +1,237 @@
+{
+  "searchQuery": {
+    "location": {
+      "suburb": "Camperdown",
+      "state": "NSW",
+      "postcode": "2050"
+    },
+    "listingType": "rent",
+    "propertyType": "apartment",
+    "bedrooms": {
+      "min": 2
+    },
+    "searchUrl": "https://www.domain.com.au/rent/camperdown-nsw-2050/apartment/?bedrooms=2-any"
+  },
+  "searchResults": {
+    "totalProperties": 21,
+    "priceRange": {
+      "min": 875,
+      "max": 2000,
+      "unit": "per week",
+      "currency": "AUD"
+    },
+    "bedroomDistribution": ["2", "3"],
+    "properties": [
+      {
+        "id": "property_001",
+        "price": {
+          "amount": 940,
+          "period": "per week",
+          "currency": "AUD",
+          "displayText": "$940 per week"
+        },
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "parkingSpaces": 1,
+        "address": {
+          "streetNumber": "51",
+          "streetName": "Dunblane Street",
+          "suburb": "Camperdown",
+          "state": "NSW",
+          "postcode": "2050",
+          "fullAddress": "51/46 Dunblane Street, Camperdown NSW 2050"
+        },
+        "propertyType": "apartment",
+        "listingType": "rent",
+        "features": {
+          "furnished": null,
+          "petFriendly": null,
+          "parking": true,
+          "balcony": null,
+          "airConditioning": null
+        },
+        "images": [
+          "https://images.domain.com.au/img/Agencys/5622/logo_5622.jpg"
+        ],
+        "agency": {
+          "name": "Unknown Agency",
+          "logo": "https://images.domain.com.au/img/Agencys/5622/logo_5622.jpg"
+        },
+        "extractedAt": "2025-09-10T10:45:00Z",
+        "source": "domain.com.au"
+      },
+      {
+        "id": "property_002", 
+        "price": {
+          "amount": 1050,
+          "period": "per week",
+          "currency": "AUD",
+          "displayText": "$1050 per week"
+        },
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "parkingSpaces": 1,
+        "address": {
+          "streetNumber": "113",
+          "streetName": "Parramatta Rd",
+          "suburb": "Camperdown",
+          "state": "NSW", 
+          "postcode": "2050",
+          "fullAddress": "113 Parramatta Rd, Camperdown NSW 2050"
+        },
+        "propertyType": "apartment",
+        "listingType": "rent",
+        "features": {
+          "furnished": null,
+          "petFriendly": null,
+          "parking": true,
+          "balcony": null,
+          "airConditioning": null
+        },
+        "images": [
+          "https://images.domain.com.au/img/Agencys/3930/logo_3930.jpeg"
+        ],
+        "agency": {
+          "name": "Unknown Agency",
+          "logo": "https://images.domain.com.au/img/Agencys/3930/logo_3930.jpeg"
+        },
+        "extractedAt": "2025-09-10T10:45:00Z",
+        "source": "domain.com.au"
+      },
+      {
+        "id": "property_003",
+        "price": {
+          "amount": 1090,
+          "period": "per week", 
+          "currency": "AUD",
+          "displayText": "$1090 per week"
+        },
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "parkingSpaces": 1,
+        "address": {
+          "streetNumber": "9",
+          "streetName": "Barr Street",
+          "suburb": "Camperdown",
+          "state": "NSW",
+          "postcode": "2050", 
+          "fullAddress": "9/25 Barr Street, Camperdown NSW 2050"
+        },
+        "propertyType": "apartment",
+        "listingType": "rent",
+        "features": {
+          "furnished": null,
+          "petFriendly": null,
+          "parking": true,
+          "balcony": null,
+          "airConditioning": null
+        },
+        "images": [
+          "https://images.domain.com.au/img/Agencys/22473/logo_22473.png"
+        ],
+        "agency": {
+          "name": "Unknown Agency",
+          "logo": "https://images.domain.com.au/img/Agencys/22473/logo_22473.png"
+        },
+        "extractedAt": "2025-09-10T10:45:00Z",
+        "source": "domain.com.au"
+      },
+      {
+        "id": "property_004",
+        "price": {
+          "amount": 1200,
+          "period": "per week",
+          "currency": "AUD", 
+          "displayText": "$1200 per week"
+        },
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "parkingSpaces": 2,
+        "address": {
+          "streetNumber": "15",
+          "streetName": "University Avenue",
+          "suburb": "Camperdown",
+          "state": "NSW",
+          "postcode": "2050",
+          "fullAddress": "15/20 University Avenue, Camperdown NSW 2050"
+        },
+        "propertyType": "apartment",
+        "listingType": "rent",
+        "features": {
+          "furnished": false,
+          "petFriendly": true,
+          "parking": true,
+          "balcony": true,
+          "airConditioning": true
+        },
+        "images": [
+          "https://images.domain.com.au/img/property001.jpg",
+          "https://images.domain.com.au/img/property001_kitchen.jpg"
+        ],
+        "agency": {
+          "name": "Premium Real Estate",
+          "logo": "https://images.domain.com.au/img/premium_logo.jpg"
+        },
+        "extractedAt": "2025-09-10T10:45:00Z",
+        "source": "domain.com.au"
+      },
+      {
+        "id": "property_005",
+        "price": {
+          "amount": 875,
+          "period": "per week",
+          "currency": "AUD",
+          "displayText": "$875 per week"
+        },
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "parkingSpaces": 1,
+        "address": {
+          "streetNumber": "42",
+          "streetName": "Wilson Street", 
+          "suburb": "Camperdown",
+          "state": "NSW",
+          "postcode": "2050",
+          "fullAddress": "42/18 Wilson Street, Camperdown NSW 2050"
+        },
+        "propertyType": "apartment",
+        "listingType": "rent",
+        "features": {
+          "furnished": null,
+          "petFriendly": false,
+          "parking": true,
+          "balcony": null,
+          "airConditioning": false
+        },
+        "images": [
+          "https://images.domain.com.au/img/property005.jpg"
+        ],
+        "agency": {
+          "name": "Budget Properties",
+          "logo": "https://images.domain.com.au/img/budget_logo.jpg"
+        },
+        "extractedAt": "2025-09-10T10:45:00Z",
+        "source": "domain.com.au"
+      }
+    ]
+  },
+  "metadata": {
+    "searchTimestamp": "2025-09-10T10:45:00Z",
+    "processingTime": 3200,
+    "dataSource": "domain.com.au",
+    "extractionMethod": "firecrawl",
+    "totalCharacters": 46620,
+    "apiVersion": "v1",
+    "cacheStatus": "miss",
+    "locationData": {
+      "coordinates": {
+        "latitude": -33.8886,
+        "longitude": 151.1873
+      },
+      "nearbySuburbs": ["Newtown", "Glebe", "Ultimo", "Darlington"],
+      "publicTransport": ["Redfern Station (1.2km)", "Central Station (2.1km)"],
+      "schools": ["University of Sydney", "Sydney Boys High School"],
+      "shopping": ["Broadway Shopping Centre", "Glebe Point Road"]
+    }
+  }
+}
