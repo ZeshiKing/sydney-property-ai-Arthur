@@ -1,0 +1,54 @@
+# FastAPI 核心框架
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# 数据验证和序列化
+pydantic==2.5.1
+pydantic-settings==2.1.0
+
+# 数据库
+sqlalchemy==2.0.23
+asyncpg==0.29.0
+alembic==1.13.0
+
+# 缓存和任务队列
+redis==5.0.1
+aioredis==2.0.1
+celery==5.3.4
+
+# HTTP客户端和网络
+httpx==0.25.2
+aiofiles==23.2.1
+
+# 数据处理
+pandas==2.1.4
+openpyxl==3.1.2
+
+# 安全和认证
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+
+# 环境配置
+python-dotenv==1.0.0
+
+# 日期时间处理
+python-dateutil==2.8.2
+
+# JSON处理
+orjson==3.9.10
+
+# 开发工具
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.11.0
+ruff==0.1.7
+mypy==1.7.1
+
+# 监控和日志
+structlog==23.2.0
+
+# 其他工具
+click==8.1.7
+rich==13.7.0

@@ -1,55 +1,64 @@
-# Multi-stage build for production optimization
-FROM node:18-alpine AS base
+# Multi-stage build for Python FastAPI application
+FROM python:3.11-slim AS base
 
 # Set working directory
 WORKDIR /app
 
-# Install dependencies for native modules
-RUN apk add --no-cache python3 make g++
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    libpq-dev \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
 
-# Copy package files
-COPY package*.json ./
-COPY tsconfig.json ./
+# Install Python dependencies
+COPY requirements.txt pyproject.toml ./
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Development stage
 FROM base AS development
-RUN npm install
+# Install dev dependencies
+RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 EXPOSE 3000
-CMD ["npm", "run", "dev"]
-
-# Build stage
-FROM base AS build
-RUN npm ci --only=production && npm cache clean --force
-COPY . .
-RUN npm run build
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "3000", "--reload"]
 
 # Production stage
-FROM node:18-alpine AS production
+FROM python:3.11-slim AS production
 
 # Create app user
-RUN addgroup -g 1001 -S nodejs
-RUN adduser -S nodejs -u 1001
+RUN groupadd -r appuser && useradd -r -g appuser appuser
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    libpq-dev \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
-# Copy built application
-COPY --from=build --chown=nodejs:nodejs /app/dist ./dist
-COPY --from=build --chown=nodejs:nodejs /app/node_modules ./node_modules
-COPY --from=build --chown=nodejs:nodejs /app/package*.json ./
+# Install Python dependencies
+COPY requirements.txt pyproject.toml ./
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Create logs directory
-RUN mkdir -p logs && chown nodejs:nodejs logs
+# Copy application code
+COPY --chown=appuser:appuser ./app ./app
+COPY --chown=appuser:appuser ./app/main.py ./
+
+# Create necessary directories
+RUN mkdir -p logs csv_exports && \
+    chown -R appuser:appuser logs csv_exports
 
 # Switch to non-root user
-USER nodejs
+USER appuser
 
 # Expose port
 EXPOSE 3000
 
 # Health check
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD node -e "require('http').get('http://localhost:3000/health', (res) => { process.exit(res.statusCode === 200 ? 0 : 1) }).on('error', () => process.exit(1))"
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+  CMD curl -f http://localhost:3000/health || exit 1
 
 # Start the application
-CMD ["node", "dist/index.js"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "3000", "--workers", "1"]

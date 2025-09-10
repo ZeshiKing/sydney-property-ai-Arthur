@@ -35,18 +35,30 @@ services:
       timeout: 10s
       retries: 3
 
-  # Application
+  # Python FastAPI Application
   app:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: rental-aggregator-api
+      target: development
+    container_name: rental-aggregator-api-python
     environment:
-      NODE_ENV: development
+      ENVIRONMENT: development
+      DEBUG: true
       PORT: 3000
-      DATABASE_URL: postgresql://postgres:password123@postgres:5432/rental_aggregator
-      REDIS_URL: redis://redis123@redis:6379
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: rental_aggregator
+      DB_USER: postgres
+      DB_PASSWORD: password123
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_PASSWORD: redis123
       FIRECRAWL_API_KEY: ${FIRECRAWL_API_KEY}
+      FIRECRAWL_BASE_URL: https://api.firecrawl.dev
+      LOG_LEVEL: INFO
+      CACHE_TTL_SECONDS: 3600
+      CSV_EXPORT_DIR: csv_exports
     ports:
       - "3000:3000"
     depends_on:
@@ -55,9 +67,9 @@ services:
       redis:
         condition: service_healthy
     volumes:
-      - ./src:/app/src
+      - ./app:/app/app
       - ./logs:/app/logs
-    command: npm run dev
+      - ./csv_exports:/app/csv_exports
     restart: unless-stopped
 
   # Redis Commander (Optional - for Redis GUI)

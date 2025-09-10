@@ -1,503 +1,430 @@
-# 澳洲租房聚合网站后端系统
+# 澳洲租房聚合系统后端 - Python FastAPI 版本
 
-一个用于聚合澳洲租房市场数据的企业级后端API服务，支持实时抓取Domain.com.au等房产网站数据，为用户提供智能房产搜索和AI报告生成服务。
+🏠 **澳洲房产租赁数据聚合API** - 基于Python FastAPI构建的高性能房产数据抓取和聚合系统
 
-## 🏗️ 系统架构
+## 🚀 技术栈迁移
 
-### 核心组件
-- **Express.js API服务器** - RESTful API接口
-- **Firecrawl集成** - 智能网页抓取服务
-- **Redis缓存层** - 高性能数据缓存
-- **PostgreSQL数据库** - 可靠的数据持久化
-- **Bull队列系统** - 异步任务处理
-- **TypeScript** - 类型安全的代码
+**从 TypeScript/Node.js 迁移至 Python FastAPI**
 
-### 技术栈
-- **后端框架**: Node.js + Express.js + TypeScript
-- **数据库**: PostgreSQL 15 + Redis 7
-- **队列处理**: Bull Queue (Redis-based)
-- **网页抓取**: Firecrawl API
-- **容器化**: Docker + Docker Compose
-- **测试框架**: Jest + Supertest
-- **代码质量**: ESLint + TypeScript
+### 新技术栈优势
+- ✅ **Python** - 主流语言，学习曲线友好
+- ✅ **FastAPI** - 现代高性能Web框架，自动API文档生成
+- ✅ **Pydantic** - 强类型数据验证和序列化
+- ✅ **SQLAlchemy 2.0** - 现代Python ORM，支持异步操作
+- ✅ **asyncio/httpx** - 异步HTTP客户端，高并发性能
+- ✅ **pandas** - 强大的数据处理和CSV导出功能
 
-## 🚀 快速开始
+### 核心功能
+- 🔍 **智能房产搜索** - 支持多条件筛选
+- 🤖 **Firecrawl集成** - 专业网页抓取服务
+- 📊 **CSV数据导出** - 自动生成调试用CSV文件
+- 🗄️ **PostgreSQL存储** - 可靠的数据持久化
+- ⚡ **Redis缓存** - 高性能数据缓存
+- 🐳 **Docker支持** - 一键部署和开发环境
+
+## 📋 快速开始
 
 ### 环境要求
-- Node.js 18+
-- Docker & Docker Compose
-- Firecrawl API Key
-
-### 🍎💻🐧 跨平台开发注意事项
-
-**重要提醒：我们的团队使用不同的操作系统，请注意以下事项：**
-
-#### macOS 用户
-- ⚠️ **请确保已配置Git忽略系统文件**：项目已包含完整的`.gitignore`规则
-- 📁 **避免提交`.DS_Store`文件**：macOS会自动创建这些隐藏文件
-- 🔧 **推荐设置全局Git配置**：
-  ```bash
-  # 全局忽略macOS系统文件
-  echo ".DS_Store" >> ~/.gitignore_global
-  git config --global core.excludesfile ~/.gitignore_global
-  ```
-- 🐳 **Docker路径注意**：使用绝对路径时注意大小写敏感
-
-#### Windows 用户  
-- 🔧 **行结束符设置**：
-  ```bash
-  git config --global core.autocrlf true
-  ```
-- 📂 **路径分隔符**：注意使用正确的路径分隔符
-- 🐳 **Docker Desktop**：确保WSL2集成已启用
-
-#### Linux 用户
-- 🔐 **权限设置**：注意Docker容器的用户权限
-- 📦 **包管理器**：使用对应发行版的包管理器安装依赖
+- Python 3.9+ 
+- Docker & Docker Compose (推荐)
+- PostgreSQL 15+
+- Redis 7+
 
 ### 1. 克隆项目
 ```bash
-git clone <repository-url>
-cd rental-aggregator-backend
+git clone https://github.com/ZeshiKing/sydney-property-ai-Arthur.git
+cd sydney-property-ai-Arthur
 ```
 
-### 2. 环境配置
+### 2. 配置环境变量
 ```bash
-# 复制环境变量模板
+# 复制环境配置模板
 cp .env.example .env
 
-# 编辑环境变量
+# 编辑 .env 文件，设置必要的配置
 nano .env
 ```
 
-必填配置项：
+**重要配置项**:
 ```env
 FIRECRAWL_API_KEY=your_firecrawl_api_key_here
+DB_PASSWORD=your_secure_password
+REDIS_PASSWORD=your_redis_password
+SECRET_KEY=your-very-secure-secret-key
 ```
 
-### 3. 启动开发环境
+### 3. Docker方式运行（推荐）
 ```bash
-# 启动所有服务 (数据库、缓存、应用)
+# 启动完整服务栈
 docker-compose up -d
 
-# 或仅启动依赖服务
-docker-compose up -d postgres redis
+# 查看服务状态
+docker-compose ps
+
+# 查看应用日志
+docker-compose logs -f app
+```
+
+### 4. 本地开发方式
+```bash
+# 创建虚拟环境
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# venv\Scripts\activate  # Windows
 
 # 安装依赖
-npm install
+pip install -r requirements.txt
 
 # 启动开发服务器
-npm run dev
+python -m app.main
+# 或使用 uvicorn
+uvicorn app.main:app --host 0.0.0.0 --port 3000 --reload
 ```
 
-### 4. 启动管理工具 (可选)
-```bash
-# 启动 Redis GUI 和 PostgreSQL GUI
-docker-compose --profile tools up -d
+## 📚 API文档
 
-# 访问地址：
-# Redis Commander: http://localhost:8081
-# pgAdmin: http://localhost:8080 (admin@rental-aggregator.com / admin123)
-```
+### 自动生成的文档
+启动服务后访问：
+- **Swagger UI**: http://localhost:3000/api/v1/docs
+- **ReDoc**: http://localhost:3000/api/v1/redoc
 
-## 📚 API 文档
+### 核心API端点
 
-### 基础信息
-- **Base URL**: `http://localhost:3000`
-- **Content-Type**: `application/json`
-- **Rate Limit**: 100 requests per 15 minutes (default)
+#### 🏠 房产搜索
+```http
+POST /api/v1/properties/search
+Content-Type: application/json
 
-### 核心端点
-
-#### 1. 房产搜索
-```bash
-POST /api/properties/search
-```
-
-请求示例：
-```json
 {
-  "listingType": "rent",
-  "location": {
-    "suburb": "Camperdown",
-    "state": "NSW",
-    "postcode": "2050"
-  },
-  "propertyType": "apartment",
-  "bedrooms": {
-    "min": 2,
-    "max": 3
-  },
-  "priceRange": {
-    "min": 400,
-    "max": 800
-  },
-  "sortBy": "price-asc",
-  "page": 1,
-  "limit": 20
+  "location": "Camperdown",
+  "min_price": 400,
+  "max_price": 800,
+  "bedrooms": 2,
+  "bathrooms": 1,
+  "property_type": "Apartment",
+  "max_results": 20
 }
 ```
 
-响应示例：
+**响应示例**:
 ```json
 {
   "success": true,
-  "data": {
-    "properties": [
-      {
-        "id": "property-123",
-        "source": "domain",
-        "address": {
-          "street": "123 Test Street",
-          "suburb": "Camperdown",
-          "state": "NSW",
-          "postcode": "2050",
-          "fullAddress": "123 Test Street, Camperdown NSW 2050"
-        },
-        "price": {
-          "display": "$450 per week",
-          "amount": 450,
-          "frequency": "weekly",
-          "currency": "AUD"
-        },
-        "propertyDetails": {
-          "type": "apartment",
-          "bedrooms": 2,
-          "bathrooms": 1,
-          "parking": 1
-        },
-        "media": {
-          "images": ["https://example.com/image1.jpg"]
-        },
-        "description": "Modern apartment with city views...",
-        "features": ["Air conditioning", "Balcony", "Pool"],
-        "contact": {
-          "agentName": "John Smith",
-          "agencyName": "Premium Real Estate"
-        },
-        "metadata": {
-          "listingDate": "2024-01-15T10:00:00Z",
-          "lastUpdated": "2024-01-15T14:30:00Z",
-          "sourceUrl": "https://domain.com.au/property-123"
-        }
-      }
-    ],
-    "pagination": {
-      "currentPage": 1,
-      "totalPages": 5,
-      "totalProperties": 89,
-      "hasNext": true,
-      "hasPrevious": false
-    },
-    "metadata": {
-      "searchId": "search_1642234567_abc123",
-      "executionTime": 1250,
-      "sourcesScrapped": ["domain", "cache"],
-      "cacheHit": false
+  "properties": [
+    {
+      "id": "uuid-here",
+      "title": "Modern 2 Bedroom Apartment in Camperdown",
+      "price": "$650/week",
+      "location": "Camperdown",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": 1,
+      "property_type": "Apartment",
+      "description": "Well-appointed modern apartment...",
+      "features": ["Air Conditioning", "Built-in Wardrobes"],
+      "images": ["https://example.com/image1.jpg"],
+      "agent": {
+        "name": "Property Agent",
+        "phone": "0400 000 000"
+      },
+      "url": "https://www.domain.com.au/property/sample",
+      "source": "Domain.com.au",
+      "scraped_at": "2024-01-01T00:00:00Z"
     }
-  }
+  ],
+  "metadata": {
+    "total_found": 1,
+    "search_time_ms": 2500.0,
+    "timestamp": "2024-01-01T00:00:00Z"
+  },
+  "message": "成功找到 1 个房产"
 }
 ```
 
-#### 2. 获取单个房产
-```bash
-GET /api/properties/:id?source=domain
+#### 🔍 健康检查
+```http
+GET /api/v1/health/
 ```
 
-#### 3. 地区建议
-```bash
-GET /api/locations/suggest?query=camper&limit=10
+#### 📊 支持的区域
+```http
+GET /api/v1/properties/locations
 ```
 
-#### 4. 健康检查
-```bash
-GET /health
-GET /health/detailed
-GET /health/ready
-GET /health/live
+#### 🧪 测试Firecrawl连接
+```http
+GET /api/v1/properties/test
 ```
 
-#### 5. 管理员端点
-```bash
-GET /api/admin/analytics/search?days=7
-GET /api/admin/queue/status
-POST /api/admin/cache/invalidate
+## 🗄️ 数据库设计
+
+### 房产表 (Properties)
+```sql
+CREATE TABLE properties (
+    id VARCHAR(36) PRIMARY KEY,
+    title VARCHAR(500) NOT NULL,
+    price VARCHAR(100) NOT NULL,
+    price_numeric INTEGER,  -- 便于价格筛选
+    location VARCHAR(200) NOT NULL,
+    bedrooms INTEGER,
+    bathrooms INTEGER,
+    parking INTEGER,
+    property_type VARCHAR(50) NOT NULL,
+    description TEXT,
+    features JSON,
+    images JSON,
+    latitude FLOAT,
+    longitude FLOAT,
+    url VARCHAR(1000) UNIQUE NOT NULL,
+    source VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW()
+);
 ```
 
-## 🧪 测试
-
-```bash
-# 运行所有测试
-npm test
-
-# 运行测试并生成覆盖率报告
-npm run test:coverage
-
-# 运行测试监视模式
-npm run test:watch
-
-# 运行特定测试文件
-npm test -- domainUrlBuilder.test.ts
+### 搜索历史表 (Search History)
+```sql
+CREATE TABLE search_history (
+    id VARCHAR(36) PRIMARY KEY,
+    location VARCHAR(200) NOT NULL,
+    search_params JSON NOT NULL,
+    results_found INTEGER DEFAULT 0,
+    search_time_ms FLOAT NOT NULL,
+    search_status VARCHAR(20) NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW()
+);
 ```
 
-测试覆盖率目标: >80%
+## 📁 项目结构
 
-## 🛠️ 开发工具
+```
+rental-aggregator-backend/
+├── app/                          # 主应用目录
+│   ├── __init__.py
+│   ├── main.py                   # FastAPI应用入口
+│   ├── api/                      # API路由
+│   │   ├── api_v1/
+│   │   │   ├── api.py           # API路由聚合
+│   │   │   └── endpoints/
+│   │   │       ├── health.py    # 健康检查端点
+│   │   │       └── properties.py # 房产搜索端点
+│   ├── core/                     # 核心配置
+│   │   ├── config.py            # 应用配置
+│   │   └── logging.py           # 日志配置
+│   ├── database/                 # 数据库层
+│   │   └── base.py              # 数据库连接和基类
+│   └── models/                   # 数据模型
+│       ├── property.py          # 房产模型
+│       └── search_history.py    # 搜索历史模型
+├── csv_exports/                  # CSV导出目录
+├── logs/                         # 日志文件
+├── requirements.txt              # Python依赖
+├── pyproject.toml               # 项目配置
+├── docker-compose.yml           # Docker编排
+├── Dockerfile                   # Docker镜像
+└── .env.example                 # 环境变量模板
+```
 
-### 代码质量
+## 🔧 开发工具
+
+### 代码格式化和检查
 ```bash
+# 安装开发依赖
+pip install -r requirements.txt
+
+# 代码格式化
+black app/
+
 # 代码检查
-npm run lint
+ruff app/
 
-# 自动修复代码风格问题
-npm run lint:fix
-
-# TypeScript 类型检查
-npm run build
+# 类型检查
+mypy app/
 ```
 
-### 数据库管理
+### 数据库迁移
 ```bash
-# 运行数据库迁移
-npm run db:migrate
+# 手动创建数据库表（当前版本）
+# 启动应用时会自动创建表
 
-# 查看数据库状态
-docker-compose exec postgres psql -U postgres -d rental_aggregator
+# 未来版本将集成Alembic进行版本化迁移
 ```
 
-### 缓存管理
+## 🐳 Docker部署
+
+### 开发环境
 ```bash
-# 连接到 Redis CLI
-docker-compose exec redis redis-cli -a redis123
+# 启动开发环境（支持热重载）
+docker-compose up -d
 
-# 查看缓存统计
-redis-cli -a redis123 info memory
+# 仅启动数据库服务
+docker-compose up -d postgres redis
 ```
 
-## 📊 监控和日志
-
-### 日志级别
-- **error**: 系统错误和异常
-- **warn**: 警告和潜在问题
-- **info**: 一般信息和重要事件
-- **debug**: 调试信息（仅开发环境）
-
-### 日志文件位置
-```
-logs/
-├── error.log      # 错误日志
-├── combined.log   # 综合日志
-└── app.log        # 应用日志
-```
-
-### 监控端点
-- `/health` - 基础健康检查
-- `/health/detailed` - 详细系统状态
-- `/api/properties/health` - 服务健康状态
-- `/api/admin/queue/status` - 队列状态
-
-## 🔧 配置说明
-
-### 环境变量
-
-#### 应用配置
-```env
-NODE_ENV=development
-PORT=3000
-APP_NAME=Rental Aggregator Backend
-```
-
-#### 数据库配置
-```env
-DATABASE_URL=postgresql://postgres:password123@localhost:5432/rental_aggregator
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=rental_aggregator
-```
-
-#### Redis配置
-```env
-REDIS_URL=redis://localhost:6379
-REDIS_HOST=localhost
-REDIS_PORT=6379
-REDIS_PASSWORD=
-```
-
-#### Firecrawl配置
-```env
-FIRECRAWL_API_KEY=your_api_key_here
-FIRECRAWL_BASE_URL=https://api.firecrawl.dev
-```
-
-#### 性能配置
-```env
-RATE_LIMIT_WINDOW_MS=900000    # 15分钟
-RATE_LIMIT_MAX_REQUESTS=100
-CACHE_TTL_SECONDS=900          # 15分钟
-QUEUE_CONCURRENCY=5
-MAX_CONCURRENT_REQUESTS=3
-SCRAPING_DELAY_MS=1000
-```
-
-## 🚢 部署
-
-### Docker生产部署
+### 生产环境
 ```bash
 # 构建生产镜像
 docker build --target production -t rental-aggregator:latest .
 
-# 运行生产容器
-docker run -d \
-  --name rental-aggregator \
-  -p 3000:3000 \
-  --env-file .env.production \
-  rental-aggregator:latest
+# 使用环境变量文件
+docker-compose --env-file .env.production up -d
 ```
 
-### Docker Compose生产部署
+### 常用Docker命令
 ```bash
-# 使用生产配置
-docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+# 查看服务状态
+docker-compose ps
+
+# 查看日志
+docker-compose logs -f app
+
+# 进入应用容器
+docker-compose exec app bash
+
+# 重启应用服务
+docker-compose restart app
+
+# 清理并重新构建
+docker-compose down
+docker-compose build --no-cache
+docker-compose up -d
 ```
 
-### 环境变量清单（生产）
-确保生产环境包含所有必需的环境变量：
-- ✅ `FIRECRAWL_API_KEY`
-- ✅ `DATABASE_URL`
-- ✅ `REDIS_URL`
-- ✅ `NODE_ENV=production`
+## 📊 CSV数据导出
 
-## 🔒 安全考虑
+每次成功搜索后，系统会自动在后台生成CSV文件：
 
-### API安全
-- ✅ Helmet.js 安全头
-- ✅ CORS 跨域保护
-- ✅ 请求速率限制
-- ✅ 输入数据验证
-- ✅ SQL注入防护
+### CSV文件位置
+- 开发环境: `./csv_exports/`
+- Docker环境: 映射到主机的 `./csv_exports/`
 
-### 数据安全
-- ✅ 敏感数据不记录日志
-- ✅ 数据库连接加密 (生产环境SSL)
-- ✅ API密钥环境变量管理
-- ✅ 容器非root用户运行
+### CSV文件格式
+```csv
+ID,Title,Price,Location,Bedrooms,Bathrooms,Parking,Property_Type,Description,Features,Agent_Name,Agent_Phone,Available_From,Property_Size,Pet_Friendly,Furnished,URL,Source,Scraped_At,Search_Location,Search_Min_Price,Search_Max_Price
+```
 
-## 📈 性能优化
+### CSV管理
+- 自动清理：保留最新50个文件
+- 文件命名：`property_search_[location]_[timestamp].csv`
+- 编码格式：UTF-8
 
-### 缓存策略
-- **搜索结果**: 15分钟TTL
-- **单个房产**: 30分钟TTL
-- **地区建议**: 1小时TTL
-
-### 数据库优化
-- 地理位置GIN索引
-- 价格和卧室BTREE索引
-- 自动更新时间戳触发器
-- 定期ANALYZE统计信息
-
-### 队列优化
-- 并发处理控制
-- 指数退避重试机制
-- 优先级队列管理
-- 失败任务清理
-
-## 🐛 故障排除
+## 🚨 故障排除
 
 ### 常见问题
 
 #### 1. Firecrawl API错误
 ```bash
 # 检查API密钥配置
-echo $FIRECRAWL_API_KEY
+curl -H "Authorization: Bearer your_api_key" https://api.firecrawl.dev/health
 
-# 测试API连接
-curl -H "Authorization: Bearer $FIRECRAWL_API_KEY" https://api.firecrawl.dev/v0/scrape
+# 查看API使用量
+# 访问 https://firecrawl.dev 查看账户余额
 ```
 
-#### 2. 数据库连接问题
+#### 2. 数据库连接失败
 ```bash
-# 检查数据库状态
-docker-compose exec postgres pg_isready
+# 检查PostgreSQL服务
+docker-compose ps postgres
 
 # 查看数据库日志
 docker-compose logs postgres
+
+# 测试数据库连接
+docker-compose exec postgres psql -U postgres -d rental_aggregator -c "SELECT version();"
 ```
 
 #### 3. Redis连接问题
 ```bash
+# 检查Redis服务
+docker-compose ps redis
+
 # 测试Redis连接
 docker-compose exec redis redis-cli ping
-
-# 查看Redis日志
-docker-compose logs redis
 ```
 
-#### 4. 队列处理问题
+#### 4. 应用启动失败
 ```bash
-# 查看队列状态
-curl http://localhost:3000/api/admin/queue/status
+# 查看详细日志
+docker-compose logs -f app
 
-# 查看应用日志
-docker-compose logs app
+# 检查环境变量
+docker-compose exec app env | grep -E "(DB_|REDIS_|FIRECRAWL_)"
+
+# 重新构建镜像
+docker-compose build --no-cache app
 ```
 
-### 调试技巧
+## 🔧 管理界面
 
-#### 启用详细日志
-```env
-LOG_LEVEL=debug
-```
-
-#### 监控资源使用
+### PostgreSQL管理 (pgAdmin)
 ```bash
-# Docker容器资源使用
-docker stats
+# 启动pgAdmin（可选）
+docker-compose --profile tools up -d pgadmin
 
-# 应用健康状态
-curl http://localhost:3000/health/detailed
+# 访问 http://localhost:8080
+# 邮箱: admin@rental-aggregator.com
+# 密码: admin123
 ```
 
-## 🤝 开发贡献
+### Redis管理 (Redis Commander)
+```bash
+# 启动Redis Commander（可选）
+docker-compose --profile tools up -d redis-commander
 
-### 开发流程
-1. Fork 项目
-2. 创建功能分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送分支 (`git push origin feature/AmazingFeature`)
-5. 创建 Pull Request
-
-### 代码规范
-- 使用 TypeScript 严格模式
-- 遵循 ESLint 配置规则
-- 编写单元测试（覆盖率 >80%）
-- 添加JSDoc注释
-- 使用语义化版本控制
-
-### 提交信息规范
-```
-type(scope): description
-
-类型：
-- feat: 新功能
-- fix: 修复bug
-- docs: 文档更新
-- style: 代码格式调整
-- refactor: 代码重构
-- test: 添加测试
-- chore: 构建过程或工具变动
+# 访问 http://localhost:8081
 ```
 
-## 📄 许可证
+## 📈 性能优化
 
-本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件
+### 数据库优化
+- 索引优化：价格、位置、房产类型等关键字段
+- 连接池：配置合适的连接池大小
+- 查询优化：使用SQLAlchemy的延迟加载
 
-## 🆘 支持
+### 缓存策略
+- Redis缓存：搜索结果缓存5分钟
+- 应用缓存：Firecrawl响应缓存1小时
+- 数据库查询缓存：相同查询条件缓存
 
-如遇问题，请通过以下方式获取支持：
-- 📧 Email: support@rental-aggregator.com
-- 🐛 Issues: GitHub Issues
-- 📖 文档: [项目文档](docs/)
+### 并发处理
+- 异步处理：全面使用asyncio和httpx
+- 连接限制：控制并发请求数量
+- 超时设置：合理设置网络超时时间
+
+## 🔒 安全考虑
+
+### API安全
+- CORS配置：限制跨域请求来源
+- 速率限制：防止API滥用
+- 输入验证：Pydantic严格验证输入
+
+### 数据安全
+- 环境变量：敏感信息不硬编码
+- 数据库安全：使用强密码和SSL连接
+- 日志安全：不记录敏感信息
+
+## 📞 技术支持
+
+### 获取帮助
+- 查看日志文件：`logs/app.log`
+- API文档：http://localhost:3000/api/v1/docs
+- 健康检查：http://localhost:3000/health
+
+### 联系方式
+- 项目地址：https://github.com/ZeshiKing/sydney-property-ai-Arthur
+- 问题反馈：通过GitHub Issues
+
+## 🚀 部署上线
+
+### 生产环境清单
+- [ ] 更新所有默认密码
+- [ ] 配置SSL/TLS证书
+- [ ] 设置反向代理（Nginx）
+- [ ] 配置日志轮转
+- [ ] 设置监控和告警
+- [ ] 数据库定期备份
+- [ ] 性能测试和调优
 
 ---
 
-**注意**: 本项目仅用于教育和演示目的。请确保遵守目标网站的robots.txt和使用条款。
+**🎉 恭喜！Python FastAPI版本已成功迁移完成。享受更简洁的Python开发体验！**

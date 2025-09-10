@@ -1,231 +1,392 @@
-# 数据结构文档
+# 数据结构文档 - Python FastAPI 版本
 
-## 📊 澳洲租房聚合系统数据格式说明
+**澳洲租房聚合系统** - 房产数据结构和API接口规范
 
-### 🏠 完整数据结构概览
+## 📊 核心数据模型
 
-本系统从Domain.com.au抓取的房产数据采用标准化的JSON格式，确保数据的一致性和可用性。
+### 1. 房产搜索请求 (PropertySearchRequest)
 
-## 🔍 搜索查询结构 (searchQuery)
+```python
+class PropertySearchRequest(BaseModel):
+    location: str                    # 必需：搜索区域
+    min_price: Optional[int]         # 可选：最低价格 (周租)
+    max_price: Optional[int]         # 可选：最高价格 (周租)  
+    property_type: Optional[str]     # 可选：房产类型
+    bedrooms: Optional[int]          # 可选：卧室数量
+    bathrooms: Optional[int]         # 可选：浴室数量
+    parking: Optional[int]           # 可选：停车位数量
+    max_results: Optional[int] = 50  # 可选：最大结果数量 (1-200)
+```
 
-```typescript
-interface SearchQuery {
-  location: {
-    suburb: string;        // 街区名称，如 "Camperdown"
-    state: string;         // 州名，如 "NSW"  
-    postcode: string;      // 邮编，如 "2050"
-  };
-  listingType: "rent" | "buy";           // 租赁或购买
-  propertyType: "apartment" | "house" | "townhouse" | "unit";
-  bedrooms?: {
-    min?: number;          // 最少卧室数
-    max?: number;          // 最多卧室数
-  };
-  bathrooms?: {
-    min?: number;          // 最少浴室数
-    max?: number;          // 最多浴室数
-  };
-  priceRange?: {
-    min?: number;          // 最低价格
-    max?: number;          // 最高价格
-  };
-  searchUrl: string;       // 构建的Domain.com.au搜索URL
+**JSON示例**:
+```json
+{
+  "location": "Camperdown",
+  "min_price": 500,
+  "max_price": 800,
+  "bedrooms": 2,
+  "bathrooms": 1,
+  "property_type": "Apartment",
+  "max_results": 20
 }
 ```
 
-## 📋 搜索结果结构 (searchResults)
+### 2. 房产数据模型 (PropertyModel)
 
-### 总体信息
-```typescript
-interface SearchResults {
-  totalProperties: number;              // 找到的房产总数
-  priceRange: {
-    min: number;                        // 最低价格
-    max: number;                        // 最高价格  
-    unit: "per week" | "per month";     // 价格周期
-    currency: "AUD";                    // 货币单位
-  };
-  bedroomDistribution: string[];        // 卧室数量分布，如["2", "3"]
-  properties: Property[];               // 房产列表
+```python
+class PropertyModel(BaseModel):
+    # 基本信息
+    id: str                          # 房产唯一标识
+    title: str                       # 房产标题
+    price: str                       # 租金价格 (如: "$650/week")
+    location: str                    # 房产位置
+    
+    # 房产特征
+    bedrooms: Optional[int]          # 卧室数量
+    bathrooms: Optional[int]         # 浴室数量
+    parking: Optional[int]           # 停车位数量
+    property_type: str               # 房产类型 (Apartment/House/Studio等)
+    
+    # 详细描述
+    description: str                 # 房产描述
+    features: List[str]              # 房产特色列表
+    images: List[str]                # 图片URL列表
+    
+    # 中介信息
+    agent: Dict[str, Any]            # 中介联系信息
+    
+    # 地理位置
+    coordinates: Optional[Dict[str, float]]  # 经纬度坐标
+    
+    # 数据源信息
+    url: str                         # 房产链接
+    source: str                      # 数据来源
+    scraped_at: str                  # 抓取时间
+    
+    # 租赁信息
+    available_from: Optional[str]    # 可入住时间
+    property_size: Optional[str]     # 房产面积
+    land_size: Optional[str]         # 土地面积
+    year_built: Optional[int]        # 建造年份
+    energy_rating: Optional[str]     # 能效等级
+    pet_friendly: Optional[bool]     # 是否允许宠物
+    furnished: Optional[bool]        # 是否有家具
+    inspection_times: List[Dict[str, str]]  # 看房时间
+```
+
+**JSON示例**:
+```json
+{
+  "id": "3afcb9c5-0396-4547-84e2-965bb94aa6cd",
+  "title": "Modern 2 Bedroom Apartment in Camperdown",
+  "price": "$650/week",
+  "location": "Camperdown",
+  "bedrooms": 2,
+  "bathrooms": 1,
+  "parking": 1,
+  "property_type": "Apartment",
+  "description": "Well-appointed modern apartment with excellent amenities",
+  "features": [
+    "Air Conditioning",
+    "Built-in Wardrobes",
+    "Balcony"
+  ],
+  "images": [
+    "https://example.com/image1.jpg"
+  ],
+  "agent": {
+    "name": "Property Agent",
+    "phone": "0400 000 000",
+    "email": "agent@realestate.com"
+  },
+  "coordinates": {
+    "lat": -33.8688,
+    "lng": 151.2093
+  },
+  "url": "https://www.domain.com.au/property/sample",
+  "source": "Domain.com.au",
+  "scraped_at": "2024-09-10T17:30:00Z",
+  "available_from": "Available Now",
+  "property_size": "75 sqm",
+  "land_size": null,
+  "year_built": null,
+  "energy_rating": null,
+  "pet_friendly": false,
+  "furnished": false,
+  "inspection_times": []
 }
 ```
 
-### 🏡 单个房产数据结构 (Property)
+### 3. 搜索元数据 (SearchMetadata)
 
-```typescript
-interface Property {
-  id: string;                          // 房产唯一标识符
-  
-  // 价格信息
-  price: {
-    amount: number;                     // 价格数额，如 940
-    period: "per week" | "per month";   // 计费周期
-    currency: "AUD";                    // 货币
-    displayText: string;                // 显示文本，如 "$940 per week"
-  };
-  
-  // 房产基本信息
-  bedrooms: number;                     // 卧室数量
-  bathrooms: number;                    // 浴室数量  
-  parkingSpaces: number;                // 停车位数量
-  propertyType: string;                 // 房产类型
-  listingType: string;                  // 列表类型
-  
-  // 地址信息
-  address: {
-    streetNumber?: string;              // 门牌号
-    streetName: string;                 // 街道名
-    suburb: string;                     // 街区
-    state: string;                      // 州
-    postcode: string;                   // 邮编
-    fullAddress: string;                // 完整地址
-  };
-  
-  // 房产特色
-  features: {
-    furnished?: boolean | null;         // 是否带家具
-    petFriendly?: boolean | null;       // 是否允许宠物
-    parking: boolean;                   // 是否有停车位
-    balcony?: boolean | null;           // 是否有阳台
-    airConditioning?: boolean | null;   // 是否有空调
-  };
-  
-  // 媒体资源
-  images: string[];                     // 房产图片URL数组
-  
-  // 中介信息
-  agency: {
-    name: string;                       // 中介公司名称
-    logo?: string;                      // 中介公司Logo URL
-  };
-  
-  // 元数据
-  extractedAt: string;                  // 数据抓取时间 (ISO 8601)
-  source: string;                       // 数据来源，如 "domain.com.au"
-}
+```python
+class SearchMetadata(BaseModel):
+    total_found: int                 # 找到的房产总数
+    search_time_ms: float            # 搜索耗时 (毫秒)
+    firecrawl_usage: Dict[str, Any]  # Firecrawl API使用信息
+    search_params: Dict[str, Any]    # 搜索参数
+    timestamp: str                   # 搜索时间戳
 ```
 
-## 📈 元数据结构 (metadata)
+### 4. 搜索响应 (PropertySearchResponse)
 
-```typescript
-interface Metadata {
-  searchTimestamp: string;              // 搜索时间戳
-  processingTime: number;               // 处理时间（毫秒）
-  dataSource: string;                   // 数据源
-  extractionMethod: string;             // 抓取方法
-  totalCharacters: number;              // 原始数据字符数
-  apiVersion: string;                   // API版本
-  cacheStatus: "hit" | "miss";          // 缓存状态
-  
-  // 位置相关数据
-  locationData?: {
-    coordinates: {
-      latitude: number;                 // 纬度
-      longitude: number;                // 经度
-    };
-    nearbySuburbs: string[];            // 附近街区
-    publicTransport: string[];          // 公共交通信息
-    schools: string[];                  // 附近学校
-    shopping: string[];                 // 购物中心
-  };
-}
+```python
+class PropertySearchResponse(BaseModel):
+    success: bool                    # 搜索是否成功
+    properties: List[PropertyModel]  # 房产数据列表
+    metadata: SearchMetadata         # 搜索元数据
+    message: str                     # 响应消息
 ```
 
-## 🔢 实际数据样本
-
-### 价格范围示例：
-- **最低**: $875/周 (2卧1卫，Wilson Street)
-- **最高**: $2000/周 (高端公寓)  
-- **平均**: $1100-1300/周 (2-3卧公寓)
-
-### 常见房产类型：
-- **Apartment**: 公寓 (最常见)
-- **Unit**: 单元房
-- **House**: 独栋房屋
-- **Townhouse**: 联排别墅
-
-### 地址格式示例：
-```
-51/46 Dunblane Street, Camperdown NSW 2050
-[单元号]/[门牌号] [街道名], [街区] [州] [邮编]
-```
-
-## 🔧 API响应格式
-
-### 成功响应 (200 OK)
+**完整响应示例**:
 ```json
 {
   "success": true,
-  "data": {
-    // 完整的SearchResults结构
+  "properties": [
+    {
+      "id": "uuid-123",
+      "title": "Modern Apartment",
+      "price": "$650/week",
+      "location": "Camperdown",
+      // ... 其他房产字段
+    }
+  ],
+  "metadata": {
+    "total_found": 1,
+    "search_time_ms": 1250.0,
+    "firecrawl_usage": {},
+    "search_params": {
+      "location": "Camperdown",
+      "min_price": 500,
+      "max_price": 800
+    },
+    "timestamp": "2024-09-10T17:30:00Z"
   },
-  "message": "搜索完成",
-  "timestamp": "2025-09-10T10:45:00Z"
+  "message": "成功找到 1 个房产"
 }
 ```
 
-### 错误响应 (400/500)
-```json
-{
-  "success": false,
-  "error": {
-    "code": "SEARCH_FAILED",
-    "message": "搜索失败：API配额不足",
-    "details": "Firecrawl API返回402错误"
-  },
-  "timestamp": "2025-09-10T10:45:00Z"
-}
+## 🗄️ 数据库模型
+
+### 1. 房产表 (properties)
+
+```sql
+CREATE TABLE properties (
+    id VARCHAR(36) PRIMARY KEY,
+    title VARCHAR(500) NOT NULL,
+    price VARCHAR(100) NOT NULL,
+    price_numeric INTEGER,           -- 便于价格筛选
+    location VARCHAR(200) NOT NULL,
+    suburb VARCHAR(100),
+    state VARCHAR(10),
+    postcode VARCHAR(10),
+    
+    -- 房产特征
+    bedrooms INTEGER,
+    bathrooms INTEGER,
+    parking INTEGER,
+    property_type VARCHAR(50) NOT NULL,
+    property_size VARCHAR(50),
+    land_size VARCHAR(50),
+    year_built INTEGER,
+    
+    -- 描述和特色
+    description TEXT NOT NULL,
+    features JSON,                   -- 房产特色数组
+    
+    -- 图片和媒体
+    images JSON,                     -- 图片URL数组
+    virtual_tour_url VARCHAR(500),
+    
+    -- 地理位置
+    latitude FLOAT,
+    longitude FLOAT,
+    
+    -- 出租信息
+    available_from VARCHAR(100),
+    lease_term VARCHAR(100),
+    bond_amount VARCHAR(100),
+    pet_friendly BOOLEAN,
+    furnished BOOLEAN,
+    utilities_included VARCHAR(200),
+    
+    -- 能效和评级
+    energy_rating VARCHAR(10),
+    
+    -- 中介信息
+    agent_info JSON,                 -- 中介信息对象
+    agency_name VARCHAR(200),
+    
+    -- 看房时间
+    inspection_times JSON,           -- 看房时间数组
+    
+    -- 数据来源
+    url VARCHAR(1000) UNIQUE NOT NULL,
+    source VARCHAR(100) NOT NULL,
+    source_id VARCHAR(100),
+    scraped_at VARCHAR(30) NOT NULL,
+    
+    -- 数据质量
+    data_quality_score FLOAT,
+    is_active BOOLEAN DEFAULT TRUE,
+    is_verified BOOLEAN DEFAULT FALSE,
+    
+    -- 时间戳
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW()
+);
 ```
 
-## 📊 数据质量指标
+### 2. 搜索历史表 (search_history)
 
-### 当前系统表现：
-- **提取准确率**: >95% (价格、卧室、地址)
-- **数据完整性**: ~85% (部分特色信息可能缺失)
-- **处理速度**: 3-5秒/搜索
-- **平均房产数量**: 15-25个/搜索
+```sql
+CREATE TABLE search_history (
+    id VARCHAR(36) PRIMARY KEY,
+    session_id VARCHAR(100),
+    user_ip VARCHAR(50),
+    user_agent TEXT,
+    
+    -- 搜索参数
+    location VARCHAR(200) NOT NULL,
+    min_price INTEGER,
+    max_price INTEGER,
+    property_type VARCHAR(50),
+    bedrooms INTEGER,
+    bathrooms INTEGER,
+    parking INTEGER,
+    max_results INTEGER DEFAULT 50,
+    
+    -- 搜索结果统计
+    results_found INTEGER DEFAULT 0,
+    search_time_ms FLOAT NOT NULL,
+    firecrawl_usage JSON,
+    
+    -- 搜索状态
+    search_status VARCHAR(20) NOT NULL, -- success, error, timeout
+    error_message TEXT,
+    
+    -- 用户交互
+    csv_exported VARCHAR(5) DEFAULT 'false',
+    results_clicked INTEGER DEFAULT 0,
+    
+    -- 完整搜索参数
+    search_params JSON NOT NULL,
+    
+    created_at TIMESTAMP DEFAULT NOW()
+);
+```
 
-### 数据来源可靠性：
-- ✅ **价格**: 高度准确
-- ✅ **卧室/浴室数**: 高度准确  
-- ✅ **地址**: 高度准确
-- ⚠️ **房产特色**: 中等准确 (依赖原始描述)
-- ⚠️ **中介信息**: 中等准确 (部分缺失)
+## 📄 CSV导出格式
 
-## 🚀 使用示例
+自动生成的CSV文件包含以下字段：
 
-### API调用示例：
+| 字段名 | 类型 | 说明 |
+|--------|------|------|
+| ID | string | 房产唯一标识 |
+| Title | string | 房产标题 |
+| Price | string | 租金价格 |
+| Location | string | 房产位置 |
+| Bedrooms | number | 卧室数量 |
+| Bathrooms | number | 浴室数量 |
+| Parking | number | 停车位数量 |
+| Property_Type | string | 房产类型 |
+| Description | string | 房产描述 (截取200字符) |
+| Features | string | 房产特色 (逗号分隔) |
+| Agent_Name | string | 中介姓名 |
+| Agent_Phone | string | 中介电话 |
+| Available_From | string | 可入住时间 |
+| Property_Size | string | 房产面积 |
+| Pet_Friendly | string | 是否允许宠物 (Yes/No) |
+| Furnished | string | 是否有家具 (Yes/No) |
+| URL | string | 房产链接 |
+| Source | string | 数据来源 |
+| Scraped_At | string | 抓取时间 |
+| Search_Location | string | 搜索位置 |
+| Search_Min_Price | number | 搜索最低价 |
+| Search_Max_Price | number | 搜索最高价 |
+
+## 🔄 与TypeScript版本的主要差异
+
+### 1. **编程语言和框架**
+- **之前**: TypeScript + Node.js + Express
+- **现在**: Python + FastAPI + Pydantic
+
+### 2. **数据验证**
+- **之前**: 手动验证或使用第三方库
+- **现在**: Pydantic自动类型验证和转换
+
+### 3. **响应格式**
+- **核心结构保持一致**，但有以下改进：
+  - 更严格的类型定义
+  - 自动API文档生成
+  - 更好的错误处理
+
+### 4. **新增功能**
+- **后台任务**: FastAPI的BackgroundTasks用于CSV导出
+- **更丰富的元数据**: 包含Firecrawl使用统计
+- **改进的日志系统**: 专用的API、抓取、CSV日志
+
+### 5. **数据库模型增强**
+- 更多索引优化
+- JSON字段用于复杂数据
+- 改进的数据质量跟踪
+
+## 🚀 API端点
+
+### 主要端点
+- `POST /api/v1/properties/search` - 房产搜索
+- `GET /api/v1/properties/locations` - 支持的区域
+- `GET /api/v1/properties/test` - 测试Firecrawl连接
+- `GET /api/v1/health/` - 健康检查
+
+### 文档地址
+- **Swagger UI**: `http://localhost:3000/api/v1/docs`
+- **ReDoc**: `http://localhost:3000/api/v1/redoc`
+
+## 📝 使用示例
+
+### Python代码示例
+```python
+import httpx
+import asyncio
+
+async def search_properties():
+    search_request = {
+        "location": "Camperdown",
+        "min_price": 500,
+        "max_price": 800,
+        "bedrooms": 2,
+        "property_type": "Apartment"
+    }
+    
+    async with httpx.AsyncClient() as client:
+        response = await client.post(
+            "http://localhost:3000/api/v1/properties/search",
+            json=search_request
+        )
+        
+        data = response.json()
+        print(f"找到 {data['metadata']['total_found']} 个房产")
+        
+        for prop in data['properties']:
+            print(f"- {prop['title']}: {prop['price']}")
+
+asyncio.run(search_properties())
+```
+
+### cURL示例
 ```bash
-curl -X POST http://localhost:3000/api/properties/search \
+curl -X POST http://localhost:3000/api/v1/properties/search \
   -H "Content-Type: application/json" \
   -d '{
-    "listingType": "rent",
-    "location": {
-      "suburb": "Camperdown",
-      "state": "NSW",
-      "postcode": "2050"
-    },
-    "propertyType": "apartment",
-    "bedrooms": {"min": 2}
+    "location": "Camperdown",
+    "min_price": 500,
+    "max_price": 800,
+    "bedrooms": 2,
+    "property_type": "Apartment"
   }'
-```
-
-### 前端使用示例 (JavaScript):
-```javascript
-const response = await fetch('/api/properties/search', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({
-    listingType: 'rent',
-    location: { suburb: 'Camperdown', state: 'NSW', postcode: '2050' },
-    bedrooms: { min: 2 }
-  })
-});
-
-const data = await response.json();
-console.log(`找到${data.data.totalProperties}套房产`);
 ```
 
 ---
 
-**💡 提示**: 这个数据结构设计支持未来扩展更多房产网站（如realestate.com.au），保持了良好的可扩展性和标准化格式。
+**🎯 总结**: Python FastAPI版本保持了与TypeScript版本的数据结构兼容性，同时提供了更强的类型安全、自动验证和更丰富的功能。

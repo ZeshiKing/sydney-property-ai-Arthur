@@ -1,143 +1,87 @@
-# Dependencies
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# ===========================================
+# Python 项目 .gitignore
+# ===========================================
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
+# Python 字节码
+__pycache__/
+*.py[cod]
+*$py.class
 
-# Coverage directory used by tools like istanbul
-coverage/
-.nyc_output
+# C 扩展
+*.so
 
-# Compiled TypeScript
-dist/
+# 分发/打包
+.Python
 build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# Environment variables
+# Python 虚拟环境
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# 测试和覆盖率
+.coverage
+.pytest_cache/
+.tox/
+.nox/
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# mypy 类型检查
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre 类型检查
+.pyre/
+
+# 环境变量文件
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# Logs
+# 日志文件
 logs/
 *.log
 
-# Runtime data
-*.tgz
-*.tar.gz
-
-# Optional npm cache directory
-.npm
-
-# Optional REPL history
-.node_repl_history
-
-# Output of 'npm pack'
-*.tgz
-
-# Yarn Integrity file
-.yarn-integrity
-
-# dotenv environment variables file
-.env
-
-# IDE and editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Docker
-docker-compose.override.yml
-
-# Database
+# 数据库文件
 *.sqlite
 *.db
 
-# Temporary files
+# CSV 导出文件 (调试用)
+csv_exports/
+*.csv
+
+# 临时文件
 tmp/
 temp/
-
-# Test files
-test-results/
-
-# Documentation build
-docs/build/
-
-# Package managers
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
-
-# ESLint cache
-.eslintcache
-
-# TypeScript cache
-*.tsbuildinfo
-
-# Parcel cache
-.parcel-cache
-
-# Microbundle cache
-.rpt2_cache/
-.rts2_cache_cjs/
-.rts2_cache_es/
-.rts2_cache_umd/
-
-# Optional eslint cache
-.eslintcache
-
-# Optional stylelint cache
-.stylelintcache
-
-# SvelteKit build
-.svelte-kit
-
-# Prisma
-prisma/migrations/
-
-# Sentry
-.sentryclirc
-
-# Local Netlify folder
-.netlify
-
-# Stores VSCode versions used for testing VSCode extensions
-.vscode-test
-
-# Ignore test screenshots and videos
-test-results/
-playwright-report/
-playwright/.cache/
-
-# Ignore API keys and secrets
-*.key
-*.pem
-*.p12
-*.pfx
-secrets.json
-credentials.json
-
-# Ignore backup files
-*.backup
-*.bak
+*.tmp
 
 # ===========================================
 # macOS 系统文件 (重要：Mac用户请注意)

@@ -1,237 +1,294 @@
 {
-  "searchQuery": {
-    "location": {
-      "suburb": "Camperdown",
-      "state": "NSW",
-      "postcode": "2050"
+  "title": "澳洲租房聚合系统 - 标准化JSON数据格式",
+  "description": "基于Python FastAPI的房产数据标准格式定义",
+  "version": "2.0.0-python",
+  "last_updated": "2024-09-10",
+  
+  "search_request_format": {
+    "description": "房产搜索请求格式",
+    "required_fields": ["location"],
+    "optional_fields": ["min_price", "max_price", "bedrooms", "bathrooms", "parking", "property_type", "max_results"],
+    "example": {
+      "location": "Camperdown",
+      "min_price": 500,
+      "max_price": 800,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": 1,
+      "property_type": "Apartment",
+      "max_results": 20
     },
-    "listingType": "rent",
-    "propertyType": "apartment",
-    "bedrooms": {
-      "min": 2
-    },
-    "searchUrl": "https://www.domain.com.au/rent/camperdown-nsw-2050/apartment/?bedrooms=2-any"
-  },
-  "searchResults": {
-    "totalProperties": 21,
-    "priceRange": {
-      "min": 875,
-      "max": 2000,
-      "unit": "per week",
-      "currency": "AUD"
-    },
-    "bedroomDistribution": ["2", "3"],
-    "properties": [
-      {
-        "id": "property_001",
-        "price": {
-          "amount": 940,
-          "period": "per week",
-          "currency": "AUD",
-          "displayText": "$940 per week"
-        },
-        "bedrooms": 2,
-        "bathrooms": 2,
-        "parkingSpaces": 1,
-        "address": {
-          "streetNumber": "51",
-          "streetName": "Dunblane Street",
-          "suburb": "Camperdown",
-          "state": "NSW",
-          "postcode": "2050",
-          "fullAddress": "51/46 Dunblane Street, Camperdown NSW 2050"
-        },
-        "propertyType": "apartment",
-        "listingType": "rent",
-        "features": {
-          "furnished": null,
-          "petFriendly": null,
-          "parking": true,
-          "balcony": null,
-          "airConditioning": null
-        },
-        "images": [
-          "https://images.domain.com.au/img/Agencys/5622/logo_5622.jpg"
-        ],
-        "agency": {
-          "name": "Unknown Agency",
-          "logo": "https://images.domain.com.au/img/Agencys/5622/logo_5622.jpg"
-        },
-        "extractedAt": "2025-09-10T10:45:00Z",
-        "source": "domain.com.au"
-      },
-      {
-        "id": "property_002", 
-        "price": {
-          "amount": 1050,
-          "period": "per week",
-          "currency": "AUD",
-          "displayText": "$1050 per week"
-        },
-        "bedrooms": 2,
-        "bathrooms": 2,
-        "parkingSpaces": 1,
-        "address": {
-          "streetNumber": "113",
-          "streetName": "Parramatta Rd",
-          "suburb": "Camperdown",
-          "state": "NSW", 
-          "postcode": "2050",
-          "fullAddress": "113 Parramatta Rd, Camperdown NSW 2050"
-        },
-        "propertyType": "apartment",
-        "listingType": "rent",
-        "features": {
-          "furnished": null,
-          "petFriendly": null,
-          "parking": true,
-          "balcony": null,
-          "airConditioning": null
-        },
-        "images": [
-          "https://images.domain.com.au/img/Agencys/3930/logo_3930.jpeg"
-        ],
-        "agency": {
-          "name": "Unknown Agency",
-          "logo": "https://images.domain.com.au/img/Agencys/3930/logo_3930.jpeg"
-        },
-        "extractedAt": "2025-09-10T10:45:00Z",
-        "source": "domain.com.au"
-      },
-      {
-        "id": "property_003",
-        "price": {
-          "amount": 1090,
-          "period": "per week", 
-          "currency": "AUD",
-          "displayText": "$1090 per week"
-        },
-        "bedrooms": 2,
-        "bathrooms": 2,
-        "parkingSpaces": 1,
-        "address": {
-          "streetNumber": "9",
-          "streetName": "Barr Street",
-          "suburb": "Camperdown",
-          "state": "NSW",
-          "postcode": "2050", 
-          "fullAddress": "9/25 Barr Street, Camperdown NSW 2050"
-        },
-        "propertyType": "apartment",
-        "listingType": "rent",
-        "features": {
-          "furnished": null,
-          "petFriendly": null,
-          "parking": true,
-          "balcony": null,
-          "airConditioning": null
-        },
-        "images": [
-          "https://images.domain.com.au/img/Agencys/22473/logo_22473.png"
-        ],
-        "agency": {
-          "name": "Unknown Agency",
-          "logo": "https://images.domain.com.au/img/Agencys/22473/logo_22473.png"
-        },
-        "extractedAt": "2025-09-10T10:45:00Z",
-        "source": "domain.com.au"
-      },
-      {
-        "id": "property_004",
-        "price": {
-          "amount": 1200,
-          "period": "per week",
-          "currency": "AUD", 
-          "displayText": "$1200 per week"
-        },
-        "bedrooms": 3,
-        "bathrooms": 2,
-        "parkingSpaces": 2,
-        "address": {
-          "streetNumber": "15",
-          "streetName": "University Avenue",
-          "suburb": "Camperdown",
-          "state": "NSW",
-          "postcode": "2050",
-          "fullAddress": "15/20 University Avenue, Camperdown NSW 2050"
-        },
-        "propertyType": "apartment",
-        "listingType": "rent",
-        "features": {
-          "furnished": false,
-          "petFriendly": true,
-          "parking": true,
-          "balcony": true,
-          "airConditioning": true
-        },
-        "images": [
-          "https://images.domain.com.au/img/property001.jpg",
-          "https://images.domain.com.au/img/property001_kitchen.jpg"
-        ],
-        "agency": {
-          "name": "Premium Real Estate",
-          "logo": "https://images.domain.com.au/img/premium_logo.jpg"
-        },
-        "extractedAt": "2025-09-10T10:45:00Z",
-        "source": "domain.com.au"
-      },
-      {
-        "id": "property_005",
-        "price": {
-          "amount": 875,
-          "period": "per week",
-          "currency": "AUD",
-          "displayText": "$875 per week"
-        },
-        "bedrooms": 2,
-        "bathrooms": 1,
-        "parkingSpaces": 1,
-        "address": {
-          "streetNumber": "42",
-          "streetName": "Wilson Street", 
-          "suburb": "Camperdown",
-          "state": "NSW",
-          "postcode": "2050",
-          "fullAddress": "42/18 Wilson Street, Camperdown NSW 2050"
-        },
-        "propertyType": "apartment",
-        "listingType": "rent",
-        "features": {
-          "furnished": null,
-          "petFriendly": false,
-          "parking": true,
-          "balcony": null,
-          "airConditioning": false
-        },
-        "images": [
-          "https://images.domain.com.au/img/property005.jpg"
-        ],
-        "agency": {
-          "name": "Budget Properties",
-          "logo": "https://images.domain.com.au/img/budget_logo.jpg"
-        },
-        "extractedAt": "2025-09-10T10:45:00Z",
-        "source": "domain.com.au"
-      }
-    ]
-  },
-  "metadata": {
-    "searchTimestamp": "2025-09-10T10:45:00Z",
-    "processingTime": 3200,
-    "dataSource": "domain.com.au",
-    "extractionMethod": "firecrawl",
-    "totalCharacters": 46620,
-    "apiVersion": "v1",
-    "cacheStatus": "miss",
-    "locationData": {
-      "coordinates": {
-        "latitude": -33.8886,
-        "longitude": 151.1873
-      },
-      "nearbySuburbs": ["Newtown", "Glebe", "Ultimo", "Darlington"],
-      "publicTransport": ["Redfern Station (1.2km)", "Central Station (2.1km)"],
-      "schools": ["University of Sydney", "Sydney Boys High School"],
-      "shopping": ["Broadway Shopping Centre", "Glebe Point Road"]
+    "validation_rules": {
+      "min_price": "integer >= 0",
+      "max_price": "integer >= min_price",
+      "bedrooms": "integer >= 0",
+      "bathrooms": "integer >= 0", 
+      "parking": "integer >= 0",
+      "max_results": "integer 1-200, default: 50"
     }
+  },
+  
+  "property_data_format": {
+    "description": "单个房产数据标准格式",
+    "required_fields": ["id", "title", "price", "location", "property_type", "description", "features", "images", "agent", "url", "source", "scraped_at"],
+    "optional_fields": ["bedrooms", "bathrooms", "parking", "coordinates", "available_from", "property_size", "land_size", "year_built", "energy_rating", "pet_friendly", "furnished", "inspection_times"],
+    "example": {
+      "id": "3afcb9c5-0396-4547-84e2-965bb94aa6cd",
+      "title": "Modern 2 Bedroom Apartment in Camperdown",
+      "price": "$650/week",
+      "location": "Camperdown",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "parking": 1,
+      "property_type": "Apartment",
+      "description": "Well-appointed modern apartment with excellent amenities and convenient location near University of Sydney.",
+      "features": [
+        "Air Conditioning",
+        "Built-in Wardrobes",
+        "Balcony",
+        "Internal Laundry",
+        "Dishwasher",
+        "Security Building"
+      ],
+      "images": [
+        "https://bucket-api.domain.com.au/v1/bucket/image/123456_1_1_240910_123456-w800-h600.jpg",
+        "https://bucket-api.domain.com.au/v1/bucket/image/123456_2_1_240910_123456-w800-h600.jpg"
+      ],
+      "agent": {
+        "name": "John Smith",
+        "phone": "0412 345 678",
+        "email": "john.smith@realestate.com.au",
+        "agency": "Premium Property Group"
+      },
+      "coordinates": {
+        "lat": -33.8688,
+        "lng": 151.2093
+      },
+      "url": "https://www.domain.com.au/123456-camperdown-nsw-2050",
+      "source": "Domain.com.au",
+      "scraped_at": "2024-09-10T17:30:45.123Z",
+      "available_from": "Available Now",
+      "property_size": "75 sqm",
+      "land_size": null,
+      "year_built": 2018,
+      "energy_rating": "6 stars",
+      "pet_friendly": false,
+      "furnished": false,
+      "inspection_times": [
+        {
+          "date": "2024-09-14",
+          "time": "10:00-10:30",
+          "type": "Open Inspection"
+        },
+        {
+          "date": "2024-09-17",
+          "time": "18:00-18:30",
+          "type": "Private Inspection"
+        }
+      ]
+    },
+    "field_types": {
+      "id": "string (UUID v4)",
+      "title": "string (max 500 chars)",
+      "price": "string (e.g. '$650/week', 'Contact Agent')",
+      "location": "string (suburb/area name)",
+      "bedrooms": "integer or null",
+      "bathrooms": "integer or null",
+      "parking": "integer or null",
+      "property_type": "string (Apartment|House|Townhouse|Studio|Unit|Villa)",
+      "description": "string (HTML allowed)",
+      "features": "array of strings",
+      "images": "array of URLs",
+      "agent": "object with name, phone, email, agency fields",
+      "coordinates": "object with lat, lng (float)",
+      "url": "string (source URL)",
+      "source": "string (data source name)",
+      "scraped_at": "string (ISO 8601 datetime)",
+      "available_from": "string or null",
+      "property_size": "string or null (e.g. '75 sqm')",
+      "land_size": "string or null (e.g. '200 sqm')",
+      "year_built": "integer or null",
+      "energy_rating": "string or null",
+      "pet_friendly": "boolean or null",
+      "furnished": "boolean or null",
+      "inspection_times": "array of objects with date, time, type"
+    }
+  },
+  
+  "search_response_format": {
+    "description": "房产搜索响应格式",
+    "required_fields": ["success", "properties", "metadata", "message"],
+    "example": {
+      "success": true,
+      "properties": [
+        "// 房产数据数组，每个元素符合property_data_format"
+      ],
+      "metadata": {
+        "total_found": 15,
+        "search_time_ms": 2847.5,
+        "firecrawl_usage": {
+          "credits_used": 1,
+          "credits_remaining": 999
+        },
+        "search_params": {
+          "location": "Camperdown",
+          "min_price": 500,
+          "max_price": 800,
+          "bedrooms": 2
+        },
+        "timestamp": "2024-09-10T17:30:45.123Z"
+      },
+      "message": "成功找到 15 个房产"
+    },
+    "metadata_fields": {
+      "total_found": "integer (实际找到的房产数量)",
+      "search_time_ms": "float (搜索耗时，毫秒)",
+      "firecrawl_usage": "object (Firecrawl API使用信息)",
+      "search_params": "object (原始搜索参数)",
+      "timestamp": "string (响应生成时间，ISO 8601)"
+    }
+  },
+  
+  "error_response_format": {
+    "description": "错误响应格式",
+    "example": {
+      "success": false,
+      "properties": [],
+      "metadata": {
+        "total_found": 0,
+        "search_time_ms": 156.7,
+        "firecrawl_usage": {},
+        "search_params": {
+          "location": "InvalidLocation"
+        },
+        "timestamp": "2024-09-10T17:30:45.123Z"
+      },
+      "message": "搜索失败: 无效的搜索区域"
+    }
+  },
+  
+  "csv_export_format": {
+    "description": "CSV导出字段映射",
+    "filename_pattern": "property_search_{location}_{timestamp}.csv",
+    "encoding": "UTF-8",
+    "fields": [
+      "ID", "Title", "Price", "Location", "Bedrooms", "Bathrooms", 
+      "Parking", "Property_Type", "Description", "Features", 
+      "Agent_Name", "Agent_Phone", "Available_From", "Property_Size",
+      "Pet_Friendly", "Furnished", "URL", "Source", "Scraped_At",
+      "Search_Location", "Search_Min_Price", "Search_Max_Price"
+    ],
+    "field_transformations": {
+      "Description": "truncate to 200 chars + '...'",
+      "Features": "join with ', '",
+      "Pet_Friendly": "'Yes' if true else 'No'",
+      "Furnished": "'Yes' if true else 'No'"
+    }
+  },
+  
+  "api_endpoints": {
+    "/": {
+      "method": "GET",
+      "description": "系统基本信息",
+      "auth_required": false
+    },
+    "/health": {
+      "method": "GET", 
+      "description": "简单健康检查",
+      "auth_required": false
+    },
+    "/api/v1/health/": {
+      "method": "GET",
+      "description": "详细健康检查",
+      "auth_required": false,
+      "response_includes": ["database", "redis", "firecrawl"]
+    },
+    "/api/v1/properties/search": {
+      "method": "POST",
+      "description": "房产搜索",
+      "auth_required": false,
+      "request_body": "search_request_format",
+      "response_body": "search_response_format"
+    },
+    "/api/v1/properties/locations": {
+      "method": "GET",
+      "description": "支持的搜索区域",
+      "auth_required": false
+    },
+    "/api/v1/properties/test": {
+      "method": "GET",
+      "description": "测试Firecrawl API连接",
+      "auth_required": false
+    }
+  },
+  
+  "validation_schemas": {
+    "search_request": {
+      "type": "object",
+      "required": ["location"],
+      "properties": {
+        "location": {
+          "type": "string",
+          "minLength": 1,
+          "description": "搜索区域名称"
+        },
+        "min_price": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "最低价格(周租)"
+        },
+        "max_price": {
+          "type": "integer", 
+          "minimum": 0,
+          "description": "最高价格(周租)"
+        },
+        "bedrooms": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "bathrooms": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "parking": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "property_type": {
+          "type": "string",
+          "enum": ["Apartment", "House", "Townhouse", "Studio", "Unit", "Villa"]
+        },
+        "max_results": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 200,
+          "default": 50
+        }
+      }
+    }
+  },
+  
+  "migration_notes": {
+    "from_typescript": {
+      "interface_to_pydantic": "TypeScript interfaces converted to Pydantic models",
+      "express_to_fastapi": "Express.js routes converted to FastAPI endpoints",
+      "manual_validation_to_pydantic": "Manual validation replaced with automatic Pydantic validation",
+      "callback_to_async_await": "Callback patterns replaced with async/await",
+      "compatibility": "API response format maintained for client compatibility"
+    },
+    "breaking_changes": [
+      "Internal data models now use Python types instead of TypeScript",
+      "Development server runs on Python instead of Node.js",
+      "Build and deployment process changed to Docker with Python"
+    ],
+    "improvements": [
+      "Automatic API documentation generation with Swagger/ReDoc",
+      "Better type safety with Pydantic models",
+      "More robust error handling and validation",
+      "Enhanced logging and monitoring capabilities"
+    ]
   }
 }

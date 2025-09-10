@@ -1,21 +1,78 @@
-node_modules
-npm-debug.log
+# Python-specific files
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+build
+develop-eggs
 dist
-coverage
-.nyc_output
+downloads
+eggs
+.eggs
+lib
+lib64
+parts
+sdist
+var
+wheels
+*.egg-info
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv
+.venv
+env
 .env
+
+# Environment files
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+
+# Testing
+.coverage
+.pytest_cache
+htmlcov
+.tox
+.nox
+
+# Logs
 logs
 *.log
+
+# IDE files
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
 .git
 .gitignore
+
+# Documentation and development files
 README.md
+docs
+tests
+*.md
+
+# CSV exports (runtime generated)
+csv_exports
+
+# Old Node.js files (if any remain)
+node_modules
+npm-debug.log
+package-lock.json
+
+# Old TypeScript files
+tsconfig.json
 .eslintrc.js
 .prettierrc
 jest.config.js
-tsconfig.json
-docs
-tests
