@@ -16,9 +16,9 @@ python -m app.main
 ```
 
 ### 访问API文档
-- **Swagger UI**: http://localhost:3000/api/v1/docs
-- **ReDoc**: http://localhost:3000/api/v1/redoc
-- **基础信息**: http://localhost:3000/
+- **Swagger UI**: http://localhost:8000/api/v1/docs
+- **ReDoc**: http://localhost:8000/api/v1/redoc
+- **基础信息**: http://localhost:8000/
 
 ## 📋 API端点总览
 
@@ -59,14 +59,14 @@ python -m app.main
 
 #### 基础搜索
 ```bash
-curl -X POST http://localhost:3000/api/v1/properties/search \
+curl -X POST http://localhost:8000/api/v1/properties/search \
   -H "Content-Type: application/json" \
   -d '{"location": "Camperdown"}'
 ```
 
 #### 完整参数搜索
 ```bash
-curl -X POST http://localhost:3000/api/v1/properties/search \
+curl -X POST http://localhost:8000/api/v1/properties/search \
   -H "Content-Type: application/json" \
   -d '{
     "location": "Camperdown",
@@ -97,7 +97,7 @@ async def search_properties():
     
     async with httpx.AsyncClient() as client:
         response = await client.post(
-            "http://localhost:3000/api/v1/properties/search",
+            "http://localhost:8000/api/v1/properties/search",
             json=request_data,
             timeout=60  # 60秒超时
         )
@@ -195,7 +195,7 @@ asyncio.run(search_properties())
 
 ### 详细健康检查
 ```bash
-curl http://localhost:3000/api/v1/health/
+curl http://localhost:8000/api/v1/health/
 ```
 
 **响应**:
@@ -224,19 +224,19 @@ curl http://localhost:3000/api/v1/health/
 
 ### 就绪检查 (Kubernetes)
 ```bash
-curl http://localhost:3000/api/v1/health/ready
+curl http://localhost:8000/api/v1/health/ready
 ```
 
 ### 存活检查 (Kubernetes)
 ```bash
-curl http://localhost:3000/api/v1/health/live
+curl http://localhost:8000/api/v1/health/live
 ```
 
 ## 📍 支持的区域API
 
 ### 获取支持的搜索区域
 ```bash
-curl http://localhost:3000/api/v1/properties/locations
+curl http://localhost:8000/api/v1/properties/locations
 ```
 
 **响应**:
@@ -263,7 +263,7 @@ curl http://localhost:3000/api/v1/properties/locations
 
 ### 测试API连接状态
 ```bash
-curl http://localhost:3000/api/v1/properties/test
+curl http://localhost:8000/api/v1/properties/test
 ```
 
 **成功响应**:

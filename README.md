@@ -18,17 +18,23 @@
 - 🔍 **智能房产搜索** - 支持多条件筛选
 - 🤖 **Firecrawl集成** - 专业网页抓取服务
 - 📊 **CSV数据导出** - 自动生成调试用CSV文件
-- 🗄️ **PostgreSQL存储** - 可靠的数据持久化
-- ⚡ **Redis缓存** - 高性能数据缓存
-- 🐳 **Docker支持** - 一键部署和开发环境
+- 🗄️ **数据存储** - 支持PostgreSQL持久化或内存模式
+- ⚡ **缓存支持** - 可选Redis高性能缓存
+- 🐳 **灵活部署** - 支持Docker或本地直接运行
+- 🔧 **优雅降级** - 服务可在缺少依赖时正常运行
 
 ## 📋 快速开始
 
 ### 环境要求
-- Python 3.9+ 
-- Docker & Docker Compose (推荐)
-- PostgreSQL 15+
-- Redis 7+
+
+**基础要求**:
+- Python 3.9+ (必需)
+- Firecrawl API密钥 (必需 - 用于房产数据抓取)
+
+**可选依赖** (服务会自动降级):
+- Docker & Docker Compose (推荐 - 一键部署)
+- PostgreSQL 15+ (可选 - 用于数据持久化，否则使用内存模式)
+- Redis 7+ (可选 - 用于缓存优化)
 
 ### 1. 克隆项目
 ```bash
@@ -78,15 +84,15 @@ pip install -r requirements.txt
 # 启动开发服务器
 python -m app.main
 # 或使用 uvicorn
-uvicorn app.main:app --host 0.0.0.0 --port 3000 --reload
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
 ## 📚 API文档
 
 ### 自动生成的文档
 启动服务后访问：
-- **Swagger UI**: http://localhost:3000/api/v1/docs
-- **ReDoc**: http://localhost:3000/api/v1/redoc
+- **Swagger UI**: http://localhost:8000/api/v1/docs
+- **ReDoc**: http://localhost:8000/api/v1/redoc
 
 ### 核心API端点
 
@@ -407,8 +413,8 @@ docker-compose --profile tools up -d redis-commander
 
 ### 获取帮助
 - 查看日志文件：`logs/app.log`
-- API文档：http://localhost:3000/api/v1/docs
-- 健康检查：http://localhost:3000/health
+- API文档：http://localhost:8000/api/v1/docs
+- 健康检查：http://localhost:8000/health
 
 ### 联系方式
 - 项目地址：https://github.com/ZeshiKing/sydney-property-ai-Arthur

@@ -45,7 +45,7 @@ services:
     environment:
       ENVIRONMENT: development
       DEBUG: true
-      PORT: 3000
+      PORT: 8000
       DB_HOST: postgres
       DB_PORT: 5432
       DB_NAME: rental_aggregator
@@ -60,7 +60,7 @@ services:
       CACHE_TTL_SECONDS: 3600
       CSV_EXPORT_DIR: csv_exports
     ports:
-      - "3000:3000"
+      - "8000:8000"
     depends_on:
       postgres:
         condition: service_healthy

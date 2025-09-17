@@ -4,7 +4,8 @@
 包含所有应用程序配置，支持环境变量和默认值
 """
 
-from pydantic import BaseSettings, PostgresDsn, validator, Field
+from pydantic_settings import BaseSettings
+from pydantic import PostgresDsn, field_validator, Field, ValidationInfo
 from typing import List, Optional, Any
 import os
 from pathlib import Path
@@ -25,18 +26,16 @@ class Settings(BaseSettings):
     DEBUG: bool = Field(default=True, env="DEBUG")
     
     # CORS设置
-    BACKEND_CORS_ORIGINS: List[str] = Field(
-        default=["http://localhost:3000", "http://127.0.0.1:3000", "http://localhost:8000"],
+    BACKEND_CORS_ORIGINS: str = Field(
+        default="http://localhost:3000,http://127.0.0.1:3000,http://localhost:8000",
         env="BACKEND_CORS_ORIGINS"
     )
-    
-    @validator("BACKEND_CORS_ORIGINS", pre=True)
-    def assemble_cors_origins(cls, v: str | List[str]) -> List[str]:
-        if isinstance(v, str) and not v.startswith("["):
-            return [i.strip() for i in v.split(",")]
-        elif isinstance(v, (list, str)):
-            return v
-        raise ValueError(v)
+
+    @field_validator("BACKEND_CORS_ORIGINS", mode="before")
+    @classmethod
+    def assemble_cors_origins(cls, v: str) -> str:
+        # 简化处理，直接返回字符串，在FastAPI应用中再分割
+        return v
     
     # 数据库设置
     DB_HOST: str = Field(default="localhost", env="DB_HOST")
@@ -44,20 +43,21 @@ class Settings(BaseSettings):
     DB_NAME: str = Field(default="rental_aggregator", env="DB_NAME") 
     DB_USER: str = Field(default="postgres", env="DB_USER")
     DB_PASSWORD: str = Field(default="password123", env="DB_PASSWORD")
-    DATABASE_URL: Optional[PostgresDsn] = None
+    DATABASE_URL: Optional[str] = None
     
-    @validator("DATABASE_URL", pre=True)
-    def assemble_db_connection(cls, v: Optional[str], values: dict[str, Any]) -> Any:
+    @field_validator("DATABASE_URL", mode="before")
+    @classmethod
+    def assemble_db_connection(cls, v: Optional[str], info: ValidationInfo) -> Any:
         if isinstance(v, str):
             return v
-        return PostgresDsn.build(
-            scheme="postgresql+asyncpg",
-            user=values.get("DB_USER"),
-            password=values.get("DB_PASSWORD"),
-            host=values.get("DB_HOST"),
-            port=str(values.get("DB_PORT")),
-            path=f"/{values.get('DB_NAME') or ''}",
-        )
+        values = info.data if info.data else {}
+        user = values.get("DB_USER", "postgres")
+        password = values.get("DB_PASSWORD", "password123")
+        host = values.get("DB_HOST", "localhost")
+        port = values.get("DB_PORT", 5432)
+        db_name = values.get("DB_NAME", "rental_aggregator")
+
+        return f"postgresql+asyncpg://{user}:{password}@{host}:{port}/{db_name}"
     
     # Redis设置
     REDIS_HOST: str = Field(default="localhost", env="REDIS_HOST")
@@ -65,11 +65,13 @@ class Settings(BaseSettings):
     REDIS_PASSWORD: Optional[str] = Field(default="redis123", env="REDIS_PASSWORD")
     REDIS_URL: Optional[str] = None
     
-    @validator("REDIS_URL", pre=True)
-    def assemble_redis_connection(cls, v: Optional[str], values: dict[str, Any]) -> str:
+    @field_validator("REDIS_URL", mode="before")
+    @classmethod
+    def assemble_redis_connection(cls, v: Optional[str], info: ValidationInfo) -> str:
         if isinstance(v, str):
             return v
-        
+
+        values = info.data if info.data else {}
         password = values.get("REDIS_PASSWORD")
         if password:
             return f"redis://:{password}@{values.get('REDIS_HOST')}:{values.get('REDIS_PORT')}"
@@ -103,16 +105,20 @@ class Settings(BaseSettings):
     CELERY_BROKER_URL: Optional[str] = None
     CELERY_RESULT_BACKEND: Optional[str] = None
     
-    @validator("CELERY_BROKER_URL", pre=True)
-    def assemble_celery_broker(cls, v: Optional[str], values: dict[str, Any]) -> str:
+    @field_validator("CELERY_BROKER_URL", mode="before")
+    @classmethod
+    def assemble_celery_broker(cls, v: Optional[str], info: ValidationInfo) -> str:
         if isinstance(v, str):
             return v
+        values = info.data if info.data else {}
         return values.get("REDIS_URL", "redis://localhost:6379")
     
-    @validator("CELERY_RESULT_BACKEND", pre=True)
-    def assemble_celery_backend(cls, v: Optional[str], values: dict[str, Any]) -> str:
+    @field_validator("CELERY_RESULT_BACKEND", mode="before")
+    @classmethod
+    def assemble_celery_backend(cls, v: Optional[str], info: ValidationInfo) -> str:
         if isinstance(v, str):
             return v
+        values = info.data if info.data else {}
         return values.get("REDIS_URL", "redis://localhost:6379")
     
     # 安全设置
@@ -128,9 +134,10 @@ class Settings(BaseSettings):
     MAX_CONCURRENT_REQUESTS: int = Field(default=10, env="MAX_CONCURRENT_REQUESTS")
     REQUEST_TIMEOUT: int = Field(default=30, env="REQUEST_TIMEOUT")
     
-    class Config:
-        env_file = ".env"
-        case_sensitive = True
+    model_config = {
+        "env_file": ".env",
+        "case_sensitive": True
+    }
 
 
 # 创建全局设置实例

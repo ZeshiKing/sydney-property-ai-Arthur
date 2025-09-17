@@ -28,31 +28,46 @@ async def lifespan(app: FastAPI):
     logger.info(f"📊 环境: {settings.ENVIRONMENT}")
     logger.info(f"🌐 API版本: {settings.API_V1_STR}")
     
-    # 初始化数据库
+    # 初始化数据库 (可选)
     try:
         from app.database.base import init_database
         await init_database()
-        logger.info("🗄️  数据库初始化完成")
+        logger.info("🗄️  数据库连接成功")
     except Exception as e:
-        logger.error(f"❌ 数据库初始化失败: {e}")
-        # 不阻止应用启动，但记录错误
+        logger.warning(f"⚠️  数据库连接失败: {e}")
+        logger.info("ℹ️  系统将在无数据库模式下运行 (仅内存存储)")
     
-    # 检查关键服务连接
+    # 检查Firecrawl API连接 (测试实际端点)
     try:
         import httpx
-        async with httpx.AsyncClient(timeout=5) as client:
-            response = await client.get(
-                f"{settings.FIRECRAWL_BASE_URL}/health",
-                headers={"Authorization": f"Bearer {settings.FIRECRAWL_API_KEY}"}
+        async with httpx.AsyncClient(timeout=10) as client:
+            # 测试实际的抓取端点而不是健康检查
+            test_payload = {
+                "url": "https://httpbin.org/status/200",
+                "formats": ["markdown"]
+            }
+            response = await client.post(
+                f"{settings.FIRECRAWL_BASE_URL}/v1/scrape",
+                headers={"Authorization": f"Bearer {settings.FIRECRAWL_API_KEY}"},
+                json=test_payload
             )
-            if response.status_code == 200:
+            if response.status_code in [200, 201]:
                 logger.info("🔥 Firecrawl API 连接正常")
             else:
-                logger.warning(f"⚠️  Firecrawl API 响应异常: {response.status_code}")
+                logger.warning(f"⚠️  Firecrawl API 测试失败: {response.status_code}")
+                logger.info("ℹ️  API功能可能受限，但基本服务正常")
     except Exception as e:
         logger.warning(f"⚠️  Firecrawl API 连接检查失败: {e}")
+        logger.info("ℹ️  将使用模拟数据模式运行")
     
+    # 显示系统启动完成状态
     logger.info("✅ 系统启动完成")
+    logger.info("📋 服务状态:")
+    logger.info("   🌐 FastAPI: ✅ 运行中")
+    logger.info("   🗄️  数据库: ⚠️  可选模式 (如需持久化，请启动PostgreSQL)")
+    logger.info("   🔥 Firecrawl: ⚠️  请检查API密钥和网络连接")
+    logger.info("   📊 API文档: http://localhost:8000/docs")
+    logger.info("   🔍 健康检查: http://localhost:8000/health")
     
     yield
     
@@ -80,9 +95,10 @@ app = FastAPI(
 )
 
 # CORS中间件
+cors_origins = [origin.strip() for origin in settings.BACKEND_CORS_ORIGINS.split(",")]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.BACKEND_CORS_ORIGINS,
+    allow_origins=cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

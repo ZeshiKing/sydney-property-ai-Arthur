@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>澳洲租房聚合系统 - 前端API测试</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 25px;
+            border: 1px solid #e1e5e9;
+            border-radius: 10px;
+            background: #f8f9fa;
+        }
+
+        .section h2 {
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #4a5568;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            max-width: 300px;
+            padding: 12px 15px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .form-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-right: 15px;
+            margin-bottom: 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+        }
+
+        .status {
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-weight: 500;
+        }
+
+        .status.success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+
+        .status.error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+
+        .status.loading {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+            position: relative;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #0c5460;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 10px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .results {
+            max-height: 600px;
+            overflow-y: auto;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .property-card {
+            border-bottom: 1px solid #e2e8f0;
+            padding: 20px;
+            transition: background-color 0.2s ease;
+        }
+
+        .property-card:hover {
+            background: #f7fafc;
+        }
+
+        .property-card:last-child {
+            border-bottom: none;
+        }
+
+        .property-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .property-price {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .property-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .property-meta {
+            font-size: 0.9em;
+            color: #718096;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 15px;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .feature-tag {
+            background: #edf2f7;
+            color: #4a5568;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+
+        .code-block {
+            background: #1a202c;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        .api-endpoint {
+            background: #2d3748;
+            color: #68d391;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-family: monospace;
+            font-weight: 600;
+            display: inline-block;
+            margin: 5px 0;
+        }
+
+        .connection-status {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            border-radius: 25px;
+            color: white;
+            font-weight: 600;
+            z-index: 1000;
+        }
+
+        .connection-status.connected {
+            background: #48bb78;
+        }
+
+        .connection-status.disconnected {
+            background: #e53e3e;
+        }
+    </style>
+</head>
+<body>
+    <div class="connection-status" id="connectionStatus">检查连接中...</div>
+
+    <div class="container">
+        <div class="header">
+            <h1>🏠 澳洲租房聚合系统</h1>
+            <p>前端API连接测试工具 - Python FastAPI 版本</p>
+        </div>
+
+        <div class="content">
+            <!-- 连接检查部分 -->
+            <div class="section">
+                <h2>🔗 后端连接检查</h2>
+                <p>首先检查后端API服务是否正常运行：</p>
+
+                <button class="btn" onclick="checkConnection()">检查后端连接</button>
+                <button class="btn btn-secondary" onclick="checkApiDocs()">打开API文档</button>
+
+                <div class="code-block">
+                    <strong>后端地址:</strong><br>
+                    开发环境: <span class="api-endpoint">http://localhost:8000</span><br>
+                    API文档: <span class="api-endpoint">http://localhost:8000/docs</span><br>
+                    健康检查: <span class="api-endpoint">http://localhost:8000/health</span>
+                </div>
+
+                <div id="connectionResult"></div>
+            </div>
+
+            <!-- 房产搜索部分 -->
+            <div class="section">
+                <h2>🔍 房产搜索测试</h2>
+                <p>测试实时房产搜索功能：</p>
+
+                <form id="searchForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="location">搜索区域 *</label>
+                            <input type="text" id="location" value="Camperdown" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="propertyType">房产类型</label>
+                            <select id="propertyType">
+                                <option value="">所有类型</option>
+                                <option value="Apartment">公寓</option>
+                                <option value="House">独立屋</option>
+                                <option value="Townhouse">联排别墅</option>
+                                <option value="Studio">工作室</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="minPrice">最低价格 (周租)</label>
+                            <input type="number" id="minPrice" value="500">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="maxPrice">最高价格 (周租)</label>
+                            <input type="number" id="maxPrice" value="1000">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bedrooms">卧室数量</label>
+                            <input type="number" id="bedrooms" value="2" min="0" max="10">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bathrooms">浴室数量</label>
+                            <input type="number" id="bathrooms" value="1" min="0" max="10">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="maxResults">最大结果数</label>
+                            <input type="number" id="maxResults" value="10" min="1" max="50">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn" id="searchBtn">🔍 搜索房产</button>
+                </form>
+
+                <div id="searchStatus"></div>
+                <div id="searchResults" class="results" style="display: none;"></div>
+            </div>
+
+            <!-- 代码示例部分 -->
+            <div class="section">
+                <h2>💻 前端集成代码示例</h2>
+                <p>以下是您的前端代码可以参考的API调用示例：</p>
+
+                <h3>JavaScript fetch示例:</h3>
+                <div class="code-block">async function searchProperties(searchParams) {
+  try {
+    const response = await fetch('http://localhost:8000/api/v1/properties/search', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(searchParams)
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      console.log(`✅ 找到 ${data.properties.length} 个房产`);
+      return data.properties;
+    } else {
+      console.error('❌ 搜索失败:', data.message);
+      return [];
+    }
+  } catch (error) {
+    console.error('🚨 网络错误:', error);
+    return [];
+  }
+}
+
+// 使用示例
+const searchParams = {
+  location: "Camperdown",
+  min_price: 500,
+  max_price: 1000,
+  bedrooms: 2,
+  property_type: "Apartment"
+};
+
+searchProperties(searchParams).then(properties => {
+  // 在这里处理返回的房产数据
+  properties.forEach(property => {
+    console.log(`🏠 ${property.title} - ${property.price}`);
+  });
+});</div>
+
+                <h3>Axios示例:</h3>
+                <div class="code-block">import axios from 'axios';
+
+const API_BASE_URL = 'http://localhost:8000';
+
+const api = axios.create({
+  baseURL: API_BASE_URL,
+  timeout: 30000,
+  headers: {
+    'Content-Type': 'application/json'
+  }
+});
+
+export const searchProperties = async (searchParams) => {
+  try {
+    const response = await api.post('/api/v1/properties/search', searchParams);
+    return response.data;
+  } catch (error) {
+    console.error('API调用失败:', error);
+    throw error;
+  }
+};</div>
+
+                <h3>React Hook示例:</h3>
+                <div class="code-block">import { useState } from 'react';
+
+const usePropertySearch = () => {
+  const [properties, setProperties] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  const searchProperties = async (searchParams) => {
+    setLoading(true);
+    setError(null);
+
+    try {
+      const response = await fetch('http://localhost:8000/api/v1/properties/search', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(searchParams)
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setProperties(data.properties);
+      } else {
+        setError(data.message);
+      }
+    } catch (err) {
+      setError('网络连接失败');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return { properties, loading, error, searchProperties };
+};</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE_URL = 'http://localhost:8000';
+
+        // 检查后端连接状态
+        async function checkConnection() {
+            const statusEl = document.getElementById('connectionResult');
+            const connectionStatus = document.getElementById('connectionStatus');
+
+            statusEl.innerHTML = '<div class="status loading"><div class="loading-spinner"></div>正在检查后端连接...</div>';
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/health`, {
+                    method: 'GET',
+                    timeout: 10000
+                });
+
+                const data = await response.json();
+
+                if (response.ok && data.status === 'healthy') {
+                    statusEl.innerHTML = `
+                        <div class="status success">
+                            ✅ <strong>后端连接正常!</strong><br>
+                            服务版本: ${data.version || '未知'}<br>
+                            响应时间: ${Date.now() - startTime}ms<br>
+                            时间戳: ${new Date().toLocaleString('zh-CN')}
+                        </div>
+                    `;
+                    connectionStatus.textContent = '✅ 已连接';
+                    connectionStatus.className = 'connection-status connected';
+
+                    // 自动获取API详细健康状态
+                    checkDetailedHealth();
+                } else {
+                    throw new Error(`服务状态异常: ${data.status || 'unknown'}`);
+                }
+            } catch (error) {
+                statusEl.innerHTML = `
+                    <div class="status error">
+                        ❌ <strong>后端连接失败!</strong><br>
+                        错误: ${error.message}<br><br>
+                        <strong>解决步骤:</strong><br>
+                        1. 确认后端服务已启动<br>
+                        2. 检查地址是否正确: ${API_BASE_URL}<br>
+                        3. 查看浏览器控制台错误信息<br>
+                        4. 检查CORS设置
+                    </div>
+                `;
+                connectionStatus.textContent = '❌ 未连接';
+                connectionStatus.className = 'connection-status disconnected';
+            }
+        }
+
+        // 检查详细健康状态
+        async function checkDetailedHealth() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/api/v1/health/`);
+                const data = await response.json();
+
+                const currentStatus = document.getElementById('connectionResult');
+                const detailsHtml = `
+                    <div class="status success">
+                        🔍 <strong>详细系统状态:</strong><br>
+                        数据库: ${data.services?.database?.status || '未知'}
+                        (${data.services?.database?.response_time_ms || 0}ms)<br>
+                        缓存: ${data.services?.redis?.status || '未知'}
+                        (${data.services?.redis?.response_time_ms || 0}ms)<br>
+                        Firecrawl API: ${data.services?.firecrawl?.status || '未知'}
+                        (${data.services?.firecrawl?.response_time_ms || 0}ms)
+                    </div>
+                `;
+                currentStatus.innerHTML += detailsHtml;
+            } catch (error) {
+                console.log('详细健康检查失败:', error);
+            }
+        }
+
+        // 打开API文档
+        function checkApiDocs() {
+            window.open(`${API_BASE_URL}/docs`, '_blank');
+        }
+
+        // 房产搜索
+        document.getElementById('searchForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const searchBtn = document.getElementById('searchBtn');
+            const statusEl = document.getElementById('searchStatus');
+            const resultsEl = document.getElementById('searchResults');
+
+            // 收集表单数据
+            const searchParams = {
+                location: document.getElementById('location').value,
+                min_price: parseInt(document.getElementById('minPrice').value) || undefined,
+                max_price: parseInt(document.getElementById('maxPrice').value) || undefined,
+                bedrooms: parseInt(document.getElementById('bedrooms').value) || undefined,
+                bathrooms: parseInt(document.getElementById('bathrooms').value) || undefined,
+                property_type: document.getElementById('propertyType').value || undefined,
+                max_results: parseInt(document.getElementById('maxResults').value) || 10
+            };
+
+            // 显示加载状态
+            searchBtn.disabled = true;
+            searchBtn.innerHTML = '<div class="loading-spinner"></div>搜索中...';
+            statusEl.innerHTML = '<div class="status loading"><div class="loading-spinner"></div>正在搜索房产数据...</div>';
+            resultsEl.style.display = 'none';
+
+            const startTime = Date.now();
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/api/v1/properties/search`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(searchParams)
+                });
+
+                const data = await response.json();
+                const searchTime = Date.now() - startTime;
+
+                if (data.success && data.properties) {
+                    // 显示成功状态
+                    statusEl.innerHTML = `
+                        <div class="status success">
+                            ✅ <strong>搜索成功!</strong><br>
+                            找到 ${data.properties.length} 个房产<br>
+                            搜索耗时: ${searchTime}ms<br>
+                            服务器处理时间: ${data.metadata?.search_time_ms?.toFixed(1) || '未知'}ms
+                        </div>
+                    `;
+
+                    // 显示房产结果
+                    displayProperties(data.properties, data.metadata);
+                    resultsEl.style.display = 'block';
+
+                } else {
+                    statusEl.innerHTML = `
+                        <div class="status error">
+                            ❌ <strong>搜索失败:</strong> ${data.message || '未知错误'}
+                        </div>
+                    `;
+                }
+
+            } catch (error) {
+                statusEl.innerHTML = `
+                    <div class="status error">
+                        🚨 <strong>网络错误:</strong> ${error.message}<br><br>
+                        请检查:
+                        <br>1. 后端服务是否运行
+                        <br>2. 网络连接是否正常
+                        <br>3. 浏览器控制台的详细错误信息
+                    </div>
+                `;
+            } finally {
+                searchBtn.disabled = false;
+                searchBtn.innerHTML = '🔍 搜索房产';
+            }
+        });
+
+        // 显示房产数据
+        function displayProperties(properties, metadata) {
+            const resultsEl = document.getElementById('searchResults');
+
+            if (!properties || properties.length === 0) {
+                resultsEl.innerHTML = '<div class="property-card">未找到符合条件的房产</div>';
+                return;
+            }
+
+            let html = '';
+            properties.forEach((property, index) => {
+                html += `
+                    <div class="property-card">
+                        <div class="property-title">${property.title}</div>
+                        <div class="property-price">${property.price}</div>
+
+                        <div class="property-details">
+                            <div><strong>位置:</strong> ${property.location}</div>
+                            <div><strong>房间:</strong> ${property.bedrooms || 'N/A'}室 ${property.bathrooms || 'N/A'}浴</div>
+                            <div><strong>停车:</strong> ${property.parking || 0}个车位</div>
+                            <div><strong>类型:</strong> ${property.property_type}</div>
+                        </div>
+
+                        <div><strong>描述:</strong> ${property.description}</div>
+
+                        ${property.features && property.features.length > 0 ? `
+                            <div class="features">
+                                ${property.features.map(feature => `<span class="feature-tag">${feature}</span>`).join('')}
+                            </div>
+                        ` : ''}
+
+                        <div class="property-meta">
+                            <strong>中介:</strong> ${property.agent?.name || '未知'}
+                            ${property.agent?.phone ? `- ${property.agent.phone}` : ''}<br>
+                            <strong>数据来源:</strong> ${property.source}<br>
+                            <strong>更新时间:</strong> ${new Date(property.scraped_at).toLocaleString('zh-CN')}<br>
+                            ${property.url ? `<strong>原网页:</strong> <a href="${property.url}" target="_blank">查看详情</a>` : ''}
+                        </div>
+                    </div>
+                `;
+            });
+
+            resultsEl.innerHTML = html;
+        }
+
+        // 页面加载时自动检查连接
+        window.addEventListener('load', () => {
+            setTimeout(checkConnection, 1000);
+        });
+
+        // 记录搜索开始时间
+        let startTime;
+
+        // 更新连接状态显示
+        function updateConnectionStatus() {
+            fetch(`${API_BASE_URL}/health`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'healthy') {
+                        document.getElementById('connectionStatus').textContent = '✅ 已连接';
+                        document.getElementById('connectionStatus').className = 'connection-status connected';
+                    }
+                })
+                .catch(() => {
+                    document.getElementById('connectionStatus').textContent = '❌ 未连接';
+                    document.getElementById('connectionStatus').className = 'connection-status disconnected';
+                });
+        }
+
+        // 每30秒检查一次连接状态
+        setInterval(updateConnectionStatus, 30000);
+    </script>
+</body>
+</html>

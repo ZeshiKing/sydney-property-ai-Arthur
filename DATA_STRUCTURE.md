@@ -340,8 +340,8 @@ CREATE TABLE search_history (
 - `GET /api/v1/health/` - 健康检查
 
 ### 文档地址
-- **Swagger UI**: `http://localhost:3000/api/v1/docs`
-- **ReDoc**: `http://localhost:3000/api/v1/redoc`
+- **Swagger UI**: `http://localhost:8000/api/v1/docs`
+- **ReDoc**: `http://localhost:8000/api/v1/redoc`
 
 ## 📝 使用示例
 
@@ -361,7 +361,7 @@ async def search_properties():
     
     async with httpx.AsyncClient() as client:
         response = await client.post(
-            "http://localhost:3000/api/v1/properties/search",
+            "http://localhost:8000/api/v1/properties/search",
             json=search_request
         )
         
@@ -376,7 +376,7 @@ asyncio.run(search_properties())
 
 ### cURL示例
 ```bash
-curl -X POST http://localhost:3000/api/v1/properties/search \
+curl -X POST http://localhost:8000/api/v1/properties/search \
   -H "Content-Type: application/json" \
   -d '{
     "location": "Camperdown",
