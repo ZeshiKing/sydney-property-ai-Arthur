@@ -82,6 +82,12 @@ class Settings(BaseSettings):
     FIRECRAWL_API_KEY: str = Field(env="FIRECRAWL_API_KEY")
     FIRECRAWL_BASE_URL: str = Field(default="https://api.firecrawl.dev", env="FIRECRAWL_BASE_URL")
     
+    # OpenAI API设置
+    OPENAI_API_KEY: Optional[str] = Field(default=None, env="OPENAI_API_KEY")
+    OPENAI_MODEL: str = Field(default="gpt-4o-mini", env="OPENAI_MODEL")
+    OPENAI_MAX_TOKENS: int = Field(default=500, env="OPENAI_MAX_TOKENS")
+    OPENAI_TEMPERATURE: float = Field(default=0.1, env="OPENAI_TEMPERATURE")
+    
     # 缓存设置
     CACHE_TTL_SECONDS: int = Field(default=3600, env="CACHE_TTL_SECONDS")  # 1小时
     SEARCH_CACHE_TTL: int = Field(default=300, env="SEARCH_CACHE_TTL")     # 5分钟

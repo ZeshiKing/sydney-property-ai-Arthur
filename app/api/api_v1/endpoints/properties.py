@@ -15,6 +15,8 @@ import uuid
 
 from app.core.config import settings, get_csv_export_path
 from app.core.logging import api_logger, scraping_logger, csv_logger
+from app.services.openai_parser import openai_parser
+from app.services.recommendation_service import recommendation_service
 
 router = APIRouter()
 
@@ -37,6 +39,20 @@ class PropertySearchRequest(BaseModel):
             if v < values['min_price']:
                 raise ValueError('最高价格不能小于最低价格')
         return v
+
+
+class RecommendationRequest(BaseModel):
+    """房产推荐请求模型"""
+    query: str = Field(..., description="自然语言查询，如：'Looking for a 2 bedroom apartment in Camperdown, budget $900 per week'")
+    location: Optional[str] = Field(None, description="搜索区域")
+    min_price: Optional[int] = Field(None, ge=0, description="最低价格 (周租)")
+    max_price: Optional[int] = Field(None, ge=0, description="最高价格 (周租)")
+    property_type: Optional[str] = Field(None, description="房产类型")
+    bedrooms: Optional[int] = Field(None, ge=0, description="卧室数量")
+    bathrooms: Optional[int] = Field(None, ge=0, description="浴室数量")
+    parking: Optional[int] = Field(None, ge=0, description="停车位数量")
+    pet_friendly: Optional[bool] = Field(None, description="是否允许宠物")
+    max_results: Optional[int] = Field(10, ge=1, le=50, description="最大推荐结果数量")
 
 
 # 响应模型
@@ -334,8 +350,8 @@ async def search_properties(
         # 使用Firecrawl抓取数据
         raw_data = await firecrawl_service.scrape_properties(request)
         
-        # 解析房产数据
-        properties = firecrawl_service.parse_property_data(raw_data, request)
+        # 使用OpenAI解析房产数据
+        properties = await openai_parser.parse_properties_from_raw(raw_data, request.dict())
         
         # 计算执行时间
         execution_time = (datetime.now() - start_time).total_seconds() * 1000
@@ -438,3 +454,336 @@ async def test_firecrawl():
             "message": "Firecrawl API连接失败",
             "api_url": settings.FIRECRAWL_BASE_URL
         }
+
+
+@router.post("/recommend", response_model=PropertySearchResponse)
+async def recommend_properties(
+    request: RecommendationRequest,
+    background_tasks: BackgroundTasks
+):
+    """
+    智能房产推荐API
+    
+    使用LLM解析自然语言查询，结合推荐算法返回最匹配的房产
+    """
+    request_id = str(uuid.uuid4())[:8]
+    start_time = datetime.now()
+    
+    api_logger.info(f"[{request_id}] 开始智能推荐: {request.query}")
+    
+    try:
+        # 1. 使用OpenAI解析自然语言查询
+        parsed_query = await openai_parser.llm_parse(request.query)
+        api_logger.info(f"[{request_id}] OpenAI解析结果: {parsed_query}")
+        
+        # 2. 构建搜索参数（合并解析结果和显式参数）
+        search_location = request.location or parsed_query.get('address') or parsed_query.get('suburbs', [''])[0] if isinstance(parsed_query.get('suburbs'), list) else ''
+        if not search_location:
+            raise HTTPException(status_code=400, detail="无法确定搜索区域，请在query中指定位置或使用location参数")
+        
+        # 构建搜索请求
+        search_request = PropertySearchRequest(
+            location=search_location,
+            min_price=request.min_price or parsed_query.get('price_min'),
+            max_price=request.max_price or parsed_query.get('price_max'),
+            property_type=request.property_type or parsed_query.get('property_type'),
+            bedrooms=request.bedrooms or parsed_query.get('bedrooms'),
+            bathrooms=request.bathrooms or parsed_query.get('bathrooms'),
+            parking=request.parking or parsed_query.get('parking_spaces'),
+            max_results=100  # 先获取更多数据用于推荐
+        )
+        
+        # 3. 使用Firecrawl抓取数据
+        raw_data = await firecrawl_service.scrape_properties(search_request)
+        
+        # 4. 解析房产数据
+        properties = await openai_parser.parse_properties_from_raw(raw_data, search_request.dict())
+        
+        if not properties:
+            api_logger.warning(f"[{request_id}] 未找到房产数据")
+            execution_time = (datetime.now() - start_time).total_seconds() * 1000
+            metadata = SearchMetadata(
+                total_found=0,
+                search_time_ms=round(execution_time, 2),
+                firecrawl_usage=raw_data.get('metadata', {}),
+                search_params=request.dict(),
+                timestamp=datetime.utcnow().isoformat() + "Z"
+            )
+            return PropertySearchResponse(
+                success=False,
+                properties=[],
+                metadata=metadata,
+                message="未找到匹配的房产"
+            )
+        
+        # 5. 构建推荐查询参数
+        recommendation_query = recommendation_service.build_query_from_request(
+            search_request=request.dict(),
+            file_default={'location': search_location}
+        )
+        
+        # 6. 获取推荐结果
+        recommendations = recommendation_service.recommend_properties(
+            properties=properties,
+            query=recommendation_query,
+            topk=request.max_results or 10
+        )
+        
+        # 7. 转换为PropertyModel格式
+        recommended_properties = []
+        for rec in recommendations:
+            # 从原始properties中找到对应的PropertyModel
+            for prop in properties:
+                if prop.id == rec['id']:
+                    recommended_properties.append(prop)
+                    break
+        
+        # 计算执行时间
+        execution_time = (datetime.now() - start_time).total_seconds() * 1000
+        
+        # 构建响应元数据
+        metadata = SearchMetadata(
+            total_found=len(recommended_properties),
+            search_time_ms=round(execution_time, 2),
+            firecrawl_usage=raw_data.get('metadata', {}),
+            search_params={
+                **request.dict(),
+                'parsed_query': parsed_query,
+                'recommendation_scores': [rec['score'] for rec in recommendations]
+            },
+            timestamp=datetime.utcnow().isoformat() + "Z"
+        )
+        
+        # 构建响应
+        response = PropertySearchResponse(
+            success=True,
+            properties=recommended_properties,
+            metadata=metadata,
+            message=f"根据您的需求推荐了 {len(recommended_properties)} 个最匹配的房产"
+        )
+        
+        # 后台任务：导出CSV
+        if recommended_properties:
+            background_tasks.add_task(export_to_csv, recommended_properties, search_request, metadata)
+        
+        api_logger.info(f"[{request_id}] 推荐完成，返回 {len(recommended_properties)} 个房产")
+        return response
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        api_logger.error(f"[{request_id}] 推荐失败: {str(e)}")
+        
+        # 返回错误响应
+        execution_time = (datetime.now() - start_time).total_seconds() * 1000
+        metadata = SearchMetadata(
+            total_found=0,
+            search_time_ms=round(execution_time, 2),
+            firecrawl_usage={},
+            search_params=request.dict(),
+            timestamp=datetime.utcnow().isoformat() + "Z"
+        )
+        
+        return PropertySearchResponse(
+            success=False,
+            properties=[],
+            metadata=metadata,
+            message=f"推荐失败: {str(e)}"
+        )
+
+
+@router.post("/import-csv")
+async def import_csv_data(
+    request: Dict[str, Any]
+):
+    """
+    导入CSV数据到后端数据库
+    
+    接收前端爬取的数据并存储
+    """
+    request_id = str(uuid.uuid4())[:8]
+    api_logger.info(f"[{request_id}] 开始导入CSV数据")
+    
+    try:
+        properties_data = request.get('properties', [])
+        metadata = request.get('metadata', {})
+        
+        if not properties_data:
+            raise HTTPException(status_code=400, detail="没有提供房产数据")
+        
+        # 处理导入的数据
+        imported_count = 0
+        for prop_data in properties_data:
+            try:
+                # 验证数据完整性
+                if not prop_data.get('title') and not prop_data.get('price'):
+                    continue
+                
+                # 这里可以添加数据库存储逻辑
+                # property_model = Property.from_dict(prop_data)
+                # await save_to_database(property_model)
+                
+                imported_count += 1
+                
+            except Exception as e:
+                api_logger.warning(f"导入单条数据失败: {e}")
+                continue
+        
+        # 自动生成CSV文件
+        if imported_count > 0:
+            csv_filename = await save_imported_data_to_csv(properties_data, metadata)
+            
+        api_logger.info(f"[{request_id}] 成功导入 {imported_count}/{len(properties_data)} 条数据")
+        
+        return {
+            "success": True,
+            "imported_count": imported_count,
+            "total_received": len(properties_data),
+            "csv_file": csv_filename if imported_count > 0 else None,
+            "message": f"成功导入 {imported_count} 条房产数据"
+        }
+        
+    except Exception as e:
+        api_logger.error(f"[{request_id}] CSV导入失败: {e}")
+        return {
+            "success": False,
+            "error": str(e),
+            "message": "数据导入失败"
+        }
+
+
+@router.post("/bulk-process")
+async def bulk_process_properties(
+    request: Dict[str, Any],
+    background_tasks: BackgroundTasks
+):
+    """
+    批量处理前端提交的房产数据
+    
+    应用推荐算法并生成CSV
+    """
+    request_id = str(uuid.uuid4())[:8]
+    api_logger.info(f"[{request_id}] 开始批量处理房产数据")
+    
+    try:
+        properties_raw = request.get('properties', [])
+        source = request.get('source', 'unknown')
+        
+        if not properties_raw:
+            raise HTTPException(status_code=400, detail="没有提供房产数据")
+        
+        # 转换为PropertyModel格式
+        properties = []
+        for prop_raw in properties_raw:
+            try:
+                # 补充缺失的字段
+                prop_data = {
+                    'id': prop_raw.get('id', str(uuid.uuid4())),
+                    'title': prop_raw.get('title', ''),
+                    'price': prop_raw.get('price', ''),
+                    'location': prop_raw.get('location', ''),
+                    'bedrooms': prop_raw.get('bedrooms'),
+                    'bathrooms': prop_raw.get('bathrooms'),
+                    'parking': prop_raw.get('parking'),
+                    'property_type': prop_raw.get('property_type', 'unknown'),
+                    'description': prop_raw.get('description', ''),
+                    'features': prop_raw.get('features', []),
+                    'images': prop_raw.get('images', []),
+                    'agent': prop_raw.get('agent', {}),
+                    'coordinates': prop_raw.get('coordinates'),
+                    'url': prop_raw.get('url', ''),
+                    'source': f"{source} -> Backend Processing",
+                    'scraped_at': prop_raw.get('scraped_at', datetime.utcnow().isoformat() + "Z"),
+                    'available_from': prop_raw.get('available_from'),
+                    'property_size': prop_raw.get('property_size'),
+                    'land_size': prop_raw.get('land_size'),
+                    'year_built': prop_raw.get('year_built'),
+                    'energy_rating': prop_raw.get('energy_rating'),
+                    'pet_friendly': prop_raw.get('pet_friendly', False),
+                    'furnished': prop_raw.get('furnished', False),
+                    'inspection_times': prop_raw.get('inspection_times', [])
+                }
+                
+                property_model = PropertyModel(**prop_data)
+                properties.append(property_model)
+                
+            except Exception as e:
+                api_logger.warning(f"转换房产数据失败: {e}")
+                continue
+        
+        # 应用推荐算法（如果有查询参数）
+        if request.get('apply_recommendation'):
+            query_params = request.get('query_params', {})
+            recommendation_query = recommendation_service.build_query_from_request(query_params)
+            properties = recommendation_service.recommend_properties(properties, recommendation_query)
+        
+        # 生成元数据
+        metadata = SearchMetadata(
+            total_found=len(properties),
+            search_time_ms=0,
+            firecrawl_usage={},
+            search_params={'source': source, 'bulk_processing': True},
+            timestamp=datetime.utcnow().isoformat() + "Z"
+        )
+        
+        # 后台任务：生成CSV
+        background_tasks.add_task(export_to_csv, properties, 
+                                {'source': source, 'bulk': True}, metadata)
+        
+        api_logger.info(f"[{request_id}] 成功处理 {len(properties)} 条房产数据")
+        
+        return {
+            "success": True,
+            "processed_count": len(properties),
+            "total_received": len(properties_raw),
+            "message": f"成功处理 {len(properties)} 条房产数据，CSV正在生成中"
+        }
+        
+    except Exception as e:
+        api_logger.error(f"[{request_id}] 批量处理失败: {e}")
+        return {
+            "success": False,
+            "error": str(e),
+            "message": "批量处理失败"
+        }
+
+
+async def save_imported_data_to_csv(properties_data: List[Dict], metadata: Dict) -> str:
+    """保存导入数据为CSV文件"""
+    try:
+        # 准备CSV数据
+        csv_data = []
+        for prop in properties_data:
+            csv_row = {
+                'ID': prop.get('id', ''),
+                'Title': prop.get('title', ''),
+                'Price': prop.get('price', ''),
+                'Location': prop.get('location', ''),
+                'Bedrooms': prop.get('bedrooms', ''),
+                'Bathrooms': prop.get('bathrooms', ''),
+                'Parking': prop.get('parking', ''),
+                'URL': prop.get('url', ''),
+                'Source': prop.get('source', ''),
+                'Scraped_At': prop.get('scraped_at', ''),
+                'Import_Source': metadata.get('source', 'frontend'),
+                'Import_Time': metadata.get('scraped_at', datetime.now().isoformat()),
+            }
+            csv_data.append(csv_row)
+        
+        # 生成文件名
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        filename = f"imported_properties_{timestamp}.csv"
+        
+        # 保存CSV文件
+        csv_dir = get_csv_export_path()
+        file_path = csv_dir / filename
+        
+        df = pd.DataFrame(csv_data)
+        df.to_csv(file_path, index=False, encoding='utf-8')
+        
+        csv_logger.info(f"导入数据CSV已保存: {file_path}")
+        return filename
+        
+    except Exception as e:
+        csv_logger.error(f"保存导入数据CSV失败: {e}")
+        return ""

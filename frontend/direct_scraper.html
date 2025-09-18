@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前端直接爬取 - Domain.com.au</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .scraper-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+            flex-wrap: wrap;
+        }
+        input, select, button {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        button:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+        }
+        .results {
+            margin-top: 20px;
+        }
+        .property-item {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            background: #fafafa;
+        }
+        .property-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .property-details {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            font-size: 14px;
+            color: #666;
+        }
+        .log-area {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            font-family: monospace;
+            font-size: 12px;
+            max-height: 300px;
+            overflow-y: auto;
+            margin: 15px 0;
+        }
+        .status {
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .status.success { background: #d4edda; color: #155724; }
+        .status.error { background: #f8d7da; color: #721c24; }
+        .status.info { background: #d1ecf1; color: #0c5460; }
+        .csv-section {
+            background: #e9f7ef;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🕷️ Domain.com.au 前端爬取器</h1>
+        <p>⚠️ 注意：由于CORS限制，此方法需要浏览器插件或代理</p>
+        
+        <!-- 方法1: 代理爬取 -->
+        <div class="scraper-section">
+            <h2>方法1: 通过代理API爬取</h2>
+            <p>使用CORS代理绕过跨域限制</p>
+            
+            <div class="controls">
+                <input type="text" id="location1" placeholder="地区 (如: Camperdown)" value="Camperdown">
+                <input type="number" id="minPrice1" placeholder="最低价格" value="500">
+                <input type="number" id="maxPrice1" placeholder="最高价格" value="1000">
+                <select id="bedrooms1">
+                    <option value="">任意卧室</option>
+                    <option value="1">1室</option>
+                    <option value="2" selected>2室</option>
+                    <option value="3">3室</option>
+                    <option value="4">4室+</option>
+                </select>
+                <button onclick="scrapeWithProxy()" id="proxyBtn">开始爬取</button>
+            </div>
+            
+            <div id="proxyLog" class="log-area" style="display:none;"></div>
+            <div id="proxyResults" class="results"></div>
+        </div>
+        
+        <!-- 方法2: 用户提供数据 -->
+        <div class="scraper-section">
+            <h2>方法2: 手动提供页面数据</h2>
+            <p>用户访问Domain.com.au，复制页面源码到这里处理</p>
+            
+            <div class="controls">
+                <input type="url" id="domainUrl" placeholder="Domain.com.au搜索结果页面URL" style="width: 400px;">
+                <button onclick="openDomainPage()">打开Domain页面</button>
+            </div>
+            
+            <textarea id="htmlContent" placeholder="请将Domain.com.au页面的HTML源码粘贴到这里..." 
+                     style="width: 100%; height: 150px; margin: 10px 0; padding: 10px; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+            
+            <div class="controls">
+                <button onclick="parseHTMLContent()">解析数据</button>
+                <button onclick="sendToBackend()">发送到后端处理</button>
+            </div>
+            
+            <div id="manualResults" class="results"></div>
+        </div>
+        
+        <!-- CSV数据管理 -->
+        <div class="csv-section">
+            <h2>📊 CSV数据管理</h2>
+            <div class="controls">
+                <button onclick="downloadCSV()">下载CSV</button>
+                <button onclick="uploadToBackend()">上传到后端</button>
+                <button onclick="clearData()">清空数据</button>
+                <span id="dataCount">当前数据：0条</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let scrapedData = [];
+        
+        function log(area, message, type = 'info') {
+            const logArea = document.getElementById(area + 'Log');
+            logArea.style.display = 'block';
+            
+            const timestamp = new Date().toLocaleTimeString();
+            const className = type === 'error' ? 'color: red' : type === 'success' ? 'color: green' : 'color: black';
+            
+            logArea.innerHTML += `<div style="${className}">[${timestamp}] ${message}</div>`;
+            logArea.scrollTop = logArea.scrollHeight;
+        }
+        
+        // 方法1: 使用代理API爬取
+        async function scrapeWithProxy() {
+            const btn = document.getElementById('proxyBtn');
+            btn.disabled = true;
+            btn.textContent = '爬取中...';
+            
+            try {
+                log('proxy', '开始构建搜索URL...');
+                
+                const location = document.getElementById('location1').value;
+                const minPrice = document.getElementById('minPrice1').value;
+                const maxPrice = document.getElementById('maxPrice1').value;
+                const bedrooms = document.getElementById('bedrooms1').value;
+                
+                // 构建Domain.com.au URL
+                let domainUrl = 'https://www.domain.com.au/rent/';
+                const params = [];
+                
+                if (location) {
+                    params.push(`suburb=${location.toLowerCase().replace(/\s+/g, '-')}`);
+                }
+                if (minPrice) {
+                    params.push(`price=${minPrice}-${maxPrice || 'any'}`);
+                }
+                if (bedrooms) {
+                    params.push(`bedrooms=${bedrooms}`);
+                }
+                
+                if (params.length > 0) {
+                    domainUrl += '?' + params.join('&');
+                }
+                
+                log('proxy', `目标URL: ${domainUrl}`);
+                
+                // 尝试使用公共CORS代理
+                const proxyUrls = [
+                    'https://api.allorigins.win/get?url=',
+                    'https://cors-anywhere.herokuapp.com/',
+                    'https://corsproxy.io/?'
+                ];
+                
+                for (const proxy of proxyUrls) {
+                    try {
+                        log('proxy', `尝试代理: ${proxy}`);
+                        
+                        const response = await fetch(proxy + encodeURIComponent(domainUrl));
+                        let htmlContent;
+                        
+                        if (proxy.includes('allorigins')) {
+                            const data = await response.json();
+                            htmlContent = data.contents;
+                        } else {
+                            htmlContent = await response.text();
+                        }
+                        
+                        if (htmlContent && htmlContent.length > 1000) {
+                            log('proxy', '成功获取页面数据，开始解析...', 'success');
+                            const properties = parsePropertyHTML(htmlContent);
+                            displayResults('proxyResults', properties);
+                            scrapedData = properties;
+                            updateDataCount();
+                            return;
+                        }
+                    } catch (e) {
+                        log('proxy', `代理失败: ${e.message}`, 'error');
+                    }
+                }
+                
+                log('proxy', '所有代理都失败了，请尝试方法2', 'error');
+                
+            } catch (error) {
+                log('proxy', `爬取失败: ${error.message}`, 'error');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = '开始爬取';
+            }
+        }
+        
+        // 方法2: 解析用户提供的HTML内容
+        function parseHTMLContent() {
+            const htmlContent = document.getElementById('htmlContent').value.trim();
+            
+            if (!htmlContent) {
+                alert('请先粘贴HTML内容');
+                return;
+            }
+            
+            try {
+                const properties = parsePropertyHTML(htmlContent);
+                displayResults('manualResults', properties);
+                scrapedData = properties;
+                updateDataCount();
+                
+                alert(`成功解析 ${properties.length} 个房产信息！`);
+            } catch (error) {
+                alert(`解析失败: ${error.message}`);
+            }
+        }
+        
+        // HTML解析函数
+        function parsePropertyHTML(htmlContent) {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(htmlContent, 'text/html');
+            const properties = [];
+            
+            // Domain.com.au的常见选择器
+            const selectors = [
+                '[data-testid="listing-card"]',
+                '.listing-card',
+                '.property-card',
+                'article[data-testid*="listing"]',
+                '.css-1qp9106'  // Domain的常用类名
+            ];
+            
+            let propertyElements = [];
+            for (const selector of selectors) {
+                propertyElements = doc.querySelectorAll(selector);
+                if (propertyElements.length > 0) break;
+            }
+            
+            console.log(`找到 ${propertyElements.length} 个房产元素`);
+            
+            propertyElements.forEach((element, index) => {
+                try {
+                    const property = {
+                        id: `prop_${Date.now()}_${index}`,
+                        title: extractText(element, [
+                            '[data-testid="listing-card-title"]',
+                            '.listing-card__title',
+                            'h2 a',
+                            'h3 a',
+                            '.property-title'
+                        ]),
+                        price: extractText(element, [
+                            '[data-testid="listing-card-price"]',
+                            '.property-price',
+                            '.listing-card__price',
+                            '.css-mgq8yx'
+                        ]),
+                        location: extractText(element, [
+                            '[data-testid="listing-card-suburb"]',
+                            '.listing-card__suburb',
+                            '.property-address',
+                            '.css-694pno'
+                        ]),
+                        bedrooms: extractNumber(element, ['bed', 'br']),
+                        bathrooms: extractNumber(element, ['bath', 'ba']),
+                        parking: extractNumber(element, ['car', 'park']),
+                        url: extractURL(element),
+                        scraped_at: new Date().toISOString(),
+                        source: 'Domain.com.au (Frontend)'
+                    };
+                    
+                    // 只添加有效数据
+                    if (property.title || property.price) {
+                        properties.push(property);
+                    }
+                } catch (error) {
+                    console.warn(`解析第${index}个房产失败:`, error);
+                }
+            });
+            
+            return properties;
+        }
+        
+        // 辅助解析函数
+        function extractText(element, selectors) {
+            for (const selector of selectors) {
+                const found = element.querySelector(selector);
+                if (found && found.textContent.trim()) {
+                    return found.textContent.trim();
+                }
+            }
+            return '';
+        }
+        
+        function extractNumber(element, keywords) {
+            const text = element.textContent.toLowerCase();
+            for (const keyword of keywords) {
+                const match = text.match(new RegExp(`(\\d+)\\s*${keyword}`));
+                if (match) return parseInt(match[1]);
+            }
+            return null;
+        }
+        
+        function extractURL(element) {
+            const link = element.querySelector('a[href]');
+            if (link) {
+                const href = link.getAttribute('href');
+                if (href.startsWith('http')) return href;
+                if (href.startsWith('/')) return 'https://www.domain.com.au' + href;
+            }
+            return '';
+        }
+        
+        // 显示结果
+        function displayResults(containerId, properties) {
+            const container = document.getElementById(containerId);
+            
+            if (properties.length === 0) {
+                container.innerHTML = '<p>未找到房产数据</p>';
+                return;
+            }
+            
+            let html = `<h3>找到 ${properties.length} 个房产</h3>`;
+            
+            properties.forEach(prop => {
+                html += `
+                    <div class="property-item">
+                        <div class="property-title">${prop.title || '无标题'}</div>
+                        <div class="property-details">
+                            <span>💰 ${prop.price || 'N/A'}</span>
+                            <span>📍 ${prop.location || 'N/A'}</span>
+                            <span>🛏️ ${prop.bedrooms || 'N/A'}室</span>
+                            <span>🛁 ${prop.bathrooms || 'N/A'}卫</span>
+                            <span>🚗 ${prop.parking || 'N/A'}车位</span>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html;
+        }
+        
+        // 打开Domain页面
+        function openDomainPage() {
+            const url = document.getElementById('domainUrl').value || 'https://www.domain.com.au/rent/';
+            window.open(url, '_blank');
+            
+            alert('请在新打开的页面中:\n1. 进行房产搜索\n2. 右键 → 查看页面源代码\n3. 复制全部HTML内容\n4. 粘贴到下方文本框');
+        }
+        
+        // 发送到后端处理
+        async function sendToBackend() {
+            if (scrapedData.length === 0) {
+                alert('没有数据可发送');
+                return;
+            }
+            
+            try {
+                const response = await fetch('http://localhost:3000/api/v1/properties/bulk-process', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        properties: scrapedData,
+                        source: 'frontend_scraper'
+                    })
+                });
+                
+                if (response.ok) {
+                    const result = await response.json();
+                    alert(`成功发送 ${scrapedData.length} 条数据到后端处理`);
+                } else {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+            } catch (error) {
+                alert(`发送失败: ${error.message}\n请确保后端服务正在运行`);
+            }
+        }
+        
+        // CSV导出功能
+        function downloadCSV() {
+            if (scrapedData.length === 0) {
+                alert('没有数据可导出');
+                return;
+            }
+            
+            const csvContent = convertToCSV(scrapedData);
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            
+            if (link.download !== undefined) {
+                const url = URL.createObjectURL(blob);
+                link.setAttribute('href', url);
+                link.setAttribute('download', `domain_properties_${new Date().toISOString().split('T')[0]}.csv`);
+                link.style.visibility = 'hidden';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+        }
+        
+        function convertToCSV(data) {
+            const headers = ['ID', 'Title', 'Price', 'Location', 'Bedrooms', 'Bathrooms', 'Parking', 'URL', 'Source', 'Scraped_At'];
+            
+            let csv = headers.join(',') + '\n';
+            
+            data.forEach(row => {
+                const values = [
+                    row.id || '',
+                    (row.title || '').replace(/,/g, ';'),
+                    (row.price || '').replace(/,/g, ';'),
+                    (row.location || '').replace(/,/g, ';'),
+                    row.bedrooms || '',
+                    row.bathrooms || '',
+                    row.parking || '',
+                    row.url || '',
+                    row.source || '',
+                    row.scraped_at || ''
+                ];
+                
+                csv += values.join(',') + '\n';
+            });
+            
+            return csv;
+        }
+        
+        function updateDataCount() {
+            document.getElementById('dataCount').textContent = `当前数据：${scrapedData.length}条`;
+        }
+        
+        function clearData() {
+            scrapedData = [];
+            updateDataCount();
+            document.getElementById('proxyResults').innerHTML = '';
+            document.getElementById('manualResults').innerHTML = '';
+            alert('数据已清空');
+        }
+        
+        // 上传到后端
+        async function uploadToBackend() {
+            if (scrapedData.length === 0) {
+                alert('没有数据可上传');
+                return;
+            }
+            
+            try {
+                const response = await fetch('http://localhost:3000/api/v1/properties/import-csv', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        properties: scrapedData,
+                        metadata: {
+                            source: 'frontend_scraper',
+                            scraped_at: new Date().toISOString(),
+                            count: scrapedData.length
+                        }
+                    })
+                });
+                
+                if (response.ok) {
+                    const result = await response.json();
+                    alert(`成功上传 ${scrapedData.length} 条数据到后端数据库`);
+                } else {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+            } catch (error) {
+                alert(`上传失败: ${error.message}`);
+            }
+        }
+    </script>
+</body>
+</html>

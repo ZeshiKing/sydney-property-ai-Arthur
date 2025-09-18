@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API连接测试</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .test-item {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .test-item h3 {
+            margin: 0 0 10px 0;
+        }
+        .status {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .status.testing { background: #fff3cd; color: #856404; }
+        .status.success { background: #d4edda; color: #155724; }
+        .status.error { background: #f8d7da; color: #721c24; }
+        .log {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 12px;
+            max-height: 200px;
+            overflow-y: auto;
+            margin-top: 10px;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        button:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+        }
+        .quick-test {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .error-details {
+            color: #dc3545;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 澳洲房产推荐系统 - API连接测试</h1>
+        
+        <div class="quick-test">
+            <h3>🚀 快速测试</h3>
+            <button onclick="runAllTests()">运行所有测试</button>
+            <button onclick="clearLogs()">清空日志</button>
+        </div>
+        
+        <!-- 健康检查测试 -->
+        <div class="test-item">
+            <h3>1. 后端健康检查 <span id="health-status" class="status">待测试</span></h3>
+            <p>测试后端服务是否启动</p>
+            <button onclick="testHealth()">测试</button>
+            <div id="health-log" class="log" style="display:none;"></div>
+        </div>
+        
+        <!-- OpenAI API测试 -->
+        <div class="test-item">
+            <h3>2. OpenAI API连接 <span id="openai-status" class="status">待测试</span></h3>
+            <p>测试智能推荐功能</p>
+            <button onclick="testOpenAI()">测试</button>
+            <div id="openai-log" class="log" style="display:none;"></div>
+        </div>
+        
+        <!-- Firecrawl API测试 -->
+        <div class="test-item">
+            <h3>3. Firecrawl API连接 <span id="firecrawl-status" class="status">待测试</span></h3>
+            <p>测试网页抓取功能</p>
+            <button onclick="testFirecrawl()">测试</button>
+            <div id="firecrawl-log" class="log" style="display:none;"></div>
+        </div>
+        
+        <!-- 普通搜索测试 -->
+        <div class="test-item">
+            <h3>4. 普通搜索功能 <span id="search-status" class="status">待测试</span></h3>
+            <p>测试结构化搜索</p>
+            <button onclick="testSearch()">测试</button>
+            <div id="search-log" class="log" style="display:none;"></div>
+        </div>
+        
+        <!-- 智能推荐测试 -->
+        <div class="test-item">
+            <h3>5. 智能推荐功能 <span id="recommend-status" class="status">待测试</span></h3>
+            <p>测试自然语言查询和推荐</p>
+            <button onclick="testRecommend()">测试</button>
+            <div id="recommend-log" class="log" style="display:none;"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:3000';
+        
+        function log(testId, message, type = 'info') {
+            const logElement = document.getElementById(`${testId}-log`);
+            logElement.style.display = 'block';
+            
+            const timestamp = new Date().toLocaleTimeString();
+            const color = type === 'error' ? 'red' : type === 'success' ? 'green' : 'black';
+            
+            logElement.innerHTML += `<div style="color: ${color}">[${timestamp}] ${message}</div>`;
+            logElement.scrollTop = logElement.scrollHeight;
+        }
+        
+        function setStatus(testId, status) {
+            const statusElement = document.getElementById(`${testId}-status`);
+            statusElement.className = `status ${status}`;
+            statusElement.textContent = {
+                'testing': '测试中...',
+                'success': '✅ 成功',
+                'error': '❌ 失败'
+            }[status];
+        }
+        
+        async function testHealth() {
+            const testId = 'health';
+            setStatus(testId, 'testing');
+            log(testId, '开始健康检查测试...');
+            
+            try {
+                const response = await fetch(`${API_BASE}/health`);
+                const data = await response.json();
+                
+                if (response.ok) {
+                    setStatus(testId, 'success');
+                    log(testId, `健康检查成功: ${JSON.stringify(data)}`, 'success');
+                } else {
+                    setStatus(testId, 'error');
+                    log(testId, `HTTP错误 ${response.status}: ${response.statusText}`, 'error');
+                }
+            } catch (error) {
+                setStatus(testId, 'error');
+                log(testId, `连接失败: ${error.message}`, 'error');
+                log(testId, '请确保后端服务已启动 (python -m app.main)', 'error');
+            }
+        }
+        
+        async function testOpenAI() {
+            const testId = 'openai';
+            setStatus(testId, 'testing');
+            log(testId, '测试OpenAI API连接...');
+            
+            try {
+                const response = await fetch(`${API_BASE}/api/v1/properties/recommend`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        query: "test query for 2 bedroom apartment",
+                        max_results: 1
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok && data.success) {
+                    setStatus(testId, 'success');
+                    log(testId, `OpenAI API连接成功`, 'success');
+                    log(testId, `返回 ${data.properties?.length || 0} 个结果`);
+                } else {
+                    setStatus(testId, 'error');
+                    log(testId, `API调用失败: ${data.message || '未知错误'}`, 'error');
+                    
+                    if (data.message && data.message.includes('API')) {
+                        log(testId, '可能的原因: OpenAI API密钥未配置或无效', 'error');
+                    }
+                }
+            } catch (error) {
+                setStatus(testId, 'error');
+                log(testId, `请求失败: ${error.message}`, 'error');
+            }
+        }
+        
+        async function testFirecrawl() {
+            const testId = 'firecrawl';
+            setStatus(testId, 'testing');
+            log(testId, '测试Firecrawl API连接...');
+            
+            try {
+                const response = await fetch(`${API_BASE}/api/v1/properties/test`);
+                const data = await response.json();
+                
+                if (response.ok && data.success) {
+                    setStatus(testId, 'success');
+                    log(testId, 'Firecrawl API连接成功', 'success');
+                } else {
+                    setStatus(testId, 'error');
+                    log(testId, `Firecrawl测试失败: ${data.message || data.error}`, 'error');
+                    log(testId, '可能的原因: Firecrawl API密钥未配置或无效', 'error');
+                }
+            } catch (error) {
+                setStatus(testId, 'error');
+                log(testId, `请求失败: ${error.message}`, 'error');
+            }
+        }
+        
+        async function testSearch() {
+            const testId = 'search';
+            setStatus(testId, 'testing');
+            log(testId, '测试普通搜索功能...');
+            
+            try {
+                const response = await fetch(`${API_BASE}/api/v1/properties/search`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        location: "Sydney",
+                        min_price: 500,
+                        max_price: 1000,
+                        bedrooms: 2,
+                        max_results: 3
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok && data.success) {
+                    setStatus(testId, 'success');
+                    log(testId, `普通搜索成功`, 'success');
+                    log(testId, `找到 ${data.properties?.length || 0} 个房产`);
+                    log(testId, `搜索耗时: ${data.metadata?.search_time_ms || 0}ms`);
+                } else {
+                    setStatus(testId, 'error');
+                    log(testId, `搜索失败: ${data.message || '未知错误'}`, 'error');
+                }
+            } catch (error) {
+                setStatus(testId, 'error');
+                log(testId, `请求失败: ${error.message}`, 'error');
+            }
+        }
+        
+        async function testRecommend() {
+            const testId = 'recommend';
+            setStatus(testId, 'testing');
+            log(testId, '测试智能推荐功能...');
+            
+            try {
+                const response = await fetch(`${API_BASE}/api/v1/properties/recommend`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        query: "Looking for a 2 bedroom apartment in Sydney, budget $800 per week",
+                        max_results: 3
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok && data.success) {
+                    setStatus(testId, 'success');
+                    log(testId, `智能推荐成功`, 'success');
+                    log(testId, `推荐 ${data.properties?.length || 0} 个房产`);
+                    log(testId, `处理耗时: ${data.metadata?.search_time_ms || 0}ms`);
+                    
+                    if (data.metadata?.search_params?.parsed_query) {
+                        log(testId, `解析结果: ${JSON.stringify(data.metadata.search_params.parsed_query)}`);
+                    }
+                } else {
+                    setStatus(testId, 'error');
+                    log(testId, `推荐失败: ${data.message || '未知错误'}`, 'error');
+                }
+            } catch (error) {
+                setStatus(testId, 'error');
+                log(testId, `请求失败: ${error.message}`, 'error');
+            }
+        }
+        
+        async function runAllTests() {
+            clearLogs();
+            
+            // 按顺序运行测试，避免并发问题
+            await testHealth();
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            
+            await testFirecrawl();
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            
+            await testOpenAI();
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            
+            await testSearch();
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            
+            await testRecommend();
+        }
+        
+        function clearLogs() {
+            const logElements = document.querySelectorAll('.log');
+            logElements.forEach(element => {
+                element.innerHTML = '';
+                element.style.display = 'none';
+            });
+            
+            const statusElements = document.querySelectorAll('.status');
+            statusElements.forEach(element => {
+                element.className = 'status';
+                element.textContent = '待测试';
+            });
+        }
+    </script>
+</body>
+</html>

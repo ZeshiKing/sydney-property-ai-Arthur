@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>澳洲房产智能推荐系统</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 0;
+        }
+        
+        .search-panel {
+            background: #f8f9fc;
+            padding: 40px;
+            border-right: 1px solid #e1e5e9;
+        }
+        
+        .results-panel {
+            padding: 40px;
+        }
+        
+        .search-form {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e1e5e9;
+            border-radius: 10px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: #4facfe;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .search-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+            margin-bottom: 15px;
+        }
+        
+        .search-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .search-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .recommend-btn {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+        
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #4facfe;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .property-card {
+            border: 1px solid #e1e5e9;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .property-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .property-header {
+            display: flex;
+            justify-content: between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .property-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+            flex: 1;
+        }
+        
+        .property-price {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #4facfe;
+            margin-left: 20px;
+        }
+        
+        .property-location {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 15px;
+        }
+        
+        .property-details {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .detail-item {
+            background: #f8f9fc;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        
+        .property-features {
+            margin-bottom: 15px;
+        }
+        
+        .features-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .feature-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+        
+        .property-actions {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .action-btn {
+            padding: 8px 16px;
+            border: 1px solid #4facfe;
+            border-radius: 8px;
+            background: transparent;
+            color: #4facfe;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: all 0.3s;
+        }
+        
+        .action-btn:hover {
+            background: #4facfe;
+            color: white;
+        }
+        
+        .error-message {
+            background: #ffe6e6;
+            color: #d63031;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .success-message {
+            background: #e6ffe6;
+            color: #00b894;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .results-header {
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f8f9fc;
+        }
+        
+        .results-count {
+            font-size: 1.2em;
+            color: #333;
+            font-weight: 600;
+        }
+        
+        .results-time {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .search-panel {
+                border-right: none;
+                border-bottom: 1px solid #e1e5e9;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .property-header {
+                flex-direction: column;
+            }
+            
+            .property-price {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏠 澳洲房产智能推荐</h1>
+            <p>基于AI大语言模型的房产搜索与智能推荐系统</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="search-panel">
+                <div class="search-form">
+                    <h2 style="margin-bottom: 25px; color: #333;">智能搜索</h2>
+                    
+                    <!-- 自然语言查询 -->
+                    <div class="form-group">
+                        <label for="naturalQuery">🤖 自然语言查询 (推荐)</label>
+                        <textarea 
+                            id="naturalQuery" 
+                            placeholder="例如：Looking for a 2 bedroom apartment in Camperdown, budget $800-900 per week, must have parking"
+                        ></textarea>
+                    </div>
+                    
+                    <button class="search-btn recommend-btn" onclick="searchRecommend()">
+                        🔍 智能推荐搜索
+                    </button>
+                    
+                    <div style="text-align: center; margin: 20px 0; color: #999;">
+                        ──── 或者使用结构化搜索 ────
+                    </div>
+                    
+                    <!-- 结构化搜索表单 -->
+                    <div class="form-group">
+                        <label for="location">📍 搜索区域</label>
+                        <input type="text" id="location" placeholder="如：Camperdown, Sydney">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="minPrice">💰 最低价格 (周租)</label>
+                            <input type="number" id="minPrice" placeholder="400">
+                        </div>
+                        <div class="form-group">
+                            <label for="maxPrice">💰 最高价格 (周租)</label>
+                            <input type="number" id="maxPrice" placeholder="800">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bedrooms">🛏️ 卧室数量</label>
+                            <select id="bedrooms">
+                                <option value="">不限</option>
+                                <option value="1">1室</option>
+                                <option value="2">2室</option>
+                                <option value="3">3室</option>
+                                <option value="4">4室+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="bathrooms">🛁 卫浴数量</label>
+                            <select id="bathrooms">
+                                <option value="">不限</option>
+                                <option value="1">1卫</option>
+                                <option value="2">2卫</option>
+                                <option value="3">3卫+</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="propertyType">🏢 房产类型</label>
+                            <select id="propertyType">
+                                <option value="">不限</option>
+                                <option value="apartment">公寓</option>
+                                <option value="house">独栋房</option>
+                                <option value="townhouse">联排别墅</option>
+                                <option value="studio">单间公寓</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="parking">🚗 停车位</label>
+                            <select id="parking">
+                                <option value="">不限</option>
+                                <option value="1">1个</option>
+                                <option value="2">2个+</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button class="search-btn" onclick="searchNormal()">
+                        🔍 普通搜索
+                    </button>
+                </div>
+            </div>
+            
+            <div class="results-panel">
+                <div id="results-container">
+                    <div style="text-align: center; padding: 60px 20px; color: #999;">
+                        <h3>🎯 开始您的房产搜索</h3>
+                        <p style="margin-top: 15px;">使用左侧的自然语言查询或结构化搜索来找到理想房产</p>
+                        <div style="margin-top: 30px;">
+                            <p style="font-size: 0.9em; opacity: 0.8;">💡 提示：自然语言查询支持中英文混合输入</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:3000/api/v1';
+        
+        async function searchRecommend() {
+            const naturalQuery = document.getElementById('naturalQuery').value.trim();
+            
+            if (!naturalQuery) {
+                showError('请输入自然语言查询');
+                return;
+            }
+            
+            const requestData = {
+                query: naturalQuery,
+                location: document.getElementById('location').value || null,
+                min_price: parseInt(document.getElementById('minPrice').value) || null,
+                max_price: parseInt(document.getElementById('maxPrice').value) || null,
+                property_type: document.getElementById('propertyType').value || null,
+                bedrooms: parseInt(document.getElementById('bedrooms').value) || null,
+                bathrooms: parseInt(document.getElementById('bathrooms').value) || null,
+                parking: parseInt(document.getElementById('parking').value) || null,
+                max_results: 10
+            };
+            
+            await performSearch('/properties/recommend', requestData, '智能推荐');
+        }
+        
+        async function searchNormal() {
+            const location = document.getElementById('location').value.trim();
+            
+            if (!location) {
+                showError('请输入搜索区域');
+                return;
+            }
+            
+            const requestData = {
+                location: location,
+                min_price: parseInt(document.getElementById('minPrice').value) || null,
+                max_price: parseInt(document.getElementById('maxPrice').value) || null,
+                property_type: document.getElementById('propertyType').value || null,
+                bedrooms: parseInt(document.getElementById('bedrooms').value) || null,
+                bathrooms: parseInt(document.getElementById('bathrooms').value) || null,
+                parking: parseInt(document.getElementById('parking').value) || null,
+                max_results: 50
+            };
+            
+            await performSearch('/properties/search', requestData, '普通搜索');
+        }
+        
+        async function performSearch(endpoint, requestData, searchType) {
+            const resultsContainer = document.getElementById('results-container');
+            const buttons = document.querySelectorAll('.search-btn');
+            
+            // 禁用按钮，显示加载状态
+            buttons.forEach(btn => btn.disabled = true);
+            showLoading();
+            
+            try {
+                const response = await fetch(`${API_BASE}${endpoint}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(requestData)
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    displayResults(data, searchType);
+                    showSuccess(`${searchType}完成！找到 ${data.properties.length} 个房产`);
+                } else {
+                    showError(data.message || `${searchType}失败`);
+                }
+                
+            } catch (error) {
+                console.error('搜索错误:', error);
+                showError(`${searchType}失败: ${error.message}`);
+            } finally {
+                // 重新启用按钮
+                buttons.forEach(btn => btn.disabled = false);
+            }
+        }
+        
+        function showLoading() {
+            document.getElementById('results-container').innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>🔍 正在搜索房产数据...</p>
+                    <p style="font-size: 0.9em; color: #999; margin-top: 10px;">请稍候，这可能需要几秒钟</p>
+                </div>
+            `;
+        }
+        
+        function displayResults(data, searchType) {
+            const properties = data.properties || [];
+            const metadata = data.metadata || {};
+            
+            let html = `
+                <div class="results-header">
+                    <div class="results-count">
+                        🎯 ${searchType}结果：共找到 ${properties.length} 个房产
+                    </div>
+                    <div class="results-time">
+                        ⏱️ 搜索耗时：${metadata.search_time_ms || 0}ms
+                    </div>
+                </div>
+            `;
+            
+            if (properties.length === 0) {
+                html += `
+                    <div style="text-align: center; padding: 40px; color: #666;">
+                        <h3>😔 未找到匹配的房产</h3>
+                        <p style="margin-top: 15px;">请尝试调整搜索条件</p>
+                    </div>
+                `;
+            } else {
+                properties.forEach(property => {
+                    html += createPropertyCard(property);
+                });
+            }
+            
+            document.getElementById('results-container').innerHTML = html;
+        }
+        
+        function createPropertyCard(property) {
+            const features = property.features || [];
+            const agent = property.agent || {};
+            const coordinates = property.coordinates || {};
+            
+            return `
+                <div class="property-card">
+                    <div class="property-header">
+                        <div>
+                            <div class="property-title">${property.title || '房产标题'}</div>
+                            <div class="property-location">📍 ${property.location || '位置信息'}</div>
+                        </div>
+                        <div class="property-price">${property.price || '价格面议'}</div>
+                    </div>
+                    
+                    <div class="property-details">
+                        ${property.bedrooms ? `<span class="detail-item">🛏️ ${property.bedrooms}室</span>` : ''}
+                        ${property.bathrooms ? `<span class="detail-item">🛁 ${property.bathrooms}卫</span>` : ''}
+                        ${property.parking ? `<span class="detail-item">🚗 ${property.parking}车位</span>` : ''}
+                        ${property.property_type ? `<span class="detail-item">🏢 ${property.property_type}</span>` : ''}
+                        ${property.property_size ? `<span class="detail-item">📐 ${property.property_size}</span>` : ''}
+                    </div>
+                    
+                    ${property.description ? `
+                        <div style="margin-bottom: 15px; color: #666; line-height: 1.5;">
+                            ${property.description.substring(0, 150)}${property.description.length > 150 ? '...' : ''}
+                        </div>
+                    ` : ''}
+                    
+                    ${features.length > 0 ? `
+                        <div class="property-features">
+                            <div class="features-list">
+                                ${features.slice(0, 6).map(feature => 
+                                    `<span class="feature-tag">${feature}</span>`
+                                ).join('')}
+                            </div>
+                        </div>
+                    ` : ''}
+                    
+                    <div class="property-actions">
+                        ${property.url ? `<a href="${property.url}" target="_blank" class="action-btn">🔗 查看详情</a>` : ''}
+                        ${agent.phone ? `<a href="tel:${agent.phone}" class="action-btn">📞 ${agent.phone}</a>` : ''}
+                        ${coordinates.lat && coordinates.lng ? `
+                            <a href="https://www.google.com/maps?q=${coordinates.lat},${coordinates.lng}" target="_blank" class="action-btn">
+                                🗺️ 地图
+                            </a>
+                        ` : ''}
+                    </div>
+                </div>
+            `;
+        }
+        
+        function showError(message) {
+            const existingMessage = document.querySelector('.error-message');
+            if (existingMessage) {
+                existingMessage.remove();
+            }
+            
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error-message';
+            errorDiv.textContent = message;
+            
+            const resultsContainer = document.getElementById('results-container');
+            resultsContainer.insertBefore(errorDiv, resultsContainer.firstChild);
+            
+            setTimeout(() => {
+                if (errorDiv.parentNode) {
+                    errorDiv.remove();
+                }
+            }, 5000);
+        }
+        
+        function showSuccess(message) {
+            const existingMessage = document.querySelector('.success-message');
+            if (existingMessage) {
+                existingMessage.remove();
+            }
+            
+            const successDiv = document.createElement('div');
+            successDiv.className = 'success-message';
+            successDiv.textContent = message;
+            
+            const resultsContainer = document.getElementById('results-container');
+            resultsContainer.insertBefore(successDiv, resultsContainer.firstChild);
+            
+            setTimeout(() => {
+                if (successDiv.parentNode) {
+                    successDiv.remove();
+                }
+            }, 3000);
+        }
+        
+        // 页面加载完成后的初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 可以在这里添加一些初始化代码
+            console.log('澳洲房产智能推荐系统已加载');
+        });
+    </script>
+</body>
+</html>
