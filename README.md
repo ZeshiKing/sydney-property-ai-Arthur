@@ -71,21 +71,45 @@ docker-compose ps
 docker-compose logs -f app
 ```
 
-### 4. 本地开发方式
-```bash
-# 创建虚拟环境
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# venv\Scripts\activate  # Windows
+### 4. 本地开发方式（Python虚拟环境）
 
-# 安装依赖
+> 推荐使用 Python 3.11，以避免 pandas 等依赖在 Windows 上需要手动编译。
+
+#### Windows (PowerShell)
+```powershell
+py -3.11 -m venv .venv
+.\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-
-# 启动开发服务器
-python -m app.main
-# 或使用 uvicorn
-uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+uvicorn app.main:app --host 0.0.0.0 --port 3000 --reload
 ```
+
+#### macOS / Linux
+```bash
+python3.11 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --host 0.0.0.0 --port 3000 --reload
+```
+
+服务启动后：
+- 后端 API 文档：`http://localhost:3000/api/v1/docs`
+- 前端界面（后端托管）：`http://localhost:3000/app`
+- 静态文件：`http://localhost:3000/frontend/index.html`
+
+**Firecrawl 验证**（命令行示例）
+```bash
+curl -X POST http://localhost:3000/api/v1/properties/search   -H "Content-Type: application/json"   -d '{
+    "location": "Camperdown",
+    "min_price": 500,
+    "max_price": 900,
+    "bedrooms": 2,
+    "property_type": "Apartment",
+    "max_results": 5
+  }'
+```
+> 首次请求会触发 Firecrawl 抓取，耗时约 4~6 秒，并在 `csv_exports/` 下生成最新搜索结果的 CSV。
+
+如果缺少 `OPENAI_API_KEY`，解析器会使用内建规则生成基础字段，仍可完成流程。
 
 ## 📚 API文档
 

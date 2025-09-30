@@ -4,16 +4,21 @@ OpenAI-based Property Data Parser Service
 基于OpenAI API的房产数据解析服务
 """
 
+from __future__ import annotations
+
 import json
 import re
 import os
-from typing import Dict, Any, List, Optional
 import logging
+from typing import TYPE_CHECKING, Dict, Any, List, Optional
+
 from openai import AsyncOpenAI
 
 from app.core.config import settings
 from app.models.property import Property
-from app.api.api_v1.endpoints.properties import PropertyModel
+
+if TYPE_CHECKING:
+    from app.api.api_v1.endpoints.properties import PropertyModel
 
 logger = logging.getLogger(__name__)
 
@@ -316,6 +321,7 @@ Return only the JSON object:"""
                                    search_params: Dict[str, Any]) -> Optional[PropertyModel]:
         """从解析数据创建PropertyModel"""
         try:
+            from app.api.api_v1.endpoints.properties import PropertyModel
             import uuid
             from datetime import datetime
             
@@ -380,6 +386,7 @@ Return only the JSON object:"""
         properties = []
         
         try:
+            from app.api.api_v1.endpoints.properties import PropertyModel
             import uuid
             from datetime import datetime
             

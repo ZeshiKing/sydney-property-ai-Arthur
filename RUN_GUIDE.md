@@ -11,23 +11,31 @@
 ## 🛠️ 环境准备
 
 ### 1. 系统要求
-- Python 3.9+
+- Python 3.11（推荐，最低 3.9）
 - 网络连接 (用于API调用)
 - 最低配置即可运行 (无需GPU)
 
 ### 2. 依赖安装
+
 ```bash
 cd sydney-property-ai-Arthur
+```
 
-# 创建虚拟环境
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# 或
-venv\Scripts\activate     # Windows
-
-# 安装依赖 (更轻量，无需torch等重型ML库)
+#### Windows (PowerShell)
+```powershell
+py -3.11 -m venv .venv
+.\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
+
+#### macOS / Linux
+```bash
+python3.11 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+> 第一次安装会拉取 pandas / uvicorn 等依赖，耗时约 1 分钟。若必须使用系统 Python 3.9/3.10，也可将 `python3.11` 替换为现有版本。
 
 ### 3. API密钥获取
 
@@ -75,13 +83,25 @@ DATABASE_URL=sqlite:///./properties.db
 ## 🚀 启动系统
 
 ### 方式1: 直接运行 (推荐开发)
-```bash
-# 启动后端API服务
-python -m app.main
 
-# 或使用uvicorn
+**PowerShell (Windows)**
+```powershell
+.\.venv\Scripts\Activate.ps1
 uvicorn app.main:app --host 0.0.0.0 --port 3000 --reload
 ```
+
+**macOS / Linux**
+```bash
+source .venv/bin/activate
+uvicorn app.main:app --host 0.0.0.0 --port 3000 --reload
+```
+
+> 备选：`python -m app.main` 亦可启动，但推荐使用 uvicorn 获取自动热重载。
+
+启动完成后可访问：
+- 后端健康检查 `http://localhost:3000/health`
+- API 文档 `http://localhost:3000/api/v1/docs`
+- 前端界面 `http://localhost:3000/app`
 
 ### 方式2: Docker运行
 ```bash
@@ -103,9 +123,8 @@ docker-compose logs -f app
 - **健康检查**: http://localhost:3000/health
 
 ### 前端界面
-在浏览器中打开: `frontend/index.html`
-
-或使用简单HTTP服务器:
+- **推荐**: 访问 http://localhost:3000/app （后端自动托管前端静态资源）
+- **备用**: 仍可直接打开 `frontend/index.html`，或使用本地HTTP服务器:
 ```bash
 cd frontend
 python -m http.server 8080
@@ -151,6 +170,8 @@ curl -X POST "http://localhost:3000/api/v1/properties/search" \
     "max_results": 10
   }'
 ```
+
+> 首次请求会触发 Firecrawl 抓取，耗时约 4~6 秒，并在 `csv_exports/` 下生成 CSV。若未配置 `OPENAI_API_KEY` 将使用内建规则返回精简字段，但请求仍可成功。
 
 ## 📊 功能说明
 

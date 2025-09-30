@@ -166,6 +166,9 @@
 
     <script>
         let scrapedData = [];
+        const API_BASE = window.location.origin.startsWith('http')
+            ? window.location.origin
+            : 'http://localhost:3000';
         
         function log(area, message, type = 'info') {
             const logArea = document.getElementById(area + 'Log');
@@ -418,7 +421,7 @@
             }
             
             try {
-                const response = await fetch('http://localhost:3000/api/v1/properties/bulk-process', {
+                const response = await fetch(`${API_BASE}/api/v1/properties/bulk-process`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -507,7 +510,7 @@
             }
             
             try {
-                const response = await fetch('http://localhost:3000/api/v1/properties/import-csv', {
+                const response = await fetch(`${API_BASE}/api/v1/properties/import-csv`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

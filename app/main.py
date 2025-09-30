@@ -7,9 +7,12 @@
 from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from contextlib import asynccontextmanager
 import time
 import logging
+from pathlib import Path
 
 from app.core.config import settings
 from app.api.api_v1.api import api_router
@@ -93,6 +96,15 @@ app = FastAPI(
     redoc_url=f"{settings.API_V1_STR}/redoc",
     lifespan=lifespan
 )
+FRONTEND_DIR = Path(__file__).parent.parent / "frontend"
+if FRONTEND_DIR.exists():
+    app.mount("/frontend", StaticFiles(directory=FRONTEND_DIR, html=True), name="frontend")
+
+    @app.get("/app", include_in_schema=False)
+    async def serve_frontend_app():
+        """Serve the main frontend interface"""
+        return FileResponse(FRONTEND_DIR / "index.html")
+
 
 # CORS中间件
 cors_origins = [origin.strip() for origin in settings.BACKEND_CORS_ORIGINS.split(",")]

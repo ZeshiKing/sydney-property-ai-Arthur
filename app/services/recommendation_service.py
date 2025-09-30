@@ -4,14 +4,17 @@ Property Recommendation Service
 房产智能推荐服务
 """
 
+from __future__ import annotations
+
 import json
 import math
 import time
 import datetime as dt
-from typing import Dict, Any, List, Optional
+from typing import TYPE_CHECKING, Dict, Any, List, Optional
 import logging
 
-from app.api.api_v1.endpoints.properties import PropertyModel
+if TYPE_CHECKING:
+    from app.api.api_v1.endpoints.properties import PropertyModel
 
 logger = logging.getLogger(__name__)
 
