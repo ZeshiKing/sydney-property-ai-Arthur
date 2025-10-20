@@ -61,13 +61,12 @@ SECRET_KEY=your-very-secure-secret-key
 
 ### 3. Docker方式运行（推荐）
 ```bash
-# 启动完整服务栈（生产镜像）
+# 一键启动（自动构建 & 跟随日志，可选）
+./scripts/docker-up.sh --build --logs
+
+# 或手动执行
 docker compose up -d
-
-# 查看服务状态
 docker compose ps
-
-# 查看应用日志
 docker compose logs -f app
 
 # 开发者热更新（可选）
@@ -109,6 +108,10 @@ curl -X POST http://localhost:8000/api/v1/properties/search   -H "Content-Type: 
     "property_type": "Apartment",
     "max_results": 5
   }'
+  scripts/docker-up.ps1 --build --logs
+
+Windows PowerShell:
+  scripts\docker-up.ps1 --build --logs
 ```
 > 若未配置 `FIRECRAWL_API_KEY`，服务会自动降级为示例数据模式以便快速体验；配置真实密钥后即可启用真实抓取。
 >
