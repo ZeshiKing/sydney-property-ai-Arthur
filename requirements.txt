@@ -4,12 +4,12 @@ uvicorn[standard]==0.24.0
 python-multipart==0.0.6
 
 # 数据验证和序列化
-pydantic==2.5.1
+pydantic==2.9.2
 pydantic-settings==2.1.0
 
 # 数据库
 sqlalchemy==2.0.23
-asyncpg==0.29.0
+asyncpg==0.29.0; python_version < "3.13"
 aiosqlite==0.19.0
 alembic==1.13.0
 
@@ -23,7 +23,7 @@ httpx==0.25.2
 aiofiles==23.2.1
 
 # 数据处理
-pandas==2.1.4
+pandas==2.2.3
 openpyxl==3.1.2
 
 # 安全和认证
@@ -38,7 +38,7 @@ python-dotenv==1.0.0
 python-dateutil==2.8.2
 
 # JSON处理
-orjson==3.9.10
+orjson==3.9.10; python_version < "3.13"
 
 # 开发工具
 pytest==7.4.3
@@ -62,3 +62,5 @@ openai>=1.3.0
 # 其他工具
 click==8.1.7
 rich==13.7.0
+# Enforce Python 3.11 runtime
+py311-only==0.0.0; python_version < "3.11" or python_version >= "3.12"

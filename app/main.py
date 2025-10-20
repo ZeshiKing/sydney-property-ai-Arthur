@@ -43,22 +43,25 @@ async def lifespan(app: FastAPI):
     # 检查Firecrawl API连接 (测试实际端点)
     try:
         import httpx
-        async with httpx.AsyncClient(timeout=10) as client:
-            # 测试实际的抓取端点而不是健康检查
-            test_payload = {
-                "url": "https://httpbin.org/status/200",
-                "formats": ["markdown"]
-            }
-            response = await client.post(
-                f"{settings.FIRECRAWL_BASE_URL}/v1/scrape",
-                headers={"Authorization": f"Bearer {settings.FIRECRAWL_API_KEY}"},
-                json=test_payload
-            )
-            if response.status_code in [200, 201]:
-                logger.info("🔥 Firecrawl API 连接正常")
-            else:
-                logger.warning(f"⚠️  Firecrawl API 测试失败: {response.status_code}")
-                logger.info("ℹ️  API功能可能受限，但基本服务正常")
+        if not settings.FIRECRAWL_API_KEY:
+            logger.info("🔥 Firecrawl API 未配置，将使用示例数据模式运行")
+        else:
+            async with httpx.AsyncClient(timeout=10) as client:
+                # 测试实际的抓取端点而不是健康检查
+                test_payload = {
+                    "url": "https://httpbin.org/status/200",
+                    "formats": ["markdown"]
+                }
+                response = await client.post(
+                    f"{settings.FIRECRAWL_BASE_URL}/v1/scrape",
+                    headers={"Authorization": f"Bearer {settings.FIRECRAWL_API_KEY}"},
+                    json=test_payload
+                )
+                if response.status_code in [200, 201]:
+                    logger.info("🔥 Firecrawl API 连接正常")
+                else:
+                    logger.warning(f"⚠️  Firecrawl API 测试失败: {response.status_code}")
+                    logger.info("ℹ️  API功能可能受限，但基本服务正常")
     except Exception as e:
         logger.warning(f"⚠️  Firecrawl API 连接检查失败: {e}")
         logger.info("ℹ️  将使用模拟数据模式运行")

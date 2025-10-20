@@ -79,7 +79,7 @@ class Settings(BaseSettings):
             return f"redis://{values.get('REDIS_HOST')}:{values.get('REDIS_PORT')}"
     
     # Firecrawl API设置
-    FIRECRAWL_API_KEY: str = Field(env="FIRECRAWL_API_KEY")
+    FIRECRAWL_API_KEY: Optional[str] = Field(default=None, env="FIRECRAWL_API_KEY")
     FIRECRAWL_BASE_URL: str = Field(default="https://api.firecrawl.dev", env="FIRECRAWL_BASE_URL")
     
     # OpenAI API设置

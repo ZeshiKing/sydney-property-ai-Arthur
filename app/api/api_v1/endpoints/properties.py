@@ -108,6 +108,30 @@ class FirecrawlService:
         self.api_key = settings.FIRECRAWL_API_KEY
         self.base_url = settings.FIRECRAWL_BASE_URL
         self.timeout = settings.SCRAPING_TIMEOUT
+
+    def _fallback_response(
+        self,
+        search_params: PropertySearchRequest,
+        reason: str,
+        search_url: Optional[str] = None
+    ) -> Dict[str, Any]:
+        """构建本地降级响应"""
+        if search_url is None:
+            search_url = self.build_domain_search_url(search_params)
+
+        return {
+            "data": {
+                "markdown": "",
+                "html": ""
+            },
+            "metadata": {
+                "mode": "fallback",
+                "reason": reason,
+                "generated_at": datetime.utcnow().isoformat() + "Z",
+                "search_url": search_url,
+                "search_params": search_params.model_dump()
+            }
+        }
     
     def build_domain_search_url(self, params: PropertySearchRequest) -> str:
         """构建Domain.com.au搜索URL"""
@@ -155,6 +179,10 @@ class FirecrawlService:
         # 构建搜索URL
         search_url = self.build_domain_search_url(search_params)
         scraping_logger.info(f"开始抓取URL: {search_url}")
+
+        if not self.api_key:
+            scraping_logger.warning("Firecrawl API key 未配置，使用本地示例数据")
+            return self._fallback_response(search_params, "missing_firecrawl_api_key", search_url)
         
         # Firecrawl API配置
         firecrawl_config = {
@@ -186,21 +214,13 @@ class FirecrawlService:
                 
             except httpx.HTTPStatusError as e:
                 scraping_logger.error(f"Firecrawl API错误: {e.response.status_code} - {e.response.text}")
+                reason = f"http_status_{e.response.status_code}"
                 if e.response.status_code == 402:
-                    raise HTTPException(
-                        status_code=402,
-                        detail="Firecrawl API配额不足，请检查账户余额"
-                    )
-                raise HTTPException(
-                    status_code=500,
-                    detail=f"抓取服务错误: {e.response.text}"
-                )
+                    reason = "firecrawl_quota_exceeded"
+                return self._fallback_response(search_params, reason, search_url)
             except Exception as e:
                 scraping_logger.error(f"抓取过程出错: {str(e)}")
-                raise HTTPException(
-                    status_code=500,
-                    detail=f"抓取过程出错: {str(e)}"
-                )
+                return self._fallback_response(search_params, "request_exception", search_url)
     
     def parse_property_data(self, raw_data: Dict[str, Any], search_params: PropertySearchRequest) -> List[PropertyModel]:
         """解析原始数据为标准房产模型"""

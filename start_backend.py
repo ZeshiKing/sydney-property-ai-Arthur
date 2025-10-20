@@ -10,6 +10,8 @@ import time
 import requests
 from pathlib import Path
 
+PROJECT_ROOT = Path(__file__).resolve().parent
+
 def check_port_in_use(port=3000):
     """检查端口是否被占用"""
     try:
@@ -36,7 +38,7 @@ def install_dependencies():
 
 def create_simple_env():
     """创建简单的环境配置"""
-    env_file = Path(".env")
+    env_file = PROJECT_ROOT / ".env"
     
     if not env_file.exists():
         print("📝 创建基本配置文件...")
@@ -62,9 +64,9 @@ BACKEND_CORS_ORIGINS=http://localhost:3000,http://127.0.0.1:3000,http://localhos
 def start_server():
     """启动服务器"""
     print("🚀 启动后端服务...")
-    
+
     # 切换到项目目录
-    os.chdir("/Users/zeshi/haofang/pythonProject6/sydney-property-ai-Arthur")
+    os.chdir(PROJECT_ROOT)
     
     # 检查端口
     port_used, msg = check_port_in_use()

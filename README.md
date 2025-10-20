@@ -28,7 +28,7 @@
 ### 环境要求
 
 **基础要求**:
-- Python 3.9+ (必需)
+- Python 3.11.x (必需)
 - Firecrawl API密钥 (必需 - 用于房产数据抓取)
 
 **可选依赖** (服务会自动降级):
@@ -61,14 +61,17 @@ SECRET_KEY=your-very-secure-secret-key
 
 ### 3. Docker方式运行（推荐）
 ```bash
-# 启动完整服务栈
-docker-compose up -d
+# 启动完整服务栈（生产镜像）
+docker compose up -d
 
 # 查看服务状态
-docker-compose ps
+docker compose ps
 
 # 查看应用日志
-docker-compose logs -f app
+docker compose logs -f app
+
+# 开发者热更新（可选）
+docker compose --profile dev up app-dev
 ```
 
 ### 4. 本地开发方式（Python虚拟环境）
@@ -80,7 +83,7 @@ docker-compose logs -f app
 py -3.11 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-uvicorn app.main:app --host 0.0.0.0 --port 3000 --reload
+py -3.11 -m uvicorn app.main:app --host 0.0.0.0 --port 3000 --reload
 ```
 
 #### macOS / Linux
@@ -88,17 +91,17 @@ uvicorn app.main:app --host 0.0.0.0 --port 3000 --reload
 python3.11 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-uvicorn app.main:app --host 0.0.0.0 --port 3000 --reload
+python3.11 -m uvicorn app.main:app --host 0.0.0.0 --port 3000 --reload
 ```
 
 服务启动后：
-- 后端 API 文档：`http://localhost:3000/api/v1/docs`
-- 前端界面（后端托管）：`http://localhost:3000/app`
-- 静态文件：`http://localhost:3000/frontend/index.html`
+- 后端 API 文档：`http://localhost:8000/api/v1/docs`
+- 前端界面（后端托管）：`http://localhost:8000/app`
+- 静态文件：`http://localhost:8000/frontend/index.html`
 
 **Firecrawl 验证**（命令行示例）
 ```bash
-curl -X POST http://localhost:3000/api/v1/properties/search   -H "Content-Type: application/json"   -d '{
+curl -X POST http://localhost:8000/api/v1/properties/search   -H "Content-Type: application/json"   -d '{
     "location": "Camperdown",
     "min_price": 500,
     "max_price": 900,
@@ -107,9 +110,11 @@ curl -X POST http://localhost:3000/api/v1/properties/search   -H "Content-Type: 
     "max_results": 5
   }'
 ```
-> 首次请求会触发 Firecrawl 抓取，耗时约 4~6 秒，并在 `csv_exports/` 下生成最新搜索结果的 CSV。
+> 若未配置 `FIRECRAWL_API_KEY`，服务会自动降级为示例数据模式以便快速体验；配置真实密钥后即可启用真实抓取。
+>
+> 同样，缺少 `OPENAI_API_KEY` 时系统会退回到规则解析，依然可以完成流程。
 
-如果缺少 `OPENAI_API_KEY`，解析器会使用内建规则生成基础字段，仍可完成流程。
+> ⚠️ 本项目的 `requirements.txt` 在非 Python 3.11 环境会刻意报错（使用 `py311-only` 哨兵依赖），请务必先安装/切换到 3.11 再执行 `pip install -r requirements.txt`。
 
 ## 📚 API文档
 

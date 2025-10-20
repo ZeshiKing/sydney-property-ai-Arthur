@@ -8,9 +8,11 @@ import sys
 import subprocess
 from pathlib import Path
 
+PROJECT_ROOT = Path(__file__).resolve().parent
+
 def fix_env_file():
     """修复环境配置文件"""
-    env_file = Path(".env")
+    env_file = PROJECT_ROOT / ".env"
     
     print("🔧 修复环境配置文件...")
     
@@ -84,7 +86,7 @@ def test_openai_key():
         api_key = os.getenv("OPENAI_API_KEY")
         if not api_key:
             # 尝试从.env文件读取
-            env_file = Path(".env")
+            env_file = PROJECT_ROOT / ".env"
             if env_file.exists():
                 for line in env_file.read_text().split('\n'):
                     if line.startswith('OPENAI_API_KEY='):
@@ -130,8 +132,8 @@ FIRECRAWL_API_KEY=fc-test-key
 BACKEND_CORS_ORIGINS=http://localhost:3000,http://127.0.0.1:3000,http://localhost:8080,file://
 """
     
-    env_file = Path(".env")
-    backup_file = Path(".env.backup")
+    env_file = PROJECT_ROOT / ".env"
+    backup_file = PROJECT_ROOT / ".env.backup"
     
     # 备份现有文件
     if env_file.exists():
@@ -151,7 +153,7 @@ def start_backend_test():
     
     try:
         # 设置环境变量
-        os.chdir("/Users/zeshi/haofang/pythonProject6/sydney-property-ai-Arthur")
+        os.chdir(PROJECT_ROOT)
         
         # 启动服务 (不使用reload模式，避免文件监控问题)
         cmd = [
@@ -187,7 +189,7 @@ def main():
     
     # 切换到项目目录
     try:
-        os.chdir("/Users/zeshi/haofang/pythonProject6/sydney-property-ai-Arthur")
+        os.chdir(PROJECT_ROOT)
         print(f"📁 工作目录: {os.getcwd()}")
     except:
         print("❌ 无法切换到项目目录")

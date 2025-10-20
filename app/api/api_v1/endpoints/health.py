@@ -91,6 +91,14 @@ async def check_firecrawl() -> ServiceStatus:
     import httpx
     
     start_time = asyncio.get_event_loop().time()
+
+    if not settings.FIRECRAWL_API_KEY:
+        response_time = (asyncio.get_event_loop().time() - start_time) * 1000
+        return ServiceStatus(
+            status="healthy",
+            response_time_ms=round(response_time, 2),
+            details={"mode": "fallback", "reason": "FIRECRAWL_API_KEY not configured"}
+        )
     
     try:
         async with httpx.AsyncClient() as client:
